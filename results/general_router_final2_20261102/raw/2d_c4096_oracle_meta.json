@@ -1,0 +1,18 @@
+{
+  "full_ns": 2213862486,
+  "phases_ns": {
+    "gen": 2233856,
+    "build": 1148514,
+    "execute": 2209946032,
+    "extract": 326577,
+    "cleanup": 207507
+  },
+  "peak_rss_kb": 7248,
+  "bytes": {
+    "static_index": 0,
+    "product_class": 0,
+    "dynamic": 0,
+    "dense_need": 4297064704
+  },
+  "dense_need_bytes": null
+}

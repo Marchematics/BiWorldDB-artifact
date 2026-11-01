@@ -20,7 +20,7 @@ independent references, and runs randomized branching tests.
 python tools/download_data.py taxi
 python reproduce.py benchmark additive --fixture fixtures/taxi2024.bin --repeats 6
 python reproduce.py benchmark compiler --fixture fixtures/taxi2024.bin --states 300000 --threads 32
-python reproduce.py benchmark mixed
+python reproduce.py benchmark mixed --repeats 2
 python reproduce.py benchmark holistic
 python reproduce.py benchmark rectangles
 python reproduce.py benchmark csr
@@ -40,12 +40,16 @@ use about 33 GiB RAM for the dense candidate.
 `src/` contains executors, indexes, workload generators and references; `tools/`
 contains data converters and the frozen planner; `policies/` contains policies and
 experiment cells. Recorded measurements are in `results/`; new runs go to `out/`.
-Each run records timings, memory and complete-answer hashes. CSR budgets use MiB.
+Each run records timings, memory and complete-answer hashes. The mixed-query suite loads
+its frozen policy before generating nine workloads and checks every eligible executor
+against an independent reference. Its recorded vectors and policy receipt are in
+`results/general_router_final2_20261102/`; `python tools/verify_mixed_results.py` checks them.
+CSR budgets use MiB.
 
 GPU workers build with `cmake -S . -B build/cuda -DCMAKE_BUILD_TYPE=Release -DBW_CUDA=ON -DBW_STATES=300000`
 and `cmake --build build/cuda -j2`. They require CUDA; architecture 89 targets the RTX 4090.
 
 `tools/full_state_sql.py --fixture fixtures/retail2009.bin` prepares the full-state
 SQL inputs; its `--normalize` option checks client output against `--oracle`.
-`tools/parallel_jobs.py --help` lists the four-GPU runner options. The added DBMS
+`tools/parallel_jobs.py --help` lists the four-GPU runner options. The DBMS
 and concurrent-job measurements are in `results/external5_root_20261102/` and `results/gpu4_20261102/`.

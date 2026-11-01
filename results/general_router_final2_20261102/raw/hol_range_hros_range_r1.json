@@ -1,0 +1,31 @@
+{
+  "mode": "hros",
+  "base_id": "real3_100k",
+  "fixture": "artifact/real3_100k.bin",
+  "topology": 0,
+  "seed": 20261321,
+  "factor_period": 59,
+  "q": 2,
+  "repeat": 0,
+  "n_states": 2049,
+  "max_v": 2048,
+  "n_rows": 100379,
+  "sigma": 46888,
+  "n_answers": 16384,
+  "n_queries": 4096,
+  "n_updates": 6042,
+  "range_scope": "measure_1d",
+  "answers_fn": "ca6bbbecc32071ff",
+  "answers_sha256": "abdc564c7ed45365d53996f3289a53170442ec61c7a8465eba1d23449a3cea95",
+  "phases_ns": {
+    "load": 45705,
+    "setup": 20798366,
+    "execute": 5304802,
+    "extract": 2002916,
+    "cleanup": 359685
+  },
+  "update_ns": 3503273,
+  "query_ns": 1518983,
+  "full_ns": 28511474,
+  "peak_rss_kb": 11108
+}

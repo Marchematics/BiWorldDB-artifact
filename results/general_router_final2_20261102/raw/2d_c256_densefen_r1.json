@@ -1,0 +1,32 @@
+{
+  "mode": "densefen",
+  "rows": 100000,
+  "c0": 256,
+  "c1": 256,
+  "groups": 64,
+  "states": 2049,
+  "max_v": 2048,
+  "q": 2,
+  "factor_period": 37,
+  "topology": 0,
+  "seed": 20261301,
+  "repeat": 0,
+  "answers_fn": "eb2df91b136b9b42",
+  "answers_sha256": "ce375f62572bbe0137eee3f05c8ae11d17a7b7ba4df7620b4ef955ad54f70cc9",
+  "n_answers": 4096,
+  "phases_ns": {
+    "gen": 2186218,
+    "build": 24129585,
+    "execute": 38408727,
+    "extract": 326216,
+    "cleanup": 2662370
+  },
+  "full_ns": 67713116,
+  "peak_rss_kb": 40840,
+  "bytes": {
+    "static_index": 33817088,
+    "product_class": 524288,
+    "dynamic": 33817088,
+    "dense_need": 33817088
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "mode": "sparse2d",
+  "rows": 100000,
+  "c0": 4096,
+  "c1": 4096,
+  "groups": 32,
+  "states": 2049,
+  "max_v": 2048,
+  "q": 2,
+  "factor_period": 37,
+  "topology": 0,
+  "seed": 20261303,
+  "repeat": 0,
+  "answers_fn": "f94db8a7c9634994",
+  "answers_sha256": "09253275fa2b9a64e59e4608faefb19a15c902e08f94ebc1932f386e3d73feff",
+  "n_answers": 4096,
+  "phases_ns": {
+    "gen": 2204624,
+    "build": 65616978,
+    "execute": 104751598,
+    "extract": 358563,
+    "cleanup": 1130048
+  },
+  "full_ns": 174061811,
+  "peak_rss_kb": 19132,
+  "bytes": {
+    "static_index": 10622468,
+    "product_class": 4294967296,
+    "dynamic": 100580,
+    "dense_need": 4297064704
+  }
+}

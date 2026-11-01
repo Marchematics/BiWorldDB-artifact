@@ -1,0 +1,31 @@
+{
+  "mode": "fenwick",
+  "base_id": "real3_100k",
+  "fixture": "artifact/real3_100k.bin",
+  "topology": 0,
+  "seed": 20261321,
+  "factor_period": 59,
+  "q": 2,
+  "repeat": 0,
+  "n_states": 2049,
+  "max_v": 2048,
+  "n_rows": 100379,
+  "sigma": 46888,
+  "n_answers": 16384,
+  "n_queries": 4096,
+  "n_updates": 4028,
+  "range_scope": "measure_1d",
+  "answers_fn": "ca6bbbecc32071ff",
+  "answers_sha256": "abdc564c7ed45365d53996f3289a53170442ec61c7a8465eba1d23449a3cea95",
+  "phases_ns": {
+    "load": 32466,
+    "setup": 15171804,
+    "execute": 1378413,
+    "extract": 3041252,
+    "cleanup": 195370
+  },
+  "update_ns": 480589,
+  "query_ns": 619104,
+  "full_ns": 19819305,
+  "peak_rss_kb": 9456
+}

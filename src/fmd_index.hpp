@@ -227,7 +227,7 @@ struct FlatDim1Tree {
       for (i32 n = size + p.c0; n >= 1; n >>= 1) ++cnt[size_t(n)];
     }
     nstart.assign(size_t(nodes) + 1, 0);
-    for (i32 n = 1; n <= nodes; ++n) nstart[size_t(n) + 1] = nstart[size_t(n)] + cnt[size_t(n)];
+    for (i32 n = 1; n < nodes; ++n) nstart[size_t(n) + 1] = nstart[size_t(n)] + cnt[size_t(n)];
     const size_t total = size_t(nstart[size_t(nodes)]);
     c1v.assign(total, 0);
     std::vector<i64> amtv(total, 0);
@@ -242,7 +242,7 @@ struct FlatDim1Tree {
     ncount.assign(size_t(nodes), 0);
     prefv.assign(total, 0);
     std::vector<std::pair<u32, i64>> tmp;
-    for (i32 n = 1; n <= nodes; ++n) {
+    for (i32 n = 1; n < nodes; ++n) {
       const u32 b = nstart[size_t(n)], c = cnt[size_t(n)];
       if (c == 0) { ncount[size_t(n)] = 0; continue; }
       tmp.clear();
@@ -266,7 +266,7 @@ struct FlatDim1Tree {
     // rebuild the dense per-node offsets after compression
     u32 acc = 0;
     std::vector<u32> ns(size_t(nodes) + 1, 0);
-    for (i32 n = 1; n <= nodes; ++n) {
+    for (i32 n = 1; n < nodes; ++n) {
       ns[size_t(n)] = acc;
       acc += ncount[size_t(n)];
     }
@@ -274,7 +274,7 @@ struct FlatDim1Tree {
     // compact the entries (they were written at the uncompressed offsets)
     std::vector<u32> c1c(acc);
     std::vector<i64> pfc(acc);
-    for (i32 n = 1; n <= nodes; ++n) {
+    for (i32 n = 1; n < nodes; ++n) {
       const u32 b = nstart[size_t(n)];
       for (u32 k = 0; k < ncount[size_t(n)]; ++k) {
         c1c[size_t(ns[size_t(n)] + k)] = c1v[size_t(b + k)];
@@ -383,6 +383,7 @@ struct Bit2DGroup {
     }
   }
   inline i64 prefix(i32 x0, i32 y1) const {
+    if (C0 == 0) return 0;
     i64 s = 0;
     for (i32 n = x0; n > 0; n -= n & (-n)) {
       const i32 ni = n - 1;

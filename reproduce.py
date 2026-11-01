@@ -255,42 +255,68 @@ def rectangles(args, out):
 
 
 def mixed(args, out):
-    bins = build(2049, ['biworld', 'compiled', 'aligned', 'classic', 'batch_serial',
-        'rectangles_product', 'rectangles_aligned', 'holistic_reference', 'adhoc', 'adhoc_oracle'], args.jobs)
-    fixture = synthetic('mixed100k', 100000, 64)
+    # Read and record the frozen policy before creating any test data or workloads.
+    policy_path = ROOT / 'policies/mixed.json'
+    policy = json.loads(policy_path.read_text())
+    additive_policy = json.loads((ROOT / 'policies/additive.json').read_text())
     cells = json.loads((ROOT / 'policies/cells.json').read_text())['mixed']
-    policy = json.loads((ROOT / 'policies/additive.json').read_text())
-    mapping = {'panel': 'biworld', 'panel_classic': 'classic', 'panel_batch_v2': 'batch_serial',
-               'panel_pgdg_align': 'aligned', 'panel_fmd': 'rectangles_product',
-               'panel_fmd_align': 'rectangles_aligned', 'panel_hros_factor': 'holistic_reference',
-               'panel_deri': 'adhoc'}
+    dump(out / 'policy_receipt.json', dict(policy_sha256=digest(policy_path),
+         recorded_ns=time.time_ns(), before_load_generation=True))
+    bins = build(2049, ['biworld', 'compiled', 'aligned', 'classic', 'oracle',
+        'rectangles', 'holistic', 'holistic_aligned', 'adhoc', 'adhoc_oracle'], args.jobs)
+    fixture = synthetic('real3_100k' if not args.small else 'mixed_small',
+                        2000 if args.small else 100000, 64, seed=20261151)
+    mapping = {'panel': 'biworld', 'panel_classic': 'classic',
+               'panel_batch_v7fix': 'compiled', 'panel_pgdg_align': 'aligned',
+               'panel_fmdi_sparse': 'rectangles', 'panel_hros_factor_v2': 'holistic',
+               'panel_hros_align': 'holistic_aligned', 'panel_deri_scanfix': 'adhoc',
+               'panel_adhoc_oracle': 'adhoc_oracle'}
     summary = {}
-    for c in cells:
+    for original in cells:
+        c = dict(original)
+        if args.small and 'fixture' not in c:
+            c.update(rows=400, states=50)
         directory = out / c['cid']
-        if c['cls'] in ('1d_declared', 'adhoc_1d'):
+        if 'fixture' in c:
             base_args = fixture_args(fixture, c['q'], c['fp'], c['seed'], c['topo'])
         else:
-            base_args = generated_args(c['rows'], c['groups'], c['states'], c['q'], c['fp'], c['seed'], c['topo'])
-            if c['cls'] == '2d_rectangle': base_args += ['--c0', c['c0'], '--c1', c['c1']]
-        candidates = {name: (mapping[binary], extra) for name, (binary, extra) in c['backends'].items()}
-        envs = {}
+            base_args = generated_args(c['rows'], c['groups'], c['states'],
+                                       c['q'], c['fp'], c['seed'], c['topo'])
+            if c['cls'] == '2d_rectangle':
+                base_args += ['--c0', c['c0'], '--c1', c['c1']]
+        candidates = {name: (mapping[binary], extra)
+                      for name, (binary, extra) in c['backends'].items()
+                      if name not in policy['classes'][c['cls']].get('ineligible', {})}
+        start = time.perf_counter_ns()
         if c['cls'] == '1d_declared':
-            candidates['batch_v7'] = ('compiled', [])
-            envs['batch_v7'] = {'BWH_BATCH_FORCE': '1'}
-            f = features.case_features({'states': 2049, 'q': c['q'], 'factor_period': c['fp']}, fixture)
-            selected = {'pgdg_align': 'aligned_pgdg', 'rf': 'rf', 'batch_deep': 'batch_v7',
-                        'hybrid_fast': 'batch_v2', 'corr': 'static_declared'}[planner.decide(policy, f)['chosen']]
-        elif c['cls'] == 'adhoc_1d':
-            candidates.pop('scan')
-            candidates['oracle'] = ('adhoc_oracle', ['--adhoc-fraction', c['adhoc']])
-            selected = 'deri_union'
+            f = features.case_features({'states': 2049, 'q': c['q'],
+                                       'factor_period': c['fp']}, fixture)
+            selected = policy['classes'][c['cls']]['mapping'][planner.decide(additive_policy, f)['chosen']]
         elif c['cls'] == '2d_rectangle':
-            selected = 'naive2d' if c['groups'] * c['c0'] * c['c1'] <= 262144 else 'fmd'
-        else: selected = 'hros_f'
-        measurements = compare(bins, candidates, base_args, directory, args.repeats, envs=envs)
+            gate = policy['classes'][c['cls']]
+            d = 8*c['groups']*(c['c0']+1)*(c['c1']+1)
+            selected = ('densefen' if d <= gate['densefen_max_mb']*10**6 else
+                        'fmd' if d <= gate['budget_mb']*10**6 and
+                        c['c0']*c['c1'] <= gate['fmd_max_product'] else 'sparse2d')
+        elif c['cls'] == 'holistic_factor_weighted':
+            selected = 'hros_f_v2'
+        elif c['cls'] == 'holistic_range_median':
+            selected = policy['classes'][c['cls']]['engine']
+        else:
+            selected = policy['classes'][c['cls']]['default']
+        plan_ns = time.perf_counter_ns() - start
+        if c['cls'] == '1d_declared':
+            expected = oracle(bins, fixture, directory, c['q'], c['fp'], c['seed'], c['topo'])
+        else:
+            binary, extra = c['oracle']
+            reference = worker(bins, mapping[binary], [*base_args, *extra], directory, 'oracle')
+            expected = (reference['answers_sha256'], reference['answer_bytes'])
+        measurements = compare(bins, candidates, base_args, directory, args.repeats,
+                               envs={'batch_v7fix': {'BWH_BATCH_FORCE': '1'}}, expected=expected)
         best = min(x['full_ms'] for x in measurements.values())
-        summary[c['cid']] = {'selected': selected, 'selected_over_best': measurements[selected]['full_ms'] / best,
-                             'measurements': measurements}
+        summary[c['cid']] = dict(selected=selected, plan_ns=plan_ns, exact=True,
+            selected_over_best=measurements[selected]['full_ms']/best, measurements=measurements,
+            oracle_sha256=expected[0], answer_bytes=expected[1])
     return summary
 
 

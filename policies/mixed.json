@@ -1,31 +1,59 @@
 {
- "schema": "general-router-real-v1",
- "frozen_utc": "2026-11-01T16:53:11Z",
+ "schema": "general-router-final2-corrected-v1",
+ "frozen_utc": "2026-11-01T19:54:21Z",
  "v3_policy_sha256": "cec9ad2b3f1510e63f8018232abf050a73dd715f3ad365c2a1c3494e6df31121",
+ "memory_budgets_mb": [
+  64,
+  256,
+  1024
+ ],
+ "selected_budget_mb": 1024,
  "classes": {
   "1d_declared": {
    "engine": "frozen_v3_policy",
    "candidates": [
-    "static_declared",
-    "batch_v7",
-    "aligned_pgdg",
-    "rf",
-    "batch_v2"
-   ]
+    "static",
+    "aligned",
+    "batch_v7fix",
+    "rf"
+   ],
+   "mapping": {
+    "hybrid_fast": "static",
+    "corr": "static",
+    "batch_deep": "batch_v7fix",
+    "pgdg_align": "aligned",
+    "rf": "rf"
+   }
   },
   "2d_rectangle": {
-   "gate": "product",
-   "threshold_entries": 262144
+   "gate": "size_performance_plus_memory",
+   "rule": "densefen if dense_need <= 64 MB; elif C0*C1 <= 2^20 and dense_need <= budget -> fmd (FMDI); else sparse2d (dense_need > budget or C0>=4096)",
+   "budget_mb": 1024,
+   "densefen_max_mb": 64,
+   "fmd_max_product": 1048576
   },
-  "holistic": {
-   "engine": "hros_f"
+  "holistic_factor_weighted": {
+   "engine": "hros_f_v2_eager"
+  },
+  "holistic_range_median": {
+   "engine": "fenwick_range",
+   "note": "calibration: Fenwick beats HROS treap on range order stats"
   },
   "adhoc_1d": {
-   "gate": "adhoc_fraction",
-   "zero": "declared_fast_path",
-   "positive": "deri_union"
+   "gate": "exact_default",
+   "default": "deri",
+   "ineligible": {
+    "union": "union returns inexact answers on new seeds (0/2048 tuples match the independent oracle); eligible again only after the fix"
+   }
   }
  },
- "ineligibility": "a backend that cannot answer a class is ineligible for it, never a negative latency",
- "new_load": "fixtures seeds 20261131; workload seeds 20261201-20261232; FMDI/HROS-F generator seeds 20261211-20261222"
+ "oracles": {
+  "1d": "oracle binary",
+  "2d": "panel_fmdi_sparse --mode oracle",
+  "holistic_factor": "panel_hros_factor_v2 --mode oracle",
+  "holistic_range": "panel_hros_align --mode rebuild",
+  "adhoc": "panel_deri_scanfix --arm scan (oracle-only, not a candidate)"
+ },
+ "ineligibility": "a backend that cannot answer a class is ineligible, never a negative latency",
+ "new_load": "fixture seed 20261151; workload seeds 20261291-20261332 (fresh, none reused from the final run)"
 }

@@ -3,28 +3,32 @@
     {
       "cid": "1d_q2",
       "cls": "1d_declared",
-      "fixture": "real1d_100k",
+      "fixture": "real3_100k",
       "rows": 100000,
       "groups": 64,
       "states": 2049,
       "q": 2,
       "fp": 59,
-      "seed": 20261201,
+      "seed": 20261291,
       "topo": 0,
       "backends": {
-        "static_declared": [
+        "static": [
           "panel",
           [
             "--arm",
             "hybrid"
           ]
         ],
-        "aligned_pgdg": [
+        "aligned": [
           "panel_pgdg_align",
           [
             "--arm",
             "pgdg_auto"
           ]
+        ],
+        "batch_v7fix": [
+          "panel_batch_v7fix",
+          []
         ],
         "rf": [
           "panel_classic",
@@ -32,38 +36,42 @@
             "--arm",
             "rf"
           ]
-        ],
-        "batch_v2": [
-          "panel_batch_v2",
-          []
         ]
-      }
+      },
+      "oracle": [
+        "oracle",
+        []
+      ]
     },
     {
       "cid": "1d_q8",
       "cls": "1d_declared",
-      "fixture": "real1d_100k",
+      "fixture": "real3_100k",
       "rows": 100000,
       "groups": 64,
       "states": 2049,
       "q": 8,
       "fp": 59,
-      "seed": 20261202,
+      "seed": 20261292,
       "topo": 0,
       "backends": {
-        "static_declared": [
+        "static": [
           "panel",
           [
             "--arm",
             "hybrid"
           ]
         ],
-        "aligned_pgdg": [
+        "aligned": [
           "panel_pgdg_align",
           [
             "--arm",
             "pgdg_auto"
           ]
+        ],
+        "batch_v7fix": [
+          "panel_batch_v7fix",
+          []
         ],
         "rf": [
           "panel_classic",
@@ -71,168 +79,219 @@
             "--arm",
             "rf"
           ]
-        ],
-        "batch_v2": [
-          "panel_batch_v2",
-          []
         ]
-      }
+      },
+      "oracle": [
+        "oracle",
+        []
+      ]
     },
     {
-      "cid": "2d_low_product",
+      "cid": "2d_c256",
       "cls": "2d_rectangle",
-      "rows": 200000,
-      "c0": 64,
-      "c1": 64,
-      "groups": 8,
+      "rows": 100000,
+      "c0": 256,
+      "c1": 256,
+      "groups": 64,
       "states": 2049,
       "q": 2,
       "fp": 37,
-      "seed": 20261211,
+      "seed": 20261301,
       "topo": 0,
       "backends": {
-        "fmd": [
-          "panel_fmd",
+        "densefen": [
+          "panel_fmdi_sparse",
           [
-            "--arm",
+            "--mode",
+            "densefen"
+          ]
+        ],
+        "sparse2d": [
+          "panel_fmdi_sparse",
+          [
+            "--mode",
+            "sparse2d"
+          ]
+        ],
+        "fmd": [
+          "panel_fmdi_sparse",
+          [
+            "--mode",
             "fmd"
           ]
-        ],
-        "dense2d": [
-          "panel_fmd_align",
-          [
-            "--arm",
-            "dyn2d"
-          ]
-        ],
-        "naive2d": [
-          "panel_fmd",
-          [
-            "--arm",
-            "naive"
-          ]
         ]
-      }
+      },
+      "oracle": [
+        "panel_fmdi_sparse",
+        [
+          "--mode",
+          "oracle"
+        ]
+      ]
     },
     {
-      "cid": "2d_high_product",
+      "cid": "2d_c1024",
       "cls": "2d_rectangle",
-      "rows": 200000,
+      "rows": 100000,
       "c0": 1024,
       "c1": 1024,
       "groups": 64,
       "states": 2049,
       "q": 2,
       "fp": 37,
-      "seed": 20261212,
+      "seed": 20261302,
       "topo": 0,
       "backends": {
-        "fmd": [
-          "panel_fmd",
+        "densefen": [
+          "panel_fmdi_sparse",
           [
-            "--arm",
+            "--mode",
+            "densefen"
+          ]
+        ],
+        "sparse2d": [
+          "panel_fmdi_sparse",
+          [
+            "--mode",
+            "sparse2d"
+          ]
+        ],
+        "fmd": [
+          "panel_fmdi_sparse",
+          [
+            "--mode",
             "fmd"
           ]
-        ],
-        "dense2d": [
-          "panel_fmd_align",
-          [
-            "--arm",
-            "dyn2d"
-          ]
-        ],
-        "naive2d": [
-          "panel_fmd",
-          [
-            "--arm",
-            "naive"
-          ]
         ]
-      }
+      },
+      "oracle": [
+        "panel_fmdi_sparse",
+        [
+          "--mode",
+          "oracle"
+        ]
+      ]
     },
     {
-      "cid": "hol_fp2",
-      "cls": "holistic",
+      "cid": "2d_c4096",
+      "cls": "2d_rectangle",
+      "rows": 100000,
+      "c0": 4096,
+      "c1": 4096,
+      "groups": 32,
+      "states": 2049,
+      "q": 2,
+      "fp": 37,
+      "seed": 20261303,
+      "topo": 0,
+      "backends": {
+        "sparse2d": [
+          "panel_fmdi_sparse",
+          [
+            "--mode",
+            "sparse2d"
+          ]
+        ],
+        "fmd": [
+          "panel_fmdi_sparse",
+          [
+            "--mode",
+            "fmd"
+          ]
+        ]
+      },
+      "oracle": [
+        "panel_fmdi_sparse",
+        [
+          "--mode",
+          "oracle"
+        ]
+      ]
+    },
+    {
+      "cid": "hol_fact",
+      "cls": "holistic_factor_weighted",
       "rows": 20000,
       "groups": 4,
       "states": 2049,
       "q": 2,
       "fp": 2,
-      "seed": 20261221,
+      "seed": 20261311,
       "topo": 0,
       "backends": {
-        "hros_f": [
-          "panel_hros_factor",
+        "hros_f_v2": [
+          "panel_hros_factor_v2",
           [
             "--mode",
             "hros"
           ]
         ],
         "fenwick_mat": [
-          "panel_hros_factor",
+          "panel_hros_factor_v2",
           [
             "--mode",
             "fenwick"
           ]
-        ],
-        "scan": [
-          "panel_hros_factor",
-          [
-            "--mode",
-            "oracle"
-          ]
         ]
-      }
+      },
+      "oracle": [
+        "panel_hros_factor_v2",
+        [
+          "--mode",
+          "oracle"
+        ]
+      ]
     },
     {
-      "cid": "hol_fp4",
-      "cls": "holistic",
-      "rows": 20000,
-      "groups": 8,
+      "cid": "hol_range",
+      "cls": "holistic_range_median",
+      "fixture": "real3_100k",
+      "rows": 100000,
+      "groups": 64,
       "states": 2049,
       "q": 2,
-      "fp": 4,
-      "seed": 20261222,
+      "fp": 59,
+      "seed": 20261321,
       "topo": 0,
       "backends": {
-        "hros_f": [
-          "panel_hros_factor",
+        "hros_range": [
+          "panel_hros_align",
           [
             "--mode",
             "hros"
           ]
         ],
-        "fenwick_mat": [
-          "panel_hros_factor",
+        "fenwick_range": [
+          "panel_hros_align",
           [
             "--mode",
             "fenwick"
           ]
-        ],
-        "scan": [
-          "panel_hros_factor",
-          [
-            "--mode",
-            "oracle"
-          ]
         ]
-      }
+      },
+      "oracle": [
+        "panel_hros_align",
+        [
+          "--mode",
+          "rebuild"
+        ]
+      ]
     },
     {
       "cid": "adhoc_f50",
       "cls": "adhoc_1d",
-      "fixture": "real1d_100k",
+      "fixture": "real3_100k",
       "rows": 100000,
       "groups": 64,
       "states": 2049,
       "q": 2,
       "fp": 37,
-      "seed": 20261231,
+      "seed": 20261331,
       "topo": 0,
       "adhoc": 50,
       "backends": {
-        "deri_union": [
-          "panel_deri",
+        "deri": [
+          "panel_deri_scanfix",
           [
             "--arm",
             "deri",
@@ -240,32 +299,39 @@
             "50"
           ]
         ],
-        "scan": [
-          "panel_deri",
+        "union": [
+          "panel_deri_scanfix",
           [
             "--arm",
-            "scan",
+            "union",
             "--adhoc-fraction",
             "50"
           ]
         ]
-      }
+      },
+      "oracle": [
+        "panel_adhoc_oracle",
+        [
+          "--adhoc-fraction",
+          "50"
+        ]
+      ]
     },
     {
       "cid": "adhoc_f100",
       "cls": "adhoc_1d",
-      "fixture": "real1d_100k",
+      "fixture": "real3_100k",
       "rows": 100000,
       "groups": 64,
       "states": 2049,
       "q": 2,
       "fp": 37,
-      "seed": 20261232,
+      "seed": 20261332,
       "topo": 0,
       "adhoc": 100,
       "backends": {
-        "deri_union": [
-          "panel_deri",
+        "deri": [
+          "panel_deri_scanfix",
           [
             "--arm",
             "deri",
@@ -273,16 +339,23 @@
             "100"
           ]
         ],
-        "scan": [
-          "panel_deri",
+        "union": [
+          "panel_deri_scanfix",
           [
             "--arm",
-            "scan",
+            "union",
             "--adhoc-fraction",
             "100"
           ]
         ]
-      }
+      },
+      "oracle": [
+        "panel_adhoc_oracle",
+        [
+          "--adhoc-fraction",
+          "100"
+        ]
+      ]
     }
   ],
   "holistic": [

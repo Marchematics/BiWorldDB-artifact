@@ -1,0 +1,13 @@
+{
+  "full_ns": 9193723361,
+  "phases_ns": {
+    "gen": 242958,
+    "build": 194559,
+    "execute": 9191683651,
+    "extract": 1574714,
+    "cleanup": 27479
+  },
+  "peak_rss_kb": 4676,
+  "bytes": null,
+  "dense_need_bytes": null
+}
