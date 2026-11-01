@@ -42,5 +42,5 @@ contains data converters and the frozen planner; `policies/` contains policies a
 experiment cells. Recorded measurements are in `results/`; new runs go to `out/`.
 Each run records timings, memory and complete-answer hashes. CSR budgets use MiB.
 
-GPU workers build with `cmake -S . -B build/cuda -DBW_CUDA=ON -DBW_STATES=300000`
+GPU workers build with `cmake -S . -B build/cuda -DCMAKE_BUILD_TYPE=Release -DBW_CUDA=ON -DBW_STATES=300000`
 and `cmake --build build/cuda -j2`. They require CUDA; architecture 89 targets the RTX 4090.
