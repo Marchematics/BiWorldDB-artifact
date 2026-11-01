@@ -31,7 +31,9 @@ python reproduce.py external --fixture fixtures/taxi2024.bin
 ```
 
 `download_data.py` also accepts `intel`, `air` and `retail`. External comparisons use
-Rust and the committed Cargo locks. `benchmark --help` lists workload options;
+Rust and the committed Cargo locks; `external --engines` selects DD, DBSP, DuckDB,
+ClickHouse (`chdb`), Polars or DataFusion with their Python packages installed.
+`benchmark --help` lists workload options;
 `--small` runs a compact configuration. Rectangle experiments at 8,192 coordinates
 use about 33 GiB RAM for the dense candidate.
 
@@ -39,3 +41,6 @@ use about 33 GiB RAM for the dense candidate.
 contains data converters and the frozen planner; `policies/` contains policies and
 experiment cells. Recorded measurements are in `results/`; new runs go to `out/`.
 Each run records timings, memory and complete-answer hashes. CSR budgets use MiB.
+
+GPU workers build with `cmake -S . -B build/cuda -DBW_CUDA=ON -DBW_STATES=300000`
+and `cmake --build build/cuda -j2`. They require CUDA; architecture 89 targets the RTX 4090.

@@ -11,5 +11,6 @@ jobs:
           python-version: '3.12'
       - run: pip install numpy
       - run: python reproduce.py check --jobs 2
+      - run: cmake --build build/2049 --parallel 2
       - run: python reproduce.py benchmark planning
       - run: python reproduce.py benchmark csr --small --repeats 1

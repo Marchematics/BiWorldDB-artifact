@@ -1,0 +1,97 @@
+{
+ "meta": {
+  "timestamp": "2026-11-01T20:35:00+08:00",
+  "host": "benchmark-host",
+  "case": "300,000 versions, fp37, Q2, per_state, chain, seed 7",
+  "reps": 3,
+  "threads_setup": 32,
+  "prod_env": {},
+  "gpu_device": "CUDA_VISIBLE_DEVICES=0"
+ },
+ "aligned_gpu_baseline": {
+  "status": "IMPLEMENTED, NOT EXACT - invalid as a baseline",
+  "files": [
+   "pgdg_align_gpu.hpp",
+   "panel_pgdg_align_gpu.cpp"
+  ],
+  "design": "CPU setup = aligned PGD-G engine (fixed dense boundary, OpenMP); plan exported to the generic block-replay kernels gpu_v7b.cu (snap/block/combine, unmodified): one CUDA block per version block replays unified weighted-mass V, CPU carry pass + GPU combine; sha_fast extract identical.",
+  "observed": {
+   "intel": {
+    "B8": {
+     "full_ms": 224.7,
+     "setup_ms": 142.7,
+     "upload_ms": 12.2,
+     "snap_ms": 0.1,
+     "kernel_ms": 43.2,
+     "carry_ms": 0.1,
+     "combine_ms": 0.1,
+     "download_ms": 2.1,
+     "extract_ms": 20.5,
+     "rss_mib": 273,
+     "sha": "d415096c313afd0e..."
+    },
+    "B16": {
+     "kernel_ms": 23.7
+    },
+    "B24": {
+     "full_ms": 202.2,
+     "kernel_ms": 15.9
+    },
+    "B32+": "device illegal memory access (unresolved)"
+   },
+   "taxi": {
+    "B8": {
+     "sha": "b8946cd74118aff3..."
+    },
+    "B16/B24": "same wrong sha"
+   }
+  },
+  "exactness": "FAIL: GPU answers differ from CPU/native at every block count (reference intel 33c3132f..., taxi 7fea044d...); B=1 also wrong => block-local export/metadata semantics bug, independent of snapshots. B>=32 additionally hits a device illegal-access.",
+  "next_steps": [
+   "compare ms_base/ms_cls/ms_dev and Vbase against batch_engine_v7b.hpp's GPU export row-by-row",
+   "check plan ti/existence-bit encoding vs kernel contract (row: kind bits, factor: g_old=group)",
+   "find B>=32 region/index overflow (device fault only at B>=32)"
+  ]
+ },
+ "native_pairing_same_window": {
+  "intel": {
+   "gpu3": {
+    "full": 132.4,
+    "setup": 80.0,
+    "execute": 27.2,
+    "extract": 21.0,
+    "rss_mib": 277,
+    "sha": "33c3132f3f690def..."
+   },
+   "cpu_v7_32t": {
+    "full": 131.8,
+    "setup": 89.7,
+    "execute": 25.1,
+    "extract": 13.8,
+    "rss_mib": 187,
+    "sha": "33c3132f3f690def..."
+   },
+   "gpu_over_cpu": 1.005
+  },
+  "taxi2024": {
+   "gpu3": {
+    "full": 146.7,
+    "setup": 95.1,
+    "execute": 26.2,
+    "extract": 21.0,
+    "rss_mib": 304,
+    "sha": "7fea044d7094a50d..."
+   },
+   "cpu_v7_32t": {
+    "full": 142.4,
+    "setup": 106.3,
+    "execute": 20.3,
+    "extract": 13.4,
+    "rss_mib": 214,
+    "sha": "7fea044d7094a50d..."
+   },
+   "gpu_over_cpu": 1.03
+  }
+ },
+ "verdict": "Native GPU phase3 does NOT beat native CPU v7 in the same window: Intel 132.4 vs 131.8 ms (ratio 1.00), taxi 146.7 vs 142.4 ms (0.97x). The GPU saves ~10-11 ms of CPU setup but pays ~13-14 ms upload + 2.2 ms download + ~16 ms combined transfer/bookkeeping and ~7 ms extra extract (answer copy), netting zero. A fair aligned-GPU baseline built on the same generic block executor is structurally implemented here but its plan export is not yet exact, so no aligned GPU number is claimed."
+}

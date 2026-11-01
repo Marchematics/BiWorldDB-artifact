@@ -385,7 +385,10 @@ def external(args):
     fixture = args.fixture or synthetic('external', 100000, 64)
     out = ROOT / 'out/external'
     out.mkdir(parents=True, exist_ok=True)
-    for crate in ('dd_probe', 'dbsp_probe'):
+    engines = args.engines.split(',')
+    supported = {'dd', 'dbsp', 'duckdb', 'chdb', 'polars', 'datafusion'}
+    if not set(engines) <= supported: raise ValueError('Unknown external engine')
+    for crate in (x + '_probe' for x in engines if x in ('dd', 'dbsp')):
         print(f'Building {crate}', flush=True)
         run(['cargo', 'build', '--locked', '--release', '--manifest-path', f'external/{crate}/Cargo.toml'])
     summary = {}
@@ -395,12 +398,19 @@ def external(args):
         events = directory / 'events.bin'
         run([bins / 'emit_events', *fixture_args(fixture, q=q), '--out', events], env=environment())
         records = {}
-        for crate in ('dd_probe', 'dbsp_probe'):
-            text = run([ROOT / f'external/{crate}/target/release/{crate}', '--events', events,
-                        '--q', q, '--oracle', directory / 'oracle.bin'])
+        for engine in engines:
+            if engine in ('dd', 'dbsp'):
+                crate = engine + '_probe'
+                command = [ROOT / f'external/{crate}/target/release/{crate}', '--events', events,
+                           '--q', q, '--oracle', directory / 'oracle.bin']
+            else:
+                command = [sys.executable, f'tools/{engine}_external.py', '--fixture', fixture,
+                           '--topology', 0, '--seed', 7, '--factor-period', 37, '--q', q,
+                           '--oracle', directory / 'oracle.bin']
+            text = run(command)
             rec = json.loads(text.strip().splitlines()[-1])
-            if rec.get('oracle_ok') is not True: raise RuntimeError(f'{crate}: oracle mismatch')
-            records[crate] = rec
+            if rec.get('oracle_ok') is not True: raise RuntimeError(f'{engine}: oracle mismatch')
+            records[engine] = rec
         records['shared'] = worker(bins, 'biworld', fixture_args(fixture, q=q) + ['--arm', 'hybrid'],
                                     directory, 'shared')
         exact([records['shared']], (sha, size))
@@ -425,6 +435,7 @@ def main():
     ex = sub.add_parser('external')
     ex.add_argument('--fixture', type=Path)
     ex.add_argument('--jobs', type=int, default=2)
+    ex.add_argument('--engines', default='dd,dbsp', help='dd,dbsp,duckdb,chdb,polars,datafusion')
     args = ap.parse_args()
     if getattr(args, 'fixture', None): args.fixture = args.fixture.resolve()
     if args.command == 'check': return check(args)

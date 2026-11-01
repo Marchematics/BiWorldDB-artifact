@@ -1,0 +1,38 @@
+{
+ "arm": "gpu_session",
+ "base_id": "taxi2024",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 0,
+ "n_states": 300000,
+ "batches": 10,
+ "range_scope": "per_state",
+ "answers_fn": "b11bb2efdbca459b",
+ "answers_sha256": "1c88e02f99004d8075c713534a5cd775e8b8192d591b49edf334557e9361de5e",
+ "phases_ns": {
+  "load": 30985,
+  "setup": 267821093,
+  "execute": 15429363,
+  "extract": 20702501,
+  "cleanup": 4555660
+ },
+ "session": {
+  "blocks": 32,
+  "threads": 256,
+  "Cpfx": 3430,
+  "ncls": 3429,
+  "kernel_ms": 15.095,
+  "build_ns": 77344970,
+  "upload_ns": 181659112,
+  "first_batch_ns": 15429363,
+  "steady_batch_ns": 15388841,
+  "n_queries": 599998,
+  "steady_per_query_ns": 25.65,
+  "amortized_1_ns": 308508617,
+  "amortized_N_ns": 308472147
+ },
+ "full_ns": 308508617,
+ "peak_rss_kb": 310476
+}

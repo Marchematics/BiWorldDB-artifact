@@ -1,0 +1,38 @@
+{
+ "arm": "gpu_v7",
+ "base_id": "intel",
+ "fixture": "artifact/intel.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 1,
+ "n_states": 300000,
+ "n_answers": 599998,
+ "range_scope": "per_state",
+ "answers_fn": "848e61ad01257a08",
+ "answers_sha256": "33c3132f3f690defed29a5f9c57ce91ed0f8b7ec6cf95717b16d4815edee14f8",
+ "phases_ns": {
+  "load": 27920,
+  "setup": 105407832,
+  "execute": 21377667,
+  "extract": 21422799,
+  "cleanup": 5965971
+ },
+ "gpu": {
+  "device": "NVIDIA GeForce RTX 4090",
+  "blocks": 64,
+  "threads": 256,
+  "shared_bytes": 69704,
+  "upload_ns": 12285408,
+  "snap_ns": 312728,
+  "kernel_ns": 6018047,
+  "carry_ns": 562606,
+  "combine_ns": 160329,
+  "download_ns": 2038549,
+  "node_bytes": 12000000,
+  "devbuf_bytes": 48894464
+ },
+ "full_ns": 154202189,
+ "peak_rss_kb": 323076
+}

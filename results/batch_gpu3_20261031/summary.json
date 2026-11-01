@@ -1,0 +1,112 @@
+{
+ "intel": {
+  "gpu3_B32": {
+   "full": 129.0,
+   "setup": 77.1,
+   "execute": 25.7,
+   "extract": 21.9,
+   "rss": 284378,
+   "upload_ms": 12.07,
+   "snap_ms": 0.17,
+   "kernel_ms": 11.05,
+   "combine_ms": 0.113,
+   "download_ms": 2.03
+  },
+  "gpu3_B64": {
+   "full": 134.8,
+   "setup": 86.5,
+   "execute": 21.4,
+   "extract": 22.1,
+   "rss": 310720,
+   "upload_ms": 12.37,
+   "snap_ms": 0.31,
+   "kernel_ms": 5.87,
+   "combine_ms": 0.161,
+   "download_ms": 2.15
+  },
+  "v7_32T": {
+   "full": 127.2,
+   "setup": 89.3,
+   "execute": 21.4,
+   "extract": 13.7,
+   "rss": 192302,
+   "upload_ms": 0.0,
+   "snap_ms": 0.0,
+   "kernel_ms": 0.0,
+   "combine_ms": 0.0,
+   "download_ms": 0.0
+  },
+  "aligned_1T": {
+   "full": 305.2,
+   "setup": 161.9,
+   "execute": 123.3,
+   "extract": 13.6,
+   "rss": 126360,
+   "upload_ms": 0.0,
+   "snap_ms": 0.0,
+   "kernel_ms": 0.0,
+   "combine_ms": 0.0,
+   "download_ms": 0.0
+  },
+  "best_gpu3_full": 129.0,
+  "ratios": {
+   "gpu3_best_over_v7_32T": 0.986,
+   "gpu3_best_over_aligned_1T": 2.366
+  }
+ },
+ "taxi2024": {
+  "gpu3_B32": {
+   "full": 144.3,
+   "setup": 92.4,
+   "execute": 25.1,
+   "extract": 22.2,
+   "rss": 311264,
+   "upload_ms": 12.97,
+   "snap_ms": 0.18,
+   "kernel_ms": 9.5,
+   "combine_ms": 0.097,
+   "download_ms": 2.12
+  },
+  "gpu3_B64": {
+   "full": 139.1,
+   "setup": 92.3,
+   "execute": 21.0,
+   "extract": 21.2,
+   "rss": 313838,
+   "upload_ms": 13.54,
+   "snap_ms": 0.17,
+   "kernel_ms": 4.56,
+   "combine_ms": 0.142,
+   "download_ms": 2.16
+  },
+  "v7_32T": {
+   "full": 142.2,
+   "setup": 106.2,
+   "execute": 19.1,
+   "extract": 13.7,
+   "rss": 220588,
+   "upload_ms": 0.0,
+   "snap_ms": 0.0,
+   "kernel_ms": 0.0,
+   "combine_ms": 0.0,
+   "download_ms": 0.0
+  },
+  "aligned_1T": {
+   "full": 292.6,
+   "setup": 171.7,
+   "execute": 100.9,
+   "extract": 13.2,
+   "rss": 146166,
+   "upload_ms": 0.0,
+   "snap_ms": 0.0,
+   "kernel_ms": 0.0,
+   "combine_ms": 0.0,
+   "download_ms": 0.0
+  },
+  "best_gpu3_full": 139.1,
+  "ratios": {
+   "gpu3_best_over_v7_32T": 1.022,
+   "gpu3_best_over_aligned_1T": 2.104
+  }
+ }
+}

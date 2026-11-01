@@ -1,0 +1,13 @@
+{
+ "input_sha256": "6f3d09d64aeadc046e475f40bd780c49592357b1247e042635834eb307834396",
+ "input_revision": 7,
+ "pages": 15,
+ "figures": 3,
+ "exact_numeric_table_rows_preserved": 44,
+ "latex_second_pass_missing_glyphs": 0,
+ "latex_second_pass_overfull_boxes": 0,
+ "latex_second_pass_undefined_references": 0,
+ "visual_review": "All 15 pages rendered and inspected; math, tables, figure captions, references, and margins readable. Long hashes wrap; phase table and historical results in appendices.",
+ "experiment_changes": false,
+ "submission_ready": false
+}

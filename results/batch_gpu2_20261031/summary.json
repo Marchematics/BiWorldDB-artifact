@@ -1,0 +1,128 @@
+{
+ "intel": {
+  "gpu2_B32": {
+   "full": 140.1,
+   "setup": 87.2,
+   "execute": 26.5,
+   "extract": 22.1,
+   "rss": 296542,
+   "upload_ms": 12.49,
+   "snap_ms": 0.17,
+   "kernel_ms": 11.37,
+   "combine_ms": 0.11,
+   "download_ms": 2.02,
+   "node_bytes": 12000000,
+   "devbuf_bytes": 24447232
+  },
+  "gpu2_B64": {
+   "full": 150.0,
+   "setup": 101.5,
+   "execute": 21.3,
+   "extract": 21.8,
+   "rss": 322994,
+   "upload_ms": 12.15,
+   "snap_ms": 0.31,
+   "kernel_ms": 6.01,
+   "combine_ms": 0.16,
+   "download_ms": 2.08,
+   "node_bytes": 12000000,
+   "devbuf_bytes": 48894464
+  },
+  "v7_32T": {
+   "full": 137.5,
+   "setup": 93.5,
+   "execute": 27.8,
+   "extract": 13.4,
+   "rss": 193344,
+   "upload_ms": 0.0,
+   "snap_ms": 0.0,
+   "kernel_ms": 0.0,
+   "combine_ms": 0.0,
+   "download_ms": 0.0,
+   "node_bytes": 0,
+   "devbuf_bytes": 0
+  },
+  "aligned_1T": {
+   "full": 301.6,
+   "setup": 158.6,
+   "execute": 123.1,
+   "extract": 13.6,
+   "rss": 126332,
+   "upload_ms": 0.0,
+   "snap_ms": 0.0,
+   "kernel_ms": 0.0,
+   "combine_ms": 0.0,
+   "download_ms": 0.0,
+   "node_bytes": 0,
+   "devbuf_bytes": 0
+  },
+  "best_gpu2_full": 140.1,
+  "ratios": {
+   "gpu2_best_over_v7_32T": 0.981,
+   "gpu2_best_over_aligned_1T": 2.153
+  }
+ },
+ "taxi2024": {
+  "gpu2_B32": {
+   "full": 158.2,
+   "setup": 107.2,
+   "execute": 24.9,
+   "extract": 21.4,
+   "rss": 323798,
+   "upload_ms": 12.85,
+   "snap_ms": 0.18,
+   "kernel_ms": 9.5,
+   "combine_ms": 0.1,
+   "download_ms": 2.04,
+   "node_bytes": 12000000,
+   "devbuf_bytes": 26795912
+  },
+  "gpu2_B64": {
+   "full": 150.3,
+   "setup": 103.5,
+   "execute": 20.5,
+   "extract": 21.7,
+   "rss": 325710,
+   "upload_ms": 13.08,
+   "snap_ms": 0.17,
+   "kernel_ms": 4.57,
+   "combine_ms": 0.14,
+   "download_ms": 2.07,
+   "node_bytes": 12000000,
+   "devbuf_bytes": 26795912
+  },
+  "v7_32T": {
+   "full": 149.8,
+   "setup": 110.7,
+   "execute": 21.9,
+   "extract": 14.1,
+   "rss": 220880,
+   "upload_ms": 0.0,
+   "snap_ms": 0.0,
+   "kernel_ms": 0.0,
+   "combine_ms": 0.0,
+   "download_ms": 0.0,
+   "node_bytes": 0,
+   "devbuf_bytes": 0
+  },
+  "aligned_1T": {
+   "full": 297.0,
+   "setup": 175.4,
+   "execute": 101.5,
+   "extract": 13.3,
+   "rss": 147058,
+   "upload_ms": 0.0,
+   "snap_ms": 0.0,
+   "kernel_ms": 0.0,
+   "combine_ms": 0.0,
+   "download_ms": 0.0,
+   "node_bytes": 0,
+   "devbuf_bytes": 0
+  },
+  "best_gpu2_full": 150.3,
+  "ratios": {
+   "gpu2_best_over_v7_32T": 0.997,
+   "gpu2_best_over_aligned_1T": 1.976
+  }
+ }
+}
