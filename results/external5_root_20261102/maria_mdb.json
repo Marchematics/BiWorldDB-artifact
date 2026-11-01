@@ -1,0 +1,48 @@
+{
+ "workload": "retail2009 2049 states Q2 fp37 per_state",
+ "oracle_sha256": "9847cd2edf8847ad602c963105d909c550829abde817416e8e08daa8356073b7",
+ "methods": {
+  "mariadb": {
+   "version": "10.6.23",
+   "load_s": 1.53,
+   "execute_s": 527.32,
+   "full_s": 528.85,
+   "rss_mib": 228.6,
+   "query_median_ms": 257.5,
+   "exact": true
+  },
+  "monetdb": {
+   "version": "11.55.9",
+   "load_s": 0.25,
+   "execute_s": 36.74,
+   "full_s": 36.99,
+   "query_median_ms": 17.94,
+   "exact": true
+  },
+  "postgresql": {
+   "version": "16.15",
+   "full_s": 147.88,
+   "rss_mib": 35.6,
+   "exact": true
+  },
+  "timescaledb": {
+   "version": "2.31.0/PG16.15",
+   "full_s": 159.6,
+   "rss_mib": 55.5,
+   "exact": true
+  },
+  "sqlite": {
+   "version": "3.37.2",
+   "full_s": 337.34,
+   "rss_mib": 29.2,
+   "exact": true
+  },
+  "duckdb_anchor": {
+   "version": "1.5.6",
+   "full_s": 13.76,
+   "rss_mib": 544.3,
+   "exact": true
+  }
+ },
+ "note": "MariaDB/MonetDB outputs normalized to 4096 i64 values; SHA equals oracle. 4-way slots; full-state versioned B category."
+}

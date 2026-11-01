@@ -1,0 +1,38 @@
+{
+ "arm": "gpu_session",
+ "base_id": "intel",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 0,
+ "n_states": 300000,
+ "batches": 10,
+ "range_scope": "per_state",
+ "answers_fn": "d3149bfa731bc71a",
+ "answers_sha256": "f792fa3e7303efd240c78309b99913980fdf181a386ca5737e7c8c8c6e377283",
+ "phases_ns": {
+  "load": 34960,
+  "setup": 332533164,
+  "execute": 16344727,
+  "extract": 21336202,
+  "cleanup": 4371969
+ },
+ "session": {
+  "blocks": 32,
+  "threads": 256,
+  "Cpfx": 4326,
+  "ncls": 4325,
+  "kernel_ms": 14.614,
+  "build_ns": 66974136,
+  "upload_ns": 256323186,
+  "first_batch_ns": 16344727,
+  "steady_batch_ns": 15767643,
+  "n_queries": 599998,
+  "steady_per_query_ns": 26.28,
+  "amortized_1_ns": 374586062,
+  "amortized_N_ns": 374066687
+ },
+ "full_ns": 374586062,
+ "peak_rss_kb": 283348
+}

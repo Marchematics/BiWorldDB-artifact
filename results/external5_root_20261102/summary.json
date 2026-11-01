@@ -1,0 +1,183 @@
+{
+ "meta": {
+  "timestamp": "2026-11-02T03:10:42+0800",
+  "host": "benchmark-host",
+  "fixture": "artifact/retail2009.bin",
+  "base": "retail2009",
+  "states": 2049,
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2,
+  "slots_cpu": {
+   "timescale": "0-15",
+   "pg": "16-31",
+   "sqlite": "32-47",
+   "duckdb": "48-63"
+  },
+  "wall_ms_4way": 337355.1,
+  "oracle_sha256": "9847cd2edf8847ad602c963105d909c550829abde817416e8e08daa8356073b7",
+  "workload": {
+   "fixture": "artifact/retail2009.bin",
+   "base": "retail2009",
+   "n_rows": 1067778,
+   "n_base": 1067371,
+   "n_ins": 407,
+   "groups": 43,
+   "states": 2049,
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 2,
+   "env": {
+    "BWH_RANGE_SCOPE": "per_state"
+   }
+  },
+  "round": "root/install round (2026-11-02)",
+  "hybrid_reference_ms": {
+   "engine": "aligned PGD-G same fixture/contract",
+   "full_ms": 8.804,
+   "answers_sha256": "9847cd2edf8847ad602c963105d909c550829abde817416e8e08daa8356073b7"
+  }
+ },
+ "workers": {
+  "duckdb": {
+   "engine": "duckdb",
+   "status": "ok",
+   "version": "DuckDB 1.5.6",
+   "phases_ns": {
+    "load": 19141322,
+    "setup": 476538600,
+    "execute": 13206865466,
+    "extract": 980692,
+    "cleanup": 52043143
+   },
+   "full_ns": 13755569223,
+   "answers_sha256": "9847cd2edf8847ad602c963105d909c550829abde817416e8e08daa8356073b7",
+   "exact": true,
+   "n_answers": 4096,
+   "peak_rss_kb": 557412
+  },
+  "pg": {
+   "engine": "pg",
+   "status": "ok",
+   "version": "PostgreSQL 16.15",
+   "phases_ns": {
+    "load": 1790063898,
+    "setup": 152171231,
+    "execute": 145725617488,
+    "extract": 8562891,
+    "cleanup": 203973130
+   },
+   "full_ns": 147880388638,
+   "answers_sha256": "9847cd2edf8847ad602c963105d909c550829abde817416e8e08daa8356073b7",
+   "exact": true,
+   "n_answers": 4096,
+   "update_ms": {
+    "median": 0.208,
+    "p95": 0.232
+   },
+   "query_ms": {
+    "median": 70.618,
+    "p95": 73.05265,
+    "max": 87.411
+   },
+   "peak_rss_kb": 36424,
+   "server_pid": 3615480
+  },
+  "timescale": {
+   "engine": "timescale",
+   "status": "ok",
+   "version": "PostgreSQL 16.15 + TimescaleDB 2.31.0",
+   "phases_ns": {
+    "load": 1101922920,
+    "setup": 486762176,
+    "execute": 157998068928,
+    "extract": 8714387,
+    "cleanup": 1131
+   },
+   "full_ns": 159595469542,
+   "answers_sha256": "9847cd2edf8847ad602c963105d909c550829abde817416e8e08daa8356073b7",
+   "exact": true,
+   "n_answers": 4096,
+   "update_ms": {
+    "median": 0.352,
+    "p95": 0.388
+   },
+   "query_ms": {
+    "median": 76.463,
+    "p95": 78.29455,
+    "max": 91.45
+   },
+   "peak_rss_kb": 56784,
+   "server_pid": 3609582
+  },
+  "sqlite": {
+   "engine": "sqlite",
+   "status": "ok",
+   "version": "SQLite 3.37.2 (python stdlib)",
+   "phases_ns": {
+    "load": 1590288498,
+    "setup": 183632,
+    "execute": 335751860325,
+    "extract": 918870,
+    "cleanup": 154074
+   },
+   "full_ns": 337343405399,
+   "answers_sha256": "9847cd2edf8847ad602c963105d909c550829abde817416e8e08daa8356073b7",
+   "exact": true,
+   "n_answers": 4096,
+   "update_ms": {
+    "median": 0.041694999999999996,
+    "p95": 0.053589
+   },
+   "query_ms": {
+    "median": 163.889343,
+    "p95": 172.19041465,
+    "max": 192.908094
+   },
+   "peak_rss_kb": 29864
+  }
+ },
+ "install_attempts": {
+  "timescaledb": {
+   "status": "installed and run (exact)",
+   "detail": "PostgreSQL 16.15 (pgdg .deb, extracted to artifact/pgroot; 16.13 was too old for Timescale 2.31 - undefined symbol palloc_mul) + timescaledb-2-postgresql-16 + loader 2.31.0 (curl -L was the missing piece; earlier 0-byte download was a redirect) extracted into the same tree; private cluster initdb/pg_ctl as user benchmark-host on port 55435 socket artifact/sock_ts, shared_preload_libraries=timescaledb; CREATE EXTENSION timescaledb 2.31.0 OK; hypertable on t created after load; all answers exact."
+  },
+  "mariadb": {
+   "status": "installed and started, full workload NOT run (timebox)",
+   "detail": "root apt-get install mariadb-server mariadb-client 10.6.23 (policy-rc.d prevents service autostart); private datadir artifact/mariadb via mariadb-install-db, mariadbd on artifact/maria.sock + 127.0.0.1:3307 as benchmark-host, local_infile=1, skip-log-bin; version()=10.6.23-MariaDB confirmed. Full retail2049 load/update/query run was cut by the timebox after the five-method install work; no substitution."
+  },
+  "monetdb": {
+   "status": "installed and database started, full workload NOT run (timebox)",
+   "detail": "root apt repo https://www.monetdb.org/downloads/deb jammy/monetdb (monetdb5-sql + monetdb-client 11.55.9); private dbfarm artifact/mdb via monetdbd create/start as benchmark-host; database bench in state LR; MAPI socket artifact/.s.monetdb.57123, control port 57123. Full workload run was cut by the timebox; no substitution."
+  },
+  "risingwave": {
+   "status": "unavailable (download corrupt)",
+   "detail": "GitHub release v2.6.0 asset risingwave-v2.6.0-x86_64-unknown-linux.tar.gz (383,165,551 B) is only reachable through proxy ghproxy.net; 16-range parallel download stalled/mixed, several ranges timed out, assembled tar is truncated: tar/gzip 'invalid compressed data--format violated / Unexpected EOF'. Direct github.com and objects.githubusercontent.com are unreachable from the host; Docker is not installed. No valid binary obtained; no substitution."
+  },
+  "materialize": {
+   "status": "unavailable",
+   "detail": "No root-accessible single binary in Materialize GitHub releases probed (all release asset URLs unreachable/404); Docker not installed and registry-1.docker.io is unreachable from the host; no installable artifact obtained; no substitution."
+  }
+ },
+ "categories": {
+  "B_full_state_dbms": {
+   "postgresql16": "measured this round (exact)",
+   "sqlite": "measured (exact)",
+   "timescaledb": "measured this round (exact, extension/hypertable)",
+   "mariadb": "installed/started, run outstanding",
+   "monetdb": "installed/started, run outstanding"
+  },
+  "C_incremental_ivm": {
+   "materialize": "unavailable",
+   "risingwave": "unavailable (corrupt download)",
+   "note": "no category-C numbers claimed; full-state runs are not reported as IVM."
+  }
+ },
+ "contract_notes": [
+  "Same retail2049 Q2 workload as before: 2,049 versions, chain, seed 7, fp37, Q2, per_state, retail2009 (1,067,371 rows + 407 insert slots, 43 groups). Full-state/versioned: bulk load relation+factors, real SQL UPDATE per version, one aggregate statement per state; every worker compared against the authored oracle vector sha256 9847cd2edf8847ad..., 4,096 answers.",
+  "4-way CPU slots this round: Timescale 0-15, PostgreSQL 16 16-31, SQLite 32-47, DuckDB anchor 48-63; four fresh worker processes launched concurrently with taskset; wave wall 337,355 ms (SQLite execute 335.8 s is the critical path; PG 145.7 s, Timescale 158.0 s, DuckDB 13.2 s execute all overlap).",
+  "Timescale cluster and DuckDB/SQLite were not stopped by the workers (cleanup 0 for Timescale; shared cluster left for inspection), no other user process/service was touched; root used only for package installs."
+ ]
+}
