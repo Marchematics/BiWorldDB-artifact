@@ -1,0 +1,41 @@
+{
+ "arm": "sparse",
+ "arm_mode": "sparse",
+ "base_id": "taxi2024",
+ "fixture": "artifact/taxi2024.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 128,
+ "repeat": 2,
+ "n_states": 2049,
+ "n_answers": 262144,
+ "range_scope": "per_state",
+ "cold": false,
+ "preload_fadvise_dontneed": false,
+ "sparse_base_env": "auto",
+ "answers_fn": "dae3cc4b6504919f",
+ "answers_sha256": "7760790d25011fdd0506701362467bbb3a01221ec478a98f5b6c308058638c66",
+ "phases_ns": {
+  "load": 95988,
+  "setup": 75069532,
+  "execute": 64509379,
+  "extract": 13115807,
+  "cleanup": 4962742
+ },
+ "full_ns": 157753448,
+ "peak_rss_kb": 98220,
+ "base_stats": {
+  "mode": "sparse",
+  "n_active": 55,
+  "classes": 343526,
+  "nnz": 90729,
+  "csr_bytes": 4269156,
+  "dense_bytes": 151151440,
+  "bitmap_bytes": 2361920,
+  "lut_bytes": 1181180,
+  "transient_bytes": 0,
+  "est_nnz": 0,
+  "build_us": 31266
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "note": "Paired interleaved benchmark: bin/panel (copied loader) and bin/panel_mmap (zero-copy mapped loader) alternate within the same window on one pinned core; medians over 5 repetitions each. Host load ~54-92 (shared, recorded). Phase times are worker-internal; full_ns is input-to-answers.",
+ "rows": [
+  {
+   "cohort": "Intel Q2",
+   "old_total_ms": 122.9,
+   "new_total_ms": 78.01,
+   "reduction_pct": 36.5,
+   "old_load_ms": 41.72,
+   "new_load_ms": 0.041,
+   "old_setup_ms": 62.93,
+   "new_setup_ms": 65.36,
+   "n_old": 5,
+   "n_new": 5
+  },
+  {
+   "cohort": "Intel Q32",
+   "old_total_ms": 281.85,
+   "new_total_ms": 246.02,
+   "reduction_pct": 12.7,
+   "old_load_ms": 41.39,
+   "new_load_ms": 0.058,
+   "old_setup_ms": 172.15,
+   "new_setup_ms": 182.68,
+   "n_old": 5,
+   "n_new": 5
+  },
+  {
+   "cohort": "Retail Q2",
+   "old_total_ms": 61.07,
+   "new_total_ms": 41.01,
+   "reduction_pct": 32.9,
+   "old_load_ms": 22.0,
+   "new_load_ms": 0.038,
+   "old_setup_ms": 27.85,
+   "new_setup_ms": 32.0,
+   "n_old": 5,
+   "n_new": 5
+  },
+  {
+   "cohort": "Taxi Q2",
+   "old_total_ms": 158.59,
+   "new_total_ms": 114.86,
+   "reduction_pct": 27.6,
+   "old_load_ms": 54.9,
+   "new_load_ms": 0.034,
+   "old_setup_ms": 84.94,
+   "new_setup_ms": 100.01,
+   "n_old": 5,
+   "n_new": 5
+  }
+ ]
+}

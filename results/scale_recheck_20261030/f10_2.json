@@ -1,0 +1,24 @@
+{
+ "arm": "rf",
+ "base_id": "syn10m",
+ "fixture": "artifact/syn10m.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 2,
+ "n_states": 2049,
+ "n_answers": 4096,
+ "range_scope": "per_state",
+ "answers_fn": "787b9887e310c1bf",
+ "answers_sha256": "2376bbe3465db87ccc20eccb6e4b2c1237ed5ce54c0f37b8a089476737451518",
+ "phases_ns": {
+  "load": 75918,
+  "setup": 652577866,
+  "execute": 206053923,
+  "extract": 270177,
+  "cleanup": 36402654
+ },
+ "full_ns": 895380538,
+ "peak_rss_kb": 1025080
+}

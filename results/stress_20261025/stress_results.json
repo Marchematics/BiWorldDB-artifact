@@ -1,0 +1,54 @@
+{
+ "q1": {
+  "cases": 18,
+  "envelope_median": 1.7362309147989485,
+  "envelope_min": 1.710498057929425,
+  "wins": 18,
+  "raw_median": 4.5021840783628955,
+  "projected_median": 1.7362309147989485,
+  "factor_heavy_median": 1.736129753205192,
+  "no_factor_median": 1.738575163535657,
+  "worst_case": {
+   "case_id": "intel_t1_s7_f8193_q1",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 8193,
+   "q": 1,
+   "hybrid_full_ns": 82974585.0,
+   "full_raw_full_ns": 375446435.5,
+   "full_projected_full_ns": 141927866.5,
+   "envelope": 1.710498057929425,
+   "ratio_raw": 4.52483655688064,
+   "ratio_projected": 1.710498057929425
+  },
+  "hybrid_median_full_ns": 82561103.5,
+  "raw_median_full_ns": 370336311.25,
+  "projected_median_full_ns": 143300225.75
+ },
+ "q8": {
+  "cases": 18,
+  "envelope_median": 2.8757208238508456,
+  "envelope_min": 2.7767749957863854,
+  "wins": 18,
+  "raw_median": 3.9105259389917064,
+  "projected_median": 2.8757208238508456,
+  "factor_heavy_median": 2.839176354541638,
+  "no_factor_median": 2.89109712692382,
+  "worst_case": {
+   "case_id": "intel_t0_s17_f2_q8",
+   "topology": 0,
+   "seed": 17,
+   "factor_period": 2,
+   "q": 8,
+   "hybrid_full_ns": 152324678.5,
+   "full_raw_full_ns": 574454594.5,
+   "full_projected_full_ns": 422971358.5,
+   "envelope": 2.7767749957863854,
+   "ratio_raw": 3.7712509893792423,
+   "ratio_projected": 2.7767749957863854
+  },
+  "hybrid_median_full_ns": 147652897.5,
+  "raw_median_full_ns": 578234540.0,
+  "projected_median_full_ns": 423983532.75
+ }
+}

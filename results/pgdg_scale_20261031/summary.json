@@ -1,0 +1,20 @@
+{
+ "note": "same-session medians; hybrid shift/corr, pgdg shift",
+ "cases": {
+  "syn10m": {
+   "hybrid_ms": 107.8,
+   "pgdg_ms": 274.3,
+   "speedup": 2.54
+  },
+  "retail2009": {
+   "hybrid_ms": 75.6,
+   "pgdg_ms": 96.7,
+   "speedup": 1.28
+  },
+  "taxi2024": {
+   "hybrid_ms": 125.8,
+   "pgdg_ms": 477.6,
+   "speedup": 3.8
+  }
+ }
+}

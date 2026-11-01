@@ -1,0 +1,31 @@
+{
+ "schema": "general-router-real-v1",
+ "frozen_utc": "2026-11-01T16:53:11Z",
+ "v3_policy_sha256": "cec9ad2b3f1510e63f8018232abf050a73dd715f3ad365c2a1c3494e6df31121",
+ "classes": {
+  "1d_declared": {
+   "engine": "frozen_v3_policy",
+   "candidates": [
+    "static_declared",
+    "batch_v7",
+    "aligned_pgdg",
+    "rf",
+    "batch_v2"
+   ]
+  },
+  "2d_rectangle": {
+   "gate": "product",
+   "threshold_entries": 262144
+  },
+  "holistic": {
+   "engine": "hros_f"
+  },
+  "adhoc_1d": {
+   "gate": "adhoc_fraction",
+   "zero": "declared_fast_path",
+   "positive": "deri_union"
+  }
+ },
+ "ineligibility": "a backend that cannot answer a class is ineligible for it, never a negative latency",
+ "new_load": "fixtures seeds 20261131; workload seeds 20261201-20261232; FMDI/HROS-F generator seeds 20261211-20261222"
+}

@@ -1,0 +1,71 @@
+{
+ "note": "Interleaved same-window comparison of the class-sorted transposed construction (bin/panel_cs) against the previous scatter-based transposed construction (bin/panel_ov), both with BWH_OVERLAY=1 + bucketed class lookup + forced class-major layout, 5 repetitions each; host load ~23-80 recorded; only within-window relative gains are interpreted.",
+ "rows": [
+  {
+   "cohort": "Taxi Q32 fp4",
+   "base_total_ms": 365.7,
+   "cs_total_ms": 386.1,
+   "gain_pct": -5.6,
+   "base_setup_ms": 267.3,
+   "cs_setup_ms": 284.9,
+   "base_execute_ms": 71.8,
+   "cs_execute_ms": 73.6,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q8 fp4",
+   "base_total_ms": 136.5,
+   "cs_total_ms": 170.1,
+   "gain_pct": -24.6,
+   "base_setup_ms": 107.7,
+   "cs_setup_ms": 140.9,
+   "base_execute_ms": 17.8,
+   "cs_execute_ms": 17.6,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q32 fp37",
+   "base_total_ms": 323.8,
+   "cs_total_ms": 358.6,
+   "gain_pct": -10.7,
+   "base_setup_ms": 261.9,
+   "cs_setup_ms": 292.9,
+   "base_execute_ms": 33.9,
+   "cs_execute_ms": 34.9,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q32 fp37",
+   "base_total_ms": 150.0,
+   "cs_total_ms": 180.9,
+   "gain_pct": -20.6,
+   "base_setup_ms": 109.3,
+   "cs_setup_ms": 138.3,
+   "base_execute_ms": 29.5,
+   "cs_execute_ms": 30.2,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q2 fp37",
+   "base_total_ms": 39.8,
+   "cs_total_ms": 71.4,
+   "gain_pct": -79.2,
+   "base_setup_ms": 33.4,
+   "cs_setup_ms": 65.3,
+   "base_execute_ms": 1.6,
+   "cs_execute_ms": 1.7,
+   "n": 5
+  },
+  {
+   "cohort": "Retail Q32 fp37",
+   "base_total_ms": 73.9,
+   "cs_total_ms": 90.6,
+   "gain_pct": -22.5,
+   "base_setup_ms": 44.9,
+   "cs_setup_ms": 61.1,
+   "base_execute_ms": 21.3,
+   "cs_execute_ms": 20.9,
+   "n": 5
+  }
+ ]
+}

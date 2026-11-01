@@ -1,0 +1,50 @@
+{
+ "arm": "pgdg_auto",
+ "base_id": "intel",
+ "mode": "pgdg_dense_corr",
+ "family": "pgdg_aligned",
+ "fixture": "artifact/intel.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 2,
+ "n_states": 300000,
+ "n_answers": 599998,
+ "range_scope": "per_state",
+ "answers_fn": "848e61ad01257a08",
+ "answers_sha256": "33c3132f3f690defed29a5f9c57ce91ed0f8b7ec6cf95717b16d4815edee14f8",
+ "phases_ns": {
+  "load": 69543,
+  "setup": 155100882,
+  "execute": 123022925,
+  "extract": 25217240,
+  "cleanup": 6291819
+ },
+ "full_ns": 309702409,
+ "peak_rss_kb": 125020,
+ "stats": {
+  "n_active": 61,
+  "n_groups": 61,
+  "classes": 4325,
+  "union_classes": 3429,
+  "dense_frame": false,
+  "sparse_base": false,
+  "corr": true,
+  "n_factor_edits": 8108,
+  "n_ins": 58365,
+  "nnz": 0,
+  "base_bytes": 2180304,
+  "dense_base_bytes": 2145696,
+  "plan_bytes": 28817304,
+  "plan_us": 74975,
+  "base_us": 10036
+ },
+ "auto": {
+  "classes": 4325,
+  "dense_bytes": 2145696,
+  "est_nnz": 263783,
+  "sparse_bytes": 3249818,
+  "occ": 0.999844
+ }
+}

@@ -1,0 +1,33 @@
+[
+ {
+  "key": "intel_t0_s7_f37_q128_fh",
+  "base_id": "intel",
+  "fixture": "artifact/intel.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 128,
+  "sha256": "4c923d650e24353d4a20111cb5bc94ad1a6cdacba25e85f1f06c952beb7f2b5a",
+  "n_answers": 262144,
+  "oracle_wall_s": 367.964488,
+  "env": {
+   "BWH_FACTOR_PCT": "50"
+  }
+ },
+ {
+  "key": "retail2009_t0_s7_f37_q128_fh",
+  "base_id": "retail2009",
+  "fixture": "artifact/retail2009.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 128,
+  "sha256": "f12811be91e052ffc0a152a3db8ec6a8e2cb3e96b1c157d062d17645669cb25e",
+  "n_answers": 262144,
+  "oracle_wall_s": 156.294012,
+  "env": {
+   "BWH_FACTOR_PCT": "50",
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ }
+]

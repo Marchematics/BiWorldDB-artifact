@@ -1,0 +1,210 @@
+{
+ "kStates": 65,
+ "kMaxQ": 32,
+ "compile": "-DBWH_STATES=65",
+ "cases": 2000,
+ "queries_compared": 254144,
+ "engines": [
+  "shipped_hybrid",
+  "sparse_csr",
+  "batch_v2",
+  "pgdg_align_auto",
+  "pgdg_variant_0..3"
+ ],
+ "oracle": "rf (rollback Fenwick)",
+ "coverage": {
+  "topology_chain": 688,
+  "topology_bushy": 653,
+  "topology_star": 659,
+  "shared_ranges": 913,
+  "per_state_ranges": 1087,
+  "dense_frame": 202,
+  "op_replace": 37090,
+  "op_insert": 15197,
+  "op_delete": 11185,
+  "op_move": 11246,
+  "op_factor": 53282,
+  "factor_value_zero": 22444,
+  "factor_value_negative": 17564,
+  "factor_value_positive": 13274,
+  "cases_empty_ranges": 181,
+  "cases_tmax_plus1_inserts": 205,
+  "cases_negative_amounts": 229,
+  "batch_v2_supported": 1798,
+  "batch_v2_unsupported": 202,
+  "pgdg_variant_counts": [
+   2959,
+   3041,
+   2000,
+   2000
+  ],
+  "dense_cases_with_hi_tmax_plus1": 159,
+  "known_edge_mismatches": 795,
+  "engine_runs": 15798,
+  "engine_mismatches": 0
+ },
+ "mismatches": [],
+ "known_edge_mismatches": [
+  {
+   "seed": 3039829188181170465,
+   "engine": "pgdg_align_auto",
+   "index": 4,
+   "got": 854519356,
+   "want": -3312581934,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 3039829188181170465,
+   "engine": "pgdg_variant_0",
+   "index": 4,
+   "got": 854519356,
+   "want": -3312581934,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 3039829188181170465,
+   "engine": "pgdg_variant_1",
+   "index": 4,
+   "got": 854519356,
+   "want": -3312581934,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 3039829188181170465,
+   "engine": "pgdg_variant_2",
+   "index": 4,
+   "got": 854519356,
+   "want": -3312581934,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 3039829188181170465,
+   "engine": "pgdg_variant_3",
+   "index": 4,
+   "got": 854519356,
+   "want": -3312581934,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 11451301691835006019,
+   "engine": "pgdg_align_auto",
+   "index": 0,
+   "got": 0,
+   "want": 450194000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 11451301691835006019,
+   "engine": "pgdg_variant_0",
+   "index": 0,
+   "got": 0,
+   "want": 450194000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 11451301691835006019,
+   "engine": "pgdg_variant_1",
+   "index": 0,
+   "got": 0,
+   "want": 450194000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 11451301691835006019,
+   "engine": "pgdg_variant_2",
+   "index": 0,
+   "got": 0,
+   "want": 450194000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 11451301691835006019,
+   "engine": "pgdg_variant_3",
+   "index": 0,
+   "got": 0,
+   "want": 450194000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 1416030121779289957,
+   "engine": "pgdg_align_auto",
+   "index": 2,
+   "got": 13795161000,
+   "want": 15547329000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 1416030121779289957,
+   "engine": "pgdg_variant_0",
+   "index": 2,
+   "got": 13795161000,
+   "want": 15547329000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 1416030121779289957,
+   "engine": "pgdg_variant_1",
+   "index": 2,
+   "got": 13795161000,
+   "want": 15547329000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 1416030121779289957,
+   "engine": "pgdg_variant_2",
+   "index": 2,
+   "got": 13795161000,
+   "want": 15547329000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 1416030121779289957,
+   "engine": "pgdg_variant_3",
+   "index": 2,
+   "got": 13795161000,
+   "want": 15547329000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 7287919553519003301,
+   "engine": "pgdg_align_auto",
+   "index": 8,
+   "got": 704161000,
+   "want": 2196781000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 7287919553519003301,
+   "engine": "pgdg_variant_0",
+   "index": 8,
+   "got": 704161000,
+   "want": 2196781000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 7287919553519003301,
+   "engine": "pgdg_variant_1",
+   "index": 8,
+   "got": 704161000,
+   "want": 2196781000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 7287919553519003301,
+   "engine": "pgdg_variant_2",
+   "index": 8,
+   "got": 704161000,
+   "want": 2196781000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  },
+  {
+   "seed": 7287919553519003301,
+   "engine": "pgdg_variant_3",
+   "index": 8,
+   "got": 704161000,
+   "want": 2196781000,
+   "config": "dense_frame query hi == t_max+1 (aligned PGD-G class_of clamp)"
+  }
+ ],
+ "pass": true
+}

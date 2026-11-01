@@ -1,0 +1,24 @@
+{
+ "arm": "hybrid",
+ "base_id": "dense2m",
+ "fixture": "artifact/dense2m.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 1,
+ "n_states": 2049,
+ "n_answers": 4096,
+ "range_scope": "per_state",
+ "answers_fn": "c705189f00272cc4",
+ "answers_sha256": "f83ad43186cffa068b3c816d7e3df38d2717de106f9345c0c8d3c1190a253b48",
+ "phases_ns": {
+  "load": 57432,
+  "setup": 15405343,
+  "execute": 2053285,
+  "extract": 246472,
+  "cleanup": 2046566
+ },
+ "full_ns": 19809098,
+ "peak_rss_kb": 55080
+}

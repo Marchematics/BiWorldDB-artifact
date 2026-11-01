@@ -1,0 +1,389 @@
+{
+ "description": "committed-evidence cross-checks used as structural priors; not mixed into the joint planner cost fit (different sessions).",
+ "sources": {
+  "four_family_20261030": {
+   "path": "results/four_family_20261030/four_family.json",
+   "deep_300k": [
+    {
+     "base": "intel",
+     "q": 2,
+     "fp": 37,
+     "hybrid_ms": 852.4,
+     "rf_ms": 20113.28,
+     "pgd_ms": 919.59,
+     "lazy_ms": 2929.04,
+     "rows": 2312781,
+     "groups": 61
+    },
+    {
+     "base": "taxi2024",
+     "q": 2,
+     "fp": 37,
+     "hybrid_ms": 991.42,
+     "rf_ms": 11429.91,
+     "pgd_ms": 2505.81,
+     "lazy_ms": 1236.14,
+     "rows": 2964606,
+     "groups": 260
+    }
+   ],
+   "mid_16385": [
+    {
+     "base": "uci501",
+     "q": 2,
+     "fp": 37,
+     "hybrid_ms": 322.25,
+     "rf_ms": 3864.54,
+     "pgd_ms": 30.08,
+     "rows": 412029,
+     "groups": 12
+    },
+    {
+     "base": "uci501",
+     "q": 8,
+     "fp": 37,
+     "hybrid_ms": 338.82,
+     "rf_ms": 3861.5,
+     "pgd_ms": 51.14,
+     "rows": 412029,
+     "groups": 12
+    }
+   ],
+   "shallow_2049_winners": {
+    "rf_is_best": 0,
+    "hybrid_is_best": 18
+   }
+  },
+  "four_family_q128": {
+   "path": "results/four_family_20261030/q128_four.json",
+   "cases": [
+    {
+     "base": "syn50k",
+     "q": 128,
+     "hybrid_ms": 36.14,
+     "rf_ms": 40.3,
+     "pgd_ms": 98.11,
+     "rows": 50000,
+     "groups": 64
+    },
+    {
+     "base": "tiny1000_256",
+     "q": 128,
+     "hybrid_ms": 35.49,
+     "rf_ms": 34.58,
+     "pgd_ms": 306.06,
+     "rows": 1000,
+     "groups": 256
+    },
+    {
+     "base": "tiny2000_512",
+     "q": 128,
+     "hybrid_ms": 36.36,
+     "rf_ms": 34.82,
+     "pgd_ms": 504.11,
+     "rows": 2000,
+     "groups": 512
+    },
+    {
+     "base": "tiny1000_512",
+     "q": 128,
+     "hybrid_ms": 35.73,
+     "rf_ms": 34.54,
+     "pgd_ms": 491.98,
+     "rows": 1000,
+     "groups": 512
+    }
+   ]
+  },
+  "pgdg_20261030": {
+   "path": "results/pgdg_20261030/panel_compare.json",
+   "cases": [
+    {
+     "base": "intel",
+     "q": 2,
+     "fp": 4,
+     "hybrid_ms": 38.02,
+     "pgd_ms": 78.73,
+     "pgdg_ms": 77.49
+    },
+    {
+     "base": "intel",
+     "q": 8,
+     "fp": 4,
+     "hybrid_ms": 56.98,
+     "pgd_ms": 127.25,
+     "pgdg_ms": 108.54
+    },
+    {
+     "base": "intel",
+     "q": 32,
+     "fp": 4,
+     "hybrid_ms": 117.05,
+     "pgd_ms": 427.84,
+     "pgdg_ms": 185.53
+    },
+    {
+     "base": "intel",
+     "q": 2,
+     "fp": 37,
+     "hybrid_ms": 35.68,
+     "pgd_ms": 78.0,
+     "pgdg_ms": 76.73
+    },
+    {
+     "base": "intel",
+     "q": 8,
+     "fp": 37,
+     "hybrid_ms": 53.61,
+     "pgd_ms": 123.61,
+     "pgdg_ms": 106.43
+    },
+    {
+     "base": "intel",
+     "q": 32,
+     "fp": 37,
+     "hybrid_ms": 99.67,
+     "pgd_ms": 425.85,
+     "pgdg_ms": 181.92
+    },
+    {
+     "base": "taxi2024",
+     "q": 2,
+     "fp": 4,
+     "hybrid_ms": 92.75,
+     "pgd_ms": 112.57,
+     "pgdg_ms": 105.56
+    },
+    {
+     "base": "taxi2024",
+     "q": 8,
+     "fp": 4,
+     "hybrid_ms": 108.08,
+     "pgd_ms": 308.49,
+     "pgdg_ms": 186.19
+    },
+    {
+     "base": "taxi2024",
+     "q": 32,
+     "fp": 4,
+     "hybrid_ms": 198.77,
+     "pgd_ms": 1248.18,
+     "pgdg_ms": 410.58
+    },
+    {
+     "base": "taxi2024",
+     "q": 2,
+     "fp": 37,
+     "hybrid_ms": 43.2,
+     "pgd_ms": 104.1,
+     "pgdg_ms": 96.28
+    },
+    {
+     "base": "taxi2024",
+     "q": 8,
+     "fp": 37,
+     "hybrid_ms": 59.32,
+     "pgd_ms": 280.03,
+     "pgdg_ms": 139.45
+    },
+    {
+     "base": "taxi2024",
+     "q": 32,
+     "fp": 37,
+     "hybrid_ms": 83.2,
+     "pgd_ms": 1170.01,
+     "pgdg_ms": 275.35
+    },
+    {
+     "base": "retail2009",
+     "q": 2,
+     "fp": 4,
+     "hybrid_ms": 18.31,
+     "pgd_ms": 37.57,
+     "pgdg_ms": 35.91
+    },
+    {
+     "base": "retail2009",
+     "q": 8,
+     "fp": 4,
+     "hybrid_ms": 28.64,
+     "pgd_ms": 66.16,
+     "pgdg_ms": 52.79
+    },
+    {
+     "base": "retail2009",
+     "q": 32,
+     "fp": 4,
+     "hybrid_ms": 58.84,
+     "pgd_ms": 171.3,
+     "pgdg_ms": 90.44
+    },
+    {
+     "base": "retail2009",
+     "q": 2,
+     "fp": 37,
+     "hybrid_ms": 17.78,
+     "pgd_ms": 36.93,
+     "pgdg_ms": 37.02
+    },
+    {
+     "base": "retail2009",
+     "q": 8,
+     "fp": 37,
+     "hybrid_ms": 29.13,
+     "pgd_ms": 64.42,
+     "pgdg_ms": 53.24
+    },
+    {
+     "base": "retail2009",
+     "q": 32,
+     "fp": 37,
+     "hybrid_ms": 51.8,
+     "pgd_ms": 169.39,
+     "pgdg_ms": 90.91
+    }
+   ]
+  },
+  "batch_20261031": {
+   "path": "results/batch_20261031/summary.json",
+   "deep": {
+    "a_300k_intel": {
+     "batch_ms": 331.69,
+     "ref_ms": 799.59,
+     "speedup": 2.411,
+     "batch_phases": {
+      "load": 0.03,
+      "setup": 157.42,
+      "execute": 132.51,
+      "extract": 24.83,
+      "cleanup": 2.74
+     },
+     "mode": "batch",
+     "answers_sha": [
+      "33c3132f3f690defed29a5f9c57ce91ed0f8b7ec6cf95717b16d4815edee14f8"
+     ],
+     "answers_consistent": true,
+     "rf_ms": 20701.52,
+     "rf_sha": "33c3132f3f690defed29a5f9c57ce91ed0f8b7ec6cf95717b16d4815edee14f8",
+     "exact_vs_ref": true
+    },
+    "a_300k_taxi2024": {
+     "batch_ms": 305.33,
+     "ref_ms": 637.72,
+     "speedup": 2.089,
+     "batch_phases": {
+      "load": 0.08,
+      "setup": 179.49,
+      "execute": 97.59,
+      "extract": 24.52,
+      "cleanup": 3.65
+     },
+     "mode": "batch",
+     "answers_sha": [
+      "7fea044d7094a50d112629cd024efe0ce4ba5eb36b138f205fe8eb733eaa2ab0"
+     ],
+     "answers_consistent": true,
+     "rf_ms": 11649.77,
+     "rf_sha": "7fea044d7094a50d112629cd024efe0ce4ba5eb36b138f205fe8eb733eaa2ab0",
+     "exact_vs_ref": true
+    }
+   },
+   "q128": {
+    "b_q128_retail2009": {
+     "batch_ms": 74.85,
+     "ref_ms": 79.68,
+     "speedup": 1.065,
+     "batch_phases": {
+      "load": 0.05,
+      "setup": 38.97,
+      "execute": 15.85,
+      "extract": 11.29,
+      "cleanup": 3.1
+     },
+     "mode": "fallback",
+     "answers_sha": [
+      "3ebc44bbbe19f1264659c7746a02e0817bb3e38c595be6c51c289ca3d38f42f6"
+     ],
+     "answers_consistent": true,
+     "rf_ms": 140.63,
+     "rf_sha": "3ebc44bbbe19f1264659c7746a02e0817bb3e38c595be6c51c289ca3d38f42f6",
+     "exact_vs_ref": true
+    },
+    "b_q128_taxi2024": {
+     "batch_ms": 122.66,
+     "ref_ms": 129.09,
+     "speedup": 1.052,
+     "batch_phases": {
+      "load": 0.05,
+      "setup": 68.79,
+      "execute": 34.32,
+      "extract": 11.42,
+      "cleanup": 3.71
+     },
+     "mode": "fallback",
+     "answers_sha": [
+      "7760790d25011fdd0506701362467bbb3a01221ec478a98f5b6c308058638c66"
+     ],
+     "answers_consistent": true,
+     "rf_ms": 329.7,
+     "rf_sha": "7760790d25011fdd0506701362467bbb3a01221ec478a98f5b6c308058638c66",
+     "exact_vs_ref": true
+    }
+   }
+  },
+  "cross_family_frozen": {
+   "path": "results/cross_family_planner_20261029/frozen_eval_syn200k_final_v2.json + syn300k_final.json",
+   "rf_wins": [
+    {
+     "base": "syn200k",
+     "q": 32,
+     "fp": 11,
+     "hybrid_ms": 81.95,
+     "rf_ms": 46.43,
+     "chosen": "classic"
+    },
+    {
+     "base": "syn200k",
+     "q": 32,
+     "fp": 11,
+     "hybrid_ms": 81.11,
+     "rf_ms": 46.93,
+     "chosen": "classic"
+    },
+    {
+     "base": "syn200k",
+     "q": 32,
+     "fp": 11,
+     "hybrid_ms": 81.44,
+     "rf_ms": 46.74,
+     "chosen": "classic"
+    },
+    {
+     "base": "syn300k",
+     "q": 32,
+     "fp": 13,
+     "hybrid_ms": 76.75,
+     "rf_ms": 56.93,
+     "chosen": "classic"
+    },
+    {
+     "base": "syn300k",
+     "q": 32,
+     "fp": 13,
+     "hybrid_ms": 76.17,
+     "rf_ms": 57.31,
+     "chosen": "classic"
+    },
+    {
+     "base": "syn300k",
+     "q": 32,
+     "fp": 13,
+     "hybrid_ms": 76.48,
+     "rf_ms": 57.37,
+     "chosen": "classic"
+    }
+   ],
+   "note": "frozen cross-family planner (older engine revision, pre LUT-shift): rf beat hybrid on Q32 at 200k/300k-row synthetic bases"
+  }
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "note": "external SQL engines hold the genuine current relation; complete-work statistics exclude interpreter/import startup on every side; bounded probe, two repeats per fixture, Intel seed 7 factor period 37, per-state ranges",
+ "rows": [
+  {
+   "fixture": "intel_t0_s7_f37_q2",
+   "hybrid_full_ns": 98796694.0,
+   "duckdb_full_ns": 21939922635.5,
+   "duckdb_over_hybrid": 222.07142513797072,
+   "datafusion_full_ns": 208271987601,
+   "datafusion_over_hybrid": 2108.086608657168
+  },
+  {
+   "fixture": "intel_t1_s7_f37_q2",
+   "hybrid_full_ns": 97493671.5,
+   "duckdb_full_ns": 20912958800.0,
+   "duckdb_over_hybrid": 214.50580820520233,
+   "datafusion_full_ns": 209376719498,
+   "datafusion_over_hybrid": 2147.592928613833
+  },
+  {
+   "fixture": "intel_t2_s7_f37_q2",
+   "hybrid_full_ns": 100052670.5,
+   "duckdb_full_ns": 20232199814.0,
+   "duckdb_over_hybrid": 202.21549023021828,
+   "datafusion_full_ns": 207923318204,
+   "datafusion_over_hybrid": 2078.1386160402385
+  },
+  {
+   "fixture": "intel_t0_s7_f37_q8",
+   "hybrid_full_ns": 145425272.0,
+   "duckdb_full_ns": 51671447093.5,
+   "duckdb_over_hybrid": 355.3127072267054,
+   "datafusion_full_ns": 238635834182,
+   "datafusion_over_hybrid": 1640.9516097174637
+  },
+  {
+   "fixture": "intel_t0_s7_f37_q32",
+   "hybrid_full_ns": 218750409.0,
+   "duckdb_full_ns": 125456079038.0,
+   "duckdb_over_hybrid": 573.5124318693274
+  }
+ ]
+}

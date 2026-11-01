@@ -1,0 +1,92 @@
+[
+ {
+  "key": "intel_t0_s7_f37_q2",
+  "base_id": "intel",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2
+ },
+ {
+  "key": "intel_t0_s7_f37_q8",
+  "base_id": "intel",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 8
+ },
+ {
+  "key": "intel_t0_s7_f37_q32",
+  "base_id": "intel",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 32
+ },
+ {
+  "key": "taxi2024_t0_s7_f37_q2",
+  "base_id": "taxi2024",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "taxi2024_t0_s7_f37_q8",
+  "base_id": "taxi2024",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 8,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "taxi2024_t0_s7_f37_q32",
+  "base_id": "taxi2024",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 32,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "retail2009_t0_s7_f37_q2",
+  "base_id": "retail2009",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "retail2009_t0_s7_f37_q8",
+  "base_id": "retail2009",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 8,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "retail2009_t0_s7_f37_q32",
+  "base_id": "retail2009",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 32,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ }
+]

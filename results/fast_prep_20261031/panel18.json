@@ -1,0 +1,146 @@
+[
+ {
+  "base": "intel",
+  "fp": 4,
+  "q": 2,
+  "ms": 22.75,
+  "exact": true,
+  "old_hybrid_ms": 38.02
+ },
+ {
+  "base": "intel",
+  "fp": 4,
+  "q": 8,
+  "ms": 42.74,
+  "exact": true,
+  "old_hybrid_ms": 56.98
+ },
+ {
+  "base": "intel",
+  "fp": 4,
+  "q": 32,
+  "ms": 102.7,
+  "exact": true,
+  "old_hybrid_ms": 117.05
+ },
+ {
+  "base": "intel",
+  "fp": 37,
+  "q": 2,
+  "ms": 21.97,
+  "exact": true,
+  "old_hybrid_ms": 35.68
+ },
+ {
+  "base": "intel",
+  "fp": 37,
+  "q": 8,
+  "ms": 39.43,
+  "exact": true,
+  "old_hybrid_ms": 53.61
+ },
+ {
+  "base": "intel",
+  "fp": 37,
+  "q": 32,
+  "ms": 79.86,
+  "exact": true,
+  "old_hybrid_ms": 99.67
+ },
+ {
+  "base": "taxi2024",
+  "fp": 4,
+  "q": 2,
+  "ms": 32.69,
+  "exact": true,
+  "old_hybrid_ms": 92.75
+ },
+ {
+  "base": "taxi2024",
+  "fp": 4,
+  "q": 8,
+  "ms": 91.61,
+  "exact": true,
+  "old_hybrid_ms": 108.08
+ },
+ {
+  "base": "taxi2024",
+  "fp": 4,
+  "q": 32,
+  "ms": 222.97,
+  "exact": true,
+  "old_hybrid_ms": 198.77
+ },
+ {
+  "base": "taxi2024",
+  "fp": 37,
+  "q": 2,
+  "ms": 30.08,
+  "exact": true,
+  "old_hybrid_ms": 43.2
+ },
+ {
+  "base": "taxi2024",
+  "fp": 37,
+  "q": 8,
+  "ms": 46.33,
+  "exact": true,
+  "old_hybrid_ms": 59.32
+ },
+ {
+  "base": "taxi2024",
+  "fp": 37,
+  "q": 32,
+  "ms": 68.42,
+  "exact": true,
+  "old_hybrid_ms": 83.2
+ },
+ {
+  "base": "retail2009",
+  "fp": 4,
+  "q": 2,
+  "ms": 11.33,
+  "exact": true,
+  "old_hybrid_ms": 18.31
+ },
+ {
+  "base": "retail2009",
+  "fp": 4,
+  "q": 8,
+  "ms": 20.38,
+  "exact": true,
+  "old_hybrid_ms": 28.64
+ },
+ {
+  "base": "retail2009",
+  "fp": 4,
+  "q": 32,
+  "ms": 47.22,
+  "exact": true,
+  "old_hybrid_ms": 58.84
+ },
+ {
+  "base": "retail2009",
+  "fp": 37,
+  "q": 2,
+  "ms": 11.49,
+  "exact": true,
+  "old_hybrid_ms": 17.78
+ },
+ {
+  "base": "retail2009",
+  "fp": 37,
+  "q": 8,
+  "ms": 21.38,
+  "exact": true,
+  "old_hybrid_ms": 29.13
+ },
+ {
+  "base": "retail2009",
+  "fp": 37,
+  "q": 32,
+  "ms": 45.95,
+  "exact": true,
+  "old_hybrid_ms": 51.8
+ }
+]

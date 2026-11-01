@@ -1,0 +1,28 @@
+{
+ "arm": "hybrid",
+ "arm_mode": "hybrid",
+ "base_id": "syn1m",
+ "fixture": "artifact/syn1m_dense.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 8,
+ "repeat": 1,
+ "n_states": 2049,
+ "n_answers": 16384,
+ "range_scope": "per_state",
+ "cold": true,
+ "preload_fadvise_dontneed": true,
+ "sparse_base_env": "auto",
+ "answers_fn": "f4ee4c9c11a48058",
+ "answers_sha256": "ad16f1dc567c1687addb23f10215832cefb12ee652ab42e13f89363ae70ad16a",
+ "phases_ns": {
+  "load": 434199,
+  "setup": 73335953,
+  "execute": 2838175,
+  "extract": 1475719,
+  "cleanup": 1714115
+ },
+ "full_ns": 79798161,
+ "peak_rss_kb": 40508
+}

@@ -1,0 +1,42 @@
+{
+ "all_u180k_g224": {
+  "fixture": "artifact/all_u180k_g224.bin",
+  "bytes": 4322752,
+  "sha256": "ada554ebeaf3225da6748cb4520698e179ccd0608a02d9649d3cbf6ff8e6b984",
+  "rows": 180000,
+  "groups": 224,
+  "fixture_seed": 20261071,
+  "span": 86400000000,
+  "role": "all_distinct_unseen"
+ },
+ "all_u650k_g80": {
+  "fixture": "artifact/all_u650k_g80.bin",
+  "bytes": 15601024,
+  "sha256": "a0a338340061ea3c54c985d9c7164bb8c9eb4e79a197bf49cdf6bc6726bfb5d6",
+  "rows": 650000,
+  "groups": 80,
+  "fixture_seed": 20261072,
+  "span": 86400000000,
+  "role": "all_distinct_unseen"
+ },
+ "all_u1100k_g160": {
+  "fixture": "artifact/all_u1100k_g160.bin",
+  "bytes": 26401984,
+  "sha256": "aa750e274d4c8a4ec31df1f72393bfeba5d9a24ca1c6bb9ccf838f3a942f8f6c",
+  "rows": 1100000,
+  "groups": 160,
+  "fixture_seed": 20261073,
+  "span": 86400000000,
+  "role": "all_distinct_unseen"
+ },
+ "all_u1600k_g448": {
+  "fixture": "artifact/all_u1600k_g448.bin",
+  "bytes": 38405440,
+  "sha256": "7ba48f58e58647b165ded03d2bbda56d01c113a0496af0c9a0e622e2b67174b2",
+  "rows": 1600000,
+  "groups": 448,
+  "fixture_seed": 20261074,
+  "span": 86400000000,
+  "role": "all_distinct_unseen"
+ }
+}

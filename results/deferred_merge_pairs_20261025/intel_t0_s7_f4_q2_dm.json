@@ -1,0 +1,21 @@
+{
+ "engine": "deferred_merge",
+ "tier": "B (reimplementation of PACMMOD 2024 plan space)",
+ "fixture": "fixtures/intel.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 4,
+ "q": 2,
+ "repeat": 0,
+ "n_answers": 4096,
+ "answers_sha256": "847264a83b6770581738bcd9e519b881d20eb7ef34daf9aef413822a57566665",
+ "oracle_ok": true,
+ "oracle_detail": "exact match",
+ "phases_ns": {
+  "load": 141768776,
+  "setup": 174826561,
+  "execute": 636838580,
+  "extract": 342641
+ },
+ "full_ns": 963801541
+}

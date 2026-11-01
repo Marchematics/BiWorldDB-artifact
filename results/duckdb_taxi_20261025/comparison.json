@@ -1,0 +1,71 @@
+{
+ "note": "external DuckDB full-state probe on the pre-registered held-out taxi base; five shapes x 2 repeats; genuine per-state relation with real UPDATEs and one batched SQL scan per state bag; all answers exact",
+ "rows": [
+  {
+   "label": "chain Q2",
+   "fixture": "taxi2024_t0_s7_f37_q2",
+   "hybrid_wall_s": 0.1337052965,
+   "duckdb_wall_s": 19.2335636535,
+   "wall_ratio": 143.85042445569835,
+   "hybrid_work_s": 0.130174141,
+   "duckdb_work_s": 18.9887062785,
+   "work_ratio": 145.871569672966,
+   "duckdb_peak_rss_mib": 853.08984375,
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "label": "bushy Q2",
+   "fixture": "taxi2024_t1_s7_f37_q2",
+   "hybrid_wall_s": 0.133219393,
+   "duckdb_wall_s": 19.473773938,
+   "wall_ratio": 146.17822149962805,
+   "hybrid_work_s": 0.1299789375,
+   "duckdb_work_s": 19.246602451,
+   "work_ratio": 148.0747790464128,
+   "duckdb_peak_rss_mib": 859.21875,
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "label": "star Q2",
+   "fixture": "taxi2024_t2_s7_f37_q2",
+   "hybrid_wall_s": 0.1334050255,
+   "duckdb_wall_s": 19.655378103,
+   "wall_ratio": 147.3361144329604,
+   "hybrid_work_s": 0.129858716,
+   "duckdb_work_s": 19.4075979305,
+   "work_ratio": 149.4516388911469,
+   "duckdb_peak_rss_mib": 861.09375,
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "label": "chain Q8",
+   "fixture": "taxi2024_t0_s7_f37_q8",
+   "hybrid_wall_s": 0.21625389,
+   "duckdb_wall_s": 39.7594132165,
+   "wall_ratio": 183.8552509575666,
+   "hybrid_work_s": 0.212831222,
+   "duckdb_work_s": 39.510419625,
+   "work_ratio": 185.64202777071873,
+   "duckdb_peak_rss_mib": 903.3671875,
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "label": "chain Q32",
+   "fixture": "taxi2024_t0_s7_f37_q32",
+   "hybrid_wall_s": 0.384641469,
+   "duckdb_wall_s": 96.9864193015,
+   "wall_ratio": 252.14758968565607,
+   "hybrid_work_s": 0.3809294595,
+   "duckdb_work_s": 96.644922041,
+   "work_ratio": 253.70818567787876,
+   "duckdb_peak_rss_mib": 1257.6796875,
+   "exact": true,
+   "runs": 2
+  }
+ ],
+ "all_exact": true
+}

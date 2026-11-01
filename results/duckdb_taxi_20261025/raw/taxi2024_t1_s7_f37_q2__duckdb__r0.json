@@ -1,0 +1,22 @@
+{
+ "engine": "duckdb",
+ "duckdb_version": "1.5.6",
+ "fixture": "fixtures/taxi2024.bin",
+ "topology": 1,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 0,
+ "n_answers": 4096,
+ "answers_sha256": "4068e4397ec77aefd2cc87468945d461613dc0bb58cc1c6d618399d4b63f8c96",
+ "oracle_ok": true,
+ "oracle_detail": "exact match",
+ "phases_ns": {
+  "load": 52071699,
+  "setup": 576391441,
+  "execute": 18504565420,
+  "extract": 759412,
+  "cleanup": 49411302
+ },
+ "full_ns": 19183199274
+}

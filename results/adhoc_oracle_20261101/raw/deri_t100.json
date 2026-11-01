@@ -1,0 +1,37 @@
+{
+ "arm": "deri",
+ "base_id": "taxi2024",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 0,
+ "adhoc_fraction": 100,
+ "n_states": 2049,
+ "answers_n": 4096,
+ "range_scope": "per_state",
+ "phases_ns": {
+  "load": 30353,
+  "setup": 395341545,
+  "execute": 140319639,
+  "extract": 183653,
+  "cleanup": 3016523
+ },
+ "deri": {
+  "build_ns": 387453445,
+  "first_query_ns": 77000,
+  "adhoc_query_total_ns": 107233603,
+  "adhoc_query_count": 4096,
+  "per_adhoc_query_ns": 26180,
+  "gen_ns": 4156975
+ },
+ "pool": 4096,
+ "adapt_unsupported": 0,
+ "union": {
+  "ncls": 0,
+  "n_endpoints": 0,
+  "brute_mismatch": 0
+ },
+ "full_ns": 538891713,
+ "peak_rss_kb": 296488
+}

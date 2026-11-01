@@ -1,0 +1,13 @@
+{
+ "counts": {
+  "fail": 0,
+  "pass": 1296,
+  "skipped": 0,
+  "workers": 1296
+ },
+ "failures": [],
+ "failures_by_status": {},
+ "generated_utc": "2026-10-24T18:08:16Z",
+ "outdir": "../panel_run",
+ "schema_version": 1
+}

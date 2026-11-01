@@ -1,0 +1,73 @@
+{
+ "panel": "formal 54-fixture taxi2024 roster, 2 fresh-process repeats per engine/fixture",
+ "hybrid_source": "results/taxi_20261025",
+ "cohorts": {
+  "q2": {
+   "dd": {
+    "wall_median": 3.355595403493638,
+    "wall_min": 3.255750533547792,
+    "wall_max": 3.3984853616620216,
+    "work_median": 3.3544845715779816,
+    "work_min": 3.250108668414138,
+    "work_max": 3.3937268197836206,
+    "wins": 18,
+    "cases": 18
+   },
+   "dbsp": {
+    "wall_median": 4.085503951764647,
+    "wall_min": 3.9431928241851097,
+    "wall_max": 4.1847325620945846,
+    "work_median": 4.084397628015663,
+    "work_min": 3.9510162505837005,
+    "work_max": 4.182923741715963,
+    "wins": 18,
+    "cases": 18
+   }
+  },
+  "q8": {
+   "dd": {
+    "wall_median": 3.9764272666733764,
+    "wall_min": 3.542578301089765,
+    "wall_max": 4.038207809175808,
+    "work_median": 3.9740265756972923,
+    "work_min": 3.5357472256439455,
+    "work_max": 4.034994047254191,
+    "wins": 18,
+    "cases": 18
+   },
+   "dbsp": {
+    "wall_median": 4.534774629885564,
+    "wall_min": 4.054591474168808,
+    "wall_max": 4.591869755979231,
+    "work_median": 4.508339523509495,
+    "work_min": 4.033746104222224,
+    "work_max": 4.570665370233479,
+    "wins": 18,
+    "cases": 18
+   }
+  },
+  "q32": {
+   "dd": {
+    "wall_median": 4.707992408872757,
+    "wall_min": 3.5027521471345646,
+    "wall_max": 4.881271671149672,
+    "work_median": 4.706187089336457,
+    "work_min": 3.493238479387849,
+    "work_max": 4.877075394787946,
+    "wins": 18,
+    "cases": 18
+   },
+   "dbsp": {
+    "wall_median": 5.22335153856014,
+    "wall_min": 3.805113190238296,
+    "wall_max": 5.281979422971963,
+    "work_median": 5.208788576319851,
+    "work_min": 3.790087475639167,
+    "work_max": 5.275128916382886,
+    "wins": 18,
+    "cases": 18
+   }
+  }
+ },
+ "all_exact": true
+}

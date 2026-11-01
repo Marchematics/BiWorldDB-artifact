@@ -1,0 +1,25 @@
+{
+ "arm": "batch_fallback",
+ "base_id": "retail2009",
+ "fixture": "artifact/retail2009.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 128,
+ "repeat": 0,
+ "n_states": 2049,
+ "n_answers": 262144,
+ "range_scope": "per_state",
+ "mode": "fallback",
+ "answers_fn": "06adcbe74e716ff2",
+ "answers_sha256": "3ebc44bbbe19f1264659c7746a02e0817bb3e38c595be6c51c289ca3d38f42f6",
+ "phases_ns": {
+  "load": 76800,
+  "setup": 41918245,
+  "execute": 15757613,
+  "extract": 11929647,
+  "cleanup": 2395663
+ },
+ "full_ns": 72077968,
+ "peak_rss_kb": 61780
+}

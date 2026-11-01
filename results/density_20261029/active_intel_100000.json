@@ -1,0 +1,17 @@
+{
+ "fixture": "artifact/intel.bin",
+ "states": 100000,
+ "rows": 2312781,
+ "groups": 61,
+ "q": 2,
+ "factor_period": 37,
+ "edits": 99999,
+ "factor_edits": 2702,
+ "active_rows_max": 96019,
+ "rho_active_max": 0.04152,
+ "active_rows_median": 48323,
+ "rho_active_median": 0.02089,
+ "cumulative_edits_over_rows": 0.04324,
+ "nonzero_dev_coords_max": 44747,
+ "nonzero_dev_coords_median": 25185
+}

@@ -1,0 +1,38 @@
+{
+ "note": "reproducibility manifest for the corrected Gate-1 comparison (production-configuration hybrid vs classic arms)",
+ "host": "benchmark-host",
+ "compile": {
+  "panel_classic": "g++ -std=c++17 -O3 -DNDEBUG -o panel_classic panel_classic.cpp",
+  "sources_sha256": {
+   "panel_classic.cpp": "c0fc937e010fb7caa2ce3b8f9e38ce57cab32299015b6721087e5782aae2face",
+   "arms_classic.hpp": "e4394ce7f61a21a28279d983aa10f7b38d6f423875a138b254c3d73282c12c5f",
+   "common.hpp": "ffaebfed2260015f64ba204e7b71475be08654646a1987493463d72c4b1ae4ce",
+   "engine.hpp": "174ffbda589ce8d250816ff1421e31964768453d7d8c8a9403f491835b13b2df"
+  },
+  "binary_sha256": "e2dd82cfd71829b00390a975bf5e25c87de4ae9f79969ff5e74479523c392bce"
+ },
+ "fixtures_sha256": {
+  "intel.bin": "b787c7c01211a650f593f628acec7cbbaa8d00bf07125b4a93e0a070ac328570",
+  "taxi2024.bin": "7da95f668fa93922bdaa67a81bad36c819368c75aa347d8bb3bc612dae6ed7d4",
+  "retail2009.bin": "7e26ae6fbdd816fa34a39251235fe7b51723ace2173d906a8f5d252df6be3d25"
+ },
+ "oracle_index_sha256": {
+  "intel": "a607deccf0997c73830b2ee59504d3acddf2e5df8f9e2e034a09001b31d225f5",
+  "taxi": "74485aa55fb3de91ac54690990d8fa5ae7fc4a8eac4510f2c665af869bce2283",
+  "retail": "9fd9d44c78256f3ebf975064d9523680160581c5ad5c94e1aa849952f9bace06"
+ },
+ "runtime_env": {
+  "BWH_RANGE_SCOPE": "per_state",
+  "BWH_CLASS_LUT": "1",
+  "BWH_OVERLAY": "1",
+  "BWH_TRANSPOSE_BASEP": "auto",
+  "BWH_GROUP_PREFIX": "active",
+  "BWH_AGG2": "auto"
+ },
+ "cli": "panel_classic --arm {rf|rs|hybrid} --fixture <fixture> --base-id <base> --topology 0|1|2 --seed 7 --factor-period 4|37 --q 2|8|32 --repeat 0|1 --answers <bin> --json <json>",
+ "counts": {
+  "unique_configurations": 54,
+  "pairwise_comparisons": 108,
+  "note": "54 unique (base, topology, factor period, q) configurations; each compared against two classic baselines (rollback Fenwick, rollback segment tree), i.e. 108 pairwise performance comparisons"
+ }
+}

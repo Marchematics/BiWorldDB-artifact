@@ -1,0 +1,25 @@
+{
+ "arm": "batch_fallback",
+ "base_id": "real1d_100k",
+ "fixture": "artifact/real1d_100k.bin",
+ "topology": 0,
+ "seed": 20261202,
+ "factor_period": 59,
+ "q": 8,
+ "repeat": 0,
+ "n_states": 2049,
+ "n_answers": 16384,
+ "range_scope": "per_state",
+ "mode": "fallback",
+ "answers_fn": "72b0411970c1fe72",
+ "answers_sha256": "d67cf365ee29772c2bdc6280591fa8c81ace39028d010088de9ebf271893e341",
+ "phases_ns": {
+  "load": 41019,
+  "setup": 13055039,
+  "execute": 3321541,
+  "extract": 1366214,
+  "cleanup": 726000
+ },
+ "full_ns": 18509813,
+ "peak_rss_kb": 15716
+}

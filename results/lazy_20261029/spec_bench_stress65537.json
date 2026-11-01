@@ -1,0 +1,41 @@
+[
+ {
+  "label": "stress65537_uci501_factor50_q2",
+  "base_id": "uci501",
+  "fixture": "artifact/uci501.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2,
+  "env": {
+   "BWH_FACTOR_PCT": "50"
+  },
+  "states": 65537
+ },
+ {
+  "label": "stress65537_uci501_factor50_q8",
+  "base_id": "uci501",
+  "fixture": "artifact/uci501.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 8,
+  "env": {
+   "BWH_FACTOR_PCT": "50"
+  },
+  "states": 65537
+ },
+ {
+  "label": "stress65537_uci501_factor50_q32",
+  "base_id": "uci501",
+  "fixture": "artifact/uci501.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 32,
+  "env": {
+   "BWH_FACTOR_PCT": "50"
+  },
+  "states": 65537
+ }
+]

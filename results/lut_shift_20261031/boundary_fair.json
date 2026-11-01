@@ -1,0 +1,18 @@
+{
+ "note": "300k states, fp37, Q2, per-state, 3 reps, same session; hybrid uses corr-prefix + shift LUT; pgd/pgdg use shift LUT",
+ "intel": {
+  "hybrid_ms": 745.5,
+  "pgd_ms": 901.9,
+  "pgdg_ms": 982.8,
+  "vs_pgd": 1.21,
+  "vs_pgdg": 1.318
+ },
+ "taxi2024": {
+  "hybrid_ms": 610.8,
+  "pgd_ms": 2394.9,
+  "pgdg_ms": 775.8,
+  "vs_pgd": 3.921,
+  "vs_pgdg": 1.27
+ },
+ "answers_identical": true
+}

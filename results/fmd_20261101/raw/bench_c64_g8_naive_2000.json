@@ -1,0 +1,30 @@
+{
+ "arm": "naive",
+ "rows": 1000000,
+ "c0": 64,
+ "c1": 64,
+ "groups": 8,
+ "states": 2000,
+ "q": 2,
+ "factor_period": 37,
+ "topology": 0,
+ "seed": 7,
+ "repeat": 0,
+ "answers_fn": "a886c95a799a35d1",
+ "answers_sha256": "683e0d3f8c406027c386b81b4b3e1b4c54ce498d2c12ab5716643b83d274dbe7",
+ "n_answers": 3998,
+ "phases_ns": {
+  "gen": 25770230,
+  "build": 13152279,
+  "execute": 4846116,
+  "extract": 328217,
+  "cleanup": 1384136
+ },
+ "full_ns": 45480978,
+ "peak_rss_kb": 43856,
+ "bytes": {
+  "static_index": 0,
+  "product_class": 532544,
+  "dynamic": 532544
+ }
+}

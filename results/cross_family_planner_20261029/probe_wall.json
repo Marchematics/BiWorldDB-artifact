@@ -1,0 +1,322 @@
+[
+ {
+  "base": "intel",
+  "topology": 1,
+  "fp": 4,
+  "q": 2,
+  "states": 2049,
+  "probe_wall_ms": 8.66
+ },
+ {
+  "base": "intel",
+  "topology": 1,
+  "fp": 4,
+  "q": 8,
+  "states": 2049,
+  "probe_wall_ms": 9.3
+ },
+ {
+  "base": "intel",
+  "topology": 1,
+  "fp": 4,
+  "q": 32,
+  "states": 2049,
+  "probe_wall_ms": 13.314
+ },
+ {
+  "base": "intel",
+  "topology": 1,
+  "fp": 37,
+  "q": 2,
+  "states": 2049,
+  "probe_wall_ms": 7.921
+ },
+ {
+  "base": "intel",
+  "topology": 1,
+  "fp": 37,
+  "q": 8,
+  "states": 2049,
+  "probe_wall_ms": 8.845
+ },
+ {
+  "base": "intel",
+  "topology": 1,
+  "fp": 37,
+  "q": 32,
+  "states": 2049,
+  "probe_wall_ms": 13.458
+ },
+ {
+  "base": "intel",
+  "topology": 2,
+  "fp": 4,
+  "q": 2,
+  "states": 2049,
+  "probe_wall_ms": 8.449
+ },
+ {
+  "base": "intel",
+  "topology": 2,
+  "fp": 4,
+  "q": 8,
+  "states": 2049,
+  "probe_wall_ms": 9.388
+ },
+ {
+  "base": "intel",
+  "topology": 2,
+  "fp": 4,
+  "q": 32,
+  "states": 2049,
+  "probe_wall_ms": 14.826
+ },
+ {
+  "base": "intel",
+  "topology": 2,
+  "fp": 37,
+  "q": 2,
+  "states": 2049,
+  "probe_wall_ms": 8.303
+ },
+ {
+  "base": "intel",
+  "topology": 2,
+  "fp": 37,
+  "q": 8,
+  "states": 2049,
+  "probe_wall_ms": 10.365
+ },
+ {
+  "base": "intel",
+  "topology": 2,
+  "fp": 37,
+  "q": 32,
+  "states": 2049,
+  "probe_wall_ms": 13.706
+ },
+ {
+  "base": "taxi2024",
+  "topology": 1,
+  "fp": 4,
+  "q": 2,
+  "states": 2049,
+  "probe_wall_ms": 8.342
+ },
+ {
+  "base": "taxi2024",
+  "topology": 1,
+  "fp": 4,
+  "q": 8,
+  "states": 2049,
+  "probe_wall_ms": 8.762
+ },
+ {
+  "base": "taxi2024",
+  "topology": 1,
+  "fp": 4,
+  "q": 32,
+  "states": 2049,
+  "probe_wall_ms": 13.779
+ },
+ {
+  "base": "taxi2024",
+  "topology": 1,
+  "fp": 37,
+  "q": 2,
+  "states": 2049,
+  "probe_wall_ms": 8.88
+ },
+ {
+  "base": "taxi2024",
+  "topology": 1,
+  "fp": 37,
+  "q": 8,
+  "states": 2049,
+  "probe_wall_ms": 9.518
+ },
+ {
+  "base": "taxi2024",
+  "topology": 1,
+  "fp": 37,
+  "q": 32,
+  "states": 2049,
+  "probe_wall_ms": 14.196
+ },
+ {
+  "base": "taxi2024",
+  "topology": 2,
+  "fp": 4,
+  "q": 2,
+  "states": 2049,
+  "probe_wall_ms": 8.199
+ },
+ {
+  "base": "taxi2024",
+  "topology": 2,
+  "fp": 4,
+  "q": 8,
+  "states": 2049,
+  "probe_wall_ms": 9.111
+ },
+ {
+  "base": "taxi2024",
+  "topology": 2,
+  "fp": 4,
+  "q": 32,
+  "states": 2049,
+  "probe_wall_ms": 13.448
+ },
+ {
+  "base": "taxi2024",
+  "topology": 2,
+  "fp": 37,
+  "q": 2,
+  "states": 2049,
+  "probe_wall_ms": 9.761
+ },
+ {
+  "base": "taxi2024",
+  "topology": 2,
+  "fp": 37,
+  "q": 8,
+  "states": 2049,
+  "probe_wall_ms": 9.462
+ },
+ {
+  "base": "taxi2024",
+  "topology": 2,
+  "fp": 37,
+  "q": 32,
+  "states": 2049,
+  "probe_wall_ms": 15.465
+ },
+ {
+  "base": "retail2009",
+  "topology": 1,
+  "fp": 4,
+  "q": 2,
+  "states": 2049,
+  "probe_wall_ms": 7.193
+ },
+ {
+  "base": "retail2009",
+  "topology": 1,
+  "fp": 4,
+  "q": 8,
+  "states": 2049,
+  "probe_wall_ms": 6.601
+ },
+ {
+  "base": "retail2009",
+  "topology": 1,
+  "fp": 4,
+  "q": 32,
+  "states": 2049,
+  "probe_wall_ms": 10.703
+ },
+ {
+  "base": "retail2009",
+  "topology": 1,
+  "fp": 37,
+  "q": 2,
+  "states": 2049,
+  "probe_wall_ms": 7.791
+ },
+ {
+  "base": "retail2009",
+  "topology": 1,
+  "fp": 37,
+  "q": 8,
+  "states": 2049,
+  "probe_wall_ms": 6.734
+ },
+ {
+  "base": "retail2009",
+  "topology": 1,
+  "fp": 37,
+  "q": 32,
+  "states": 2049,
+  "probe_wall_ms": 11.408
+ },
+ {
+  "base": "retail2009",
+  "topology": 2,
+  "fp": 4,
+  "q": 2,
+  "states": 2049,
+  "probe_wall_ms": 7.838
+ },
+ {
+  "base": "retail2009",
+  "topology": 2,
+  "fp": 4,
+  "q": 8,
+  "states": 2049,
+  "probe_wall_ms": 8.431
+ },
+ {
+  "base": "retail2009",
+  "topology": 2,
+  "fp": 4,
+  "q": 32,
+  "states": 2049,
+  "probe_wall_ms": 10.804
+ },
+ {
+  "base": "retail2009",
+  "topology": 2,
+  "fp": 37,
+  "q": 2,
+  "states": 2049,
+  "probe_wall_ms": 5.479
+ },
+ {
+  "base": "retail2009",
+  "topology": 2,
+  "fp": 37,
+  "q": 8,
+  "states": 2049,
+  "probe_wall_ms": 6.472
+ },
+ {
+  "base": "retail2009",
+  "topology": 2,
+  "fp": 37,
+  "q": 32,
+  "states": 2049,
+  "probe_wall_ms": 10.837
+ },
+ {
+  "base": "syn50k",
+  "topology": 0,
+  "fp": 37,
+  "q": 128,
+  "states": 2049,
+  "probe_wall_ms": 18.668
+ },
+ {
+  "base": "tiny1000_256",
+  "topology": 0,
+  "fp": 4,
+  "q": 128,
+  "states": 2049,
+  "probe_wall_ms": 18.524
+ },
+ {
+  "base": "tiny2000_512",
+  "topology": 0,
+  "fp": 4,
+  "q": 128,
+  "states": 2049,
+  "probe_wall_ms": 19.122
+ },
+ {
+  "base": "tiny1000_512",
+  "topology": 0,
+  "fp": 4,
+  "q": 128,
+  "states": 2049,
+  "probe_wall_ms": 18.779
+ }
+]

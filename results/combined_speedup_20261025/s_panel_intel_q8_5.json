@@ -1,0 +1,24 @@
+{
+ "arm": "hybrid",
+ "base_id": "intel",
+ "fixture": "fixtures/intel.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 8,
+ "repeat": 0,
+ "n_states": 2049,
+ "n_answers": 16384,
+ "range_scope": "per_state",
+ "answers_fn": "ca16b4c94a73ad11",
+ "answers_sha256": "71b97e75f0b36e344e0444b53aa190b9b8b64bac160ed7958fcbc534d630f50f",
+ "phases_ns": {
+  "load": 66473721,
+  "setup": 222976076,
+  "execute": 11209517,
+  "extract": 2410181,
+  "cleanup": 11139807
+ },
+ "full_ns": 314209302,
+ "peak_rss_kb": 120552
+}

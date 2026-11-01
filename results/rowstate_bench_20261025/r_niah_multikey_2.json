@@ -1,0 +1,630 @@
+{
+ "partial": true,
+ "results": [
+  {
+   "row_id": 0,
+   "task": "niah_multikey_2",
+   "length": 32678,
+   "length_bucket": null,
+   "context_tokens": 32550,
+   "policy": "full",
+   "budget": null,
+   "kept_slots": 32550,
+   "kept_slots_mean": 32550.0,
+   "prediction": "4498054.",
+   "generated": 5,
+   "outputs": [
+    "4498054"
+   ],
+   "answer_recall": 1.0,
+   "selection": null,
+   "decode_s": 0.0815,
+   "prefill_s": 81.174,
+   "peak_cuda_bytes": 6714901504
+  },
+  {
+   "row_id": 0,
+   "task": "niah_multikey_2",
+   "length": 32678,
+   "length_bucket": null,
+   "context_tokens": 32550,
+   "policy": "bounded",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "123.",
+   "generated": 3,
+   "outputs": [
+    "4498054"
+   ],
+   "answer_recall": 0.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 53,
+    "answer_token_keep_fraction": 0.4140625,
+    "all_answer_unit_fraction": 0.4140625
+   },
+   "decode_s": 0.0319,
+   "prefill_s": 81.174,
+   "peak_cuda_bytes": 6714901504
+  },
+  {
+   "row_id": 0,
+   "task": "niah_multikey_2",
+   "length": 32678,
+   "length_bucket": null,
+   "context_tokens": 32550,
+   "policy": "blend_lex",
+   "budget": 4096,
+   "kept_slots": 4608,
+   "kept_slots_mean": 4608.0,
+   "prediction": "4498054.",
+   "generated": 5,
+   "outputs": [
+    "4498054"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 128,
+    "answer_token_keep_fraction": 1.0,
+    "all_answer_unit_fraction": 1.0
+   },
+   "decode_s": 0.0507,
+   "prefill_s": 81.174,
+   "peak_cuda_bytes": 6714901504
+  },
+  {
+   "row_id": 0,
+   "task": "niah_multikey_2",
+   "length": 32678,
+   "length_bucket": null,
+   "context_tokens": 32550,
+   "policy": "snapkv",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "123.",
+   "generated": 3,
+   "outputs": [
+    "4498054"
+   ],
+   "answer_recall": 0.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 53,
+    "answer_token_keep_fraction": 0.4140625,
+    "all_answer_unit_fraction": 0.4140625
+   },
+   "decode_s": 0.0324,
+   "prefill_s": 81.174,
+   "peak_cuda_bytes": 6714901504
+  },
+  {
+   "row_id": 0,
+   "task": "niah_multikey_2",
+   "length": 32678,
+   "length_bucket": null,
+   "context_tokens": 32550,
+   "policy": "quest",
+   "budget": 4096,
+   "kept_slots": 4086,
+   "kept_slots_mean": 4086.0,
+   "prediction": "4498054.",
+   "generated": 5,
+   "outputs": [
+    "4498054"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 26,
+    "answer_token_keep_fraction": 0.203125,
+    "all_answer_unit_fraction": 0.203125
+   },
+   "decode_s": 0.0519,
+   "prefill_s": 81.174,
+   "peak_cuda_bytes": 6714901504
+  },
+  {
+   "row_id": 1,
+   "task": "niah_multikey_2",
+   "length": 32710,
+   "length_bucket": null,
+   "context_tokens": 32582,
+   "policy": "full",
+   "budget": null,
+   "kept_slots": 32582,
+   "kept_slots_mean": 32582.0,
+   "prediction": "3736522.",
+   "generated": 5,
+   "outputs": [
+    "3736522"
+   ],
+   "answer_recall": 1.0,
+   "selection": null,
+   "decode_s": 0.0922,
+   "prefill_s": 80.799,
+   "peak_cuda_bytes": 6728326144
+  },
+  {
+   "row_id": 1,
+   "task": "niah_multikey_2",
+   "length": 32710,
+   "length_bucket": null,
+   "context_tokens": 32582,
+   "policy": "bounded",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "3736522.",
+   "generated": 5,
+   "outputs": [
+    "3736522"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 84,
+    "answer_token_keep_fraction": 0.65625,
+    "all_answer_unit_fraction": 0.65625
+   },
+   "decode_s": 0.0798,
+   "prefill_s": 80.799,
+   "peak_cuda_bytes": 6728326144
+  },
+  {
+   "row_id": 1,
+   "task": "niah_multikey_2",
+   "length": 32710,
+   "length_bucket": null,
+   "context_tokens": 32582,
+   "policy": "blend_lex",
+   "budget": 4096,
+   "kept_slots": 4608,
+   "kept_slots_mean": 4608.0,
+   "prediction": "3736522.",
+   "generated": 5,
+   "outputs": [
+    "3736522"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 128,
+    "answer_token_keep_fraction": 1.0,
+    "all_answer_unit_fraction": 1.0
+   },
+   "decode_s": 0.0773,
+   "prefill_s": 80.799,
+   "peak_cuda_bytes": 6728326144
+  },
+  {
+   "row_id": 1,
+   "task": "niah_multikey_2",
+   "length": 32710,
+   "length_bucket": null,
+   "context_tokens": 32582,
+   "policy": "snapkv",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "3736522.",
+   "generated": 5,
+   "outputs": [
+    "3736522"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 84,
+    "answer_token_keep_fraction": 0.65625,
+    "all_answer_unit_fraction": 0.65625
+   },
+   "decode_s": 0.0704,
+   "prefill_s": 80.799,
+   "peak_cuda_bytes": 6728326144
+  },
+  {
+   "row_id": 1,
+   "task": "niah_multikey_2",
+   "length": 32710,
+   "length_bucket": null,
+   "context_tokens": 32582,
+   "policy": "quest",
+   "budget": 4096,
+   "kept_slots": 4086,
+   "kept_slots_mean": 4086.0,
+   "prediction": "373.",
+   "generated": 3,
+   "outputs": [
+    "3736522"
+   ],
+   "answer_recall": 0.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 54,
+    "answer_token_keep_fraction": 0.421875,
+    "all_answer_unit_fraction": 0.421875
+   },
+   "decode_s": 0.0478,
+   "prefill_s": 80.799,
+   "peak_cuda_bytes": 6728326144
+  },
+  {
+   "row_id": 2,
+   "task": "niah_multikey_2",
+   "length": 32654,
+   "length_bucket": null,
+   "context_tokens": 32526,
+   "policy": "full",
+   "budget": null,
+   "kept_slots": 32526,
+   "kept_slots_mean": 32526.0,
+   "prediction": "2313947.",
+   "generated": 5,
+   "outputs": [
+    "2313947"
+   ],
+   "answer_recall": 1.0,
+   "selection": null,
+   "decode_s": 0.0922,
+   "prefill_s": 79.802,
+   "peak_cuda_bytes": 6705992704
+  },
+  {
+   "row_id": 2,
+   "task": "niah_multikey_2",
+   "length": 32654,
+   "length_bucket": null,
+   "context_tokens": 32526,
+   "policy": "bounded",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "2317586.",
+   "generated": 5,
+   "outputs": [
+    "2313947"
+   ],
+   "answer_recall": 0.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 17,
+    "answer_token_keep_fraction": 0.1328125,
+    "all_answer_unit_fraction": 0.1328125
+   },
+   "decode_s": 0.0756,
+   "prefill_s": 79.802,
+   "peak_cuda_bytes": 6705992704
+  },
+  {
+   "row_id": 2,
+   "task": "niah_multikey_2",
+   "length": 32654,
+   "length_bucket": null,
+   "context_tokens": 32526,
+   "policy": "blend_lex",
+   "budget": 4096,
+   "kept_slots": 4608,
+   "kept_slots_mean": 4608.0,
+   "prediction": "2313947.",
+   "generated": 5,
+   "outputs": [
+    "2313947"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 128,
+    "answer_token_keep_fraction": 1.0,
+    "all_answer_unit_fraction": 1.0
+   },
+   "decode_s": 0.0771,
+   "prefill_s": 79.802,
+   "peak_cuda_bytes": 6705992704
+  },
+  {
+   "row_id": 2,
+   "task": "niah_multikey_2",
+   "length": 32654,
+   "length_bucket": null,
+   "context_tokens": 32526,
+   "policy": "snapkv",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "2317586.",
+   "generated": 5,
+   "outputs": [
+    "2313947"
+   ],
+   "answer_recall": 0.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 17,
+    "answer_token_keep_fraction": 0.1328125,
+    "all_answer_unit_fraction": 0.1328125
+   },
+   "decode_s": 0.072,
+   "prefill_s": 79.802,
+   "peak_cuda_bytes": 6705992704
+  },
+  {
+   "row_id": 2,
+   "task": "niah_multikey_2",
+   "length": 32654,
+   "length_bucket": null,
+   "context_tokens": 32526,
+   "policy": "quest",
+   "budget": 4096,
+   "kept_slots": 4094,
+   "kept_slots_mean": 4094.0,
+   "prediction": "2313947.",
+   "generated": 5,
+   "outputs": [
+    "2313947"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 29,
+    "answer_token_keep_fraction": 0.2265625,
+    "all_answer_unit_fraction": 0.2265625
+   },
+   "decode_s": 0.0794,
+   "prefill_s": 79.802,
+   "peak_cuda_bytes": 6705992704
+  },
+  {
+   "row_id": 3,
+   "task": "niah_multikey_2",
+   "length": 32767,
+   "length_bucket": null,
+   "context_tokens": 32639,
+   "policy": "full",
+   "budget": null,
+   "kept_slots": 32639,
+   "kept_slots_mean": 32639.0,
+   "prediction": "5148635.",
+   "generated": 5,
+   "outputs": [
+    "8060878"
+   ],
+   "answer_recall": 0.0,
+   "selection": null,
+   "decode_s": 0.0668,
+   "prefill_s": 81.54,
+   "peak_cuda_bytes": 6746596352
+  },
+  {
+   "row_id": 3,
+   "task": "niah_multikey_2",
+   "length": 32767,
+   "length_bucket": null,
+   "context_tokens": 32639,
+   "policy": "bounded",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "4108636.",
+   "generated": 5,
+   "outputs": [
+    "8060878"
+   ],
+   "answer_recall": 0.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 46,
+    "answer_token_keep_fraction": 0.359375,
+    "all_answer_unit_fraction": 0.359375
+   },
+   "decode_s": 0.0496,
+   "prefill_s": 81.54,
+   "peak_cuda_bytes": 6746596352
+  },
+  {
+   "row_id": 3,
+   "task": "niah_multikey_2",
+   "length": 32767,
+   "length_bucket": null,
+   "context_tokens": 32639,
+   "policy": "blend_lex",
+   "budget": 4096,
+   "kept_slots": 4608,
+   "kept_slots_mean": 4608.0,
+   "prediction": "8060878.",
+   "generated": 5,
+   "outputs": [
+    "8060878"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 128,
+    "answer_token_keep_fraction": 1.0,
+    "all_answer_unit_fraction": 1.0
+   },
+   "decode_s": 0.0503,
+   "prefill_s": 81.54,
+   "peak_cuda_bytes": 6746596352
+  },
+  {
+   "row_id": 3,
+   "task": "niah_multikey_2",
+   "length": 32767,
+   "length_bucket": null,
+   "context_tokens": 32639,
+   "policy": "snapkv",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "4108636.",
+   "generated": 5,
+   "outputs": [
+    "8060878"
+   ],
+   "answer_recall": 0.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 46,
+    "answer_token_keep_fraction": 0.359375,
+    "all_answer_unit_fraction": 0.359375
+   },
+   "decode_s": 0.0496,
+   "prefill_s": 81.54,
+   "peak_cuda_bytes": 6746596352
+  },
+  {
+   "row_id": 3,
+   "task": "niah_multikey_2",
+   "length": 32767,
+   "length_bucket": null,
+   "context_tokens": 32639,
+   "policy": "quest",
+   "budget": 4096,
+   "kept_slots": 4095,
+   "kept_slots_mean": 4095.0,
+   "prediction": "514.",
+   "generated": 3,
+   "outputs": [
+    "8060878"
+   ],
+   "answer_recall": 0.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 17,
+    "answer_token_keep_fraction": 0.1328125,
+    "all_answer_unit_fraction": 0.1328125
+   },
+   "decode_s": 0.0308,
+   "prefill_s": 81.54,
+   "peak_cuda_bytes": 6746596352
+  },
+  {
+   "row_id": 4,
+   "task": "niah_multikey_2",
+   "length": 32716,
+   "length_bucket": null,
+   "context_tokens": 32588,
+   "policy": "full",
+   "budget": null,
+   "kept_slots": 32588,
+   "kept_slots_mean": 32588.0,
+   "prediction": "9615925.",
+   "generated": 5,
+   "outputs": [
+    "9615925"
+   ],
+   "answer_recall": 1.0,
+   "selection": null,
+   "decode_s": 0.0943,
+   "prefill_s": 81.151,
+   "peak_cuda_bytes": 6729089024
+  },
+  {
+   "row_id": 4,
+   "task": "niah_multikey_2",
+   "length": 32716,
+   "length_bucket": null,
+   "context_tokens": 32588,
+   "policy": "bounded",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "9615925.",
+   "generated": 5,
+   "outputs": [
+    "9615925"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 59,
+    "answer_token_keep_fraction": 0.4609375,
+    "all_answer_unit_fraction": 0.4609375
+   },
+   "decode_s": 0.0754,
+   "prefill_s": 81.151,
+   "peak_cuda_bytes": 6729089024
+  },
+  {
+   "row_id": 4,
+   "task": "niah_multikey_2",
+   "length": 32716,
+   "length_bucket": null,
+   "context_tokens": 32588,
+   "policy": "blend_lex",
+   "budget": 4096,
+   "kept_slots": 4608,
+   "kept_slots_mean": 4608.0,
+   "prediction": "9615925.",
+   "generated": 5,
+   "outputs": [
+    "9615925"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 128,
+    "answer_token_keep_fraction": 1.0,
+    "all_answer_unit_fraction": 1.0
+   },
+   "decode_s": 0.076,
+   "prefill_s": 81.151,
+   "peak_cuda_bytes": 6729089024
+  },
+  {
+   "row_id": 4,
+   "task": "niah_multikey_2",
+   "length": 32716,
+   "length_bucket": null,
+   "context_tokens": 32588,
+   "policy": "snapkv",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "9615925.",
+   "generated": 5,
+   "outputs": [
+    "9615925"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 59,
+    "answer_token_keep_fraction": 0.4609375,
+    "all_answer_unit_fraction": 0.4609375
+   },
+   "decode_s": 0.0744,
+   "prefill_s": 81.151,
+   "peak_cuda_bytes": 6729089024
+  },
+  {
+   "row_id": 4,
+   "task": "niah_multikey_2",
+   "length": 32716,
+   "length_bucket": null,
+   "context_tokens": 32588,
+   "policy": "quest",
+   "budget": 4096,
+   "kept_slots": 4092,
+   "kept_slots_mean": 4092.0,
+   "prediction": "9615925.",
+   "generated": 5,
+   "outputs": [
+    "9615925"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 41,
+    "answer_token_keep_fraction": 0.3203125,
+    "all_answer_unit_fraction": 0.3203125
+   },
+   "decode_s": 0.0769,
+   "prefill_s": 81.151,
+   "peak_cuda_bytes": 6729089024
+  }
+ ]
+}

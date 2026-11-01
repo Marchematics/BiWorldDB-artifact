@@ -1,0 +1,45 @@
+{
+ "policy": "results/joint_planner_fast_v3_20261031/policy_v3_frozen.json",
+ "sha256": "cec9ad2b3f1510e63f8018232abf050a73dd715f3ad365c2a1c3494e6df31121",
+ "dev_summary": {
+  "cases": 23,
+  "sources": [
+   "results/joint_planner_fast_20261031/dev_cases_fast.json"
+  ],
+  "measured_rows_per_config": {
+   "hybrid_fast": 23,
+   "corr": 23,
+   "batch_deep": 4,
+   "pgdg_align": 23,
+   "rf": 23
+  },
+  "route_accuracy_vs_oracle": 1.0,
+  "regret_median": 1.0,
+  "regret_p95": 1.0,
+  "regret_max": 1.0,
+  "regret_gt_1_05": 0,
+  "regret_gt_1_10": 0,
+  "routing_only_median": 1.0,
+  "routing_only_p95": 1.0,
+  "routing_only_max": 1.0,
+  "selection_counts": {
+   "hybrid_fast": 0,
+   "corr": 0,
+   "batch_deep": 2,
+   "pgdg_align": 15,
+   "rf": 6
+  },
+  "p95_target_met": true,
+  "oracle": "best measured distinct configuration among {hybrid_fast,corr,batch_deep,pgdg_align,rf} with corr counted only where its gate is active",
+  "percentile_method": "nearest-rank sorted[ceil(q*(n-1))]; bootstrap over cases",
+  "regret_median_ci95": [
+   1.0,
+   1.0
+  ],
+  "regret_p95_ci95": [
+   1.0,
+   1.0
+  ],
+  "bootstrap_resamples": 2000
+ }
+}

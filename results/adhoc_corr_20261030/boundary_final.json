@@ -1,0 +1,50 @@
+[
+ {
+  "base": "intel",
+  "hybrid_auto_ms": [
+   748.6,
+   752.7,
+   756.6
+  ],
+  "hybrid_off_ms": [
+   812.0,
+   811.1,
+   864.9
+  ],
+  "pgd_ms": [
+   912.3,
+   904.0,
+   941.9
+  ],
+  "auto_median": 752.7,
+  "off_median": 812.0,
+  "pgd_median": 912.3,
+  "speedup_vs_pgd": 1.212,
+  "speedup_auto_vs_off": 1.079,
+  "answers_same": true
+ },
+ {
+  "base": "taxi2024",
+  "hybrid_auto_ms": [
+   637.4,
+   641.6,
+   638.8
+  ],
+  "hybrid_off_ms": [
+   1004.5,
+   1010.4,
+   1009.7
+  ],
+  "pgd_ms": [
+   2560.3,
+   2502.5,
+   2492.4
+  ],
+  "auto_median": 638.8,
+  "off_median": 1009.7,
+  "pgd_median": 2502.5,
+  "speedup_vs_pgd": 3.917,
+  "speedup_auto_vs_off": 1.581,
+  "answers_same": true
+ }
+]

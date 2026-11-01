@@ -1,0 +1,24 @@
+{
+ "arm": "hybrid",
+ "base_id": "retail2009",
+ "fixture": "fixtures/retail2009.bin",
+ "topology": 2,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 2,
+ "n_states": 2049,
+ "n_answers": 4096,
+ "range_scope": "per_state",
+ "answers_fn": "b79c02811cd5109c",
+ "answers_sha256": "42022340b9409b93af533da1f0df48df36f50efc631ed0f7ed2c45b3e9ec3412",
+ "phases_ns": {
+  "load": 41409,
+  "setup": 28475937,
+  "execute": 1189134,
+  "extract": 271969,
+  "cleanup": 3827505
+ },
+ "full_ns": 33805954,
+ "peak_rss_kb": 53320
+}

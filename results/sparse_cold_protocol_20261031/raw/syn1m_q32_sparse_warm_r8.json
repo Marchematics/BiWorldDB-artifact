@@ -1,0 +1,41 @@
+{
+ "arm": "sparse",
+ "arm_mode": "sparse",
+ "base_id": "syn1m",
+ "fixture": "artifact/syn1m_dense.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 32,
+ "repeat": 8,
+ "n_states": 2049,
+ "n_answers": 65536,
+ "range_scope": "per_state",
+ "cold": false,
+ "preload_fadvise_dontneed": false,
+ "sparse_base_env": "1",
+ "answers_fn": "ed83dd44d8c77f82",
+ "answers_sha256": "c20c72fe17b07b9fd6cdb34817f7883bea647a9be264c16c3d113f4cf252024d",
+ "phases_ns": {
+  "load": 44283,
+  "setup": 51203429,
+  "execute": 25692990,
+  "extract": 3306836,
+  "cleanup": 2468254
+ },
+ "full_ns": 82715792,
+ "peak_rss_kb": 40124,
+ "base_stats": {
+  "mode": "sparse",
+  "n_active": 55,
+  "classes": 124654,
+  "nnz": 519846,
+  "csr_bytes": 5444892,
+  "dense_bytes": 54847760,
+  "bitmap_bytes": 857120,
+  "lut_bytes": 428780,
+  "transient_bytes": 0,
+  "est_nnz": 0,
+  "build_us": 37558
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "bench": "factor-update",
+ "nz_nonzero_deviations": 100000,
+ "group": 0,
+ "ops_per_window": 200,
+ "windows": 3,
+ "eager_update_ns_per_op": 8394185.88,
+ "lazy_update_ns_per_op": 11.765,
+ "update_speedup_lazy_vs_eager": 713487.96,
+ "eager_query_ns": 30.24,
+ "lazy_query_ns": 57.535,
+ "eager_exact": true,
+ "lazy_exact": true
+}

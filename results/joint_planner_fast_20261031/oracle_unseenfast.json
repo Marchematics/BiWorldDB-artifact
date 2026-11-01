@@ -1,0 +1,110 @@
+{
+ "fast_2049_fast_u240k_g256_f53_q2": {
+  "fixture": "artifact/fast_u240k_g256.bin",
+  "topology": 0,
+  "seed": 67,
+  "factor_period": 53,
+  "q": 2,
+  "n_answers": 4096,
+  "answers_sha256": "d1964af4ae6bedc46f451d80d11b90d39ddd428b0345847e0f50a65572e6b8b7",
+  "wall_s": 2.44,
+  "case_id": "fast_2049_fast_u240k_g256_f53_q2",
+  "oracle_reported_sha256": "d1964af4ae6bedc46f451d80d11b90d39ddd428b0345847e0f50a65572e6b8b7"
+ },
+ "fast_2049_fast_u240k_g256_f97_q32": {
+  "fixture": "artifact/fast_u240k_g256.bin",
+  "topology": 0,
+  "seed": 67,
+  "factor_period": 97,
+  "q": 32,
+  "n_answers": 65536,
+  "answers_sha256": "f32754f3b95850c1fef07d52d64072f09e9b5767a3b842dae1db8567e1a4e48b",
+  "wall_s": 5.33,
+  "case_id": "fast_2049_fast_u240k_g256_f97_q32",
+  "oracle_reported_sha256": "f32754f3b95850c1fef07d52d64072f09e9b5767a3b842dae1db8567e1a4e48b"
+ },
+ "fast_2049_fast_u480k_g96_f53_q8": {
+  "fixture": "artifact/fast_u480k_g96.bin",
+  "topology": 0,
+  "seed": 67,
+  "factor_period": 53,
+  "q": 8,
+  "n_answers": 16384,
+  "answers_sha256": "e4a71bdd491885a0450642205187fb26d9f4d2e57a358c3d6697a48aea09c69e",
+  "wall_s": 9.24,
+  "case_id": "fast_2049_fast_u480k_g96_f53_q8",
+  "oracle_reported_sha256": "e4a71bdd491885a0450642205187fb26d9f4d2e57a358c3d6697a48aea09c69e"
+ },
+ "fast_2049_fast_u480k_g96_f97_q2": {
+  "fixture": "artifact/fast_u480k_g96.bin",
+  "topology": 0,
+  "seed": 67,
+  "factor_period": 97,
+  "q": 2,
+  "n_answers": 4096,
+  "answers_sha256": "5520419529623fccc296b90962d2042e560ab1d594220764cfe3b2c7c962efa8",
+  "wall_s": 4.87,
+  "case_id": "fast_2049_fast_u480k_g96_f97_q2",
+  "oracle_reported_sha256": "5520419529623fccc296b90962d2042e560ab1d594220764cfe3b2c7c962efa8"
+ },
+ "fast_2049_fast_u760k_g192_f53_q32": {
+  "fixture": "artifact/fast_u760k_g192.bin",
+  "topology": 0,
+  "seed": 67,
+  "factor_period": 53,
+  "q": 32,
+  "n_answers": 65536,
+  "answers_sha256": "6a4df58584548e8602ea5c8d9fe289d4f84b7d58acc0a2a6f87da883a64af95a",
+  "wall_s": 16.8,
+  "case_id": "fast_2049_fast_u760k_g192_f53_q32",
+  "oracle_reported_sha256": "6a4df58584548e8602ea5c8d9fe289d4f84b7d58acc0a2a6f87da883a64af95a"
+ },
+ "fast_2049_fast_u760k_g192_f97_q8": {
+  "fixture": "artifact/fast_u760k_g192.bin",
+  "topology": 0,
+  "seed": 67,
+  "factor_period": 97,
+  "q": 8,
+  "n_answers": 16384,
+  "answers_sha256": "ba2674d1101c3b4c0c2f68ff478001c16dcbe68b0fff089c37e6c2fa4fc1b29a",
+  "wall_s": 14.71,
+  "case_id": "fast_2049_fast_u760k_g192_f97_q8",
+  "oracle_reported_sha256": "ba2674d1101c3b4c0c2f68ff478001c16dcbe68b0fff089c37e6c2fa4fc1b29a"
+ },
+ "fast_2049_fast_u1500k_g384_f53_q2": {
+  "fixture": "artifact/fast_u1500k_g384.bin",
+  "topology": 0,
+  "seed": 67,
+  "factor_period": 53,
+  "q": 2,
+  "n_answers": 4096,
+  "answers_sha256": "9328751363e7613962600c795a9bb5bbb52761ef948013ed39a7b62e86c1bbf5",
+  "wall_s": 15.25,
+  "case_id": "fast_2049_fast_u1500k_g384_f53_q2",
+  "oracle_reported_sha256": "9328751363e7613962600c795a9bb5bbb52761ef948013ed39a7b62e86c1bbf5"
+ },
+ "fast_2049_fast_u1500k_g384_f97_q32": {
+  "fixture": "artifact/fast_u1500k_g384.bin",
+  "topology": 0,
+  "seed": 67,
+  "factor_period": 97,
+  "q": 32,
+  "n_answers": 65536,
+  "answers_sha256": "0c877a7032f6e5569f33c6dd6ed3559209493326cb5c0db40c2294de173520bb",
+  "wall_s": 32.98,
+  "case_id": "fast_2049_fast_u1500k_g384_f97_q32",
+  "oracle_reported_sha256": "0c877a7032f6e5569f33c6dd6ed3559209493326cb5c0db40c2294de173520bb"
+ },
+ "fast_q128_fast_u240k_g256_f53": {
+  "fixture": "artifact/fast_u240k_g256.bin",
+  "topology": 0,
+  "seed": 67,
+  "factor_period": 53,
+  "q": 128,
+  "n_answers": 262144,
+  "answers_sha256": "8c77167140592267d6b50746ea246b38f6b2b2ef16d228ecbab061604d4277f5",
+  "wall_s": 54.85,
+  "case_id": "fast_q128_fast_u240k_g256_f53",
+  "oracle_reported_sha256": "8c77167140592267d6b50746ea246b38f6b2b2ef16d228ecbab061604d4277f5"
+ }
+}

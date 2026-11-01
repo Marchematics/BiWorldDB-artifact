@@ -1,0 +1,8 @@
+{
+ "arm": "scan",
+ "base_id": "real1d_100k",
+ "q": 2,
+ "adhoc_fraction": 100,
+ "unsupported": 1,
+ "reason": "brute-force O(n) scan samples a few ad-hoc queries only; it cannot produce the full mixed answer vector (all-zero/partial output is not an answer)"
+}

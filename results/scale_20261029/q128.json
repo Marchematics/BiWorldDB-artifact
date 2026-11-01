@@ -1,0 +1,24 @@
+{
+ "arm": "rs",
+ "base_id": "syn50k",
+ "fixture": "artifact/syn50k.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 128,
+ "repeat": 0,
+ "n_states": 2049,
+ "n_answers": 262144,
+ "range_scope": "per_state",
+ "answers_fn": "54a340898a225e03",
+ "answers_sha256": "442b34d4881c17df2c1ad3e71b2bbc27b80c33f92fce2d6a3573ed71e1b652e6",
+ "phases_ns": {
+  "load": 56361,
+  "setup": 42846390,
+  "execute": 16745036,
+  "extract": 11388141,
+  "cleanup": 433544
+ },
+ "full_ns": 71469472,
+ "peak_rss_kb": 20180
+}

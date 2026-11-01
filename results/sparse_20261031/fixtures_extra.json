@@ -1,0 +1,13 @@
+{
+ "fixture": "out/fix300k.bin",
+ "rows": 300000,
+ "groups": 61,
+ "span_us": 86400000000,
+ "seed": 20261029,
+ "bytes": 7200796,
+ "sha256": "76a329ba518f936cb86fca0ffee947d4c830d75624b006f87dd8d86675f1e744",
+ "declared_span": [
+  0,
+  86399999999
+ ]
+}

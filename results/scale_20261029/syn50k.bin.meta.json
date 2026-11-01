@@ -1,0 +1,13 @@
+{
+ "fixture": "out/syn50k.bin",
+ "rows": 50000,
+ "groups": 64,
+ "span_us": 86400000000,
+ "seed": 20261029,
+ "bytes": 1200832,
+ "sha256": "84689439fcbd90c480439944e0d7c80de4fb0c25c0774117cd71866bee2d8ac3",
+ "declared_span": [
+  0,
+  86399999999
+ ]
+}

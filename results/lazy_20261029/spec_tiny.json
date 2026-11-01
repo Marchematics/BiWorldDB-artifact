@@ -1,0 +1,26 @@
+[
+ {
+  "key": "tiny_t0_s7_f4_q2",
+  "base_id": "tiny",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 4,
+  "q": 2
+ },
+ {
+  "key": "tiny_t0_s7_f37_q8",
+  "base_id": "tiny",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 8
+ },
+ {
+  "key": "tiny_t2_s7_f37_q2",
+  "base_id": "tiny",
+  "topology": 2,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2
+ }
+]

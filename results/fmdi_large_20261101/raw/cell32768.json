@@ -1,0 +1,83 @@
+{
+ "c0": 32768,
+ "c1": 32768,
+ "groups": 64,
+ "dense_need_bytes": 549789368832,
+ "dense_need_gb": 549.8,
+ "host_mem_total_gb": 540.6,
+ "dense_exceeds_host_total": true,
+ "fmd": {
+  "mode": "fmd",
+  "c": 32768,
+  "max_v": 299999,
+  "exit": 0,
+  "wall_ms": 101698.6,
+  "stderr_tail": "",
+  "rows": 1000000,
+  "c0": 32768,
+  "c1": 32768,
+  "groups": 64,
+  "states": 300000,
+  "q": 2,
+  "factor_period": 37,
+  "topology": 0,
+  "seed": 7,
+  "repeat": 0,
+  "answers_fn": "230c59476eb3d36a",
+  "answers_sha256": "251d7383a790b01e3d0b460da5081e7a9f29be410248fab8979957253ddea281",
+  "n_answers": 599998,
+  "phases_ns": {
+   "gen": 47353212,
+   "build": 1681077999,
+   "execute": 99850160792,
+   "extract": 24553913,
+   "cleanup": 64027782
+  },
+  "full_ns": 101667173698,
+  "peak_rss_kb": 590696,
+  "bytes": {
+   "static_index": 428531500,
+   "product_class": 8589934592,
+   "dynamic": 73884352,
+   "dense_need": 549789368832
+  },
+  "sha": "251d7383a790b01e3d0b460da5081e7a9f29be410248fab8979957253ddea281",
+  "answers_path": "artifact/cell32768_fmd.bin"
+ },
+ "densefen": {
+  "mode": "densefen",
+  "c": 32768,
+  "max_v": null,
+  "exit": 3,
+  "wall_ms": 54.2,
+  "stderr_tail": "INFEASIBLE_MEMORY need_bytes=549789368832 available_bytes=501415387136 groups=64 c0=32768 c1=32768\n",
+  "infeasible": true
+ },
+ "prefix_exact": true,
+ "prefix_compare": {
+  "max_v": 64,
+  "fmd_sha": "ffb7e6bb4df83f8fd988dc84c121795b6dc3c0980026df5d33aedd69de72c3e7",
+  "oracle_sha": "ffb7e6bb4df83f8fd988dc84c121795b6dc3c0980026df5d33aedd69de72c3e7",
+  "fmd_prefix_ms": 1795.715409
+ },
+ "exact": true,
+ "fmd_stats": {
+  "full_ms": 101667.2,
+  "gen_ms": 47.4,
+  "build_ms": 1681.1,
+  "execute_ms": 99850.2,
+  "extract_ms": 24.6,
+  "cleanup_ms": 64.0,
+  "peak_rss_mb": 576.9,
+  "static_bytes": 428531500,
+  "product_bytes": 8589934592,
+  "dynamic_bytes": 73884352,
+  "answers_sha256": "251d7383a790b01e3d0b460da5081e7a9f29be410248fab8979957253ddea281",
+  "sha": "251d7383a790b01e3d0b460da5081e7a9f29be410248fab8979957253ddea281"
+ },
+ "dense_stats": {
+  "exit": 3,
+  "infeasible_memory": true,
+  "stderr_tail": "INFEASIBLE_MEMORY need_bytes=549789368832 available_bytes=501415387136 groups=64 c0=32768 c1=32768\n"
+ }
+}

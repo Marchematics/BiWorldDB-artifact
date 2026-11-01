@@ -1,0 +1,44 @@
+{
+ "v2ci": {
+  "full": 269.7,
+  "setup": 137.7,
+  "execute": 104.1,
+  "extract": 23.7,
+  "rss": 142444
+ },
+ "v3ci": {
+  "full": 243.8,
+  "setup": 111.8,
+  "execute": 104.5,
+  "extract": 24.9,
+  "rss": 140672
+ },
+ "pai": {
+  "full": 309.4,
+  "setup": 155.1,
+  "execute": 123.0,
+  "extract": 24.6,
+  "rss": 125020
+ },
+ "v2ct": {
+  "full": 235.6,
+  "setup": 144.0,
+  "execute": 64.2,
+  "extract": 23.7,
+  "rss": 167280
+ },
+ "v3ct": {
+  "full": 223.0,
+  "setup": 130.4,
+  "execute": 64.5,
+  "extract": 24.7,
+  "rss": 166984
+ },
+ "pat": {
+  "full": 299.7,
+  "setup": 167.8,
+  "execute": 100.9,
+  "extract": 24.6,
+  "rss": 144720
+ }
+}

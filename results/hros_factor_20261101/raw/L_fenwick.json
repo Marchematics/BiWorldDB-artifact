@@ -1,0 +1,25 @@
+{
+ "mode": "fenwick",
+ "rows": 100000,
+ "groups": 4,
+ "states": 2049,
+ "q": 2,
+ "factor_period": 64,
+ "topology": 0,
+ "seed": 7,
+ "repeat": 0,
+ "max_v": 2048,
+ "n_answers": 16384,
+ "answers_fn": "5314bce7ff20bbaf",
+ "answers_sha256": "d6e55cf89f70aed91b08dbf13fb877560a4a73ac743a810fd4142183841ada01",
+ "phases_ns": {
+  "gen": 1046239,
+  "build": 13588899,
+  "execute": 84336401,
+  "extract": 1449075,
+  "cleanup": 536128
+ },
+ "full_ns": 100956742,
+ "peak_rss_kb": 7852,
+ "static_bytes": 2650044
+}

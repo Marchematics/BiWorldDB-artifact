@@ -1,0 +1,2 @@
+{"base": "intel", "topology": 0, "seed": 7, "factor_period": 37, "q": 8, "fid": "intel_t0_s7_f37_q8", "exact": {"pst": true}, "errors": {}, "work_ns": {"pst": 1876392453}}
+{"base": "taxi2024", "topology": 0, "seed": 7, "factor_period": 37, "q": 8, "fid": "taxi2024_t0_s7_f37_q8", "exact": {"pst": true}, "errors": {}, "work_ns": {"pst": 472203306}}

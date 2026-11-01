@@ -1,0 +1,6 @@
+{
+ "policy_sha256": "0459f0fbccbe0a2d0e7167f7caacf11b584cf0e0a431269c0058698bc447bac5",
+ "frozen_utc": "2026-11-01T16:53:11Z",
+ "frozen_before_load_generation": true,
+ "note": "policy file written and sha256-recorded before any new fixture is generated or any new run executed"
+}

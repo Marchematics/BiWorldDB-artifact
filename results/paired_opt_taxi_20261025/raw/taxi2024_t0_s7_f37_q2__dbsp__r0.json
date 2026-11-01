@@ -1,0 +1,16 @@
+{
+ "engine": "dbsp",
+ "dbsp_version": "0.369.0",
+ "events": 10732,
+ "batch": 64,
+ "answers": 4096,
+ "oracle_ok": true,
+ "oracle_detail": "exact match",
+ "phases_ns": {
+  "load": 79070483,
+  "setup": 335671156,
+  "execute": 117713000,
+  "extract": 3265980
+ },
+ "full_ns": 535720619
+}

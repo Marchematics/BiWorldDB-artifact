@@ -1,0 +1,52 @@
+{
+ "v3_u300k_g320": {
+  "fixture": "artifact/v3_u300k_g320.bin",
+  "bytes": 7203904,
+  "sha256": "1a32f7501e19077f70d1d72cc1de0c5b3012d4573d5c8d0923a7e70e171c1c3d",
+  "rows": 300000,
+  "groups": 320,
+  "fixture_seed": 20261111,
+  "span": 86400000000,
+  "role": "v3_unseen"
+ },
+ "v3_u420k_g112": {
+  "fixture": "artifact/v3_u420k_g112.bin",
+  "bytes": 10081408,
+  "sha256": "66d5c3819f3b98578e6166401de1a57504b44bcd564e68523625930f0c6fcc1c",
+  "rows": 420000,
+  "groups": 112,
+  "fixture_seed": 20261112,
+  "span": 86400000000,
+  "role": "v3_unseen"
+ },
+ "v3_u900k_g224": {
+  "fixture": "artifact/v3_u900k_g224.bin",
+  "bytes": 21602752,
+  "sha256": "9f175b8a862a6b11a3bdc53808e51bccf7db931bc646f19e732617b467074cf2",
+  "rows": 900000,
+  "groups": 224,
+  "fixture_seed": 20261113,
+  "span": 86400000000,
+  "role": "v3_unseen"
+ },
+ "v3_u1700k_g416": {
+  "fixture": "artifact/v3_u1700k_g416.bin",
+  "bytes": 40805056,
+  "sha256": "26ceea84b3d28ed4ce56ad3afb06b75d271456d069292a623943a7141f318099",
+  "rows": 1700000,
+  "groups": 416,
+  "fixture_seed": 20261114,
+  "span": 86400000000,
+  "role": "v3_unseen"
+ },
+ "v3_u160k_g160": {
+  "fixture": "artifact/v3_u160k_g160.bin",
+  "bytes": 3841984,
+  "sha256": "43c26785ffe6d7d114fa598d27ea5ed2043f2ee799ad2add94cf195896a04fd2",
+  "rows": 160000,
+  "groups": 160,
+  "fixture_seed": 20261115,
+  "span": 86400000000,
+  "role": "v3_unseen"
+ }
+}

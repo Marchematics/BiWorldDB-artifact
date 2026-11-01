@@ -1,0 +1,2394 @@
+[
+ {
+  "instance_id": "1d_v3_q128_v3_u160k_g160_f59",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "pgdg_align": 58.582,
+   "hybrid_fast": 67.589,
+   "corr": 66.2,
+   "rf": 58.103
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u160k_g160",
+   "rows": 160000,
+   "groups": 160,
+   "states": 2049,
+   "q": 128,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 1000.0,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "rf",
+  "v3_oracle": "rf",
+  "v3_oracle_ms": 58.103,
+  "v3_chosen_forced_ms": 58.103,
+  "v3_planned_ms": 58.007,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 0.9983,
+  "stored_decision": "rf",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "rf",
+  "oracle_ms": 58.103,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "rf",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u1700k_g416_f59_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "rf": 171.337,
+   "pgdg_align": 18.558,
+   "corr": 22.511,
+   "hybrid_fast": 21.632
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u1700k_g416",
+   "rows": 1700000,
+   "groups": 416,
+   "states": 2049,
+   "q": 2,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 4086.5384615384614,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 18.558,
+  "v3_chosen_forced_ms": 18.558,
+  "v3_planned_ms": 19.547,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0533,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 18.558,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u1700k_g416_f59_q8",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "pgdg_align": 32.592,
+   "rf": 174.86,
+   "hybrid_fast": 36.283,
+   "corr": 34.604
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u1700k_g416",
+   "rows": 1700000,
+   "groups": 416,
+   "states": 2049,
+   "q": 8,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 4086.5384615384614,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 32.592,
+  "v3_chosen_forced_ms": 32.592,
+  "v3_planned_ms": 33.843,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0384,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 32.592,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u1700k_g416_f59_q32",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "rf": 195.036,
+   "hybrid_fast": 54.228,
+   "pgdg_align": 49.787,
+   "corr": 54.687
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u1700k_g416",
+   "rows": 1700000,
+   "groups": 416,
+   "states": 2049,
+   "q": 32,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 4086.5384615384614,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 49.787,
+  "v3_chosen_forced_ms": 49.787,
+  "v3_planned_ms": 50.825,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0208,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 49.787,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u1700k_g416_f97_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "corr": 22.434,
+   "hybrid_fast": 21.891,
+   "pgdg_align": 19.95,
+   "rf": 162.815
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u1700k_g416",
+   "rows": 1700000,
+   "groups": 416,
+   "states": 2049,
+   "q": 2,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 97,
+   "factor_edits": 21,
+   "row_edits": 2027,
+   "span": 86400000000,
+   "rows_per_group": 4086.5384615384614,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 19.95,
+  "v3_chosen_forced_ms": 19.95,
+  "v3_planned_ms": 19.372,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 0.971,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 19.95,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u1700k_g416_f97_q8",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "corr": 31.313,
+   "hybrid_fast": 31.756,
+   "pgdg_align": 29.871,
+   "rf": 169.76
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u1700k_g416",
+   "rows": 1700000,
+   "groups": 416,
+   "states": 2049,
+   "q": 8,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 97,
+   "factor_edits": 21,
+   "row_edits": 2027,
+   "span": 86400000000,
+   "rows_per_group": 4086.5384615384614,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 29.871,
+  "v3_chosen_forced_ms": 29.871,
+  "v3_planned_ms": 30.258,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.013,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 29.871,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u1700k_g416_f97_q32",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "corr": 50.513,
+   "rf": 185.899,
+   "hybrid_fast": 49.662,
+   "pgdg_align": 56.805
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u1700k_g416",
+   "rows": 1700000,
+   "groups": 416,
+   "states": 2049,
+   "q": 32,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 97,
+   "factor_edits": 21,
+   "row_edits": 2027,
+   "span": 86400000000,
+   "rows_per_group": 4086.5384615384614,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "hybrid_fast",
+  "v3_oracle": "hybrid_fast",
+  "v3_oracle_ms": 49.662,
+  "v3_chosen_forced_ms": 49.662,
+  "v3_planned_ms": 51.202,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.031,
+  "stored_decision": "hybrid_fast",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "hybrid_fast",
+  "oracle_ms": 49.662,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "hybrid_fast",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u300k_g320_f59_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "rf": 31.058,
+   "corr": 6.992,
+   "pgdg_align": 5.617,
+   "hybrid_fast": 6.958
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u300k_g320",
+   "rows": 300000,
+   "groups": 320,
+   "states": 2049,
+   "q": 2,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 937.5,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 5.617,
+  "v3_chosen_forced_ms": 5.617,
+  "v3_planned_ms": 5.272,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 0.9386,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 5.617,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u300k_g320_f59_q8",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "hybrid_fast": 16.175,
+   "rf": 36.674,
+   "pgdg_align": 14.061,
+   "corr": 16.209
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u300k_g320",
+   "rows": 300000,
+   "groups": 320,
+   "states": 2049,
+   "q": 8,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 937.5,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 14.061,
+  "v3_chosen_forced_ms": 14.061,
+  "v3_planned_ms": 14.63,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0405,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 14.061,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u300k_g320_f59_q32",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "corr": 28.437,
+   "rf": 47.733,
+   "pgdg_align": 24.201,
+   "hybrid_fast": 28.496
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u300k_g320",
+   "rows": 300000,
+   "groups": 320,
+   "states": 2049,
+   "q": 32,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 937.5,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 24.201,
+  "v3_chosen_forced_ms": 24.201,
+  "v3_planned_ms": 24.187,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 0.9994,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 24.201,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_q128_v3_u300k_g320_f59",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "corr": 68.169,
+   "rf": 69.702,
+   "pgdg_align": 59.912,
+   "hybrid_fast": 68.111
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u300k_g320",
+   "rows": 300000,
+   "groups": 320,
+   "states": 2049,
+   "q": 128,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 937.5,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 59.912,
+  "v3_chosen_forced_ms": 59.912,
+  "v3_planned_ms": 60.022,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0018,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 59.912,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u300k_g320_f97_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "pgdg_align": 5.101,
+   "rf": 30.159,
+   "corr": 6.606,
+   "hybrid_fast": 6.756
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u300k_g320",
+   "rows": 300000,
+   "groups": 320,
+   "states": 2049,
+   "q": 2,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 97,
+   "factor_edits": 21,
+   "row_edits": 2027,
+   "span": 86400000000,
+   "rows_per_group": 937.5,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 5.101,
+  "v3_chosen_forced_ms": 5.101,
+  "v3_planned_ms": 5.177,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0149,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 5.101,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u300k_g320_f97_q8",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "pgdg_align": 12.231,
+   "hybrid_fast": 13.47,
+   "rf": 33.62,
+   "corr": 13.564
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u300k_g320",
+   "rows": 300000,
+   "groups": 320,
+   "states": 2049,
+   "q": 8,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 97,
+   "factor_edits": 21,
+   "row_edits": 2027,
+   "span": 86400000000,
+   "rows_per_group": 937.5,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 12.231,
+  "v3_chosen_forced_ms": 12.231,
+  "v3_planned_ms": 12.3,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0056,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 12.231,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u300k_g320_f97_q32",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "corr": 25.636,
+   "rf": 49.493,
+   "hybrid_fast": 25.973,
+   "pgdg_align": 35.076
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u300k_g320",
+   "rows": 300000,
+   "groups": 320,
+   "states": 2049,
+   "q": 32,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 97,
+   "factor_edits": 21,
+   "row_edits": 2027,
+   "span": 86400000000,
+   "rows_per_group": 937.5,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "hybrid_fast",
+  "v3_oracle": "hybrid_fast",
+  "v3_oracle_ms": 25.973,
+  "v3_chosen_forced_ms": 25.973,
+  "v3_planned_ms": 26.352,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0146,
+  "stored_decision": "hybrid_fast",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "hybrid_fast",
+  "oracle_ms": 25.973,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "hybrid_fast",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u420k_g112_f59_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "corr": 8.433,
+   "pgdg_align": 7.561,
+   "rf": 48.611,
+   "hybrid_fast": 8.608
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u420k_g112",
+   "rows": 420000,
+   "groups": 112,
+   "states": 2049,
+   "q": 2,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 3750.0,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 7.561,
+  "v3_chosen_forced_ms": 7.561,
+  "v3_planned_ms": 7.192,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 0.9512,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 7.561,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u420k_g112_f59_q8",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "rf": 52.775,
+   "pgdg_align": 16.795,
+   "hybrid_fast": 18.775,
+   "corr": 18.707
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u420k_g112",
+   "rows": 420000,
+   "groups": 112,
+   "states": 2049,
+   "q": 8,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 3750.0,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 16.795,
+  "v3_chosen_forced_ms": 16.795,
+  "v3_planned_ms": 17.547,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0448,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 16.795,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u420k_g112_f59_q32",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "corr": 32.869,
+   "pgdg_align": 31.336,
+   "hybrid_fast": 33.214,
+   "rf": 64.42
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u420k_g112",
+   "rows": 420000,
+   "groups": 112,
+   "states": 2049,
+   "q": 32,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 3750.0,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 31.336,
+  "v3_chosen_forced_ms": 31.336,
+  "v3_planned_ms": 30.713,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 0.9801,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 31.336,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u420k_g112_f97_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "rf": 45.325,
+   "pgdg_align": 6.839,
+   "hybrid_fast": 8.269,
+   "corr": 8.132
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u420k_g112",
+   "rows": 420000,
+   "groups": 112,
+   "states": 2049,
+   "q": 2,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 97,
+   "factor_edits": 21,
+   "row_edits": 2027,
+   "span": 86400000000,
+   "rows_per_group": 3750.0,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 6.839,
+  "v3_chosen_forced_ms": 6.839,
+  "v3_planned_ms": 6.879,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0058,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 6.839,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u420k_g112_f97_q8",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "rf": 48.573,
+   "corr": 15.299,
+   "hybrid_fast": 15.139,
+   "pgdg_align": 14.28
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u420k_g112",
+   "rows": 420000,
+   "groups": 112,
+   "states": 2049,
+   "q": 8,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 97,
+   "factor_edits": 21,
+   "row_edits": 2027,
+   "span": 86400000000,
+   "rows_per_group": 3750.0,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 14.28,
+  "v3_chosen_forced_ms": 14.28,
+  "v3_planned_ms": 14.424,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0101,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 14.28,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u420k_g112_f97_q32",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "rf": 60.52,
+   "corr": 29.276,
+   "hybrid_fast": 28.7,
+   "pgdg_align": 37.462
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u420k_g112",
+   "rows": 420000,
+   "groups": 112,
+   "states": 2049,
+   "q": 32,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 97,
+   "factor_edits": 21,
+   "row_edits": 2027,
+   "span": 86400000000,
+   "rows_per_group": 3750.0,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "hybrid_fast",
+  "v3_oracle": "hybrid_fast",
+  "v3_oracle_ms": 28.7,
+  "v3_chosen_forced_ms": 28.7,
+  "v3_planned_ms": 29.899,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0418,
+  "stored_decision": "hybrid_fast",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "hybrid_fast",
+  "oracle_ms": 28.7,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "hybrid_fast",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_q128_v3_u420k_g112_f97",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "corr": 67.009,
+   "hybrid_fast": 67.578,
+   "rf": 84.792,
+   "pgdg_align": 63.282
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u420k_g112",
+   "rows": 420000,
+   "groups": 112,
+   "states": 2049,
+   "q": 128,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 97,
+   "factor_edits": 21,
+   "row_edits": 2027,
+   "span": 86400000000,
+   "rows_per_group": 3750.0,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 63.282,
+  "v3_chosen_forced_ms": 63.282,
+  "v3_planned_ms": 63.221,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 0.999,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 63.282,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u900k_g224_f59_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "rf": 91.84,
+   "hybrid_fast": 13.802,
+   "pgdg_align": 11.847,
+   "corr": 14.125
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u900k_g224",
+   "rows": 900000,
+   "groups": 224,
+   "states": 2049,
+   "q": 2,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 4017.8571428571427,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 11.847,
+  "v3_chosen_forced_ms": 11.847,
+  "v3_planned_ms": 12.305,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0387,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 11.847,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u900k_g224_f59_q8",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "rf": 98.568,
+   "pgdg_align": 22.822,
+   "hybrid_fast": 24.989,
+   "corr": 25.636
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u900k_g224",
+   "rows": 900000,
+   "groups": 224,
+   "states": 2049,
+   "q": 8,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 4017.8571428571427,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 22.822,
+  "v3_chosen_forced_ms": 22.822,
+  "v3_planned_ms": 23.255,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.019,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 22.822,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u900k_g224_f59_q32",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "hybrid_fast": 41.028,
+   "corr": 41.127,
+   "rf": 112.03,
+   "pgdg_align": 38.173
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u900k_g224",
+   "rows": 900000,
+   "groups": 224,
+   "states": 2049,
+   "q": 32,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 34,
+   "row_edits": 2014,
+   "span": 86400000000,
+   "rows_per_group": 4017.8571428571427,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 38.173,
+  "v3_chosen_forced_ms": 38.173,
+  "v3_planned_ms": 38.698,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0138,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 38.173,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u900k_g224_f97_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "hybrid_fast": 13.509,
+   "rf": 88.714,
+   "pgdg_align": 11.767,
+   "corr": 13.272
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u900k_g224",
+   "rows": 900000,
+   "groups": 224,
+   "states": 2049,
+   "q": 2,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 97,
+   "factor_edits": 21,
+   "row_edits": 2027,
+   "span": 86400000000,
+   "rows_per_group": 4017.8571428571427,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 11.767,
+  "v3_chosen_forced_ms": 11.767,
+  "v3_planned_ms": 11.357,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 0.9652,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 11.767,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u900k_g224_f97_q8",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "rf": 93.576,
+   "pgdg_align": 20.024,
+   "hybrid_fast": 22.076,
+   "corr": 20.978
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u900k_g224",
+   "rows": 900000,
+   "groups": 224,
+   "states": 2049,
+   "q": 8,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 97,
+   "factor_edits": 21,
+   "row_edits": 2027,
+   "span": 86400000000,
+   "rows_per_group": 4017.8571428571427,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "pgdg_align",
+  "v3_oracle": "pgdg_align",
+  "v3_oracle_ms": 20.024,
+  "v3_chosen_forced_ms": 20.024,
+  "v3_planned_ms": 20.714,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0345,
+  "stored_decision": "pgdg_align",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "pgdg_align",
+  "oracle_ms": 20.024,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "pgdg_align",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_2049_v3_u900k_g224_f97_q32",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "corr": 36.973,
+   "rf": 107.695,
+   "pgdg_align": 45.12,
+   "hybrid_fast": 36.871
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u900k_g224",
+   "rows": 900000,
+   "groups": 224,
+   "states": 2049,
+   "q": 32,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 97,
+   "factor_edits": 21,
+   "row_edits": 2027,
+   "span": 86400000000,
+   "rows_per_group": 4017.8571428571427,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "hybrid_fast",
+  "v3_oracle": "hybrid_fast",
+  "v3_oracle_ms": 36.871,
+  "v3_chosen_forced_ms": 36.871,
+  "v3_planned_ms": 37.87,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0271,
+  "stored_decision": "hybrid_fast",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "hybrid_fast",
+  "oracle_ms": 36.871,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "hybrid_fast",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_300k_v3_u1700k_g416_f59_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "pgdg_align": 272.059,
+   "rf": 3883.585,
+   "hybrid_fast": 1102.153,
+   "batch_deep": 244.222,
+   "corr": 528.395
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep",
+   "corr"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u1700k_g416",
+   "rows": 1700000,
+   "groups": 416,
+   "states": 300000,
+   "q": 2,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 5084,
+   "row_edits": 294915,
+   "span": 86400000000,
+   "rows_per_group": 4086.5384615384614,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "batch_deep",
+  "v3_oracle": "batch_deep",
+  "v3_oracle_ms": 244.222,
+  "v3_chosen_forced_ms": 244.222,
+  "v3_planned_ms": 240.994,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 0.9868,
+  "stored_decision": "batch_deep",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "batch_deep",
+  "oracle_ms": 244.222,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "batch_deep",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_300k_v3_u300k_g320_f59_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "hybrid_fast": 900.107,
+   "rf": 1032.502,
+   "pgdg_align": 240.298,
+   "batch_deep": 178.356,
+   "corr": 467.428
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep",
+   "corr"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u300k_g320",
+   "rows": 300000,
+   "groups": 320,
+   "states": 300000,
+   "q": 2,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 5084,
+   "row_edits": 294915,
+   "span": 86400000000,
+   "rows_per_group": 937.5,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "batch_deep",
+  "v3_oracle": "batch_deep",
+  "v3_oracle_ms": 178.356,
+  "v3_chosen_forced_ms": 178.356,
+  "v3_planned_ms": 178.803,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0025,
+  "stored_decision": "batch_deep",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "batch_deep",
+  "oracle_ms": 178.356,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "batch_deep",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_300k_v3_u300k_g320_t1_f59_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "corr": 404.226,
+   "pgdg_align": 250.247,
+   "hybrid_fast": 480.888,
+   "rf": 944.014,
+   "batch_deep": 234.273
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep",
+   "corr"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u300k_g320",
+   "rows": 300000,
+   "groups": 320,
+   "states": 300000,
+   "q": 2,
+   "topology": 1,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 5084,
+   "row_edits": 294915,
+   "span": 86400000000,
+   "rows_per_group": 937.5,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "batch_deep",
+  "v3_oracle": "batch_deep",
+  "v3_oracle_ms": 234.273,
+  "v3_chosen_forced_ms": 234.273,
+  "v3_planned_ms": 234.2,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 0.9997,
+  "stored_decision": "batch_deep",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "batch_deep",
+  "oracle_ms": 234.273,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "batch_deep",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_300k_v3_u300k_g320_t2_f59_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "pgdg_align": 239.189,
+   "hybrid_fast": 440.33,
+   "rf": 923.744,
+   "batch_deep": 230.614,
+   "corr": 378.487
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep",
+   "corr"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u300k_g320",
+   "rows": 300000,
+   "groups": 320,
+   "states": 300000,
+   "q": 2,
+   "topology": 2,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 5084,
+   "row_edits": 294915,
+   "span": 86400000000,
+   "rows_per_group": 937.5,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "batch_deep",
+  "v3_oracle": "batch_deep",
+  "v3_oracle_ms": 230.614,
+  "v3_chosen_forced_ms": 230.614,
+  "v3_planned_ms": 230.815,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0009,
+  "stored_decision": "batch_deep",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "batch_deep",
+  "oracle_ms": 230.614,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "batch_deep",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_300k_v3_u420k_g112_f59_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "pgdg_align": 245.603,
+   "hybrid_fast": 667.044,
+   "batch_deep": 190.776,
+   "corr": 521.016,
+   "rf": 1967.7
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep",
+   "corr"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u420k_g112",
+   "rows": 420000,
+   "groups": 112,
+   "states": 300000,
+   "q": 2,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 5084,
+   "row_edits": 294915,
+   "span": 86400000000,
+   "rows_per_group": 3750.0,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "batch_deep",
+  "v3_oracle": "batch_deep",
+  "v3_oracle_ms": 190.776,
+  "v3_chosen_forced_ms": 190.776,
+  "v3_planned_ms": 192.905,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0112,
+  "stored_decision": "batch_deep",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "batch_deep",
+  "oracle_ms": 190.776,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "batch_deep",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_300k_v3_u900k_g224_f59_q2",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "corr": 515.132,
+   "pgdg_align": 254.439,
+   "hybrid_fast": 813.587,
+   "batch_deep": 208.86,
+   "rf": 2589.023
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep",
+   "corr"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u900k_g224",
+   "rows": 900000,
+   "groups": 224,
+   "states": 300000,
+   "q": 2,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 5084,
+   "row_edits": 294915,
+   "span": 86400000000,
+   "rows_per_group": 4017.8571428571427,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "batch_deep",
+  "v3_oracle": "batch_deep",
+  "v3_oracle_ms": 208.86,
+  "v3_chosen_forced_ms": 208.86,
+  "v3_planned_ms": 209.96,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 1.0053,
+  "stored_decision": "batch_deep",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "batch_deep",
+  "oracle_ms": 208.86,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "batch_deep",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "1d_v3_300k_v3_u900k_g224_f59_q8",
+  "query_class": "1d_declared",
+  "backend_times": {
+   "rf": 3293.142,
+   "pgdg_align": 25684.855,
+   "hybrid_fast": 5075.069,
+   "batch_deep": 5511.186,
+   "corr": 5069.704
+  },
+  "extrapolated": [],
+  "eligible": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep"
+  ],
+  "exact": true,
+  "features": {
+   "base": "v3_u900k_g224",
+   "rows": 900000,
+   "groups": 224,
+   "states": 300000,
+   "q": 8,
+   "topology": 0,
+   "seed": 71,
+   "factor_period": 59,
+   "factor_edits": 5084,
+   "row_edits": 294915,
+   "span": 86400000000,
+   "rows_per_group": 4017.8571428571427,
+   "per_state": 1,
+   "dense_predicate": 0
+  },
+  "v3_chosen": "rf",
+  "v3_oracle": "rf",
+  "v3_oracle_ms": 3293.142,
+  "v3_chosen_forced_ms": 3293.142,
+  "v3_planned_ms": 3262.959,
+  "v3_route_correct": true,
+  "v3_regret_routing": 1.0,
+  "v3_regret_planned": 0.9908,
+  "stored_decision": "rf",
+  "evidence": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json",
+  "oracle_backend": "rf",
+  "oracle_ms": 3293.142,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "rf",
+   "gate": "frozen_v3_policy",
+   "reason": "1D declared additive workload: frozen v3 selector (sha-pinned)"
+  }
+ },
+ {
+  "instance_id": "2d_c64_g8",
+  "query_class": "2d_rectangle",
+  "backend_times": {
+   "fmd": 1623.5,
+   "naive2d": 843.68,
+   "full2d": 624969.0
+  },
+  "extrapolated": [
+   "full2d"
+  ],
+  "eligible": [
+   "fmd",
+   "naive2d",
+   "full2d"
+  ],
+  "exact": true,
+  "features": {
+   "rows": 1000000,
+   "states": 300000,
+   "q": 2,
+   "groups": 8,
+   "c0": 64,
+   "c1": 64,
+   "product_entries": 32768,
+   "product": 4096
+  },
+  "evidence": "results/fmd_20261101/summary.json#bench.configs.c64_g8",
+  "v3_oracle": null,
+  "oracle_backend": "naive2d",
+  "oracle_ms": 843.68,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "naive2d",
+   "gate": "2d_product_gate",
+   "reason": "G*C0*C1=32768 <= product threshold 262144 -> naive2d"
+  }
+ },
+ {
+  "instance_id": "2d_c64_g64",
+  "query_class": "2d_rectangle",
+  "backend_times": {
+   "fmd": 10182.28,
+   "naive2d": 1134.28,
+   "full2d": 637027.7
+  },
+  "extrapolated": [
+   "full2d"
+  ],
+  "eligible": [
+   "fmd",
+   "naive2d",
+   "full2d"
+  ],
+  "exact": true,
+  "features": {
+   "rows": 1000000,
+   "states": 300000,
+   "q": 2,
+   "groups": 64,
+   "c0": 64,
+   "c1": 64,
+   "product_entries": 262144,
+   "product": 4096
+  },
+  "evidence": "results/fmd_20261101/summary.json#bench.configs.c64_g64",
+  "v3_oracle": null,
+  "oracle_backend": "naive2d",
+  "oracle_ms": 1134.28,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "naive2d",
+   "gate": "2d_product_gate",
+   "reason": "G*C0*C1=262144 <= product threshold 262144 -> naive2d"
+  }
+ },
+ {
+  "instance_id": "2d_c1024_g8",
+  "query_class": "2d_rectangle",
+  "backend_times": {
+   "fmd": 9892.75,
+   "naive2d": 250979.0675,
+   "full2d": 1526818.7
+  },
+  "extrapolated": [
+   "full2d",
+   "naive2d"
+  ],
+  "eligible": [
+   "fmd",
+   "naive2d",
+   "full2d"
+  ],
+  "exact": true,
+  "features": {
+   "rows": 1000000,
+   "states": 300000,
+   "q": 2,
+   "groups": 8,
+   "c0": 1024,
+   "c1": 1024,
+   "product_entries": 8388608,
+   "product": 1048576
+  },
+  "evidence": "results/fmd_20261101/summary.json#bench.configs.c1024_g8",
+  "v3_oracle": null,
+  "oracle_backend": "fmd",
+  "oracle_ms": 9892.75,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "fmd",
+   "gate": "2d_product_gate",
+   "reason": "G*C0*C1=8388608 > product threshold 262144 -> fmd"
+  }
+ },
+ {
+  "instance_id": "2d_c1024_g64",
+  "query_class": "2d_rectangle",
+  "backend_times": {
+   "fmd": 56713.51,
+   "naive2d": 280731.87450000003,
+   "full2d": 1569909.8
+  },
+  "extrapolated": [
+   "full2d",
+   "naive2d"
+  ],
+  "eligible": [
+   "fmd",
+   "naive2d",
+   "full2d"
+  ],
+  "exact": true,
+  "features": {
+   "rows": 1000000,
+   "states": 300000,
+   "q": 2,
+   "groups": 64,
+   "c0": 1024,
+   "c1": 1024,
+   "product_entries": 67108864,
+   "product": 1048576
+  },
+  "evidence": "results/fmd_20261101/summary.json#bench.configs.c1024_g64",
+  "v3_oracle": null,
+  "oracle_backend": "fmd",
+  "oracle_ms": 56713.51,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "fmd",
+   "gate": "2d_product_gate",
+   "reason": "G*C0*C1=67108864 > product threshold 262144 -> fmd"
+  }
+ },
+ {
+  "instance_id": "hol_A_100k_2049_q2",
+  "query_class": "holistic",
+  "backend_times": {
+   "hros": 29.329,
+   "rebuild_hros": 5871.005,
+   "sortall_hros": 9775.704
+  },
+  "extrapolated": [],
+  "sampled_reference": [
+   "rebuild_hros"
+  ],
+  "eligible": [
+   "hros"
+  ],
+  "exact": true,
+  "features": {
+   "rows": 100408,
+   "states": 2049,
+   "q": null,
+   "groups": null
+  },
+  "evidence": "results/hros_20261101/summary.json#configs.A_100k_2049_q2",
+  "v3_oracle": null,
+  "oracle_backend": "hros",
+  "oracle_ms": 29.329,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "hros",
+   "gate": "holistic_only_exact_backend",
+   "reason": "median/distinct over ranges: HROS is the only exact holistic backend"
+  }
+ },
+ {
+  "instance_id": "hol_A_100k_2049_q8",
+  "query_class": "holistic",
+  "backend_times": {
+   "hros": 35.229,
+   "rebuild_hros": 6722.44,
+   "sortall_hros": 9777.606
+  },
+  "extrapolated": [],
+  "sampled_reference": [
+   "rebuild_hros"
+  ],
+  "eligible": [
+   "hros"
+  ],
+  "exact": true,
+  "features": {
+   "rows": 100408,
+   "states": 2049,
+   "q": null,
+   "groups": null
+  },
+  "evidence": "results/hros_20261101/summary.json#configs.A_100k_2049_q8",
+  "v3_oracle": null,
+  "oracle_backend": "hros",
+  "oracle_ms": 35.229,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "hros",
+   "gate": "holistic_only_exact_backend",
+   "reason": "median/distinct over ranges: HROS is the only exact holistic backend"
+  }
+ },
+ {
+  "instance_id": "hol_B_300k_2049_q2",
+  "query_class": "holistic",
+  "backend_times": {
+   "hros": 63.395,
+   "rebuild_hros": 9776.845,
+   "sortall_hros": 30100.482
+  },
+  "extrapolated": [],
+  "sampled_reference": [
+   "rebuild_hros"
+  ],
+  "eligible": [
+   "hros"
+  ],
+  "exact": true,
+  "features": {
+   "rows": 300408,
+   "states": 2049,
+   "q": null,
+   "groups": null
+  },
+  "evidence": "results/hros_20261101/summary.json#configs.B_300k_2049_q2",
+  "v3_oracle": null,
+  "oracle_backend": "hros",
+  "oracle_ms": 63.395,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "hros",
+   "gate": "holistic_only_exact_backend",
+   "reason": "median/distinct over ranges: HROS is the only exact holistic backend"
+  }
+ },
+ {
+  "instance_id": "hol_B_300k_2049_q8",
+  "query_class": "holistic",
+  "backend_times": {
+   "hros": 68.719,
+   "rebuild_hros": 11841.766,
+   "sortall_hros": 30108.002
+  },
+  "extrapolated": [],
+  "sampled_reference": [
+   "rebuild_hros"
+  ],
+  "eligible": [
+   "hros"
+  ],
+  "exact": true,
+  "features": {
+   "rows": 300408,
+   "states": 2049,
+   "q": null,
+   "groups": null
+  },
+  "evidence": "results/hros_20261101/summary.json#configs.B_300k_2049_q8",
+  "v3_oracle": null,
+  "oracle_backend": "hros",
+  "oracle_ms": 68.719,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "hros",
+   "gate": "holistic_only_exact_backend",
+   "reason": "median/distinct over ranges: HROS is the only exact holistic backend"
+  }
+ },
+ {
+  "instance_id": "hol_C_1m_2049_q2",
+  "query_class": "holistic",
+  "backend_times": {
+   "hros": 169.399,
+   "rebuild_hros": 742.868,
+   "sortall_hros": 3179.448
+  },
+  "extrapolated": [],
+  "sampled_reference": [
+   "rebuild_hros"
+  ],
+  "eligible": [
+   "hros"
+  ],
+  "exact": true,
+  "features": {
+   "rows": 1000408,
+   "states": 2049,
+   "q": null,
+   "groups": null
+  },
+  "evidence": "results/hros_20261101/summary.json#configs.C_1m_2049_q2",
+  "v3_oracle": null,
+  "oracle_backend": "hros",
+  "oracle_ms": 169.399,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "hros",
+   "gate": "holistic_only_exact_backend",
+   "reason": "median/distinct over ranges: HROS is the only exact holistic backend"
+  }
+ },
+ {
+  "instance_id": "hol_C_1m_2049_q8",
+  "query_class": "holistic",
+  "backend_times": {
+   "hros": 174.796,
+   "rebuild_hros": 950.518,
+   "sortall_hros": 3179.035
+  },
+  "extrapolated": [],
+  "sampled_reference": [
+   "rebuild_hros"
+  ],
+  "eligible": [
+   "hros"
+  ],
+  "exact": true,
+  "features": {
+   "rows": 1000408,
+   "states": 2049,
+   "q": null,
+   "groups": null
+  },
+  "evidence": "results/hros_20261101/summary.json#configs.C_1m_2049_q8",
+  "v3_oracle": null,
+  "oracle_backend": "hros",
+  "oracle_ms": 174.796,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "hros",
+   "gate": "holistic_only_exact_backend",
+   "reason": "median/distinct over ranges: HROS is the only exact holistic backend"
+  }
+ },
+ {
+  "instance_id": "hol_D_100k_300k_q2",
+  "query_class": "holistic",
+  "backend_times": {
+   "hros": 1265.453,
+   "rebuild_hros": 287.763,
+   "sortall_hros": 436.379
+  },
+  "extrapolated": [],
+  "sampled_reference": [
+   "rebuild_hros"
+  ],
+  "eligible": [
+   "hros"
+  ],
+  "exact": true,
+  "features": {
+   "rows": 158366,
+   "states": 300000,
+   "q": null,
+   "groups": null
+  },
+  "evidence": "results/hros_20261101/summary.json#configs.D_100k_300k_q2",
+  "v3_oracle": null,
+  "oracle_backend": "hros",
+  "oracle_ms": 1265.453,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "hros",
+   "gate": "holistic_only_exact_backend",
+   "reason": "median/distinct over ranges: HROS is the only exact holistic backend"
+  }
+ },
+ {
+  "instance_id": "hol_D_300k_300k_q2",
+  "query_class": "holistic",
+  "backend_times": {
+   "hros": 1310.472,
+   "rebuild_hros": 473.951,
+   "sortall_hros": 1074.619
+  },
+  "extrapolated": [],
+  "sampled_reference": [
+   "rebuild_hros"
+  ],
+  "eligible": [
+   "hros"
+  ],
+  "exact": true,
+  "features": {
+   "rows": 358366,
+   "states": 300000,
+   "q": null,
+   "groups": null
+  },
+  "evidence": "results/hros_20261101/summary.json#configs.D_300k_300k_q2",
+  "v3_oracle": null,
+  "oracle_backend": "hros",
+  "oracle_ms": 1310.472,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "hros",
+   "gate": "holistic_only_exact_backend",
+   "reason": "median/distinct over ranges: HROS is the only exact holistic backend"
+  }
+ },
+ {
+  "instance_id": "adhoc_intel_f000",
+  "query_class": "adhoc_1d",
+  "backend_times": {
+   "deri_union": 201.7,
+   "declared_v7": 129.2
+  },
+  "extrapolated": [],
+  "eligible": [
+   "declared_v7",
+   "deri_union"
+  ],
+  "exact": true,
+  "features": {
+   "adhoc_fraction": 0,
+   "base": "intel",
+   "ratio_v7_union": 1.561
+  },
+  "evidence": "results/deri_20261101/summary.json#union.u4_intel_0",
+  "v3_oracle": null,
+  "oracle_backend": "declared_v7",
+  "oracle_ms": 129.2,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "declared_v7",
+   "gate": "adhoc_fraction_gate",
+   "reason": "ad-hoc fraction 0 -> declared_v7"
+  }
+ },
+ {
+  "instance_id": "adhoc_intel_f100",
+  "query_class": "adhoc_1d",
+  "backend_times": {
+   "deri_union": 170.7
+  },
+  "extrapolated": [],
+  "eligible": [
+   "deri_union"
+  ],
+  "exact": true,
+  "features": {
+   "adhoc_fraction": 100,
+   "base": "intel",
+   "ratio_v7_union": 1.321
+  },
+  "evidence": "results/deri_20261101/summary.json#union.u4_intel_100",
+  "v3_oracle": null,
+  "oracle_backend": "deri_union",
+  "oracle_ms": 170.7,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "deri_union",
+   "gate": "adhoc_fraction_gate",
+   "reason": "ad-hoc fraction 100 -> deri_union"
+  }
+ },
+ {
+  "instance_id": "adhoc_intel_f020",
+  "query_class": "adhoc_1d",
+  "backend_times": {
+   "deri_union": 236.6
+  },
+  "extrapolated": [],
+  "eligible": [
+   "deri_union"
+  ],
+  "exact": true,
+  "features": {
+   "adhoc_fraction": 20,
+   "base": "intel",
+   "ratio_v7_union": 1.831
+  },
+  "evidence": "results/deri_20261101/summary.json#union.u4_intel_20",
+  "v3_oracle": null,
+  "oracle_backend": "deri_union",
+  "oracle_ms": 236.6,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "deri_union",
+   "gate": "adhoc_fraction_gate",
+   "reason": "ad-hoc fraction 20 -> deri_union"
+  }
+ },
+ {
+  "instance_id": "adhoc_intel_f050",
+  "query_class": "adhoc_1d",
+  "backend_times": {
+   "deri_union": 245.2
+  },
+  "extrapolated": [],
+  "eligible": [
+   "deri_union"
+  ],
+  "exact": true,
+  "features": {
+   "adhoc_fraction": 50,
+   "base": "intel",
+   "ratio_v7_union": 1.898
+  },
+  "evidence": "results/deri_20261101/summary.json#union.u4_intel_50",
+  "v3_oracle": null,
+  "oracle_backend": "deri_union",
+  "oracle_ms": 245.2,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "deri_union",
+   "gate": "adhoc_fraction_gate",
+   "reason": "ad-hoc fraction 50 -> deri_union"
+  }
+ },
+ {
+  "instance_id": "adhoc_taxi2024_f000",
+  "query_class": "adhoc_1d",
+  "backend_times": {
+   "deri_union": 216.4,
+   "declared_v7": 146.2
+  },
+  "extrapolated": [],
+  "eligible": [
+   "declared_v7",
+   "deri_union"
+  ],
+  "exact": true,
+  "features": {
+   "adhoc_fraction": 0,
+   "base": "taxi2024",
+   "ratio_v7_union": 1.481
+  },
+  "evidence": "results/deri_20261101/summary.json#union.u4_taxi2024_0",
+  "v3_oracle": null,
+  "oracle_backend": "declared_v7",
+  "oracle_ms": 146.2,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "declared_v7",
+   "gate": "adhoc_fraction_gate",
+   "reason": "ad-hoc fraction 0 -> declared_v7"
+  }
+ },
+ {
+  "instance_id": "adhoc_taxi2024_f100",
+  "query_class": "adhoc_1d",
+  "backend_times": {
+   "deri_union": 204.2
+  },
+  "extrapolated": [],
+  "eligible": [
+   "deri_union"
+  ],
+  "exact": true,
+  "features": {
+   "adhoc_fraction": 100,
+   "base": "taxi2024",
+   "ratio_v7_union": 1.397
+  },
+  "evidence": "results/deri_20261101/summary.json#union.u4_taxi2024_100",
+  "v3_oracle": null,
+  "oracle_backend": "deri_union",
+  "oracle_ms": 204.2,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "deri_union",
+   "gate": "adhoc_fraction_gate",
+   "reason": "ad-hoc fraction 100 -> deri_union"
+  }
+ },
+ {
+  "instance_id": "adhoc_taxi2024_f020",
+  "query_class": "adhoc_1d",
+  "backend_times": {
+   "deri_union": 251.7
+  },
+  "extrapolated": [],
+  "eligible": [
+   "deri_union"
+  ],
+  "exact": true,
+  "features": {
+   "adhoc_fraction": 20,
+   "base": "taxi2024",
+   "ratio_v7_union": 1.722
+  },
+  "evidence": "results/deri_20261101/summary.json#union.u4_taxi2024_20",
+  "v3_oracle": null,
+  "oracle_backend": "deri_union",
+  "oracle_ms": 251.7,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "deri_union",
+   "gate": "adhoc_fraction_gate",
+   "reason": "ad-hoc fraction 20 -> deri_union"
+  }
+ },
+ {
+  "instance_id": "adhoc_taxi2024_f050",
+  "query_class": "adhoc_1d",
+  "backend_times": {
+   "deri_union": 254.4
+  },
+  "extrapolated": [],
+  "eligible": [
+   "deri_union"
+  ],
+  "exact": true,
+  "features": {
+   "adhoc_fraction": 50,
+   "base": "taxi2024",
+   "ratio_v7_union": 1.741
+  },
+  "evidence": "results/deri_20261101/summary.json#union.u4_taxi2024_50",
+  "v3_oracle": null,
+  "oracle_backend": "deri_union",
+  "oracle_ms": 254.4,
+  "oracle_extrapolated": false,
+  "router": {
+   "chosen": "deri_union",
+   "gate": "adhoc_fraction_gate",
+   "reason": "ad-hoc fraction 50 -> deri_union"
+  }
+ }
+]

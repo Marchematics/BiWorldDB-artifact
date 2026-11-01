@@ -1,0 +1,41 @@
+{
+ "arm": "sparse",
+ "arm_mode": "sparse",
+ "base_id": "syn10m",
+ "fixture": "artifact/syn10m_fullspan.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 32,
+ "repeat": 7,
+ "n_states": 2049,
+ "n_answers": 65536,
+ "range_scope": "per_state",
+ "cold": true,
+ "preload_fadvise_dontneed": true,
+ "sparse_base_env": "1",
+ "answers_fn": "d66cb903e872ea36",
+ "answers_sha256": "f3a3c3ef15b1bec7e812dc5af1ffaf75f1b821fa5a258118c186234e10587e8b",
+ "phases_ns": {
+  "load": 547500,
+  "setup": 567687121,
+  "execute": 26363766,
+  "extract": 3667921,
+  "cleanup": 10474739
+ },
+ "full_ns": 608741047,
+ "peak_rss_kb": 252224,
+ "base_stats": {
+  "mode": "sparse",
+  "n_active": 55,
+  "classes": 124654,
+  "nnz": 593716,
+  "csr_bytes": 6035852,
+  "dense_bytes": 54847760,
+  "bitmap_bytes": 857120,
+  "lut_bytes": 428780,
+  "transient_bytes": 0,
+  "est_nnz": 0,
+  "build_us": 310818
+ }
+}

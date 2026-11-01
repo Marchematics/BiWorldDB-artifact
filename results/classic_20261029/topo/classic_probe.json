@@ -1,0 +1,460 @@
+{
+ "rows": [
+  {
+   "base": "intel",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 2,
+   "fid": "intel_t1_s7_f4_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 806175189,
+    "rs": 1931975323,
+    "hybrid": 61311955
+   }
+  },
+  {
+   "base": "intel",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "fid": "intel_t1_s7_f4_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 809753430,
+    "rs": 1914241024,
+    "hybrid": 100758806
+   }
+  },
+  {
+   "base": "intel",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "fid": "intel_t1_s7_f4_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 814628114,
+    "rs": 1934551880,
+    "hybrid": 152475588
+   }
+  },
+  {
+   "base": "intel",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 2,
+   "fid": "intel_t1_s7_f37_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 307104180,
+    "rs": 497605354,
+    "hybrid": 62384890
+   }
+  },
+  {
+   "base": "intel",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "intel_t1_s7_f37_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 303433529,
+    "rs": 501565781,
+    "hybrid": 99849578
+   }
+  },
+  {
+   "base": "intel",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "fid": "intel_t1_s7_f37_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 308935123,
+    "rs": 518112109,
+    "hybrid": 149099838
+   }
+  },
+  {
+   "base": "intel",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 2,
+   "fid": "intel_t2_s7_f4_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 814008855,
+    "rs": 1857993237,
+    "hybrid": 61214167
+   }
+  },
+  {
+   "base": "intel",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "fid": "intel_t2_s7_f4_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 802920118,
+    "rs": 1867597392,
+    "hybrid": 99221293
+   }
+  },
+  {
+   "base": "intel",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "fid": "intel_t2_s7_f4_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 820756707,
+    "rs": 1973588927,
+    "hybrid": 147153501
+   }
+  },
+  {
+   "base": "intel",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 2,
+   "fid": "intel_t2_s7_f37_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 306348653,
+    "rs": 560830448,
+    "hybrid": 60780911
+   }
+  },
+  {
+   "base": "intel",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "intel_t2_s7_f37_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 314183233,
+    "rs": 542029227,
+    "hybrid": 99199883
+   }
+  },
+  {
+   "base": "intel",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "fid": "intel_t2_s7_f37_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 310773348,
+    "rs": 727668907,
+    "hybrid": 147459605
+   }
+  },
+  {
+   "base": "taxi2024",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 2,
+   "fid": "taxi2024_t1_s7_f4_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 701910598,
+    "rs": 1202477008,
+    "hybrid": 83115543
+   }
+  },
+  {
+   "base": "taxi2024",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "fid": "taxi2024_t1_s7_f4_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 708217412,
+    "rs": 1204754175,
+    "hybrid": 156351861
+   }
+  },
+  {
+   "base": "taxi2024",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "fid": "taxi2024_t1_s7_f4_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 704500719,
+    "rs": 1208737682,
+    "hybrid": 287855395
+   }
+  },
+  {
+   "base": "taxi2024",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 2,
+   "fid": "taxi2024_t1_s7_f37_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 260784867,
+    "rs": 285890693,
+    "hybrid": 86854268
+   }
+  },
+  {
+   "base": "taxi2024",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "taxi2024_t1_s7_f37_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 261004744,
+    "rs": 288640199,
+    "hybrid": 155193191
+   }
+  },
+  {
+   "base": "taxi2024",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "fid": "taxi2024_t1_s7_f37_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 274773539,
+    "rs": 293223546,
+    "hybrid": 277482365
+   }
+  },
+  {
+   "base": "taxi2024",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 2,
+   "fid": "taxi2024_t2_s7_f4_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 701960516,
+    "rs": 1198910389,
+    "hybrid": 84029591
+   }
+  },
+  {
+   "base": "taxi2024",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "fid": "taxi2024_t2_s7_f4_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 707563722,
+    "rs": 1190601477,
+    "hybrid": 156747876
+   }
+  },
+  {
+   "base": "taxi2024",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "fid": "taxi2024_t2_s7_f4_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 707203029,
+    "rs": 1492592859,
+    "hybrid": 280871108
+   }
+  },
+  {
+   "base": "taxi2024",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 2,
+   "fid": "taxi2024_t2_s7_f37_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 265728398,
+    "rs": 289072779,
+    "hybrid": 86085129
+   }
+  },
+  {
+   "base": "taxi2024",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "taxi2024_t2_s7_f37_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 266898701,
+    "rs": 290083197,
+    "hybrid": 154800915
+   }
+  },
+  {
+   "base": "taxi2024",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "fid": "taxi2024_t2_s7_f37_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 276216999,
+    "rs": 306004046,
+    "hybrid": 281659785
+   }
+  }
+ ]
+}

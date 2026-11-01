@@ -1,0 +1,50 @@
+{
+ "note": "same-window interleaved paired runs; hybrid is bin/panel_lut with BWH_CLASS_LUT=1 (zero-copy loader + bucketed class lookup); ratios are engine/hybrid work-time medians per fixture",
+ "rows": [
+  {
+   "label": "chain_q2",
+   "fixture_id": "taxi2024_t0_s7_f37_q2",
+   "hybrid_work_s": 0.0842290135,
+   "dd_work_s": 0.4412350215,
+   "dbsp_work_s": 0.533128869,
+   "dd_ratio": 5.238515841100288,
+   "dbsp_ratio": 6.329515767153084
+  },
+  {
+   "label": "bushy_q2",
+   "fixture_id": "taxi2024_t1_s7_f37_q2",
+   "hybrid_work_s": 0.083792649,
+   "dd_work_s": 0.436963307,
+   "dbsp_work_s": 0.5332561945,
+   "dd_ratio": 5.214816719781708,
+   "dbsp_ratio": 6.363997329885107
+  },
+  {
+   "label": "star_q2",
+   "fixture_id": "taxi2024_t2_s7_f37_q2",
+   "hybrid_work_s": 0.083475184,
+   "dd_work_s": 0.4390995545,
+   "dbsp_work_s": 0.5340248545,
+   "dd_ratio": 5.260240630317149,
+   "dbsp_ratio": 6.397408534014134
+  },
+  {
+   "label": "chain_q8",
+   "fixture_id": "taxi2024_t0_s7_f37_q8",
+   "hybrid_work_s": 0.104742341,
+   "dd_work_s": 0.8317676745,
+   "dbsp_work_s": 0.9421678555,
+   "dd_ratio": 7.941083486953953,
+   "dbsp_ratio": 8.995100228855874
+  },
+  {
+   "label": "chain_q32",
+   "fixture_id": "taxi2024_t0_s7_f37_q32",
+   "hybrid_work_s": 0.171565912,
+   "dd_work_s": 1.7666820995,
+   "dbsp_work_s": 1.9013533595,
+   "dd_ratio": 10.297395787456894,
+   "dbsp_ratio": 11.082349269358357
+  }
+ ]
+}

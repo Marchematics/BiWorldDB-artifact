@@ -1,0 +1,71 @@
+{
+ "note": "Projection on the two held-out bases. Formal 54-fixture panel engine/hybrid work ratios (results/ivm_taxi_panel_20261025, results/ivm_retail_panel_20261025) multiplied by the same-window interleaved combined speedup (old bin/panel vs bin/panel_lut with BWH_CLASS_LUT=1 BWH_GROUP_PREFIX=active, 5 repetitions each; host load ~90 recorded). PROVISIONAL: the measured optimized external panels are still pending a quiet window.",
+ "rows": [
+  {
+   "base": "taxi",
+   "cohort": "q2",
+   "dd_formal_ratio": 3.356,
+   "dbsp_formal_ratio": 4.086,
+   "hybrid_speedup": 1.625,
+   "dd_projected_ratio": 5.45,
+   "dbsp_projected_ratio": 6.64,
+   "old_ms": 307.0,
+   "new_ms": 188.9
+  },
+  {
+   "base": "taxi",
+   "cohort": "q8",
+   "dd_formal_ratio": 3.976,
+   "dbsp_formal_ratio": 4.535,
+   "hybrid_speedup": 2.234,
+   "dd_projected_ratio": 8.88,
+   "dbsp_projected_ratio": 10.13,
+   "old_ms": 522.1,
+   "new_ms": 233.7
+  },
+  {
+   "base": "taxi",
+   "cohort": "q32",
+   "dd_formal_ratio": 4.708,
+   "dbsp_formal_ratio": 5.223,
+   "hybrid_speedup": 2.342,
+   "dd_projected_ratio": 11.03,
+   "dbsp_projected_ratio": 12.23,
+   "old_ms": 982.4,
+   "new_ms": 419.4
+  },
+  {
+   "base": "retail",
+   "cohort": "q2",
+   "dd_formal_ratio": 1.684,
+   "dbsp_formal_ratio": 1.81,
+   "hybrid_speedup": 1.812,
+   "dd_projected_ratio": 3.05,
+   "dbsp_projected_ratio": 3.28,
+   "old_ms": 131.9,
+   "new_ms": 72.8
+  },
+  {
+   "base": "retail",
+   "cohort": "q8",
+   "dd_formal_ratio": 1.627,
+   "dbsp_formal_ratio": 1.795,
+   "hybrid_speedup": 1.199,
+   "dd_projected_ratio": 1.95,
+   "dbsp_projected_ratio": 2.15,
+   "old_ms": 142.6,
+   "new_ms": 118.9
+  },
+  {
+   "base": "retail",
+   "cohort": "q32",
+   "dd_formal_ratio": 1.625,
+   "dbsp_formal_ratio": 2.004,
+   "hybrid_speedup": 1.207,
+   "dd_projected_ratio": 1.96,
+   "dbsp_projected_ratio": 2.42,
+   "old_ms": 250.9,
+   "new_ms": 207.9
+  }
+ ]
+}

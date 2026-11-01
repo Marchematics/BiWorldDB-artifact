@@ -1,0 +1,25 @@
+{
+ "arm": "brute_force_oracle",
+ "base_id": "real1d_100k",
+ "topology": 0,
+ "seed": 20261231,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 0,
+ "adhoc_fraction": 20,
+ "n_states": 2049,
+ "n_answers": 4096,
+ "n_adhoc_queries": 833,
+ "n_declared_queries": 3263,
+ "range_scope": "per_state",
+ "answers_sha256": "93672dab15b286eff0ecf2a5f42edae7fb12dbc283e9636ae5696b2a8a14a470",
+ "phases_ns": {
+  "load": 23594,
+  "gen": 576234,
+  "execute": 1320357456,
+  "extract": 1322717491,
+  "cleanup": 158096
+ },
+ "full_ns": 1323475415,
+ "peak_rss_kb": 8620
+}

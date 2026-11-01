@@ -1,0 +1,71 @@
+{
+ "note": "Interleaved same-window comparison of the class-major (transposed) base prefix layout (BWH_TRANSPOSE_BASEP=1) against the default row-major layout, 5 repetitions each, on one pinned core; host was contended (1-minute load ~94 recorded), so only within-window relative gains are interpreted.",
+ "rows": [
+  {
+   "cohort": "Taxi Q32 fp4",
+   "row_total_ms": 523.7,
+   "tp_total_ms": 379.9,
+   "gain_pct": 27.5,
+   "row_execute_ms": 225.6,
+   "tp_execute_ms": 64.2,
+   "row_setup_ms": 260.6,
+   "tp_setup_ms": 272.4,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q32 fp37",
+   "row_total_ms": 348.5,
+   "tp_total_ms": 337.2,
+   "gain_pct": 3.2,
+   "row_execute_ms": 53.3,
+   "tp_execute_ms": 34.7,
+   "row_setup_ms": 258.2,
+   "tp_setup_ms": 268.3,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q8 fp4",
+   "row_total_ms": 201.8,
+   "tp_total_ms": 174.3,
+   "gain_pct": 13.6,
+   "row_execute_ms": 48.2,
+   "tp_execute_ms": 15.0,
+   "row_setup_ms": 134.7,
+   "tp_setup_ms": 140.9,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q32 fp37",
+   "row_total_ms": 182.6,
+   "tp_total_ms": 187.5,
+   "gain_pct": -2.7,
+   "row_execute_ms": 43.3,
+   "tp_execute_ms": 26.6,
+   "row_setup_ms": 117.9,
+   "tp_setup_ms": 137.9,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q2 fp37",
+   "row_total_ms": 78.3,
+   "tp_total_ms": 82.5,
+   "gain_pct": -5.4,
+   "row_execute_ms": 2.4,
+   "tp_execute_ms": 2.5,
+   "row_setup_ms": 65.2,
+   "tp_setup_ms": 68.8,
+   "n": 5
+  },
+  {
+   "cohort": "Retail Q32 fp37",
+   "row_total_ms": 103.7,
+   "tp_total_ms": 94.1,
+   "gain_pct": 9.3,
+   "row_execute_ms": 31.4,
+   "tp_execute_ms": 19.8,
+   "row_setup_ms": 59.1,
+   "tp_setup_ms": 60.5,
+   "n": 5
+  }
+ ]
+}

@@ -1,0 +1,202 @@
+{
+ "rows": [
+  {
+   "fid": "intel_t0_s7_f4_q32",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "exact": true,
+   "work_a": 142443997.0,
+   "work_b": 286848053.5,
+   "ratio_b_over_a": 2.0137602113201023
+  },
+  {
+   "fid": "intel_t0_s7_f37_q32",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "exact": true,
+   "work_a": 125580737.5,
+   "work_b": 97537173.5,
+   "ratio_b_over_a": 0.7766889687202227
+  },
+  {
+   "fid": "intel_t0_s17_f4_q32",
+   "topology": 0,
+   "seed": 17,
+   "factor_period": 4,
+   "q": 32,
+   "exact": true,
+   "work_a": 129111759.0,
+   "work_b": 288219797.0,
+   "ratio_b_over_a": 2.2323280174658606
+  },
+  {
+   "fid": "intel_t0_s17_f37_q32",
+   "topology": 0,
+   "seed": 17,
+   "factor_period": 37,
+   "q": 32,
+   "exact": true,
+   "work_a": 123349802.0,
+   "work_b": 99892143.0,
+   "ratio_b_over_a": 0.809828158459468
+  },
+  {
+   "fid": "intel_t0_s29_f4_q32",
+   "topology": 0,
+   "seed": 29,
+   "factor_period": 4,
+   "q": 32,
+   "exact": true,
+   "work_a": 134407801.5,
+   "work_b": 287929833.5,
+   "ratio_b_over_a": 2.1422107220465176
+  },
+  {
+   "fid": "intel_t0_s29_f37_q32",
+   "topology": 0,
+   "seed": 29,
+   "factor_period": 37,
+   "q": 32,
+   "exact": true,
+   "work_a": 123653156.0,
+   "work_b": 100386054.5,
+   "ratio_b_over_a": 0.8118357650329604
+  },
+  {
+   "fid": "intel_t1_s7_f4_q32",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "exact": true,
+   "work_a": 124530075.5,
+   "work_b": 225064543.0,
+   "ratio_b_over_a": 1.8073107407696063
+  },
+  {
+   "fid": "intel_t1_s7_f37_q32",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "exact": true,
+   "work_a": 98380986.5,
+   "work_b": 102591304.5,
+   "ratio_b_over_a": 1.0427960538899455
+  },
+  {
+   "fid": "intel_t1_s17_f4_q32",
+   "topology": 1,
+   "seed": 17,
+   "factor_period": 4,
+   "q": 32,
+   "exact": true,
+   "work_a": 123127830.5,
+   "work_b": 226094502.0,
+   "ratio_b_over_a": 1.8362583104231662
+  },
+  {
+   "fid": "intel_t1_s17_f37_q32",
+   "topology": 1,
+   "seed": 17,
+   "factor_period": 37,
+   "q": 32,
+   "exact": true,
+   "work_a": 103413877.5,
+   "work_b": 101942522.5,
+   "ratio_b_over_a": 0.9857721706644256
+  },
+  {
+   "fid": "intel_t1_s29_f4_q32",
+   "topology": 1,
+   "seed": 29,
+   "factor_period": 4,
+   "q": 32,
+   "exact": true,
+   "work_a": 141462200.0,
+   "work_b": 222698890.0,
+   "ratio_b_over_a": 1.5742642910968443
+  },
+  {
+   "fid": "intel_t1_s29_f37_q32",
+   "topology": 1,
+   "seed": 29,
+   "factor_period": 37,
+   "q": 32,
+   "exact": true,
+   "work_a": 96089073.5,
+   "work_b": 99750867.0,
+   "ratio_b_over_a": 1.0381083235233817
+  },
+  {
+   "fid": "intel_t2_s7_f4_q32",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "exact": true,
+   "work_a": 123649377.0,
+   "work_b": 208373622.0,
+   "ratio_b_over_a": 1.6851975081119899
+  },
+  {
+   "fid": "intel_t2_s7_f37_q32",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "exact": true,
+   "work_a": 106303071.5,
+   "work_b": 103443284.5,
+   "ratio_b_over_a": 0.9730977952034058
+  },
+  {
+   "fid": "intel_t2_s17_f4_q32",
+   "topology": 2,
+   "seed": 17,
+   "factor_period": 4,
+   "q": 32,
+   "exact": true,
+   "work_a": 150127303.0,
+   "work_b": 223318453.0,
+   "ratio_b_over_a": 1.4875272421299675
+  },
+  {
+   "fid": "intel_t2_s17_f37_q32",
+   "topology": 2,
+   "seed": 17,
+   "factor_period": 37,
+   "q": 32,
+   "exact": true,
+   "work_a": 97397365.5,
+   "work_b": 101156589.0,
+   "ratio_b_over_a": 1.0385967677945047
+  },
+  {
+   "fid": "intel_t2_s29_f4_q32",
+   "topology": 2,
+   "seed": 29,
+   "factor_period": 4,
+   "q": 32,
+   "exact": true,
+   "work_a": 128016731.0,
+   "work_b": 202302828.0,
+   "ratio_b_over_a": 1.580284283309812
+  },
+  {
+   "fid": "intel_t2_s29_f37_q32",
+   "topology": 2,
+   "seed": 29,
+   "factor_period": 37,
+   "q": 32,
+   "exact": true,
+   "work_a": 97918251.5,
+   "work_b": 100517154.0,
+   "ratio_b_over_a": 1.0265415533895639
+  }
+ ]
+}

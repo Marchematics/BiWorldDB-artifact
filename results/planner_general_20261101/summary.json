@@ -1,0 +1,375 @@
+{
+ "created": "2026-11-01",
+ "goal": "unified planner/router prototype for general-layer backends: route by declared query class + workload features, preserve the frozen v3 1D behaviour, measure route accuracy vs the measured best backend, latency and exactness on a mixed query-class grid",
+ "policy": {
+  "v3_sha256": "cec9ad2b3f1510e63f8018232abf050a73dd715f3ad365c2a1c3494e6df31121",
+  "v3_policy_unchanged": true,
+  "product_entries_max": 262144,
+  "adhoc_fraction_gate": 0
+ },
+ "grid": {
+  "instances": 54,
+  "by_class": {
+   "1d_declared": 34,
+   "2d_rectangle": 4,
+   "holistic": 8,
+   "adhoc_1d": 8
+  }
+ },
+ "overall": {
+  "instances": 54,
+  "route_accuracy": 1.0,
+  "regret_median": 1.0,
+  "regret_p95": 1.0,
+  "regret_max": 1.0,
+  "planned_regret_median": 1.0101,
+  "planned_regret_p95": 1.0448,
+  "planned_regret_max": 1.0533,
+  "chosen_ms_median": 59.01,
+  "oracle_ms_median": 59.01,
+  "exact_all": true,
+  "chosen_backends": {
+   "batch_deep": 6,
+   "declared_v7": 2,
+   "deri_union": 6,
+   "fmd": 2,
+   "hros": 8,
+   "hybrid_fast": 4,
+   "naive2d": 2,
+   "pgdg_align": 22,
+   "rf": 2
+  }
+ },
+ "classes": {
+  "1d_declared": {
+   "instances": 34,
+   "route_accuracy": 1.0,
+   "regret_median": 1.0,
+   "regret_p95": 1.0,
+   "regret_max": 1.0,
+   "planned_regret_median": 1.0101,
+   "planned_regret_p95": 1.0448,
+   "planned_regret_max": 1.0533,
+   "chosen_ms_median": 29.29,
+   "oracle_ms_median": 29.29,
+   "exact_all": true,
+   "chosen_backends": {
+    "batch_deep": 6,
+    "hybrid_fast": 4,
+    "pgdg_align": 22,
+    "rf": 2
+   }
+  },
+  "2d_rectangle": {
+   "instances": 4,
+   "route_accuracy": 1.0,
+   "regret_median": 1.0,
+   "regret_p95": 1.0,
+   "regret_max": 1.0,
+   "planned_regret_median": null,
+   "planned_regret_p95": null,
+   "planned_regret_max": null,
+   "chosen_ms_median": 5513.52,
+   "oracle_ms_median": 5513.52,
+   "exact_all": true,
+   "chosen_backends": {
+    "fmd": 2,
+    "naive2d": 2
+   }
+  },
+  "holistic": {
+   "instances": 8,
+   "route_accuracy": 1.0,
+   "regret_median": 1.0,
+   "regret_p95": 1.0,
+   "regret_max": 1.0,
+   "planned_regret_median": null,
+   "planned_regret_p95": null,
+   "planned_regret_max": null,
+   "chosen_ms_median": 119.06,
+   "oracle_ms_median": 119.06,
+   "exact_all": true,
+   "chosen_backends": {
+    "hros": 8
+   }
+  },
+  "adhoc_1d": {
+   "instances": 8,
+   "route_accuracy": 1.0,
+   "regret_median": 1.0,
+   "regret_p95": 1.0,
+   "regret_max": 1.0,
+   "planned_regret_median": null,
+   "planned_regret_p95": null,
+   "planned_regret_max": null,
+   "chosen_ms_median": 220.4,
+   "oracle_ms_median": 220.4,
+   "exact_all": true,
+   "chosen_backends": {
+    "declared_v7": 2,
+    "deri_union": 6
+   }
+  }
+ },
+ "v3_1d_regression": {
+  "cases": 34,
+  "route_accuracy_vs_oracle": 1.0,
+  "regret_median": 1.0101,
+  "regret_p95": 1.0448,
+  "regret_max": 1.0533,
+  "regret_gt_1_05": 1,
+  "routing_only_p95": 1.0,
+  "selection_counts": {
+   "hybrid_fast": 4,
+   "corr": 0,
+   "batch_deep": 6,
+   "pgdg_align": 22,
+   "rf": 2
+  },
+  "p95_target_met": true,
+  "p95_ci95": [
+   1.0384,
+   1.0533
+  ],
+  "decisions_identical_to_stored": true
+ },
+ "ablations": {
+  "1d_declared": [
+   {
+    "policy": "always_batch_deep",
+    "route_accuracy": 0.1765,
+    "regret_median": 1.0,
+    "regret_max": 1.6735,
+    "admissible": 7
+   },
+   {
+    "policy": "always_corr",
+    "route_accuracy": 0.0,
+    "regret_median": 1.1279,
+    "regret_max": 2.731,
+    "admissible": 6
+   },
+   {
+    "policy": "always_hybrid_fast",
+    "route_accuracy": 0.1176,
+    "regret_median": 1.1385,
+    "regret_max": 5.0467,
+    "admissible": 34
+   },
+   {
+    "policy": "always_pgdg_align",
+    "route_accuracy": 0.6471,
+    "regret_median": 1.0,
+    "regret_max": 7.7995,
+    "admissible": 34
+   },
+   {
+    "policy": "always_rf",
+    "route_accuracy": 0.0588,
+    "regret_median": 4.0295,
+    "regret_max": 15.9019,
+    "admissible": 34
+   }
+  ],
+  "2d_rectangle": [
+   {
+    "policy": "always_fmd",
+    "route_accuracy": 0.5,
+    "regret_median": 1.9243,
+    "regret_max": 8.9769,
+    "admissible": 4
+   },
+   {
+    "policy": "always_full2d",
+    "route_accuracy": 0.0,
+    "regret_median": 561.6142,
+    "regret_max": 740.7655,
+    "admissible": 4
+   },
+   {
+    "policy": "always_naive2d",
+    "route_accuracy": 0.5,
+    "regret_median": 4.95,
+    "regret_max": 25.37,
+    "admissible": 4
+   }
+  ],
+  "holistic": [
+   {
+    "policy": "always_hros",
+    "route_accuracy": 1.0,
+    "regret_median": 1.0,
+    "regret_max": 1.0,
+    "admissible": 8
+   }
+  ],
+  "adhoc_1d": [
+   {
+    "policy": "always_declared_v7",
+    "route_accuracy": 0.25,
+    "regret_median": 1.0,
+    "regret_max": 1.0,
+    "admissible": 2
+   },
+   {
+    "policy": "always_deri_union",
+    "route_accuracy": 0.75,
+    "regret_median": 1.0,
+    "regret_max": 1.5611,
+    "admissible": 8
+   }
+  ]
+ },
+ "gate_sensitivity": {
+  "2d_product_gate": [
+   {
+    "instance": "2d_c64_g8",
+    "G": 8,
+    "C0": 64,
+    "C1": 64,
+    "product_entries": 32768,
+    "fmd_ms": 1623.5,
+    "naive_ms": 843.68,
+    "naive_extrapolated": false,
+    "fmd_over_naive": 1.924,
+    "chosen": "naive2d",
+    "oracle": "naive2d"
+   },
+   {
+    "instance": "2d_c64_g64",
+    "G": 64,
+    "C0": 64,
+    "C1": 64,
+    "product_entries": 262144,
+    "fmd_ms": 10182.28,
+    "naive_ms": 1134.28,
+    "naive_extrapolated": false,
+    "fmd_over_naive": 8.977,
+    "chosen": "naive2d",
+    "oracle": "naive2d"
+   },
+   {
+    "instance": "2d_c1024_g8",
+    "G": 8,
+    "C0": 1024,
+    "C1": 1024,
+    "product_entries": 8388608,
+    "fmd_ms": 9892.75,
+    "naive_ms": 250979.07,
+    "naive_extrapolated": true,
+    "fmd_over_naive": 0.039,
+    "chosen": "fmd",
+    "oracle": "fmd"
+   },
+   {
+    "instance": "2d_c1024_g64",
+    "G": 64,
+    "C0": 1024,
+    "C1": 1024,
+    "product_entries": 67108864,
+    "fmd_ms": 56713.51,
+    "naive_ms": 280731.87,
+    "naive_extrapolated": true,
+    "fmd_over_naive": 0.202,
+    "chosen": "fmd",
+    "oracle": "fmd"
+   }
+  ],
+  "adhoc_fraction_gate": [
+   {
+    "instance": "adhoc_intel_f000",
+    "base": "intel",
+    "adhoc_fraction": 0,
+    "deri_union_ms": 201.7,
+    "declared_v7_ms": 129.2,
+    "ratio_v7": 1.561,
+    "deri_over_declared": 1.561,
+    "chosen": "declared_v7"
+   },
+   {
+    "instance": "adhoc_intel_f100",
+    "base": "intel",
+    "adhoc_fraction": 100,
+    "deri_union_ms": 170.7,
+    "declared_v7_ms": null,
+    "ratio_v7": 1.321,
+    "deri_over_declared": null,
+    "chosen": "deri_union"
+   },
+   {
+    "instance": "adhoc_intel_f020",
+    "base": "intel",
+    "adhoc_fraction": 20,
+    "deri_union_ms": 236.6,
+    "declared_v7_ms": null,
+    "ratio_v7": 1.831,
+    "deri_over_declared": null,
+    "chosen": "deri_union"
+   },
+   {
+    "instance": "adhoc_intel_f050",
+    "base": "intel",
+    "adhoc_fraction": 50,
+    "deri_union_ms": 245.2,
+    "declared_v7_ms": null,
+    "ratio_v7": 1.898,
+    "deri_over_declared": null,
+    "chosen": "deri_union"
+   },
+   {
+    "instance": "adhoc_taxi2024_f000",
+    "base": "taxi2024",
+    "adhoc_fraction": 0,
+    "deri_union_ms": 216.4,
+    "declared_v7_ms": 146.2,
+    "ratio_v7": 1.481,
+    "deri_over_declared": 1.48,
+    "chosen": "declared_v7"
+   },
+   {
+    "instance": "adhoc_taxi2024_f100",
+    "base": "taxi2024",
+    "adhoc_fraction": 100,
+    "deri_union_ms": 204.2,
+    "declared_v7_ms": null,
+    "ratio_v7": 1.397,
+    "deri_over_declared": null,
+    "chosen": "deri_union"
+   },
+   {
+    "instance": "adhoc_taxi2024_f020",
+    "base": "taxi2024",
+    "adhoc_fraction": 20,
+    "deri_union_ms": 251.7,
+    "declared_v7_ms": null,
+    "ratio_v7": 1.722,
+    "deri_over_declared": null,
+    "chosen": "deri_union"
+   },
+   {
+    "instance": "adhoc_taxi2024_f050",
+    "base": "taxi2024",
+    "adhoc_fraction": 50,
+    "deri_union_ms": 254.4,
+    "declared_v7_ms": null,
+    "ratio_v7": 1.741,
+    "deri_over_declared": null,
+    "chosen": "deri_union"
+   }
+  ]
+ },
+ "evidence_registry": {
+  "1d_declared": "results/joint_planner_fast_v3_20261031/refined/summary_v3_refined.json (frozen v3 policy sha cec9ad2b3f1510e63f8018232abf050a73dd715f3ad365c2a1c3494e6df31121)",
+  "2d_rectangle": "results/fmd_20261101/summary.json (FMDI vs product-class baselines; 1M rows, 300k states, Q=2)",
+  "holistic": "results/hros_20261101/summary.json (HROS vs full-state rebuild / per-version sort; measure-axis median+distinct; 100k-1M rows, 2,049/300k states)",
+  "adhoc_1d": "results/deri_20261101/summary.json (DERI union arm vs declared v7 oracle at adhoc fractions 0/20/50/100; Intel/taxi)",
+  "batch_v7_context": "results/batch_v7_20261031/NOTE.md (parallel declared 1D engine: 137.2 ms Intel @32T, 140.2 ms taxi @8T; not a general-router candidate)"
+ },
+ "notes": [
+  "All numbers are re-derived from existing measured evidence; no new runs in this round.",
+  "Route accuracy = chosen backend == the per-instance measured best among eligible backends.",
+  "The 2D oracle only compares full-workload measured/extrapolated times; the sampled HROS references (64-version prefix) are context, never oracle-eligible.",
+  "The gates are calibrated on this measured grid (in-sample); the 2D threshold is bracketed between 262,144 and 8,388,608 product entries and needs a finer scan to locate exactly.",
+  "Query-class detection is assumed to come from the declared query metadata (API-level dispatch); inferring the class from raw query text is out of scope."
+ ]
+}

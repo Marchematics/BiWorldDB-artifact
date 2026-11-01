@@ -1,0 +1,1504 @@
+[
+ {
+  "case": "v3_q128_v3_u160k_g160_f59",
+  "base": "v3_u160k_g160",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 128,
+  "states": 2049,
+  "rows": 160000,
+  "groups": 160,
+  "measured_ms": {
+   "pgdg_align": 58.582,
+   "hybrid_fast": 67.589,
+   "corr": 66.2,
+   "rf": 58.103
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "rf",
+  "oracle_ms": 58.103,
+  "chosen": "rf",
+  "regime": "shallow_q>=64_rf_eligible",
+  "predicted_ms": {
+   "hybrid_fast": 20.492,
+   "pgdg_align": 13.217,
+   "rf": 6.734
+  },
+  "planned_ms": 58.007,
+  "chosen_forced_ms": 58.103,
+  "route_correct": true,
+  "regret": 0.9983,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 133594,
+  "rss_kb": {
+   "pgdg_align": 28220,
+   "hybrid_fast": 34604,
+   "corr": 34604,
+   "rf": 32340
+  }
+ },
+ {
+  "case": "v3_2049_v3_u1700k_g416_f59_q2",
+  "base": "v3_u1700k_g416",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 2,
+  "states": 2049,
+  "rows": 1700000,
+  "groups": 416,
+  "measured_ms": {
+   "rf": 171.337,
+   "pgdg_align": 18.558,
+   "corr": 22.511,
+   "hybrid_fast": 21.632
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 18.558,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q<=4",
+  "predicted_ms": {
+   "hybrid_fast": 37.991,
+   "pgdg_align": 68.034,
+   "rf": 734.78
+  },
+  "planned_ms": 19.547,
+  "chosen_forced_ms": 18.558,
+  "route_correct": true,
+  "regret": 1.0533,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 155987,
+  "rss_kb": {
+   "rf": 204868,
+   "pgdg_align": 44252,
+   "corr": 45004,
+   "hybrid_fast": 45072
+  }
+ },
+ {
+  "case": "v3_2049_v3_u1700k_g416_f59_q8",
+  "base": "v3_u1700k_g416",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 8,
+  "states": 2049,
+  "rows": 1700000,
+  "groups": 416,
+  "measured_ms": {
+   "pgdg_align": 32.592,
+   "rf": 174.86,
+   "hybrid_fast": 36.283,
+   "corr": 34.604
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 32.592,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q8",
+  "predicted_ms": {
+   "hybrid_fast": 13.857,
+   "pgdg_align": 10.546,
+   "rf": 40.358
+  },
+  "planned_ms": 33.843,
+  "chosen_forced_ms": 32.592,
+  "route_correct": true,
+  "regret": 1.0384,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 139122,
+  "rss_kb": {
+   "pgdg_align": 51976,
+   "rf": 204920,
+   "hybrid_fast": 52640,
+   "corr": 52640
+  }
+ },
+ {
+  "case": "v3_2049_v3_u1700k_g416_f59_q32",
+  "base": "v3_u1700k_g416",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 32,
+  "states": 2049,
+  "rows": 1700000,
+  "groups": 416,
+  "measured_ms": {
+   "rf": 195.036,
+   "hybrid_fast": 54.228,
+   "pgdg_align": 49.787,
+   "corr": 54.687
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 49.787,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q32",
+  "predicted_ms": {
+   "hybrid_fast": 7.956,
+   "pgdg_align": 3.273,
+   "rf": 4.847
+  },
+  "planned_ms": 50.825,
+  "chosen_forced_ms": 49.787,
+  "route_correct": true,
+  "regret": 1.0208,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 139491,
+  "rss_kb": {
+   "rf": 205808,
+   "hybrid_fast": 54156,
+   "pgdg_align": 53244,
+   "corr": 54148
+  }
+ },
+ {
+  "case": "v3_2049_v3_u1700k_g416_f97_q2",
+  "base": "v3_u1700k_g416",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 97,
+  "q": 2,
+  "states": 2049,
+  "rows": 1700000,
+  "groups": 416,
+  "measured_ms": {
+   "corr": 22.434,
+   "hybrid_fast": 21.891,
+   "pgdg_align": 19.95,
+   "rf": 162.815
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 19.95,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q<=4",
+  "predicted_ms": {
+   "hybrid_fast": 22.486,
+   "pgdg_align": 41.481,
+   "rf": 422.782
+  },
+  "planned_ms": 19.372,
+  "chosen_forced_ms": 19.95,
+  "route_correct": true,
+  "regret": 0.971,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 153493,
+  "rss_kb": {
+   "corr": 45040,
+   "hybrid_fast": 45044,
+   "pgdg_align": 44100,
+   "rf": 204764
+  }
+ },
+ {
+  "case": "v3_2049_v3_u1700k_g416_f97_q8",
+  "base": "v3_u1700k_g416",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 97,
+  "q": 8,
+  "states": 2049,
+  "rows": 1700000,
+  "groups": 416,
+  "measured_ms": {
+   "corr": 31.313,
+   "hybrid_fast": 31.756,
+   "pgdg_align": 29.871,
+   "rf": 169.76
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 29.871,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q8",
+  "predicted_ms": {
+   "hybrid_fast": 8.202,
+   "pgdg_align": 6.43,
+   "rf": 23.221
+  },
+  "planned_ms": 30.258,
+  "chosen_forced_ms": 29.871,
+  "route_correct": true,
+  "regret": 1.013,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 135777,
+  "rss_kb": {
+   "corr": 49888,
+   "hybrid_fast": 49884,
+   "pgdg_align": 49292,
+   "rf": 204972
+  }
+ },
+ {
+  "case": "v3_2049_v3_u1700k_g416_f97_q32",
+  "base": "v3_u1700k_g416",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 97,
+  "q": 32,
+  "states": 2049,
+  "rows": 1700000,
+  "groups": 416,
+  "measured_ms": {
+   "corr": 50.513,
+   "rf": 185.899,
+   "hybrid_fast": 49.662,
+   "pgdg_align": 56.805
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "hybrid_fast",
+  "oracle_ms": 49.662,
+  "chosen": "hybrid_fast",
+  "regime": "shallow_q32_low_nf_hybrid",
+  "predicted_ms": {
+   "hybrid_fast": 4.709,
+   "pgdg_align": 1.995,
+   "rf": 2.789
+  },
+  "planned_ms": 51.202,
+  "chosen_forced_ms": 49.662,
+  "route_correct": true,
+  "regret": 1.031,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 140853,
+  "rss_kb": {
+   "corr": 53660,
+   "rf": 205808,
+   "hybrid_fast": 53624,
+   "pgdg_align": 70628
+  }
+ },
+ {
+  "case": "v3_2049_v3_u300k_g320_f59_q2",
+  "base": "v3_u300k_g320",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 2,
+  "states": 2049,
+  "rows": 300000,
+  "groups": 320,
+  "measured_ms": {
+   "rf": 31.058,
+   "corr": 6.992,
+   "pgdg_align": 5.617,
+   "hybrid_fast": 6.958
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 5.617,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q<=4",
+  "predicted_ms": {
+   "hybrid_fast": 36.703,
+   "pgdg_align": 81.11,
+   "rf": 747.38
+  },
+  "planned_ms": 5.272,
+  "chosen_forced_ms": 5.617,
+  "route_correct": true,
+  "regret": 0.9386,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 136337,
+  "rss_kb": {
+   "rf": 39624,
+   "corr": 12428,
+   "pgdg_align": 11444,
+   "hybrid_fast": 12440
+  }
+ },
+ {
+  "case": "v3_2049_v3_u300k_g320_f59_q8",
+  "base": "v3_u300k_g320",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 8,
+  "states": 2049,
+  "rows": 300000,
+  "groups": 320,
+  "measured_ms": {
+   "hybrid_fast": 16.175,
+   "rf": 36.674,
+   "pgdg_align": 14.061,
+   "corr": 16.209
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 14.061,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q8",
+  "predicted_ms": {
+   "hybrid_fast": 13.387,
+   "pgdg_align": 12.573,
+   "rf": 41.05
+  },
+  "planned_ms": 14.63,
+  "chosen_forced_ms": 14.061,
+  "route_correct": true,
+  "regret": 1.0405,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 136037,
+  "rss_kb": {
+   "hybrid_fast": 19896,
+   "rf": 39780,
+   "pgdg_align": 19040,
+   "corr": 19948
+  }
+ },
+ {
+  "case": "v3_2049_v3_u300k_g320_f59_q32",
+  "base": "v3_u300k_g320",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 32,
+  "states": 2049,
+  "rows": 300000,
+  "groups": 320,
+  "measured_ms": {
+   "corr": 28.437,
+   "rf": 47.733,
+   "pgdg_align": 24.201,
+   "hybrid_fast": 28.496
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 24.201,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q32",
+  "predicted_ms": {
+   "hybrid_fast": 7.686,
+   "pgdg_align": 3.902,
+   "rf": 4.93
+  },
+  "planned_ms": 24.187,
+  "chosen_forced_ms": 24.201,
+  "route_correct": true,
+  "regret": 0.9994,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 134104,
+  "rss_kb": {
+   "corr": 20152,
+   "rf": 40500,
+   "pgdg_align": 18708,
+   "hybrid_fast": 20192
+  }
+ },
+ {
+  "case": "v3_q128_v3_u300k_g320_f59",
+  "base": "v3_u300k_g320",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 128,
+  "states": 2049,
+  "rows": 300000,
+  "groups": 320,
+  "measured_ms": {
+   "corr": 68.169,
+   "rf": 69.702,
+   "pgdg_align": 59.912,
+   "hybrid_fast": 68.111
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 59.912,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q>=64",
+  "predicted_ms": {
+   "hybrid_fast": 27.084,
+   "pgdg_align": 19.439,
+   "rf": 13.535
+  },
+  "planned_ms": 60.022,
+  "chosen_forced_ms": 59.912,
+  "route_correct": true,
+  "regret": 1.0018,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 136658,
+  "rss_kb": {
+   "corr": 37892,
+   "rf": 48216,
+   "pgdg_align": 31472,
+   "hybrid_fast": 37924
+  }
+ },
+ {
+  "case": "v3_2049_v3_u300k_g320_f97_q2",
+  "base": "v3_u300k_g320",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 97,
+  "q": 2,
+  "states": 2049,
+  "rows": 300000,
+  "groups": 320,
+  "measured_ms": {
+   "pgdg_align": 5.101,
+   "rf": 30.159,
+   "corr": 6.606,
+   "hybrid_fast": 6.756
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 5.101,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q<=4",
+  "predicted_ms": {
+   "hybrid_fast": 21.724,
+   "pgdg_align": 49.454,
+   "rf": 430.032
+  },
+  "planned_ms": 5.177,
+  "chosen_forced_ms": 5.101,
+  "route_correct": true,
+  "regret": 1.0149,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 135427,
+  "rss_kb": {
+   "pgdg_align": 11180,
+   "rf": 39600,
+   "corr": 12168,
+   "hybrid_fast": 12112
+  }
+ },
+ {
+  "case": "v3_2049_v3_u300k_g320_f97_q8",
+  "base": "v3_u300k_g320",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 97,
+  "q": 8,
+  "states": 2049,
+  "rows": 300000,
+  "groups": 320,
+  "measured_ms": {
+   "pgdg_align": 12.231,
+   "hybrid_fast": 13.47,
+   "rf": 33.62,
+   "corr": 13.564
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 12.231,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q8",
+  "predicted_ms": {
+   "hybrid_fast": 7.924,
+   "pgdg_align": 7.666,
+   "rf": 23.62
+  },
+  "planned_ms": 12.3,
+  "chosen_forced_ms": 12.231,
+  "route_correct": true,
+  "regret": 1.0056,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 137269,
+  "rss_kb": {
+   "pgdg_align": 16348,
+   "hybrid_fast": 17256,
+   "rf": 39724,
+   "corr": 17252
+  }
+ },
+ {
+  "case": "v3_2049_v3_u300k_g320_f97_q32",
+  "base": "v3_u300k_g320",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 97,
+  "q": 32,
+  "states": 2049,
+  "rows": 300000,
+  "groups": 320,
+  "measured_ms": {
+   "corr": 25.636,
+   "rf": 49.493,
+   "hybrid_fast": 25.973,
+   "pgdg_align": 35.076
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "hybrid_fast",
+  "oracle_ms": 25.973,
+  "chosen": "hybrid_fast",
+  "regime": "shallow_q32_low_nf_hybrid",
+  "predicted_ms": {
+   "hybrid_fast": 4.549,
+   "pgdg_align": 2.379,
+   "rf": 2.837
+  },
+  "planned_ms": 26.352,
+  "chosen_forced_ms": 25.973,
+  "route_correct": true,
+  "regret": 1.0146,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 135476,
+  "rss_kb": {
+   "corr": 20168,
+   "rf": 40540,
+   "hybrid_fast": 20184,
+   "pgdg_align": 37968
+  }
+ },
+ {
+  "case": "v3_2049_v3_u420k_g112_f59_q2",
+  "base": "v3_u420k_g112",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 2,
+  "states": 2049,
+  "rows": 420000,
+  "groups": 112,
+  "measured_ms": {
+   "corr": 8.433,
+   "pgdg_align": 7.561,
+   "rf": 48.611,
+   "hybrid_fast": 8.608
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 7.561,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q<=4",
+  "predicted_ms": {
+   "hybrid_fast": 22.629,
+   "pgdg_align": 34.278,
+   "rf": 203.765
+  },
+  "planned_ms": 7.192,
+  "chosen_forced_ms": 7.561,
+  "route_correct": true,
+  "regret": 0.9512,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 145992,
+  "rss_kb": {
+   "corr": 15160,
+   "pgdg_align": 14248,
+   "rf": 53536,
+   "hybrid_fast": 15236
+  }
+ },
+ {
+  "case": "v3_2049_v3_u420k_g112_f59_q8",
+  "base": "v3_u420k_g112",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 8,
+  "states": 2049,
+  "rows": 420000,
+  "groups": 112,
+  "measured_ms": {
+   "rf": 52.775,
+   "pgdg_align": 16.795,
+   "hybrid_fast": 18.775,
+   "corr": 18.707
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 16.795,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q8",
+  "predicted_ms": {
+   "hybrid_fast": 8.254,
+   "pgdg_align": 5.314,
+   "rf": 11.192
+  },
+  "planned_ms": 17.547,
+  "chosen_forced_ms": 16.795,
+  "route_correct": true,
+  "regret": 1.0448,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 135177,
+  "rss_kb": {
+   "rf": 53696,
+   "pgdg_align": 21860,
+   "hybrid_fast": 22756,
+   "corr": 22744
+  }
+ },
+ {
+  "case": "v3_2049_v3_u420k_g112_f59_q32",
+  "base": "v3_u420k_g112",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 32,
+  "states": 2049,
+  "rows": 420000,
+  "groups": 112,
+  "measured_ms": {
+   "corr": 32.869,
+   "pgdg_align": 31.336,
+   "hybrid_fast": 33.214,
+   "rf": 64.42
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 31.336,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q32",
+  "predicted_ms": {
+   "hybrid_fast": 4.739,
+   "pgdg_align": 1.649,
+   "rf": 1.344
+  },
+  "planned_ms": 30.713,
+  "chosen_forced_ms": 31.336,
+  "route_correct": true,
+  "regret": 0.9801,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 148955,
+  "rss_kb": {
+   "corr": 24012,
+   "pgdg_align": 23128,
+   "hybrid_fast": 23984,
+   "rf": 54456
+  }
+ },
+ {
+  "case": "v3_2049_v3_u420k_g112_f97_q2",
+  "base": "v3_u420k_g112",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 97,
+  "q": 2,
+  "states": 2049,
+  "rows": 420000,
+  "groups": 112,
+  "measured_ms": {
+   "rf": 45.325,
+   "pgdg_align": 6.839,
+   "hybrid_fast": 8.269,
+   "corr": 8.132
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 6.839,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q<=4",
+  "predicted_ms": {
+   "hybrid_fast": 13.394,
+   "pgdg_align": 20.9,
+   "rf": 117.244
+  },
+  "planned_ms": 6.879,
+  "chosen_forced_ms": 6.839,
+  "route_correct": true,
+  "regret": 1.0058,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 135316,
+  "rss_kb": {
+   "rf": 53384,
+   "pgdg_align": 13968,
+   "hybrid_fast": 14932,
+   "corr": 14976
+  }
+ },
+ {
+  "case": "v3_2049_v3_u420k_g112_f97_q8",
+  "base": "v3_u420k_g112",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 97,
+  "q": 8,
+  "states": 2049,
+  "rows": 420000,
+  "groups": 112,
+  "measured_ms": {
+   "rf": 48.573,
+   "corr": 15.299,
+   "hybrid_fast": 15.139,
+   "pgdg_align": 14.28
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 14.28,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q8",
+  "predicted_ms": {
+   "hybrid_fast": 4.885,
+   "pgdg_align": 3.24,
+   "rf": 6.44
+  },
+  "planned_ms": 14.424,
+  "chosen_forced_ms": 14.28,
+  "route_correct": true,
+  "regret": 1.0101,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 136497,
+  "rss_kb": {
+   "rf": 53624,
+   "corr": 20060,
+   "hybrid_fast": 20132,
+   "pgdg_align": 19208
+  }
+ },
+ {
+  "case": "v3_2049_v3_u420k_g112_f97_q32",
+  "base": "v3_u420k_g112",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 97,
+  "q": 32,
+  "states": 2049,
+  "rows": 420000,
+  "groups": 112,
+  "measured_ms": {
+   "rf": 60.52,
+   "corr": 29.276,
+   "hybrid_fast": 28.7,
+   "pgdg_align": 37.462
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "hybrid_fast",
+  "oracle_ms": 28.7,
+  "chosen": "hybrid_fast",
+  "regime": "shallow_q32_low_nf_hybrid",
+  "predicted_ms": {
+   "hybrid_fast": 2.805,
+   "pgdg_align": 1.005,
+   "rf": 0.773
+  },
+  "planned_ms": 29.899,
+  "chosen_forced_ms": 28.7,
+  "route_correct": true,
+  "regret": 1.0418,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 138660,
+  "rss_kb": {
+   "rf": 54460,
+   "corr": 23468,
+   "hybrid_fast": 23484,
+   "pgdg_align": 40800
+  }
+ },
+ {
+  "case": "v3_q128_v3_u420k_g112_f97",
+  "base": "v3_u420k_g112",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 97,
+  "q": 128,
+  "states": 2049,
+  "rows": 420000,
+  "groups": 112,
+  "measured_ms": {
+   "corr": 67.009,
+   "hybrid_fast": 67.578,
+   "rf": 84.792,
+   "pgdg_align": 63.282
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 63.282,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q>=64",
+  "predicted_ms": {
+   "hybrid_fast": 9.884,
+   "pgdg_align": 5.009,
+   "rf": 2.123
+  },
+  "planned_ms": 63.221,
+  "chosen_forced_ms": 63.282,
+  "route_correct": true,
+  "regret": 0.999,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 136167,
+  "rss_kb": {
+   "corr": 41268,
+   "hybrid_fast": 41300,
+   "rf": 62016,
+   "pgdg_align": 33756
+  }
+ },
+ {
+  "case": "v3_2049_v3_u900k_g224_f59_q2",
+  "base": "v3_u900k_g224",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 2,
+  "states": 2049,
+  "rows": 900000,
+  "groups": 224,
+  "measured_ms": {
+   "rf": 91.84,
+   "hybrid_fast": 13.802,
+   "pgdg_align": 11.847,
+   "corr": 14.125
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 11.847,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q<=4",
+  "predicted_ms": {
+   "hybrid_fast": 29.72,
+   "pgdg_align": 48.987,
+   "rf": 399.437
+  },
+  "planned_ms": 12.305,
+  "chosen_forced_ms": 11.847,
+  "route_correct": true,
+  "regret": 1.0387,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 156476,
+  "rss_kb": {
+   "rf": 109348,
+   "hybrid_fast": 26432,
+   "pgdg_align": 25424,
+   "corr": 26504
+  }
+ },
+ {
+  "case": "v3_2049_v3_u900k_g224_f59_q8",
+  "base": "v3_u900k_g224",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 8,
+  "states": 2049,
+  "rows": 900000,
+  "groups": 224,
+  "measured_ms": {
+   "rf": 98.568,
+   "pgdg_align": 22.822,
+   "hybrid_fast": 24.989,
+   "corr": 25.636
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 22.822,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q8",
+  "predicted_ms": {
+   "hybrid_fast": 10.84,
+   "pgdg_align": 7.594,
+   "rf": 21.939
+  },
+  "planned_ms": 23.255,
+  "chosen_forced_ms": 22.822,
+  "route_correct": true,
+  "regret": 1.019,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 137981,
+  "rss_kb": {
+   "rf": 109552,
+   "pgdg_align": 33036,
+   "hybrid_fast": 34016,
+   "corr": 33984
+  }
+ },
+ {
+  "case": "v3_2049_v3_u900k_g224_f59_q32",
+  "base": "v3_u900k_g224",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 32,
+  "states": 2049,
+  "rows": 900000,
+  "groups": 224,
+  "measured_ms": {
+   "hybrid_fast": 41.028,
+   "corr": 41.127,
+   "rf": 112.03,
+   "pgdg_align": 38.173
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 38.173,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q32",
+  "predicted_ms": {
+   "hybrid_fast": 6.224,
+   "pgdg_align": 2.356,
+   "rf": 2.635
+  },
+  "planned_ms": 38.698,
+  "chosen_forced_ms": 38.173,
+  "route_correct": true,
+  "regret": 1.0138,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 137199,
+  "rss_kb": {
+   "hybrid_fast": 35568,
+   "corr": 35584,
+   "rf": 110260,
+   "pgdg_align": 34624
+  }
+ },
+ {
+  "case": "v3_2049_v3_u900k_g224_f97_q2",
+  "base": "v3_u900k_g224",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 97,
+  "q": 2,
+  "states": 2049,
+  "rows": 900000,
+  "groups": 224,
+  "measured_ms": {
+   "hybrid_fast": 13.509,
+   "rf": 88.714,
+   "pgdg_align": 11.767,
+   "corr": 13.272
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 11.767,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q<=4",
+  "predicted_ms": {
+   "hybrid_fast": 17.59,
+   "pgdg_align": 29.868,
+   "rf": 229.83
+  },
+  "planned_ms": 11.357,
+  "chosen_forced_ms": 11.767,
+  "route_correct": true,
+  "regret": 0.9652,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 137781,
+  "rss_kb": {
+   "hybrid_fast": 26232,
+   "rf": 109396,
+   "pgdg_align": 25268,
+   "corr": 26200
+  }
+ },
+ {
+  "case": "v3_2049_v3_u900k_g224_f97_q8",
+  "base": "v3_u900k_g224",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 97,
+  "q": 8,
+  "states": 2049,
+  "rows": 900000,
+  "groups": 224,
+  "measured_ms": {
+   "rf": 93.576,
+   "pgdg_align": 20.024,
+   "hybrid_fast": 22.076,
+   "corr": 20.978
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "pgdg_align",
+  "oracle_ms": 20.024,
+  "chosen": "pgdg_align",
+  "regime": "shallow_q8",
+  "predicted_ms": {
+   "hybrid_fast": 6.416,
+   "pgdg_align": 4.63,
+   "rf": 12.623
+  },
+  "planned_ms": 20.714,
+  "chosen_forced_ms": 20.024,
+  "route_correct": true,
+  "regret": 1.0345,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 137999,
+  "rss_kb": {
+   "rf": 109536,
+   "pgdg_align": 30476,
+   "hybrid_fast": 31392,
+   "corr": 31324
+  }
+ },
+ {
+  "case": "v3_2049_v3_u900k_g224_f97_q32",
+  "base": "v3_u900k_g224",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 97,
+  "q": 32,
+  "states": 2049,
+  "rows": 900000,
+  "groups": 224,
+  "measured_ms": {
+   "corr": 36.973,
+   "rf": 107.695,
+   "pgdg_align": 45.12,
+   "hybrid_fast": 36.871
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf"
+  ],
+  "oracle": "hybrid_fast",
+  "oracle_ms": 36.871,
+  "chosen": "hybrid_fast",
+  "regime": "shallow_q32_low_nf_hybrid",
+  "predicted_ms": {
+   "hybrid_fast": 3.684,
+   "pgdg_align": 1.437,
+   "rf": 1.516
+  },
+  "planned_ms": 37.87,
+  "chosen_forced_ms": 36.871,
+  "route_correct": true,
+  "regret": 1.0271,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 140313,
+  "rss_kb": {
+   "corr": 34788,
+   "rf": 110304,
+   "pgdg_align": 52064,
+   "hybrid_fast": 34732
+  }
+ },
+ {
+  "case": "v3_300k_v3_u1700k_g416_f59_q2",
+  "base": "v3_u1700k_g416",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 2,
+  "states": 300000,
+  "rows": 1700000,
+  "groups": 416,
+  "measured_ms": {
+   "pgdg_align": 272.059,
+   "rf": 3883.585,
+   "hybrid_fast": 1102.153,
+   "batch_deep": 244.222,
+   "corr": 528.395
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep",
+   "corr"
+  ],
+  "oracle": "batch_deep",
+  "oracle_ms": 244.222,
+  "chosen": "batch_deep",
+  "regime": "deep_q<=2",
+  "predicted_ms": {
+   "hybrid_fast": 0.04,
+   "pgdg_align": 0.0,
+   "rf": 0.0,
+   "batch_deep": 0.008,
+   "corr": 0.003
+  },
+  "planned_ms": 240.994,
+  "chosen_forced_ms": 244.222,
+  "route_correct": true,
+  "regret": 0.9868,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 184358,
+  "rss_kb": {
+   "pgdg_align": 119384,
+   "rf": 456896,
+   "hybrid_fast": 305060,
+   "batch_deep": 153756,
+   "corr": 305124
+  }
+ },
+ {
+  "case": "v3_300k_v3_u300k_g320_f59_q2",
+  "base": "v3_u300k_g320",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 2,
+  "states": 300000,
+  "rows": 300000,
+  "groups": 320,
+  "measured_ms": {
+   "hybrid_fast": 900.107,
+   "rf": 1032.502,
+   "pgdg_align": 240.298,
+   "batch_deep": 178.356,
+   "corr": 467.428
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep",
+   "corr"
+  ],
+  "oracle": "batch_deep",
+  "oracle_ms": 178.356,
+  "chosen": "batch_deep",
+  "regime": "deep_q<=2",
+  "predicted_ms": {
+   "hybrid_fast": 0.039,
+   "pgdg_align": 0.0,
+   "rf": 0.0,
+   "batch_deep": 0.01,
+   "corr": 0.003
+  },
+  "planned_ms": 178.803,
+  "chosen_forced_ms": 178.356,
+  "route_correct": true,
+  "regret": 1.0025,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 179049,
+  "rss_kb": {
+   "hybrid_fast": 261448,
+   "rf": 315632,
+   "pgdg_align": 83892,
+   "batch_deep": 106468,
+   "corr": 261452
+  }
+ },
+ {
+  "case": "v3_300k_v3_u300k_g320_t1_f59_q2",
+  "base": "v3_u300k_g320",
+  "topology": 1,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 2,
+  "states": 300000,
+  "rows": 300000,
+  "groups": 320,
+  "measured_ms": {
+   "corr": 404.226,
+   "pgdg_align": 250.247,
+   "hybrid_fast": 480.888,
+   "rf": 944.014,
+   "batch_deep": 234.273
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep",
+   "corr"
+  ],
+  "oracle": "batch_deep",
+  "oracle_ms": 234.273,
+  "chosen": "batch_deep",
+  "regime": "deep_q<=2",
+  "predicted_ms": {
+   "hybrid_fast": 0.039,
+   "pgdg_align": 0.0,
+   "rf": 0.0,
+   "batch_deep": 0.01,
+   "corr": 0.003
+  },
+  "planned_ms": 234.2,
+  "chosen_forced_ms": 234.273,
+  "route_correct": true,
+  "regret": 0.9997,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 180050,
+  "rss_kb": {
+   "corr": 254620,
+   "pgdg_align": 83676,
+   "hybrid_fast": 254604,
+   "rf": 307520,
+   "batch_deep": 105980
+  }
+ },
+ {
+  "case": "v3_300k_v3_u300k_g320_t2_f59_q2",
+  "base": "v3_u300k_g320",
+  "topology": 2,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 2,
+  "states": 300000,
+  "rows": 300000,
+  "groups": 320,
+  "measured_ms": {
+   "pgdg_align": 239.189,
+   "hybrid_fast": 440.33,
+   "rf": 923.744,
+   "batch_deep": 230.614,
+   "corr": 378.487
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep",
+   "corr"
+  ],
+  "oracle": "batch_deep",
+  "oracle_ms": 230.614,
+  "chosen": "batch_deep",
+  "regime": "deep_q<=2",
+  "predicted_ms": {
+   "hybrid_fast": 0.039,
+   "pgdg_align": 0.0,
+   "rf": 0.0,
+   "batch_deep": 0.01,
+   "corr": 0.003
+  },
+  "planned_ms": 230.815,
+  "chosen_forced_ms": 230.614,
+  "route_correct": true,
+  "regret": 1.0009,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 176205,
+  "rss_kb": {
+   "pgdg_align": 83972,
+   "hybrid_fast": 253244,
+   "rf": 309544,
+   "batch_deep": 105916,
+   "corr": 253284
+  }
+ },
+ {
+  "case": "v3_300k_v3_u420k_g112_f59_q2",
+  "base": "v3_u420k_g112",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 2,
+  "states": 300000,
+  "rows": 420000,
+  "groups": 112,
+  "measured_ms": {
+   "pgdg_align": 245.603,
+   "hybrid_fast": 667.044,
+   "batch_deep": 190.776,
+   "corr": 521.016,
+   "rf": 1967.7
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep",
+   "corr"
+  ],
+  "oracle": "batch_deep",
+  "oracle_ms": 190.776,
+  "chosen": "batch_deep",
+  "regime": "deep_q<=2",
+  "predicted_ms": {
+   "hybrid_fast": 0.024,
+   "pgdg_align": 0.0,
+   "rf": 0.0,
+   "batch_deep": 0.006,
+   "corr": 0.002
+  },
+  "planned_ms": 192.905,
+  "chosen_forced_ms": 190.776,
+  "route_correct": true,
+  "regret": 1.0112,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 181993,
+  "rss_kb": {
+   "pgdg_align": 80444,
+   "hybrid_fast": 258976,
+   "batch_deep": 103188,
+   "corr": 258684,
+   "rf": 323428
+  }
+ },
+ {
+  "case": "v3_300k_v3_u900k_g224_f59_q2",
+  "base": "v3_u900k_g224",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 2,
+  "states": 300000,
+  "rows": 900000,
+  "groups": 224,
+  "measured_ms": {
+   "corr": 515.132,
+   "pgdg_align": 254.439,
+   "hybrid_fast": 813.587,
+   "batch_deep": 208.86,
+   "rf": 2589.023
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep",
+   "corr"
+  ],
+  "oracle": "batch_deep",
+  "oracle_ms": 208.86,
+  "chosen": "batch_deep",
+  "regime": "deep_q<=2",
+  "predicted_ms": {
+   "hybrid_fast": 0.032,
+   "pgdg_align": 0.0,
+   "rf": 0.0,
+   "batch_deep": 0.007,
+   "corr": 0.002
+  },
+  "planned_ms": 209.96,
+  "chosen_forced_ms": 208.86,
+  "route_correct": true,
+  "regret": 1.0053,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 177758,
+  "rss_kb": {
+   "corr": 280660,
+   "pgdg_align": 95368,
+   "hybrid_fast": 280560,
+   "batch_deep": 123416,
+   "rf": 362956
+  }
+ },
+ {
+  "case": "v3_300k_v3_u900k_g224_f59_q8",
+  "base": "v3_u900k_g224",
+  "topology": 0,
+  "seed": 71,
+  "factor_period": 59,
+  "q": 8,
+  "states": 300000,
+  "rows": 900000,
+  "groups": 224,
+  "measured_ms": {
+   "rf": 3293.142,
+   "pgdg_align": 25684.855,
+   "hybrid_fast": 5075.069,
+   "batch_deep": 5511.186,
+   "corr": 5069.704
+  },
+  "distinct": [
+   "hybrid_fast",
+   "pgdg_align",
+   "rf",
+   "batch_deep"
+  ],
+  "oracle": "rf",
+  "oracle_ms": 3293.142,
+  "chosen": "rf",
+  "regime": "deep_q>=8_rf_eligible",
+  "predicted_ms": {
+   "hybrid_fast": 40865004.065,
+   "pgdg_align": 9357654333.057,
+   "rf": 33563145269.063,
+   "batch_deep": 36978265.654
+  },
+  "planned_ms": 3262.959,
+  "chosen_forced_ms": 3293.142,
+  "route_correct": true,
+  "regret": 0.9908,
+  "regret_chosen_forced": 1.0,
+  "plan_ns": 159822,
+  "rss_kb": {
+   "rf": 404592,
+   "pgdg_align": 356904,
+   "hybrid_fast": 5786568,
+   "batch_deep": 5849048,
+   "corr": 5786620
+  }
+ }
+]

@@ -1,0 +1,73 @@
+{
+ "panel": "formal 54-fixture retail2009 roster, 2 fresh-process repeats per engine/fixture",
+ "hybrid_source": "results/retail_20261025",
+ "cohorts": {
+  "q2": {
+   "dd": {
+    "wall_median": 1.6844085552570665,
+    "wall_min": 1.3693172082328557,
+    "wall_max": 2.0665731089599713,
+    "work_median": 1.6908480464888331,
+    "work_min": 1.3579205159804977,
+    "work_max": 2.080975411490196,
+    "wins": 18,
+    "cases": 18
+   },
+   "dbsp": {
+    "wall_median": 1.8096844232814386,
+    "wall_min": 1.4011302858160861,
+    "wall_max": 2.185049500740462,
+    "work_median": 1.830200820434548,
+    "work_min": 1.413073427645151,
+    "work_max": 2.2306797471090705,
+    "wins": 18,
+    "cases": 18
+   }
+  },
+  "q8": {
+   "dd": {
+    "wall_median": 1.627371956497151,
+    "wall_min": 1.22920922530168,
+    "wall_max": 1.7929680914826998,
+    "work_median": 1.5987228443770487,
+    "work_min": 1.2093753819183204,
+    "work_max": 1.7697933585492112,
+    "wins": 18,
+    "cases": 18
+   },
+   "dbsp": {
+    "wall_median": 1.7954094889218624,
+    "wall_min": 1.362394696549716,
+    "wall_max": 1.9809312511149282,
+    "work_median": 1.7954647858520665,
+    "work_min": 1.3674378163663419,
+    "work_max": 1.9914833875662112,
+    "wins": 18,
+    "cases": 18
+   }
+  },
+  "q32": {
+   "dd": {
+    "wall_median": 1.6250519702010293,
+    "wall_min": 1.1762302473138457,
+    "wall_max": 1.8889168536389784,
+    "work_median": 1.6071194768159502,
+    "work_min": 1.1530343668353094,
+    "work_max": 1.8797001917587313,
+    "wins": 18,
+    "cases": 18
+   },
+   "dbsp": {
+    "wall_median": 2.0040832036488543,
+    "wall_min": 1.452700595579672,
+    "wall_max": 2.386455605241857,
+    "work_median": 1.9757740548353955,
+    "work_min": 1.4270200232252974,
+    "work_max": 2.3676394887131944,
+    "wins": 18,
+    "cases": 18
+   }
+  }
+ },
+ "all_exact": true
+}

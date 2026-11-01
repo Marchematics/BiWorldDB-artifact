@@ -1,0 +1,7537 @@
+{
+ "schema": "qcc-longbench-retention-v1",
+ "partial": false,
+ "model": "artifact/Llama-3.2-1B-Instruct",
+ "label": "Llama-3.2-1B-Instruct",
+ "tiny_random_model": false,
+ "evidence": true,
+ "benchmark": "longbench",
+ "dataset": {
+  "repo": "THUDM/LongBench",
+  "cache_dir": "artifact/longbench",
+  "tasks_requested": [
+   "hotpotqa"
+  ],
+  "tasks_run": [
+   "hotpotqa"
+  ],
+  "records_run": 20,
+  "records_skipped": 0,
+  "record_counts": {
+   "hotpotqa": 200
+  },
+  "configs": {
+   "dataset2prompt.json": {
+    "path": "artifact/dataset2prompt.json",
+    "source": "cache"
+   },
+   "dataset2maxlen.json": {
+    "path": "artifact/dataset2maxlen.json",
+    "source": "cache"
+   },
+   "dataset2metric.json": {
+    "path": "artifact/dataset2metric.json",
+    "source": "cache"
+   }
+  }
+ },
+ "skipped_tasks": {},
+ "skipped_records": [],
+ "metric_errors": 0,
+ "dataset2metric": {
+  "2wikimqa": "qa_f1_score",
+  "dureader": "rouge_zh_score",
+  "gov_report": "rouge_score",
+  "hotpotqa": "qa_f1_score",
+  "lcc": "code_sim_score",
+  "lsht": "classification_score",
+  "multi_news": "rouge_score",
+  "multifieldqa_en": "qa_f1_score",
+  "multifieldqa_zh": "qa_f1_zh_score",
+  "musique": "qa_f1_score",
+  "narrativeqa": "qa_f1_score",
+  "passage_count": "count_score",
+  "passage_retrieval_en": "retrieval_score",
+  "passage_retrieval_zh": "retrieval_zh_score",
+  "qasper": "qa_f1_score",
+  "qmsum": "rouge_score",
+  "repobench-p": "code_sim_score",
+  "samsum": "rouge_score",
+  "trec": "classification_score",
+  "triviaqa": "qa_f1_score",
+  "vcsum": "rouge_zh_score"
+ },
+ "truncation_policy": {
+  "policy": "head_tail",
+  "max_input_tokens": 32768,
+  "head_tail": "keep the first and last half of the token ids, the official LongBench middle truncation",
+  "skip": "records over the limit are dropped and listed in skipped_records"
+ },
+ "decode": {
+  "greedy": true,
+  "max_new": "per-task official dataset2maxlen.json",
+  "max_new_includes_prefill_token": true,
+  "stop_at_eos": true,
+  "add_special_tokens": false,
+  "chat_template": "auto",
+  "chat_template_applied": true,
+  "chat_template_token_ids_verified": true,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "attn_impl": "sdpa",
+  "load_4bit": false
+ },
+ "config": {
+  "model": "artifact/Llama-3.2-1B-Instruct",
+  "label": null,
+  "tasks": [
+   "hotpotqa"
+  ],
+  "limit": 20,
+  "shard_index": 0,
+  "shard_count": 1,
+  "budget": 1024,
+  "pad_factor": 1.0,
+  "lex_cap": 512,
+  "select_block": 0,
+  "hops": 6,
+  "obs": 64,
+  "nsink": 4,
+  "smooth_avg": 0,
+  "recent_fraction": 0.05,
+  "snapkv_window": 32,
+  "snapkv_kernel": 5,
+  "snapkv_pooling": "avgpool",
+  "pool": 7,
+  "dilate": 9,
+  "scoring": "mean",
+  "max_new": null,
+  "no_repeat_ngram": 0,
+  "blend_mode": "mean",
+  "blend_alpha": 0.5,
+  "max_input_tokens": 32768,
+  "chat_template": "auto",
+  "truncation": "head_tail",
+  "prefill_chunk": 8192,
+  "key_chunk": 4096,
+  "kv_quant": "none",
+  "kv_quant_group": 128,
+  "arms": [
+   "qcc"
+  ],
+  "cache_dir": null,
+  "trust_remote_code": false,
+  "load_4bit": false,
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "attn_impl": "sdpa",
+  "tiny_random_model": false,
+  "progress": null,
+  "out": "artifact/r_0.05.json",
+  "snapkv_reference": {}
+ },
+ "packaged_retention_policy": "observation",
+ "packaged_retention_policies": {
+  "bounded": "observation",
+  "qcc": "blend_lex"
+ },
+ "family_lexical_arms_scope": "historical frontier implementations; not the shipped qcc arm",
+ "snapkv_forced": {},
+ "summary": {
+  "tasks": {
+   "hotpotqa": {
+    "qcc": {
+     "records": 20,
+     "mean_score": 0.3369,
+     "mean_kept_slots": 1280.0,
+     "mean_prompt_tokens": 13365.1,
+     "mean_generated": 5.0,
+     "positive_records": 9
+    }
+   }
+  },
+  "aggregate": {}
+ },
+ "records": [
+  {
+   "row": 0,
+   "task": "hotpotqa",
+   "id": "fc6267db9ba02bbb251960231bc87251c581110e4e2b5f3f",
+   "official_length": 8616,
+   "prompt_tokens": 11380,
+   "prompt_tokens_before": 11380,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.1125,
+   "max_new": 32,
+   "generated": 7,
+   "prediction": "Gates v. Collier",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "236c8a1371a29721e40ead758edf2d070542bd19d64bfeedd3105d392823790b",
+   "token_ids_sha256": "e164758ccaa09d5e886c3f8f270b42fdb1a9284cdfb1f3cda529c6b295f2a376",
+   "score": 0.333333,
+   "prefill_s": 7.45,
+   "decode_s": 0.07,
+   "pinned_rope": false,
+   "resident_gib": 3.114,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 7.08
+  },
+  {
+   "row": 1,
+   "task": "hotpotqa",
+   "id": "d542fcd45bbf5112eee9127f04ae060a887c8ef2050aa160",
+   "official_length": 11525,
+   "prompt_tokens": 16329,
+   "prompt_tokens_before": 16329,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.0784,
+   "max_new": 32,
+   "generated": 5,
+   "prediction": "Charles L. Clifford",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "ba236c97981aa21f01d1beda13802aa4f4fa519119b90fb5db132b1865fa81d7",
+   "token_ids_sha256": "69e2f632074387e1e70e40bf14b1b7239b76c21f006da9cee5253beba18919b8",
+   "score": 1.0,
+   "prefill_s": 12.94,
+   "decode_s": 0.04,
+   "pinned_rope": false,
+   "resident_gib": 4.297,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 9.8
+  },
+  {
+   "row": 2,
+   "task": "hotpotqa",
+   "id": "cb9214532284b8202912b1b75592832daef0b109593185a0",
+   "official_length": 11935,
+   "prompt_tokens": 16348,
+   "prompt_tokens_before": 16348,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.0783,
+   "max_new": 32,
+   "generated": 3,
+   "prediction": "East Lansing",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "a7dfd3f94c6d4cf6c4962f2868d3aefdd2f19edceced6bc49b1d66316659706d",
+   "token_ids_sha256": "338a9d3e20c6d511a4230493dd9281e88b5220d349dcc94fddcbc9e271a0ba77",
+   "score": 0.0,
+   "prefill_s": 12.97,
+   "decode_s": 0.02,
+   "pinned_rope": false,
+   "resident_gib": 4.302,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 10.99
+  },
+  {
+   "row": 3,
+   "task": "hotpotqa",
+   "id": "105e7f4d337799315ddf870acc4ff2a62a1e6cdf489086cd",
+   "official_length": 11879,
+   "prompt_tokens": 16378,
+   "prompt_tokens_before": 16378,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.0782,
+   "max_new": 32,
+   "generated": 3,
+   "prediction": "Mars",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "b530aefaf07bc9f2044b873d2398c7ea25a2f8c5af1fbb53d7eb830f78dec8aa",
+   "token_ids_sha256": "27607d37ee13517f6b61f5bcc3ef798f82361a4280378d545df8f5ad9b972dc2",
+   "score": 0.0,
+   "prefill_s": 13.02,
+   "decode_s": 0.02,
+   "pinned_rope": false,
+   "resident_gib": 4.308,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 11.0
+  },
+  {
+   "row": 4,
+   "task": "hotpotqa",
+   "id": "5ff08452b84748458e71d82a6d387599969311fd61cd8fd1",
+   "official_length": 9865,
+   "prompt_tokens": 14536,
+   "prompt_tokens_before": 14536,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.0881,
+   "max_new": 32,
+   "generated": 2,
+   "prediction": "Film",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "c4d57bb7e0351934214aa8a72861ffcac65d64601a8d3f6a95aab2eb018855da",
+   "token_ids_sha256": "751e34e8789b26d375ccc74bf1cd5b444103e8e3067f146dcac58745cefa5aec",
+   "score": 0.5,
+   "prefill_s": 10.35,
+   "decode_s": 0.01,
+   "pinned_rope": false,
+   "resident_gib": 3.866,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 10.27
+  },
+  {
+   "row": 5,
+   "task": "hotpotqa",
+   "id": "97b31d6d7a9137c220726ad51a6dca3e957e2c94ce5e65b8",
+   "official_length": 10034,
+   "prompt_tokens": 14643,
+   "prompt_tokens_before": 14643,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.0874,
+   "max_new": 32,
+   "generated": 4,
+   "prediction": "Channel 4",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "102c315ab5bec4c3b878c18c51c25963a27ae1f33ce326e3a69bab121a00b632",
+   "token_ids_sha256": "38240f6a90b412fc8b41c35465e355313b976fd2a75c33e20770dfc9323931c1",
+   "score": 0.0,
+   "prefill_s": 10.52,
+   "decode_s": 0.03,
+   "pinned_rope": false,
+   "resident_gib": 3.892,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 9.87
+  },
+  {
+   "row": 6,
+   "task": "hotpotqa",
+   "id": "11a7ad9d646184c16480376226d58f1b2754b095563c8344",
+   "official_length": 9438,
+   "prompt_tokens": 15848,
+   "prompt_tokens_before": 15848,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.0808,
+   "max_new": 32,
+   "generated": 7,
+   "prediction": "Thiruvaduthurai",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "097ac168a6756266a99edb39b848ab8a520fbb94537c3c5a1e33199ac9ae4fe6",
+   "token_ids_sha256": "264786478f676977b11baf4a9830ac8897bb40e0530e1422dc546a6fa133d5d4",
+   "score": 0.0,
+   "prefill_s": 12.2,
+   "decode_s": 0.05,
+   "pinned_rope": false,
+   "resident_gib": 4.182,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 10.39
+  },
+  {
+   "row": 7,
+   "task": "hotpotqa",
+   "id": "3dd1ade26fd583844dd2af051d61eb20856ccc8e23abae59",
+   "official_length": 1267,
+   "prompt_tokens": 2281,
+   "prompt_tokens_before": 2281,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.5612,
+   "max_new": 32,
+   "generated": 7,
+   "prediction": "Pleiospilos.",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "208786bb68ed40e23685b89bdc2292324f0173fbb28fe7c48175141b23b072ef",
+   "token_ids_sha256": "df72e88cdf2c2a209207e2d871aebd9476f6dd456976b07ec43892d41ebbf050",
+   "score": 1.0,
+   "prefill_s": 0.85,
+   "decode_s": 0.05,
+   "pinned_rope": false,
+   "resident_gib": 2.92,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 8.02
+  },
+  {
+   "row": 8,
+   "task": "hotpotqa",
+   "id": "f039fe9cc81a0a312f9899beca2fe26b710bf8c3aa23a4d9",
+   "official_length": 7877,
+   "prompt_tokens": 12185,
+   "prompt_tokens_before": 12185,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.105,
+   "max_new": 32,
+   "generated": 3,
+   "prediction": "2021",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "75ebbc29eab5f038cff45cd04d8504af5352cf1790f5e55ee3854204bb07fc26",
+   "token_ids_sha256": "e4eb7aa7237c689758d79e24c626c611262a5b9957e1aa765e387345c57676b9",
+   "score": 0.0,
+   "prefill_s": 7.58,
+   "decode_s": 0.02,
+   "pinned_rope": false,
+   "resident_gib": 3.306,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 7.93
+  },
+  {
+   "row": 9,
+   "task": "hotpotqa",
+   "id": "a30caa5dafcc37835bfe4093f129017adf4c814e9016e10d",
+   "official_length": 6021,
+   "prompt_tokens": 8775,
+   "prompt_tokens_before": 8775,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.1459,
+   "max_new": 32,
+   "generated": 6,
+   "prediction": "Noelle Scaggs",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "1ca0398d9299eb63c1e1ffbe4f0319db9ba92a7af951b3a68ed825126e1919db",
+   "token_ids_sha256": "ab1e134e7a040b3c490d15e7c7d2b73136e85d14c8f719d5976ad2fc8688a98c",
+   "score": 0.0,
+   "prefill_s": 4.73,
+   "decode_s": 0.04,
+   "pinned_rope": false,
+   "resident_gib": 2.49,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 6.97
+  },
+  {
+   "row": 10,
+   "task": "hotpotqa",
+   "id": "72feb2a8e5b92548a357bfc11e94050464f93f1ce286418c",
+   "official_length": 12090,
+   "prompt_tokens": 16288,
+   "prompt_tokens_before": 16288,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.0786,
+   "max_new": 32,
+   "generated": 8,
+   "prediction": "October 13, 1980",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "568b9dedd1eb372358dd1e8f5c4d773acf868c9a63c2c1783a796384e36c3802",
+   "token_ids_sha256": "28a87e22f2ad38eb6213be345732dc6eaa8750d7442f9165bb342645f0f8ca29",
+   "score": 1.0,
+   "prefill_s": 12.86,
+   "decode_s": 0.06,
+   "pinned_rope": false,
+   "resident_gib": 4.287,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 9.16
+  },
+  {
+   "row": 11,
+   "task": "hotpotqa",
+   "id": "77439b0a62b6de3a022b1d7a5678c1c00fa8d9af42fea1bf",
+   "official_length": 11381,
+   "prompt_tokens": 15907,
+   "prompt_tokens_before": 15907,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.0805,
+   "max_new": 32,
+   "generated": 4,
+   "prediction": "Cartoon Network",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "63e7b460bcb306f11f43368a189f7010538e84c891bea7e925eac3f0aafaf5d7",
+   "token_ids_sha256": "4be809e86644c56c52d6159883874d44c47fd488d2f9942e2183a13d2f06d4f5",
+   "score": 0.0,
+   "prefill_s": 12.31,
+   "decode_s": 0.03,
+   "pinned_rope": false,
+   "resident_gib": 4.196,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 10.81
+  },
+  {
+   "row": 12,
+   "task": "hotpotqa",
+   "id": "21bc398556b5612bf0437043cd2800e943bab5929c4bccc5",
+   "official_length": 11127,
+   "prompt_tokens": 15510,
+   "prompt_tokens_before": 15510,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.0825,
+   "max_new": 32,
+   "generated": 6,
+   "prediction": "Olivia de Havill",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "1baf1329343fb23c716288eac10af1fe07c4c4bbe3bc0a8496f5bcf7dbb35dc0",
+   "token_ids_sha256": "666a793bbcec2629ef461179a65ea1428830a68ae67f0a2b8db14b24502e2eba",
+   "score": 0.0,
+   "prefill_s": 11.72,
+   "decode_s": 0.04,
+   "pinned_rope": false,
+   "resident_gib": 4.101,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 10.57
+  },
+  {
+   "row": 13,
+   "task": "hotpotqa",
+   "id": "e0998dbc2db68c7b18adff7fcc67081acc865c974b721312",
+   "official_length": 6961,
+   "prompt_tokens": 10322,
+   "prompt_tokens_before": 10322,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.124,
+   "max_new": 32,
+   "generated": 2,
+   "prediction": "99",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "68335091eab413197830103ab1b3cff781910ec834a1217e0dd351172085c973",
+   "token_ids_sha256": "6f1050801eb5827dc6c38fd16f7c1deca5d4047e33d1ef0522411aebc73126d6",
+   "score": 0.0,
+   "prefill_s": 5.84,
+   "decode_s": 0.01,
+   "pinned_rope": false,
+   "resident_gib": 2.86,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 8.38
+  },
+  {
+   "row": 14,
+   "task": "hotpotqa",
+   "id": "139d2fcf8763003414ebd0187eb30b94930de13c4ab754a0",
+   "official_length": 11852,
+   "prompt_tokens": 16246,
+   "prompt_tokens_before": 16246,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.0788,
+   "max_new": 32,
+   "generated": 12,
+   "prediction": "Northeastern United States, Canada, and Europe.",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "19ba0b0a32e90a2fd8ccda9c167c7d847ba1ffd8e2bb1ebdf86a1515307af5ba",
+   "token_ids_sha256": "5d6af8ce62d14969c9af344c36d4e52f09492b22853d37c35dbf2f4ed6a3c03b",
+   "score": 0.533333,
+   "prefill_s": 12.81,
+   "decode_s": 0.1,
+   "pinned_rope": false,
+   "resident_gib": 4.277,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 9.52
+  },
+  {
+   "row": 15,
+   "task": "hotpotqa",
+   "id": "c261ca6aeaf366815232e91db1ef4dc8408cec3750c38ee9",
+   "official_length": 8651,
+   "prompt_tokens": 12270,
+   "prompt_tokens_before": 12270,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.1043,
+   "max_new": 32,
+   "generated": 5,
+   "prediction": "2000 Summer Olympics",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "d5a94bf7509f574d8de6f488246089c79350b70c68b115ba8b6d042a42d5bd1c",
+   "token_ids_sha256": "282d91eb8e3b3e6b29b4f339cbf1d925a4a16dc46664693a7fc39415b7801153",
+   "score": 0.571429,
+   "prefill_s": 7.68,
+   "decode_s": 0.04,
+   "pinned_rope": false,
+   "resident_gib": 3.327,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 9.33
+  },
+  {
+   "row": 16,
+   "task": "hotpotqa",
+   "id": "ab016faac478c4acc6e9ed3ed87f9e29dbed47fd946be244",
+   "official_length": 4109,
+   "prompt_tokens": 6219,
+   "prompt_tokens_before": 6219,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.2058,
+   "max_new": 32,
+   "generated": 4,
+   "prediction": "Claudio López",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "7fc689a54b579cc274c7661d2a0cacade6db8130fd9580c61a49566fe92dcddb",
+   "token_ids_sha256": "90b881dd4ac048de5cc8e3c78d9e200e85348e7d9aa018b26e0980a2ae15fec1",
+   "score": 0.8,
+   "prefill_s": 5.75,
+   "decode_s": 0.03,
+   "pinned_rope": false,
+   "resident_gib": 3.837,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 17.68
+  },
+  {
+   "row": 17,
+   "task": "hotpotqa",
+   "id": "cae319fad2385d30d79efac0fb61e58518fbdc0703be3b0f",
+   "official_length": 12697,
+   "prompt_tokens": 16317,
+   "prompt_tokens_before": 16317,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.0784,
+   "max_new": 32,
+   "generated": 4,
+   "prediction": "Ronald Reagan",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "02b62f94648585766477708e18ba627a319081e7107c50c47fa842ce468468fc",
+   "token_ids_sha256": "5ab1866fe224aa1b27bc8e18d97fd0987e671f98ce67ea0073044017617735c1",
+   "score": 0.0,
+   "prefill_s": 12.96,
+   "decode_s": 0.03,
+   "pinned_rope": false,
+   "resident_gib": 4.294,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 10.52
+  },
+  {
+   "row": 18,
+   "task": "hotpotqa",
+   "id": "e4df9576e5cd102024e81baf94a43325335d0ba2d8892041",
+   "official_length": 10290,
+   "prompt_tokens": 14036,
+   "prompt_tokens_before": 14036,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.0912,
+   "max_new": 32,
+   "generated": 4,
+   "prediction": "Talk That Talk",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "93b90d03dea8c1e508de06b66fef2e9cdddefe386808785e25d1b1c8cfc2b9ed",
+   "token_ids_sha256": "335543771ae739e81070ac024d70cd4d970b0704f5dc40f7e2d435754c39bc7e",
+   "score": 1.0,
+   "prefill_s": 9.7,
+   "decode_s": 0.03,
+   "pinned_rope": false,
+   "resident_gib": 3.747,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 10.06
+  },
+  {
+   "row": 19,
+   "task": "hotpotqa",
+   "id": "5e3362de0244d2b96c83958c4d3229151999292c369b0197",
+   "official_length": 11185,
+   "prompt_tokens": 15484,
+   "prompt_tokens_before": 15484,
+   "truncated": false,
+   "arm": "qcc",
+   "kept_slots": 1280,
+   "kept_slots_mean": 1280.0,
+   "slots_per_token": 0.0827,
+   "max_new": 32,
+   "generated": 4,
+   "prediction": "Roy Orbison",
+   "cache_storage": {
+    "stage": "post_compile_pre_decode",
+    "layers": [
+     {
+      "layer": 0,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 1,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 2,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 3,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 4,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 5,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 6,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 7,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 8,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 9,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 10,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 11,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 12,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 13,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 14,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     },
+     {
+      "layer": 15,
+      "keys_dtype": "torch.bfloat16",
+      "values_dtype": "torch.bfloat16",
+      "keys_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "values_shape": [
+       1,
+       8,
+       1280,
+       64
+      ],
+      "kv_tensor_payload_bytes": 2621440,
+      "kv_slots": 10240
+     }
+    ],
+    "kv_tensor_payload_bytes": 41943040,
+    "kv_slots": 163840,
+    "position_index_bytes": null,
+    "scope": "live KV tensor payload and available selection indices; not allocator release",
+    "known_auxiliary_tensors": {
+     "qcc_attention_mask": {
+      "dtype": "torch.int64",
+      "shape": [
+       1,
+       1280
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 10240,
+      "backing_storage_bytes": 10240
+     },
+     "qcc_prompt_lengths": {
+      "dtype": "torch.int64",
+      "shape": [
+       1
+      ],
+      "device": "cuda:0",
+      "tensor_payload_bytes": 8,
+      "backing_storage_bytes": 8
+     }
+    },
+    "auxiliary_tensor_payload_bytes": 10248,
+    "auxiliary_backing_storage_bytes": 10248,
+    "known_state_tensor_payload_bytes": 41953288,
+    "known_state_backing_storage_bytes": 41953288,
+    "known_state_backing_storage_by_device": {
+     "cuda:0": 41953288
+    },
+    "known_state_scope": "enumerated KV, present qcc_attention_mask/qcc_prompt_lengths and supplied indices only; indices=None remains unknown and is omitted from known totals; backing bytes count full distinct storages including unused slice backing; excludes Python objects, allocator overhead and separately retained external Full-KV/transient tensors",
+    "layout": "native_kv_head_cache",
+    "selection_index_status": "not_exposed_by_packaged_compiler"
+   },
+   "prompt_sha256": "86bcd3294be4d97f7bc4259681b631d04da53890d6796820e56f8cfa89d99652",
+   "token_ids_sha256": "fa25bc2b4171436f53871d5401c93e9de47244ef463eddc7b12b95b39c5cee54",
+   "score": 0.0,
+   "prefill_s": 11.66,
+   "decode_s": 0.03,
+   "pinned_rope": false,
+   "resident_gib": 4.095,
+   "resident_gib_scope": "post_decode_process_allocation_including_model_and_transients_not_kv_capacity",
+   "peak_gib": 10.11
+  }
+ ]
+}

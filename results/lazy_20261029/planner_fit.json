@@ -1,0 +1,559 @@
+{
+ "cases": 33,
+ "shipped_weights": {
+  "W_SCAN": 1.0,
+  "W_ADD": 3.8,
+  "W_GRP": 2.3,
+  "W_BIS": 2.4,
+  "W_FIX": 1.1,
+  "W_HEAVY": 1.7,
+  "W_LIST": 0.7,
+  "W_HFEN": 2.4,
+  "UPD": 2.0
+ },
+ "units": "estimated execute-phase nanoseconds-equivalent",
+ "median_regret": 1.002,
+ "max_regret": 1.15,
+ "searched_best": {
+  "W_SCAN": 1.9833,
+  "W_ADD": 1.0954,
+  "W_GRP": 4.8839,
+  "W_BIS": 2.1678,
+  "W_FIX": 9.5697,
+  "W_HEAVY": 1.0125,
+  "W_LIST": 1.5872,
+  "W_HFEN": 6.8242
+ },
+ "searched_best_median": 1.0,
+ "searched_best_max": 1.15,
+ "rows": [
+  {
+   "case": "default_intel_q2",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 625214.0,
+    "lazy": 729929.3,
+    "hybrid": 325590.9
+   },
+   "measured_ms": {
+    "eager": 0.845,
+    "lazy": 1.421,
+    "hybrid": 0.804
+   },
+   "measured_best": 0.804,
+   "regret": 1.0
+  },
+  {
+   "case": "default_intel_q8",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 2385343.8,
+    "lazy": 4597581.0,
+    "hybrid": 1193457.2
+   },
+   "measured_ms": {
+    "eager": 1.606,
+    "lazy": 4.901,
+    "hybrid": 1.706
+   },
+   "measured_best": 1.606,
+   "regret": 1.062
+  },
+  {
+   "case": "default_intel_q32",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 9310863.2,
+    "lazy": 20376556.8,
+    "hybrid": 4549472.0
+   },
+   "measured_ms": {
+    "eager": 4.469,
+    "lazy": 16.681,
+    "hybrid": 5.095
+   },
+   "measured_best": 4.469,
+   "regret": 1.14
+  },
+  {
+   "case": "default_taxi2024_q2",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 2614949.7,
+    "lazy": 551030.9,
+    "hybrid": 300551.7
+   },
+   "measured_ms": {
+    "eager": 1.966,
+    "lazy": 2.122,
+    "hybrid": 1.637
+   },
+   "measured_best": 1.637,
+   "regret": 1.0
+  },
+  {
+   "case": "default_taxi2024_q8",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 9986611.0,
+    "lazy": 2381016.7,
+    "hybrid": 1138636.7
+   },
+   "measured_ms": {
+    "eager": 7.215,
+    "lazy": 7.484,
+    "hybrid": 6.31
+   },
+   "measured_best": 6.31,
+   "regret": 1.0
+  },
+  {
+   "case": "default_taxi2024_q32",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 39380034.1,
+    "lazy": 9524066.8,
+    "hybrid": 4465996.0
+   },
+   "measured_ms": {
+    "eager": 30.285,
+    "lazy": 31.989,
+    "hybrid": 27.393
+   },
+   "measured_best": 27.393,
+   "regret": 1.0
+  },
+  {
+   "case": "default_retail2009_q2",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 606489.2,
+    "lazy": 1081660.1,
+    "hybrid": 360129.2
+   },
+   "measured_ms": {
+    "eager": 1.473,
+    "lazy": 2.72,
+    "hybrid": 1.517
+   },
+   "measured_best": 1.473,
+   "regret": 1.03
+  },
+  {
+   "case": "default_retail2009_q8",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 1890545.8,
+    "lazy": 4896904.5,
+    "hybrid": 1250697.2
+   },
+   "measured_ms": {
+    "eager": 5.668,
+    "lazy": 10.71,
+    "hybrid": 5.679
+   },
+   "measured_best": 5.668,
+   "regret": 1.002
+  },
+  {
+   "case": "default_retail2009_q32",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 6757147.9,
+    "lazy": 19591533.0,
+    "hybrid": 4511387.9
+   },
+   "measured_ms": {
+    "eager": 18.004,
+    "lazy": 33.291,
+    "hybrid": 18.24
+   },
+   "measured_best": 18.004,
+   "regret": 1.013
+  },
+  {
+   "case": "factor50_intel_q2",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 658703.5,
+    "lazy": 973460.3,
+    "hybrid": 494468.3
+   },
+   "measured_ms": {
+    "eager": 0.788,
+    "lazy": 1.61,
+    "hybrid": 0.679
+   },
+   "measured_best": 0.679,
+   "regret": 1.0
+  },
+  {
+   "case": "factor50_intel_q8",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 2533372.9,
+    "lazy": 6143287.3,
+    "hybrid": 1876432.1
+   },
+   "measured_ms": {
+    "eager": 1.796,
+    "lazy": 6.331,
+    "hybrid": 1.721
+   },
+   "measured_best": 1.721,
+   "regret": 1.0
+  },
+  {
+   "case": "factor50_intel_q32",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 9527406.9,
+    "lazy": 26386092.3,
+    "hybrid": 6899643.7
+   },
+   "measured_ms": {
+    "eager": 5.483,
+    "lazy": 21.63,
+    "hybrid": 5.364
+   },
+   "measured_best": 5.364,
+   "regret": 1.0
+  },
+  {
+   "case": "factor50_taxi2024_q2",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 2648465.4,
+    "lazy": 3479399.2,
+    "hybrid": 1773423.8
+   },
+   "measured_ms": {
+    "eager": 3.707,
+    "lazy": 6.764,
+    "hybrid": 3.985
+   },
+   "measured_best": 3.707,
+   "regret": 1.075
+  },
+  {
+   "case": "factor50_taxi2024_q8",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 10062032.5,
+    "lazy": 14720506.8,
+    "hybrid": 6561866.1
+   },
+   "measured_ms": {
+    "eager": 26.991,
+    "lazy": 35.858,
+    "hybrid": 26.771
+   },
+   "measured_best": 26.771,
+   "regret": 1.0
+  },
+  {
+   "case": "factor50_taxi2024_q32",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 39455345.2,
+    "lazy": 58885650.8,
+    "hybrid": 25454679.6
+   },
+   "measured_ms": {
+    "eager": 127.305,
+    "lazy": 156.041,
+    "hybrid": 127.595
+   },
+   "measured_best": 127.305,
+   "regret": 1.002
+  },
+  {
+   "case": "factor50_retail2009_q2",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 967360.4,
+    "lazy": 1011616.8,
+    "hybrid": 615751.2
+   },
+   "measured_ms": {
+    "eager": 1.332,
+    "lazy": 2.383,
+    "hybrid": 1.441
+   },
+   "measured_best": 1.332,
+   "regret": 1.081
+  },
+  {
+   "case": "factor50_retail2009_q8",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 2548444.8,
+    "lazy": 4409531.2,
+    "hybrid": 1770512.8
+   },
+   "measured_ms": {
+    "eager": 5.351,
+    "lazy": 9.917,
+    "hybrid": 6.098
+   },
+   "measured_best": 5.351,
+   "regret": 1.14
+  },
+  {
+   "case": "factor50_retail2009_q32",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 7422153.3,
+    "lazy": 17642612.7,
+    "hybrid": 5685193.3
+   },
+   "measured_ms": {
+    "eager": 19.458,
+    "lazy": 32.943,
+    "hybrid": 19.101
+   },
+   "measured_best": 19.101,
+   "regret": 1.0
+  },
+  {
+   "case": "default_intel_q128",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 36895597.1,
+    "lazy": 81506227.1,
+    "hybrid": 17858682.8
+   },
+   "measured_ms": {
+    "eager": 15.978,
+    "lazy": 57.101,
+    "hybrid": 18.368
+   },
+   "measured_best": 15.978,
+   "regret": 1.15
+  },
+  {
+   "case": "default_taxi2024_q128",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 156951618.1,
+    "lazy": 38096267.1,
+    "hybrid": 17774591.2
+   },
+   "measured_ms": {
+    "eager": 76.606,
+    "lazy": 83.804,
+    "hybrid": 66.651
+   },
+   "measured_best": 66.651,
+   "regret": 1.0
+  },
+  {
+   "case": "default_retail2009_q128",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 26201679.1,
+    "lazy": 78366131.9,
+    "hybrid": 17218639.1
+   },
+   "measured_ms": {
+    "eager": 32.52,
+    "lazy": 78.705,
+    "hybrid": 32.621
+   },
+   "measured_best": 32.52,
+   "regret": 1.003
+  },
+  {
+   "case": "factor50_intel_q128",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 37111509.3,
+    "lazy": 105544369.1,
+    "hybrid": 26600456.5
+   },
+   "measured_ms": {
+    "eager": 19.467,
+    "lazy": 75.358,
+    "hybrid": 19.413
+   },
+   "measured_best": 19.413,
+   "regret": 1.0
+  },
+  {
+   "case": "factor50_taxi2024_q128",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 157026929.2,
+    "lazy": 235542603.2,
+    "hybrid": 101024266.8
+   },
+   "measured_ms": {
+    "eager": 312.275,
+    "lazy": 440.589,
+    "hybrid": 314.315
+   },
+   "measured_best": 312.275,
+   "regret": 1.007
+  },
+  {
+   "case": "factor50_retail2009_q128",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 26866684.5,
+    "lazy": 70570450.6,
+    "hybrid": 19918844.5
+   },
+   "measured_ms": {
+    "eager": 34.589,
+    "lazy": 75.862,
+    "hybrid": 34.045
+   },
+   "measured_best": 34.045,
+   "regret": 1.0
+  },
+  {
+   "case": "stress2049_uci501_factor50_q2",
+   "chosen": "lazy",
+   "predicted": {
+    "eager": 3994077.8,
+    "lazy": 566768.2,
+    "hybrid": 566768.2
+   },
+   "measured_ms": {
+    "eager": 2.376,
+    "lazy": 1.106,
+    "hybrid": 1.003
+   },
+   "measured_best": 1.003,
+   "regret": 1.103
+  },
+  {
+   "case": "stress2049_uci501_factor50_q8",
+   "chosen": "lazy",
+   "predicted": {
+    "eager": 4333226.6,
+    "lazy": 2267072.7,
+    "hybrid": 2267072.7
+   },
+   "measured_ms": {
+    "eager": 2.879,
+    "lazy": 2.902,
+    "hybrid": 2.788
+   },
+   "measured_best": 2.788,
+   "regret": 1.041
+  },
+  {
+   "case": "stress2049_uci501_factor50_q32",
+   "chosen": "hybrid",
+   "predicted": {
+    "eager": 5689821.8,
+    "lazy": 9068290.6,
+    "hybrid": 5278327.4
+   },
+   "measured_ms": {
+    "eager": 4.834,
+    "lazy": 9.708,
+    "hybrid": 4.689
+   },
+   "measured_best": 4.689,
+   "regret": 1.0
+  },
+  {
+   "case": "stress16385_uci501_factor50_q2",
+   "chosen": "lazy",
+   "predicted": {
+    "eager": 316686709.0,
+    "lazy": 6506260.7,
+    "hybrid": 6506260.7
+   },
+   "measured_ms": {
+    "eager": 311.757,
+    "lazy": 12.399,
+    "hybrid": 12.138
+   },
+   "measured_best": 12.138,
+   "regret": 1.022
+  },
+  {
+   "case": "stress16385_uci501_factor50_q8",
+   "chosen": "lazy",
+   "predicted": {
+    "eager": 319399899.4,
+    "lazy": 26025043.0,
+    "hybrid": 26025043.0
+   },
+   "measured_ms": {
+    "eager": 318.417,
+    "lazy": 33.157,
+    "hybrid": 33.138
+   },
+   "measured_best": 33.138,
+   "regret": 1.001
+  },
+  {
+   "case": "stress16385_uci501_factor50_q32",
+   "chosen": "lazy",
+   "predicted": {
+    "eager": 330252661.0,
+    "lazy": 104100171.8,
+    "hybrid": 104100171.8
+   },
+   "measured_ms": {
+    "eager": 343.302,
+    "lazy": 109.56,
+    "hybrid": 109.32
+   },
+   "measured_best": 109.32,
+   "regret": 1.002
+  },
+  {
+   "case": "stress65537_uci501_factor50_q2",
+   "chosen": "lazy",
+   "predicted": {
+    "eager": 5451700542.2,
+    "lazy": 30834911.8,
+    "hybrid": 30834911.8
+   },
+   "measured_ms": {
+    "eager": 5784.042,
+    "lazy": 64.438,
+    "hybrid": 64.069
+   },
+   "measured_best": 64.069,
+   "regret": 1.006
+  },
+  {
+   "case": "stress65537_uci501_factor50_q8",
+   "chosen": "lazy",
+   "predicted": {
+    "eager": 5462553303.8,
+    "lazy": 123339647.3,
+    "hybrid": 123339647.3
+   },
+   "measured_ms": {
+    "eager": 5815.752,
+    "lazy": 156.45,
+    "hybrid": 157.189
+   },
+   "measured_best": 156.45,
+   "regret": 1.0
+  },
+  {
+   "case": "stress65537_uci501_factor50_q32",
+   "chosen": "lazy",
+   "predicted": {
+    "eager": 5505964350.2,
+    "lazy": 493358589.0,
+    "hybrid": 493358589.0
+   },
+   "measured_ms": {
+    "eager": 5904.731,
+    "lazy": 515.114,
+    "hybrid": 518.875
+   },
+   "measured_best": 515.114,
+   "regret": 1.0
+  }
+ ]
+}

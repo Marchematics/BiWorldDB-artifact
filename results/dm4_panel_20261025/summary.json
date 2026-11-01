@@ -1,0 +1,31 @@
+{
+ "runs": 5,
+ "all_exact": true,
+ "medians": {
+  "intel_t0_s7_f4_q2": {
+   "wall_s": 1.057498173,
+   "work_s": 0.977738538,
+   "peak_rss_mib": 292.296875
+  },
+  "intel_t1_s7_f4_q2": {
+   "wall_s": 1.016986852,
+   "work_s": 0.93368639,
+   "peak_rss_mib": 292.296875
+  },
+  "intel_t2_s7_f4_q2": {
+   "wall_s": 1.009041512,
+   "work_s": 0.9280264,
+   "peak_rss_mib": 292.296875
+  },
+  "intel_t0_s7_f4_q8": {
+   "wall_s": 3.195572996,
+   "work_s": 3.110948398,
+   "peak_rss_mib": 294.3125
+  },
+  "intel_t0_s7_f4_q32": {
+   "wall_s": 10.522618956,
+   "work_s": 10.432955229,
+   "peak_rss_mib": 302.48828125
+  }
+ }
+}

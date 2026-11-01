@@ -1,0 +1,35 @@
+{
+ "note": "Projection, NOT a re-run of the external panels. Formal 54-fixture panel engine/hybrid ratios (results/ivm_intel_panel_20261025) multiplied by the same-window interleaved speedup of the combined declared optimizations (old bin/panel vs bin/panel_lut with BWH_CLASS_LUT=1; 5 repetitions each; host load ~97 recorded). A fresh optimized external panel remains pending a quiet window.",
+ "rows": [
+  {
+   "cohort": "Q2",
+   "dd_formal_ratio": 2.512,
+   "dbsp_formal_ratio": 2.721,
+   "hybrid_speedup": 1.841,
+   "dd_projected_ratio": 4.62,
+   "dbsp_projected_ratio": 5.01,
+   "old_ms": 268.4,
+   "new_ms": 145.8
+  },
+  {
+   "cohort": "Q8",
+   "dd_formal_ratio": 3.061,
+   "dbsp_formal_ratio": 3.313,
+   "hybrid_speedup": 1.744,
+   "dd_projected_ratio": 5.34,
+   "dbsp_projected_ratio": 5.78,
+   "old_ms": 362.3,
+   "new_ms": 207.7
+  },
+  {
+   "cohort": "Q32",
+   "dd_formal_ratio": 4.379,
+   "dbsp_formal_ratio": 4.777,
+   "hybrid_speedup": 1.433,
+   "dd_projected_ratio": 6.27,
+   "dbsp_projected_ratio": 6.85,
+   "old_ms": 577.3,
+   "new_ms": 403.0
+  }
+ ]
+}

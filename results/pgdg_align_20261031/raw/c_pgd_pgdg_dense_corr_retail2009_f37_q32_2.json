@@ -1,0 +1,50 @@
+{
+ "arm": "pgdg_dense_corr",
+ "base_id": "retail2009",
+ "mode": "pgdg_dense_corr",
+ "family": "pgdg_aligned",
+ "fixture": "artifact/retail2009.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 32,
+ "repeat": 2,
+ "n_states": 2049,
+ "n_answers": 65536,
+ "range_scope": "per_state",
+ "answers_fn": "4cd3ca31a4f193ef",
+ "answers_sha256": "cd550e6494168a739ccd4f1feb6d8a56d2e69b28da55c4b630d8b1569173b0d2",
+ "phases_ns": {
+  "load": 100203,
+  "setup": 35472071,
+  "execute": 3942490,
+  "extract": 3551779,
+  "cleanup": 3987945
+ },
+ "full_ns": 47054488,
+ "peak_rss_kb": 60628,
+ "stats": {
+  "n_active": 43,
+  "n_groups": 43,
+  "classes": 80647,
+  "union_classes": 1511,
+  "dense_frame": false,
+  "sparse_base": false,
+  "corr": true,
+  "n_factor_edits": 55,
+  "n_ins": 407,
+  "nnz": 0,
+  "base_bytes": 29033280,
+  "dense_base_bytes": 28388096,
+  "plan_bytes": 1011056,
+  "plan_us": 1677,
+  "base_us": 23438
+ },
+ "auto": {
+  "classes": 0,
+  "dense_bytes": 0,
+  "est_nnz": 0,
+  "sparse_bytes": 0,
+  "occ": 0.0
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "engine": "duckdb",
+ "duckdb_version": "1.5.6",
+ "fixture": "fixtures/retail2009.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 8,
+ "repeat": 0,
+ "n_answers": 16384,
+ "answers_sha256": "aa162f6d76e7fb6d133e44bcabcd0872b8e79287070a028df3959bef853f04b7",
+ "oracle_ok": true,
+ "oracle_detail": "exact match",
+ "phases_ns": {
+  "load": 23529433,
+  "setup": 448675798,
+  "execute": 30381628362,
+  "extract": 4904090,
+  "cleanup": 55515530
+ },
+ "full_ns": 30914253213
+}

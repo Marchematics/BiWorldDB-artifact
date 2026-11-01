@@ -1,0 +1,25 @@
+[
+ {
+  "key": "intel_t0_s7_f37_q128_fh",
+  "base_id": "intel",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 128,
+  "env": {
+   "BWH_FACTOR_PCT": "50"
+  }
+ },
+ {
+  "key": "retail2009_t0_s7_f37_q128_fh",
+  "base_id": "retail2009",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 128,
+  "env": {
+   "BWH_FACTOR_PCT": "50",
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ }
+]

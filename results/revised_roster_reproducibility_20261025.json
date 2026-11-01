@@ -1,0 +1,222 @@
+{
+ "note": "Three-session reproducibility of the corrected six-optimization rosters (shipped binary), 54 fixtures x 2 repetitions per base per session, 2,916/2,916 answer vectors exact.",
+ "total_vectors": 2916,
+ "rows": [
+  {
+   "base": "Intel",
+   "cohort": "Q2",
+   "dd_sessions": [
+    6.36,
+    6.55,
+    6.71
+   ],
+   "dbsp_sessions": [
+    6.69,
+    6.94,
+    6.97
+   ],
+   "dd_w1": 6.36,
+   "dd_w2": 6.55,
+   "dd_w3": 6.71,
+   "dbsp_w1": 6.69,
+   "dbsp_w2": 6.94,
+   "dbsp_w3": 6.97,
+   "dd_min": 6.36,
+   "dd_max": 6.71,
+   "dbsp_min": 6.69,
+   "dbsp_max": 6.97
+  },
+  {
+   "base": "Intel",
+   "cohort": "Q8",
+   "dd_sessions": [
+    7.74,
+    7.99,
+    9.68
+   ],
+   "dbsp_sessions": [
+    8.38,
+    8.82,
+    10.72
+   ],
+   "dd_w1": 7.74,
+   "dd_w2": 7.99,
+   "dd_w3": 9.68,
+   "dbsp_w1": 8.38,
+   "dbsp_w2": 8.82,
+   "dbsp_w3": 10.72,
+   "dd_min": 7.74,
+   "dd_max": 9.68,
+   "dbsp_min": 8.38,
+   "dbsp_max": 10.72
+  },
+  {
+   "base": "Intel",
+   "cohort": "Q32",
+   "dd_sessions": [
+    9.18,
+    9.08,
+    11.53
+   ],
+   "dbsp_sessions": [
+    10.24,
+    10.01,
+    12.69
+   ],
+   "dd_w1": 9.18,
+   "dd_w2": 9.08,
+   "dd_w3": 11.53,
+   "dbsp_w1": 10.24,
+   "dbsp_w2": 10.01,
+   "dbsp_w3": 12.69,
+   "dd_min": 9.08,
+   "dd_max": 11.53,
+   "dbsp_min": 10.01,
+   "dbsp_max": 12.69
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q2",
+   "dd_sessions": [
+    9.13,
+    9.37,
+    9.65
+   ],
+   "dbsp_sessions": [
+    10.93,
+    11.22,
+    12.39
+   ],
+   "dd_w1": 9.13,
+   "dd_w2": 9.37,
+   "dd_w3": 9.65,
+   "dbsp_w1": 10.93,
+   "dbsp_w2": 11.22,
+   "dbsp_w3": 12.39,
+   "dd_min": 9.13,
+   "dd_max": 9.65,
+   "dbsp_min": 10.93,
+   "dbsp_max": 12.39
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q8",
+   "dd_sessions": [
+    10.84,
+    10.9,
+    11.82
+   ],
+   "dbsp_sessions": [
+    12.1,
+    12.12,
+    14.6
+   ],
+   "dd_w1": 10.84,
+   "dd_w2": 10.9,
+   "dd_w3": 11.82,
+   "dbsp_w1": 12.1,
+   "dbsp_w2": 12.12,
+   "dbsp_w3": 14.6,
+   "dd_min": 10.84,
+   "dd_max": 11.82,
+   "dbsp_min": 12.1,
+   "dbsp_max": 14.6
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q32",
+   "dd_sessions": [
+    15.05,
+    14.89,
+    18.54
+   ],
+   "dbsp_sessions": [
+    16.59,
+    16.07,
+    19.86
+   ],
+   "dd_w1": 15.05,
+   "dd_w2": 14.89,
+   "dd_w3": 18.54,
+   "dbsp_w1": 16.59,
+   "dbsp_w2": 16.07,
+   "dbsp_w3": 19.86,
+   "dd_min": 14.89,
+   "dd_max": 18.54,
+   "dbsp_min": 16.07,
+   "dbsp_max": 19.86
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q2",
+   "dd_sessions": [
+    5.03,
+    4.89,
+    4.79
+   ],
+   "dbsp_sessions": [
+    5.37,
+    5.33,
+    5.15
+   ],
+   "dd_w1": 5.03,
+   "dd_w2": 4.89,
+   "dd_w3": 4.79,
+   "dbsp_w1": 5.37,
+   "dbsp_w2": 5.33,
+   "dbsp_w3": 5.15,
+   "dd_min": 4.79,
+   "dd_max": 5.03,
+   "dbsp_min": 5.15,
+   "dbsp_max": 5.37
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q8",
+   "dd_sessions": [
+    3.82,
+    3.79,
+    3.68
+   ],
+   "dbsp_sessions": [
+    4.26,
+    4.25,
+    4.06
+   ],
+   "dd_w1": 3.82,
+   "dd_w2": 3.79,
+   "dd_w3": 3.68,
+   "dbsp_w1": 4.26,
+   "dbsp_w2": 4.25,
+   "dbsp_w3": 4.06,
+   "dd_min": 3.68,
+   "dd_max": 3.82,
+   "dbsp_min": 4.06,
+   "dbsp_max": 4.26
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q32",
+   "dd_sessions": [
+    3.14,
+    3.15,
+    3.02
+   ],
+   "dbsp_sessions": [
+    3.78,
+    3.86,
+    3.72
+   ],
+   "dd_w1": 3.14,
+   "dd_w2": 3.15,
+   "dd_w3": 3.02,
+   "dbsp_w1": 3.78,
+   "dbsp_w2": 3.86,
+   "dbsp_w3": 3.72,
+   "dd_min": 3.02,
+   "dd_max": 3.15,
+   "dbsp_min": 3.72,
+   "dbsp_max": 3.86
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "run": "results/roster4_retail_20261025",
+ "answers_checked": 324,
+ "answers_bad": [],
+ "fixtures": 54,
+ "rows": [
+  {
+   "cohort": "Q2",
+   "cases": 18,
+   "dd_median": 5.24,
+   "dd_min": 4.3,
+   "dd_max": 7.19,
+   "dbsp_median": 5.54,
+   "dbsp_min": 4.76,
+   "dbsp_max": 6.98,
+   "wins": 18
+  },
+  {
+   "cohort": "Q8",
+   "cases": 18,
+   "dd_median": 3.62,
+   "dd_min": 3.43,
+   "dd_max": 4.7,
+   "dbsp_median": 4.01,
+   "dbsp_min": 3.66,
+   "dbsp_max": 5.02,
+   "wins": 18
+  },
+  {
+   "cohort": "Q32",
+   "cases": 18,
+   "dd_median": 2.73,
+   "dd_min": 2.23,
+   "dd_max": 3.49,
+   "dbsp_median": 3.28,
+   "dbsp_min": 2.67,
+   "dbsp_max": 3.95,
+   "wins": 18
+  }
+ ]
+}

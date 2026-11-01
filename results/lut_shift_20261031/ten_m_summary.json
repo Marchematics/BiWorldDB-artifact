@@ -1,0 +1,15 @@
+{
+ "fixture": "10,000,000 rows, 512 groups, span 86,400,000,000, seed 20261029",
+ "states": 2049,
+ "factor_period": 37,
+ "q": 2,
+ "range_scope": "per_state",
+ "reps": 3,
+ "hybrid_cold_ms": 465.9,
+ "fenwick_cold_ms": 1689.7,
+ "cold_ratio": 3.63,
+ "hybrid_warm_ms": 107.8,
+ "fenwick_warm_ms": 1283.5,
+ "warm_ratio": 11.91,
+ "note": "file-page cache evicted with posix_fadvise DONTNEED before each cold run; no eviction for warm runs"
+}

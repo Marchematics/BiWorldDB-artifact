@@ -1,0 +1,164 @@
+[
+ {
+  "base": "intel",
+  "fp": 4,
+  "q": 2,
+  "hybrid_ms": 23.07,
+  "pgdg_ms": 59.66,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "intel",
+  "fp": 4,
+  "q": 8,
+  "hybrid_ms": 46.79,
+  "pgdg_ms": 93.37,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "intel",
+  "fp": 4,
+  "q": 32,
+  "hybrid_ms": 107.91,
+  "pgdg_ms": 169.97,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "intel",
+  "fp": 37,
+  "q": 2,
+  "hybrid_ms": 22.87,
+  "pgdg_ms": 58.86,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "intel",
+  "fp": 37,
+  "q": 8,
+  "hybrid_ms": 42.63,
+  "pgdg_ms": 92.31,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "intel",
+  "fp": 37,
+  "q": 32,
+  "hybrid_ms": 82.46,
+  "pgdg_ms": 170.15,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "taxi2024",
+  "fp": 4,
+  "q": 2,
+  "hybrid_ms": 36.54,
+  "pgdg_ms": 88.3,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "taxi2024",
+  "fp": 4,
+  "q": 8,
+  "hybrid_ms": 100.74,
+  "pgdg_ms": 171.35,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "taxi2024",
+  "fp": 4,
+  "q": 32,
+  "hybrid_ms": 233.95,
+  "pgdg_ms": 380.23,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "taxi2024",
+  "fp": 37,
+  "q": 2,
+  "hybrid_ms": 32.25,
+  "pgdg_ms": 84.0,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "taxi2024",
+  "fp": 37,
+  "q": 8,
+  "hybrid_ms": 53.59,
+  "pgdg_ms": 129.05,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "taxi2024",
+  "fp": 37,
+  "q": 32,
+  "hybrid_ms": 75.58,
+  "pgdg_ms": 250.44,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "retail2009",
+  "fp": 4,
+  "q": 2,
+  "hybrid_ms": 12.16,
+  "pgdg_ms": 30.01,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "retail2009",
+  "fp": 4,
+  "q": 8,
+  "hybrid_ms": 24.19,
+  "pgdg_ms": 46.42,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "retail2009",
+  "fp": 4,
+  "q": 32,
+  "hybrid_ms": 55.43,
+  "pgdg_ms": 83.7,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "retail2009",
+  "fp": 37,
+  "q": 2,
+  "hybrid_ms": 12.49,
+  "pgdg_ms": 30.13,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "retail2009",
+  "fp": 37,
+  "q": 8,
+  "hybrid_ms": 24.99,
+  "pgdg_ms": 45.68,
+  "oracle_exact": true,
+  "answers_same": true
+ },
+ {
+  "base": "retail2009",
+  "fp": 37,
+  "q": 32,
+  "hybrid_ms": 53.45,
+  "pgdg_ms": 82.03,
+  "oracle_exact": true,
+  "answers_same": true
+ }
+]

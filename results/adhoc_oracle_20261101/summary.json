@@ -1,0 +1,339 @@
+{
+ "deri_100": {
+  "arm": "deri",
+  "base": "intel",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 100,
+  "full_ms": 276.0,
+  "sha": "",
+  "unsupported": null,
+  "n_answers": null,
+  "phases": {
+   "load": 0.0,
+   "setup": 206.7,
+   "execute": 66.5,
+   "extract": 0.1,
+   "cleanup": 2.7
+  }
+ },
+ "deri_20": {
+  "arm": "deri",
+  "base": "intel",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 20,
+  "full_ms": 273.6,
+  "sha": "",
+  "unsupported": null,
+  "n_answers": null,
+  "phases": {
+   "load": 0.0,
+   "setup": 203.3,
+   "execute": 67.5,
+   "extract": 0.1,
+   "cleanup": 2.7
+  }
+ },
+ "deri_50": {
+  "arm": "deri",
+  "base": "intel",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 50,
+  "full_ms": 277.5,
+  "sha": "",
+  "unsupported": null,
+  "n_answers": null,
+  "phases": {
+   "load": 0.0,
+   "setup": 207.0,
+   "execute": 67.7,
+   "extract": 0.1,
+   "cleanup": 2.7
+  }
+ },
+ "deri_f100_s20261232": {
+  "arm": "deri",
+  "base": "real1d_100k",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 100,
+  "full_ms": 33.9,
+  "sha": "",
+  "unsupported": null,
+  "n_answers": null,
+  "phases": {
+   "load": 0.1,
+   "setup": 9.5,
+   "execute": 24.1,
+   "extract": 0.1,
+   "cleanup": 0.1
+  }
+ },
+ "deri_f20_s20261231": {
+  "arm": "deri",
+  "base": "real1d_100k",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 20,
+  "full_ms": 33.5,
+  "sha": "",
+  "unsupported": null,
+  "n_answers": null,
+  "phases": {
+   "load": 0.1,
+   "setup": 9.0,
+   "execute": 24.2,
+   "extract": 0.1,
+   "cleanup": 0.1
+  }
+ },
+ "deri_f50_s20261231": {
+  "arm": "deri",
+  "base": "real1d_100k",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 50,
+  "full_ms": 34.3,
+  "sha": "",
+  "unsupported": null,
+  "n_answers": null,
+  "phases": {
+   "load": 0.0,
+   "setup": 9.0,
+   "execute": 24.2,
+   "extract": 1.0,
+   "cleanup": 0.1
+  }
+ },
+ "deri_f50_s20261232": {
+  "arm": "deri",
+  "base": "real1d_100k",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 50,
+  "full_ms": 33.6,
+  "sha": "",
+  "unsupported": null,
+  "n_answers": null,
+  "phases": {
+   "load": 0.0,
+   "setup": 9.0,
+   "execute": 24.4,
+   "extract": 0.1,
+   "cleanup": 0.1
+  }
+ },
+ "deri_t100": {
+  "arm": "deri",
+  "base": "taxi2024",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 100,
+  "full_ms": 538.9,
+  "sha": "",
+  "unsupported": null,
+  "n_answers": null,
+  "phases": {
+   "load": 0.0,
+   "setup": 395.3,
+   "execute": 140.3,
+   "extract": 0.2,
+   "cleanup": 3.0
+  }
+ },
+ "orc_f100_s20261232": {
+  "arm": "brute_force_oracle",
+  "base": "real1d_100k",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 100,
+  "full_ms": 1342.9,
+  "sha": "458b36ad34c2e3b1",
+  "unsupported": null,
+  "n_answers": 4096,
+  "phases": {
+   "load": 0.0,
+   "gen": 0.5,
+   "execute": 1340.9,
+   "extract": 1342.2,
+   "cleanup": 0.2
+  }
+ },
+ "orc_f20_s20261231": {
+  "arm": "brute_force_oracle",
+  "base": "real1d_100k",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 20,
+  "full_ms": 1323.5,
+  "sha": "93672dab15b286ef",
+  "unsupported": null,
+  "n_answers": 4096,
+  "phases": {
+   "load": 0.0,
+   "gen": 0.6,
+   "execute": 1320.4,
+   "extract": 1322.7,
+   "cleanup": 0.2
+  }
+ },
+ "orc_f50_s20261231": {
+  "arm": "brute_force_oracle",
+  "base": "real1d_100k",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 50,
+  "full_ms": 1356.0,
+  "sha": "adee9e4a89cc44c8",
+  "unsupported": null,
+  "n_answers": 4096,
+  "phases": {
+   "load": 0.0,
+   "gen": 0.6,
+   "execute": 1353.1,
+   "extract": 1355.2,
+   "cleanup": 0.1
+  }
+ },
+ "orc_f50_s20261232": {
+  "arm": "brute_force_oracle",
+  "base": "real1d_100k",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 50,
+  "full_ms": 1340.1,
+  "sha": "12041735914540ff",
+  "unsupported": null,
+  "n_answers": 4096,
+  "phases": {
+   "load": 0.0,
+   "gen": 0.6,
+   "execute": 1337.7,
+   "extract": 1339.4,
+   "cleanup": 0.1
+  }
+ },
+ "rf_100": {
+  "arm": "rf",
+  "base": "intel",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 100,
+  "full_ms": 376.1,
+  "sha": "",
+  "unsupported": null,
+  "n_answers": null,
+  "phases": {
+   "load": 0.0,
+   "setup": 284.8,
+   "execute": 88.5,
+   "extract": 0.1,
+   "cleanup": 2.7
+  }
+ },
+ "rf_20": {
+  "arm": "rf",
+  "base": "intel",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 20,
+  "full_ms": 377.6,
+  "sha": "",
+  "unsupported": null,
+  "n_answers": null,
+  "phases": {
+   "load": 0.0,
+   "setup": 286.7,
+   "execute": 88.0,
+   "extract": 0.1,
+   "cleanup": 2.7
+  }
+ },
+ "rf_50": {
+  "arm": "rf",
+  "base": "intel",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 50,
+  "full_ms": 372.5,
+  "sha": "",
+  "unsupported": null,
+  "n_answers": null,
+  "phases": {
+   "load": 0.0,
+   "setup": 282.1,
+   "execute": 87.5,
+   "extract": 0.1,
+   "cleanup": 2.7
+  }
+ },
+ "rf_t100": {
+  "arm": "rf",
+  "base": "taxi2024",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 100,
+  "full_ms": 543.8,
+  "sha": "",
+  "unsupported": null,
+  "n_answers": null,
+  "phases": {
+   "load": 0.0,
+   "setup": 482.8,
+   "execute": 57.4,
+   "extract": 0.4,
+   "cleanup": 3.1
+  }
+ },
+ "scan_new": {
+  "arm": "scan",
+  "base": "real1d_100k",
+  "q": 2,
+  "factor_period": null,
+  "adhoc_fraction": 100,
+  "full_ms": null,
+  "sha": "",
+  "unsupported": 1,
+  "n_answers": null,
+  "phases": {}
+ },
+ "scan_router": {
+  "arm": "scan",
+  "base": "real1d_100k",
+  "q": 2,
+  "factor_period": 37,
+  "adhoc_fraction": 100,
+  "full_ms": 3.9,
+  "sha": "",
+  "unsupported": null,
+  "n_answers": null,
+  "phases": {
+   "load": 0.1,
+   "setup": 2.5,
+   "execute": 1.2,
+   "extract": 0.1,
+   "cleanup": 0.1
+  }
+ },
+ "cross_checks": {
+  "router_2049_brute_oracle_vs_deri": {
+   "f20_s20261231": "match 93672dab15b286ef",
+   "f50_s20261231": "match adee9e4a89cc44c8",
+   "f50_s20261232": "match 12041735914540ff",
+   "f100_s20261232": "match 458b36ad34c2e3b1 (= router-recorded deri_union value)"
+  },
+  "300k_eager_rf_oracle_vs_deri": {
+   "intel_f20": "match 30477055168aea6d",
+   "intel_f50": "match 92fe49b0cf493daa",
+   "intel_f100": "match a975f6f28b1122e7",
+   "taxi_f100": "match 4ea02afb23e1a542"
+  },
+  "old_scan_arm": {
+   "answers": 4096,
+   "nonzero_answers": 3,
+   "verdict": "not an answer vector (partial/zero); now explicitly unsupported"
+  }
+ }
+}

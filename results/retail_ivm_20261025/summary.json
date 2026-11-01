@@ -1,0 +1,56 @@
+{
+ "runs": 20,
+ "all_exact": true,
+ "medians": {
+  "dd:retail2009_t0_s7_f37_q2": {
+   "wall_s": 0.0957361675,
+   "work_s": 0.090786787,
+   "peak_rss_mib": 50.33203125
+  },
+  "dd:retail2009_t1_s7_f37_q2": {
+   "wall_s": 0.096847493,
+   "work_s": 0.0915259595,
+   "peak_rss_mib": 50.439453125
+  },
+  "dd:retail2009_t2_s7_f37_q2": {
+   "wall_s": 0.0967771425,
+   "work_s": 0.0913752945,
+   "peak_rss_mib": 50.546875
+  },
+  "dd:retail2009_t0_s7_f37_q8": {
+   "wall_s": 0.113295054,
+   "work_s": 0.105990073,
+   "peak_rss_mib": 50.828125
+  },
+  "dd:retail2009_t0_s7_f37_q32": {
+   "wall_s": 0.1649703395,
+   "work_s": 0.1566634105,
+   "peak_rss_mib": 59.5234375
+  },
+  "dbsp:retail2009_t0_s7_f37_q2": {
+   "wall_s": 0.102446679,
+   "work_s": 0.0959933515,
+   "peak_rss_mib": 59.5234375
+  },
+  "dbsp:retail2009_t1_s7_f37_q2": {
+   "wall_s": 0.1061822175,
+   "work_s": 0.100320777,
+   "peak_rss_mib": 59.5234375
+  },
+  "dbsp:retail2009_t2_s7_f37_q2": {
+   "wall_s": 0.1038041805,
+   "work_s": 0.0985712885,
+   "peak_rss_mib": 59.5234375
+  },
+  "dbsp:retail2009_t0_s7_f37_q8": {
+   "wall_s": 0.12595408,
+   "work_s": 0.11954756,
+   "peak_rss_mib": 59.5234375
+  },
+  "dbsp:retail2009_t0_s7_f37_q32": {
+   "wall_s": 0.209341976,
+   "work_s": 0.197956232,
+   "peak_rss_mib": 59.5234375
+  }
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "engine": "polars",
+ "base": "intel",
+ "note": "per-state full-current-state execution of the declared workload; every answer vector validated against the base oracle",
+ "rows": [
+  {
+   "label": "chain Q2",
+   "fixture": "intel_t0_s7_f37_q2",
+   "hybrid_wall_s": 0.102407072,
+   "engine_wall_s": 100.7482676655,
+   "wall_ratio": 983.8018576051076,
+   "hybrid_work_s": 0.098796694,
+   "engine_work_s": 100.510805948,
+   "work_ratio": 1017.3498917686456,
+   "engine_peak_rss_mib": 616.3984375,
+   "runs": 2,
+   "exact": true
+  },
+  {
+   "label": "bushy Q2",
+   "fixture": "intel_t1_s7_f37_q2",
+   "hybrid_wall_s": 0.100700602,
+   "engine_wall_s": 100.256412846,
+   "wall_ratio": 995.5890119306338,
+   "hybrid_work_s": 0.0974936715,
+   "engine_work_s": 99.9931437405,
+   "work_ratio": 1025.6372767795497,
+   "engine_peak_rss_mib": 616.3984375,
+   "runs": 2,
+   "exact": true
+  },
+  {
+   "label": "star Q2",
+   "fixture": "intel_t2_s7_f37_q2",
+   "hybrid_wall_s": 0.103102476,
+   "engine_wall_s": 72.411625589,
+   "wall_ratio": 702.3267374199627,
+   "hybrid_work_s": 0.1000526705,
+   "engine_work_s": 72.177165184,
+   "work_ratio": 721.391691229271,
+   "engine_peak_rss_mib": 632.65234375,
+   "runs": 2,
+   "exact": true
+  },
+  {
+   "label": "chain Q8",
+   "fixture": "intel_t0_s7_f37_q8",
+   "hybrid_wall_s": 0.149299425,
+   "engine_wall_s": 107.3083098945,
+   "wall_ratio": 718.7456341141301,
+   "hybrid_work_s": 0.145425272,
+   "engine_work_s": 107.0336678325,
+   "work_ratio": 736.0045909523897,
+   "engine_peak_rss_mib": 864.59375,
+   "runs": 2,
+   "exact": true
+  },
+  {
+   "label": "chain Q32",
+   "fixture": "intel_t0_s7_f37_q32",
+   "hybrid_wall_s": 0.2224460635,
+   "engine_wall_s": 138.7726437475,
+   "wall_ratio": 623.8485031563617,
+   "hybrid_work_s": 0.218750409,
+   "engine_work_s": 138.4501598615,
+   "work_ratio": 632.9138331416789,
+   "engine_peak_rss_mib": 2057.30078125,
+   "runs": 2,
+   "exact": true
+  }
+ ],
+ "all_exact": true
+}

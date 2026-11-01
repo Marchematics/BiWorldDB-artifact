@@ -1,0 +1,24 @@
+{
+ "arm": "pgd",
+ "base_id": "intel",
+ "fixture": "artifact/intel.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 0,
+ "n_states": 100000,
+ "n_answers": 199998,
+ "range_scope": "per_state",
+ "answers_fn": "631e51547c390e7d",
+ "answers_sha256": "d994dd99c36b6aa04b8fed3f3f383baabda8a072a7a770788d6acdb34688fdaf",
+ "phases_ns": {
+  "load": 36702,
+  "setup": 153284952,
+  "execute": 209788919,
+  "extract": 8424281,
+  "cleanup": 8723739
+ },
+ "full_ns": 380258593,
+ "peak_rss_kb": 216328
+}

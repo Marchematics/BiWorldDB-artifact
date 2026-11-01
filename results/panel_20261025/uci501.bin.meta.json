@@ -1,0 +1,13 @@
+{
+ "format": "uci501",
+ "source_lines": 420768,
+ "base_rows": 412029,
+ "excluded_null_numeric_rows": 8739,
+ "groups": 12,
+ "timestamp_unit": "civil-hour index since 2013-03-01 00:00",
+ "t_min": 0,
+ "t_max": 35063,
+ "timestamp_span": 35064,
+ "amount_scale": 6,
+ "base_multiplier_thousandths": 1000
+}

@@ -1,0 +1,41 @@
+{
+ "arm": "sparse",
+ "arm_mode": "sparse",
+ "base_id": "retail2009",
+ "fixture": "artifact/retail2009.bin",
+ "topology": 0,
+ "seed": 17,
+ "factor_period": 4,
+ "q": 8,
+ "repeat": 0,
+ "n_states": 2049,
+ "n_answers": 16384,
+ "range_scope": "per_state",
+ "cold": false,
+ "preload_fadvise_dontneed": false,
+ "sparse_base_env": "1",
+ "answers_fn": "55667e2ff0b778eb",
+ "answers_sha256": "ff5f6df0a5e8f0ce109229811a684241fa6131919d8710f5bc1de479d9d90655",
+ "phases_ns": {
+  "load": 44584,
+  "setup": 16873686,
+  "execute": 6122880,
+  "extract": 1233427,
+  "cleanup": 1606287
+ },
+ "full_ns": 25880864,
+ "peak_rss_kb": 30956,
+ "base_stats": {
+  "mode": "sparse",
+  "n_active": 43,
+  "classes": 26235,
+  "nnz": 9632,
+  "csr_bytes": 288964,
+  "dense_bytes": 9024840,
+  "bitmap_bytes": 141040,
+  "lut_bytes": 70692,
+  "transient_bytes": 0,
+  "est_nnz": 0,
+  "build_us": 10359
+ }
+}

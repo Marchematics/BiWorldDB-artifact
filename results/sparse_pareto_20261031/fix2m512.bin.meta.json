@@ -1,0 +1,13 @@
+{
+ "fixture": "out/fix2m512.bin",
+ "rows": 2000000,
+ "groups": 512,
+ "span_us": 86400000000,
+ "seed": 20261029,
+ "bytes": 48006208,
+ "sha256": "bddc1251fcd1bd3cc59ae8dc93a9d519327a63c9bf8e5bea3c63b6f5e62cb32d",
+ "declared_span": [
+  0,
+  86399999999
+ ]
+}

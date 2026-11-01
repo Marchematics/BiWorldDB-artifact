@@ -1,0 +1,15 @@
+name: Build and check
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y g++ cmake libssl-dev
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install numpy
+      - run: python reproduce.py check --jobs 2
+      - run: python reproduce.py benchmark planning
+      - run: python reproduce.py benchmark csr --small --repeats 1

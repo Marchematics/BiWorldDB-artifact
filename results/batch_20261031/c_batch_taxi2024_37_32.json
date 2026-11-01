@@ -1,0 +1,25 @@
+{
+ "arm": "batch_fallback",
+ "base_id": "taxi2024",
+ "fixture": "artifact/taxi2024.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 32,
+ "repeat": 0,
+ "n_states": 2049,
+ "n_answers": 65536,
+ "range_scope": "per_state",
+ "mode": "fallback",
+ "answers_fn": "4adb40482e8d42fd",
+ "answers_sha256": "7b7f5457c6f337fa6cb7087c4b93ea6a2dc6c42145f318832bd578c85758052b",
+ "phases_ns": {
+  "load": 59946,
+  "setup": 44734701,
+  "execute": 14126524,
+  "extract": 3471127,
+  "cleanup": 3919390
+ },
+ "full_ns": 66311688,
+ "peak_rss_kb": 86536
+}

@@ -1,0 +1,25 @@
+{
+ "arm": "batch_fallback",
+ "base_id": "intel",
+ "fixture": "artifact/intel.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 32,
+ "repeat": 0,
+ "n_states": 2049,
+ "n_answers": 65536,
+ "range_scope": "per_state",
+ "mode": "fallback",
+ "answers_fn": "245e7ad3000e6842",
+ "answers_sha256": "4d3700d3b4153f4ba595afbdd3eb2bda79e49a6e47657b5fb4fc84862bc72bcd",
+ "phases_ns": {
+  "load": 57151,
+  "setup": 50140242,
+  "execute": 18311034,
+  "extract": 4016840,
+  "cleanup": 5779466
+ },
+ "full_ns": 78304733,
+ "peak_rss_kb": 96352
+}

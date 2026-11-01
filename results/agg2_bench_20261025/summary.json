@@ -1,0 +1,93 @@
+{
+ "note": "Interleaved same-window comparison of the lazy factor-value aggregation (BWH_AGG2=auto) against the dense-prefix baseline, both with overlay + bucketed lookup + automatic class-major layout + active group-prefix, 5 repetitions each; host load ~9-26 recorded.",
+ "rows": [
+  {
+   "cohort": "Taxi Q32 fp37",
+   "base_total_ms": 152.2,
+   "agg2_total_ms": 127.3,
+   "gain_pct": 16.3,
+   "base_setup_ms": 89.8,
+   "agg2_setup_ms": 93.8,
+   "base_execute_ms": 47.6,
+   "agg2_execute_ms": 19.2,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q8 fp37",
+   "base_total_ms": 64.1,
+   "agg2_total_ms": 68.0,
+   "gain_pct": -6.0,
+   "base_setup_ms": 50.1,
+   "agg2_setup_ms": 55.1,
+   "base_execute_ms": 8.4,
+   "agg2_execute_ms": 5.9,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q2 fp37",
+   "base_total_ms": 44.3,
+   "agg2_total_ms": 49.9,
+   "gain_pct": -12.5,
+   "base_setup_ms": 38.1,
+   "agg2_setup_ms": 43.6,
+   "base_execute_ms": 2.0,
+   "agg2_execute_ms": 2.0,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q32 fp4",
+   "base_total_ms": 349.5,
+   "agg2_total_ms": 350.8,
+   "gain_pct": -0.4,
+   "base_setup_ms": 246.8,
+   "agg2_setup_ms": 249.2,
+   "base_execute_ms": 65.8,
+   "agg2_execute_ms": 65.2,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q32 fp37",
+   "base_total_ms": 136.6,
+   "agg2_total_ms": 136.6,
+   "gain_pct": 0.0,
+   "base_setup_ms": 78.9,
+   "agg2_setup_ms": 95.0,
+   "base_execute_ms": 44.8,
+   "agg2_execute_ms": 24.8,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q2 fp37",
+   "base_total_ms": 35.7,
+   "agg2_total_ms": 59.5,
+   "gain_pct": -66.8,
+   "base_setup_ms": 30.3,
+   "agg2_setup_ms": 45.1,
+   "base_execute_ms": 1.8,
+   "agg2_execute_ms": 6.9,
+   "n": 5
+  },
+  {
+   "cohort": "Retail Q32 fp37",
+   "base_total_ms": 78.8,
+   "agg2_total_ms": 77.0,
+   "gain_pct": 2.3,
+   "base_setup_ms": 41.7,
+   "agg2_setup_ms": 49.0,
+   "base_execute_ms": 28.4,
+   "agg2_execute_ms": 17.0,
+   "n": 5
+  },
+  {
+   "cohort": "Retail Q2 fp37",
+   "base_total_ms": 18.4,
+   "agg2_total_ms": 28.6,
+   "gain_pct": -55.5,
+   "base_setup_ms": 14.7,
+   "agg2_setup_ms": 21.5,
+   "base_execute_ms": 1.8,
+   "agg2_execute_ms": 3.1,
+   "n": 5
+  }
+ ]
+}

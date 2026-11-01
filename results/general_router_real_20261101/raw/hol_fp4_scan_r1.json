@@ -1,0 +1,25 @@
+{
+ "mode": "oracle",
+ "rows": 20000,
+ "groups": 8,
+ "states": 2049,
+ "q": 2,
+ "factor_period": 4,
+ "topology": 0,
+ "seed": 20261222,
+ "repeat": 1,
+ "max_v": 2048,
+ "n_answers": 16384,
+ "answers_fn": "6e94ea3c88f3e0d3",
+ "answers_sha256": "0b1a3a9a359f54e44fbac8b6a7dec63726e96debecfde30195444707f0618e01",
+ "phases_ns": {
+  "gen": 249581,
+  "build": 181732,
+  "execute": 9405571345,
+  "extract": 1429403,
+  "cleanup": 23734
+ },
+ "full_ns": 9407455795,
+ "peak_rss_kb": 4676,
+ "static_bytes": 0
+}

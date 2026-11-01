@@ -1,0 +1,630 @@
+{
+ "partial": true,
+ "results": [
+  {
+   "row_id": 0,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "full",
+   "budget": null,
+   "kept_slots": 32624,
+   "kept_slots_mean": 32624.0,
+   "prediction": "4226067.",
+   "generated": 6,
+   "outputs": [
+    "4226067"
+   ],
+   "answer_recall": 1.0,
+   "selection": null,
+   "decode_s": 0.0924,
+   "prefill_s": 73.352,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 0,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "bounded",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "4226067.",
+   "generated": 6,
+   "outputs": [
+    "4226067"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 112,
+    "answer_token_keep_fraction": 0.875,
+    "all_answer_unit_fraction": 0.875
+   },
+   "decode_s": 0.0608,
+   "prefill_s": 73.352,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 0,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "blend_lex",
+   "budget": 4096,
+   "kept_slots": 4608,
+   "kept_slots_mean": 4608.0,
+   "prediction": "4226067.",
+   "generated": 6,
+   "outputs": [
+    "4226067"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 128,
+    "answer_token_keep_fraction": 1.0,
+    "all_answer_unit_fraction": 1.0
+   },
+   "decode_s": 0.0622,
+   "prefill_s": 73.352,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 0,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "snapkv",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "4226067.",
+   "generated": 6,
+   "outputs": [
+    "4226067"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 112,
+    "answer_token_keep_fraction": 0.875,
+    "all_answer_unit_fraction": 0.875
+   },
+   "decode_s": 0.0632,
+   "prefill_s": 73.352,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 0,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "quest",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "4226067.",
+   "generated": 6,
+   "outputs": [
+    "4226067"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 111,
+    "answer_token_keep_fraction": 0.8671875,
+    "all_answer_unit_fraction": 0.8671875
+   },
+   "decode_s": 0.0626,
+   "prefill_s": 73.352,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 1,
+   "task": "niah_single_1",
+   "length": 32746,
+   "length_bucket": null,
+   "context_tokens": 32618,
+   "policy": "full",
+   "budget": null,
+   "kept_slots": 32618,
+   "kept_slots_mean": 32618.0,
+   "prediction": "4823498.\nThe grass is green. The sky is blue. The sun is yellow. Here we go.",
+   "generated": 24,
+   "outputs": [
+    "4823498"
+   ],
+   "answer_recall": 1.0,
+   "selection": null,
+   "decode_s": 0.3348,
+   "prefill_s": 73.098,
+   "peak_cuda_bytes": 6741442048
+  },
+  {
+   "row_id": 1,
+   "task": "niah_single_1",
+   "length": 32746,
+   "length_bucket": null,
+   "context_tokens": 32618,
+   "policy": "bounded",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "4823498.",
+   "generated": 6,
+   "outputs": [
+    "4823498"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 104,
+    "answer_token_keep_fraction": 0.8125,
+    "all_answer_unit_fraction": 0.8125
+   },
+   "decode_s": 0.0567,
+   "prefill_s": 73.098,
+   "peak_cuda_bytes": 6741442048
+  },
+  {
+   "row_id": 1,
+   "task": "niah_single_1",
+   "length": 32746,
+   "length_bucket": null,
+   "context_tokens": 32618,
+   "policy": "blend_lex",
+   "budget": 4096,
+   "kept_slots": 4608,
+   "kept_slots_mean": 4608.0,
+   "prediction": "4823498.\nThe grass is green. The sky is blue. The sun is yellow. Here we go.",
+   "generated": 24,
+   "outputs": [
+    "4823498"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 128,
+    "answer_token_keep_fraction": 1.0,
+    "all_answer_unit_fraction": 1.0
+   },
+   "decode_s": 0.2276,
+   "prefill_s": 73.098,
+   "peak_cuda_bytes": 6741442048
+  },
+  {
+   "row_id": 1,
+   "task": "niah_single_1",
+   "length": 32746,
+   "length_bucket": null,
+   "context_tokens": 32618,
+   "policy": "snapkv",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "4823498.",
+   "generated": 6,
+   "outputs": [
+    "4823498"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 104,
+    "answer_token_keep_fraction": 0.8125,
+    "all_answer_unit_fraction": 0.8125
+   },
+   "decode_s": 0.0592,
+   "prefill_s": 73.098,
+   "peak_cuda_bytes": 6741442048
+  },
+  {
+   "row_id": 1,
+   "task": "niah_single_1",
+   "length": 32746,
+   "length_bucket": null,
+   "context_tokens": 32618,
+   "policy": "quest",
+   "budget": 4096,
+   "kept_slots": 4090,
+   "kept_slots_mean": 4090.0,
+   "prediction": "4823498.",
+   "generated": 6,
+   "outputs": [
+    "4823498"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 103,
+    "answer_token_keep_fraction": 0.8046875,
+    "all_answer_unit_fraction": 0.8046875
+   },
+   "decode_s": 0.0588,
+   "prefill_s": 73.098,
+   "peak_cuda_bytes": 6741442048
+  },
+  {
+   "row_id": 2,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "full",
+   "budget": null,
+   "kept_slots": 32624,
+   "kept_slots_mean": 32624.0,
+   "prediction": "2694522.\nThe final answer is: 2694522.",
+   "generated": 16,
+   "outputs": [
+    "2694522"
+   ],
+   "answer_recall": 1.0,
+   "selection": null,
+   "decode_s": 0.2663,
+   "prefill_s": 72.18,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 2,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "bounded",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "2694522.",
+   "generated": 6,
+   "outputs": [
+    "2694522"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 113,
+    "answer_token_keep_fraction": 0.8828125,
+    "all_answer_unit_fraction": 0.8828125
+   },
+   "decode_s": 0.0768,
+   "prefill_s": 72.18,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 2,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "blend_lex",
+   "budget": 4096,
+   "kept_slots": 4608,
+   "kept_slots_mean": 4608.0,
+   "prediction": "2694522.",
+   "generated": 6,
+   "outputs": [
+    "2694522"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 128,
+    "answer_token_keep_fraction": 1.0,
+    "all_answer_unit_fraction": 1.0
+   },
+   "decode_s": 0.0857,
+   "prefill_s": 72.18,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 2,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "snapkv",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "2694522.",
+   "generated": 6,
+   "outputs": [
+    "2694522"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 113,
+    "answer_token_keep_fraction": 0.8828125,
+    "all_answer_unit_fraction": 0.8828125
+   },
+   "decode_s": 0.0777,
+   "prefill_s": 72.18,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 2,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "quest",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "2694522.",
+   "generated": 6,
+   "outputs": [
+    "2694522"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 106,
+    "answer_token_keep_fraction": 0.828125,
+    "all_answer_unit_fraction": 0.828125
+   },
+   "decode_s": 0.0794,
+   "prefill_s": 72.18,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 3,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "full",
+   "budget": null,
+   "kept_slots": 32624,
+   "kept_slots_mean": 32624.0,
+   "prediction": "7120868.",
+   "generated": 6,
+   "outputs": [
+    "7120868"
+   ],
+   "answer_recall": 1.0,
+   "selection": null,
+   "decode_s": 0.0764,
+   "prefill_s": 72.852,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 3,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "bounded",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "7120868.",
+   "generated": 6,
+   "outputs": [
+    "7120868"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 104,
+    "answer_token_keep_fraction": 0.8125,
+    "all_answer_unit_fraction": 0.8125
+   },
+   "decode_s": 0.0623,
+   "prefill_s": 72.852,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 3,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "blend_lex",
+   "budget": 4096,
+   "kept_slots": 4608,
+   "kept_slots_mean": 4608.0,
+   "prediction": "7120868.",
+   "generated": 6,
+   "outputs": [
+    "7120868"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 128,
+    "answer_token_keep_fraction": 1.0,
+    "all_answer_unit_fraction": 1.0
+   },
+   "decode_s": 0.0786,
+   "prefill_s": 72.852,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 3,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "snapkv",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "7120868.",
+   "generated": 6,
+   "outputs": [
+    "7120868"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 104,
+    "answer_token_keep_fraction": 0.8125,
+    "all_answer_unit_fraction": 0.8125
+   },
+   "decode_s": 0.0707,
+   "prefill_s": 72.852,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 3,
+   "task": "niah_single_1",
+   "length": 32752,
+   "length_bucket": null,
+   "context_tokens": 32624,
+   "policy": "quest",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "7120868.",
+   "generated": 6,
+   "outputs": [
+    "7120868"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 100,
+    "answer_token_keep_fraction": 0.78125,
+    "all_answer_unit_fraction": 0.78125
+   },
+   "decode_s": 0.0708,
+   "prefill_s": 72.852,
+   "peak_cuda_bytes": 6250660864
+  },
+  {
+   "row_id": 4,
+   "task": "niah_single_1",
+   "length": 32746,
+   "length_bucket": null,
+   "context_tokens": 32618,
+   "policy": "full",
+   "budget": null,
+   "kept_slots": 32618,
+   "kept_slots_mean": 32618.0,
+   "prediction": "4514944.\nThe final answer is: 4514944.",
+   "generated": 16,
+   "outputs": [
+    "4514944"
+   ],
+   "answer_recall": 1.0,
+   "selection": null,
+   "decode_s": 0.1987,
+   "prefill_s": 73.113,
+   "peak_cuda_bytes": 6741442048
+  },
+  {
+   "row_id": 4,
+   "task": "niah_single_1",
+   "length": 32746,
+   "length_bucket": null,
+   "context_tokens": 32618,
+   "policy": "bounded",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "4514944.",
+   "generated": 6,
+   "outputs": [
+    "4514944"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 111,
+    "answer_token_keep_fraction": 0.8671875,
+    "all_answer_unit_fraction": 0.8671875
+   },
+   "decode_s": 0.0613,
+   "prefill_s": 73.113,
+   "peak_cuda_bytes": 6741442048
+  },
+  {
+   "row_id": 4,
+   "task": "niah_single_1",
+   "length": 32746,
+   "length_bucket": null,
+   "context_tokens": 32618,
+   "policy": "blend_lex",
+   "budget": 4096,
+   "kept_slots": 4608,
+   "kept_slots_mean": 4608.0,
+   "prediction": "4514944.",
+   "generated": 6,
+   "outputs": [
+    "4514944"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 128,
+    "answer_token_keep_fraction": 1.0,
+    "all_answer_unit_fraction": 1.0
+   },
+   "decode_s": 0.0591,
+   "prefill_s": 73.113,
+   "peak_cuda_bytes": 6741442048
+  },
+  {
+   "row_id": 4,
+   "task": "niah_single_1",
+   "length": 32746,
+   "length_bucket": null,
+   "context_tokens": 32618,
+   "policy": "snapkv",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "4514944.",
+   "generated": 6,
+   "outputs": [
+    "4514944"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 111,
+    "answer_token_keep_fraction": 0.8671875,
+    "all_answer_unit_fraction": 0.8671875
+   },
+   "decode_s": 0.0599,
+   "prefill_s": 73.113,
+   "peak_cuda_bytes": 6741442048
+  },
+  {
+   "row_id": 4,
+   "task": "niah_single_1",
+   "length": 32746,
+   "length_bucket": null,
+   "context_tokens": 32618,
+   "policy": "quest",
+   "budget": 4096,
+   "kept_slots": 4090,
+   "kept_slots_mean": 4090.0,
+   "prediction": "4514944.",
+   "generated": 6,
+   "outputs": [
+    "4514944"
+   ],
+   "answer_recall": 1.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 98,
+    "answer_token_keep_fraction": 0.765625,
+    "all_answer_unit_fraction": 0.765625
+   },
+   "decode_s": 0.0618,
+   "prefill_s": 73.113,
+   "peak_cuda_bytes": 6741442048
+  }
+ ]
+}

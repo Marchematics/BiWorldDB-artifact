@@ -1,0 +1,39 @@
+{
+ "mode": "fenwick",
+ "rows": 100000,
+ "groups": 4,
+ "states": 2049,
+ "q": 2,
+ "factor_period": 64,
+ "topology": 0,
+ "seed": 7,
+ "repeat": 3,
+ "max_v": 2048,
+ "variant": "skip",
+ "burst": 1,
+ "n_answers": 16384,
+ "counters": {
+  "skipped_same": 21,
+  "skipped_empty": 0,
+  "deferred_assign": 0,
+  "lazy_flushes": 0,
+  "factor_edits": 32,
+  "extra_assigns": 0
+ },
+ "split_ns": {
+  "update": 29918240,
+  "query": 121887
+ },
+ "answers_fn": "5314bce7ff20bbaf",
+ "answers_sha256": "d6e55cf89f70aed91b08dbf13fb877560a4a73ac743a810fd4142183841ada01",
+ "phases_ns": {
+  "gen": 985373,
+  "build": 14164545,
+  "execute": 30197577,
+  "extract": 2298697,
+  "cleanup": 490193
+ },
+ "full_ns": 48136385,
+ "peak_rss_kb": 7812,
+ "static_bytes": 2650044
+}

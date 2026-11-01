@@ -1,0 +1,82 @@
+[
+ {
+  "key": "uci501_states2049_t0_s7_f37_q2",
+  "base_id": "uci501",
+  "fixture": "artifact/uci501.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2,
+  "sha256": "539b71945eda7ebda914cd0bb78740516408f4098dd54f0801ac299eaad7a226",
+  "n_answers": 4096,
+  "oracle_wall_s": 1.824951,
+  "env": {
+   "BWH_FACTOR_PCT": "50"
+  },
+  "states": 2049
+ },
+ {
+  "key": "uci501_states2049_t0_s7_f37_q8",
+  "base_id": "uci501",
+  "fixture": "artifact/uci501.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 8,
+  "sha256": "ba7d137d77a3795d9f6943927cb285c9993807812fc529341b44a8586a70c3ff",
+  "n_answers": 16384,
+  "oracle_wall_s": 2.631673,
+  "env": {
+   "BWH_FACTOR_PCT": "50"
+  },
+  "states": 2049
+ },
+ {
+  "key": "uci501_states16385_t0_s7_f37_q2",
+  "base_id": "uci501",
+  "fixture": "artifact/uci501.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2,
+  "sha256": "6e2b4559a86b044930844eef5db9302ca69effa8e3bc5556edff75425670fe31",
+  "n_answers": 32768,
+  "oracle_wall_s": 14.185165,
+  "env": {
+   "BWH_FACTOR_PCT": "50"
+  },
+  "states": 16385
+ },
+ {
+  "key": "uci501_states16385_t0_s7_f37_q8",
+  "base_id": "uci501",
+  "fixture": "artifact/uci501.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 8,
+  "sha256": "bd89fa703d2f07f5495872caa92f2c41b8388ae4f4b038e935c05a7b15633bf9",
+  "n_answers": 131072,
+  "oracle_wall_s": 21.530574,
+  "env": {
+   "BWH_FACTOR_PCT": "50"
+  },
+  "states": 16385
+ },
+ {
+  "key": "uci501_states65537_t0_s7_f37_q2",
+  "base_id": "uci501",
+  "fixture": "artifact/uci501.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2,
+  "sha256": "a8b371b7250a095e7a1f77ecb7b87bccac354106eb4d76e5c2a5f0225d595100",
+  "n_answers": 131072,
+  "oracle_wall_s": 59.562625,
+  "env": {
+   "BWH_FACTOR_PCT": "50"
+  },
+  "states": 65537
+ }
+]

@@ -1,0 +1,25 @@
+{
+ "arm": "batch",
+ "base_id": "intel",
+ "fixture": "artifact/intel.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 2,
+ "n_states": 300000,
+ "n_answers": 599998,
+ "range_scope": "per_state",
+ "mode": "batch",
+ "answers_fn": "848e61ad01257a08",
+ "answers_sha256": "33c3132f3f690defed29a5f9c57ce91ed0f8b7ec6cf95717b16d4815edee14f8",
+ "phases_ns": {
+  "load": 30874,
+  "setup": 109567038,
+  "execute": 78758199,
+  "extract": 24535570,
+  "cleanup": 2720432
+ },
+ "full_ns": 215612113,
+ "peak_rss_kb": 133848
+}

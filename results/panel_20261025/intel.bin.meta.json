@@ -1,0 +1,13 @@
+{
+ "format": "intel",
+ "source_lines": 2313682,
+ "base_rows": 2312781,
+ "excluded_null_numeric_rows": 901,
+ "groups": 61,
+ "timestamp_unit": "naive-civil microsecond since 2004-01-01",
+ "t_min": 5014726002832,
+ "t_max": 8247752715337,
+ "timestamp_span": 3233026712506,
+ "amount_scale": 6,
+ "base_multiplier_thousandths": 1000
+}

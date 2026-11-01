@@ -1,0 +1,225 @@
+{
+ "meta": {
+  "reps": 15,
+  "cold": "worker --evict 1 (posix_fadvise DONTNEED before load)",
+  "order": "rotated per repetition: order = rotate(dense,sparse,auto, rep % 3)",
+  "cells": [
+   "syn1m_q32",
+   "syn10m_q32"
+  ]
+ },
+ "cells": {
+  "syn1m_q32": {
+   "q": 32,
+   "arms": {
+    "dense": {
+     "cold_ms_all": [
+      136.17,
+      147.03,
+      142.95,
+      144.2,
+      137.64,
+      137.27,
+      148.33,
+      137.59,
+      137.25,
+      137.2,
+      146.1,
+      150.2,
+      147.1,
+      181.17,
+      175.64
+     ],
+     "median": 144.2,
+     "mean": 147.06,
+     "stdev": 13.18,
+     "peak_rss_mb": 84.8,
+     "arm_mode": "hybrid"
+    },
+    "sparse": {
+     "cold_ms_all": [
+      124.87,
+      169.46,
+      126.79,
+      126.54,
+      124.81,
+      156.39,
+      128.28,
+      124.6,
+      123.55,
+      155.85,
+      123.21,
+      167.17,
+      129.48,
+      124.52,
+      165.66
+     ],
+     "median": 126.79,
+     "mean": 138.08,
+     "stdev": 17.93,
+     "peak_rss_mb": 39.2,
+     "arm_mode": "sparse"
+    },
+    "auto": {
+     "cold_ms_all": [
+      154.57,
+      130.45,
+      130.56,
+      123.95,
+      123.51,
+      126.7,
+      162.28,
+      124.86,
+      128.74,
+      188.74,
+      124.35,
+      169.72,
+      152.81,
+      133.5,
+      157.7
+     ],
+     "median": 130.56,
+     "mean": 142.16,
+     "stdev": 19.84,
+     "peak_rss_mb": 39.4,
+     "arm_mode": "sparse"
+    }
+   },
+   "paired_diff_sparse_minus_dense": {
+    "values": [
+     -11.3,
+     22.43,
+     -16.16,
+     -17.66,
+     -12.83,
+     19.12,
+     -20.05,
+     -12.99,
+     -13.7,
+     18.65,
+     -22.89,
+     16.97,
+     -17.62,
+     -56.65,
+     -9.98
+    ],
+    "median": -12.99,
+    "mean": -8.98,
+    "sparse_faster_reps": 11,
+    "of": 15
+   },
+   "sparse_cold_win_median": true,
+   "sparse_rss_lower": true,
+   "answers_sha_equal_all_arms": true,
+   "answers_sha": [
+    "c20c72fe17b07b9fd6cdb34817f7883bea647a9be264c16c3d113f4cf252024d"
+   ]
+  },
+  "syn10m_q32": {
+   "q": 32,
+   "arms": {
+    "dense": {
+     "cold_ms_all": [
+      767.43,
+      725.43,
+      636.53,
+      758.99,
+      725.79,
+      603.41,
+      705.1,
+      658.79,
+      645.55,
+      667.45,
+      631.87,
+      622.48,
+      636.78,
+      737.32,
+      700.34
+     ],
+     "median": 667.45,
+     "mean": 681.55,
+     "stdev": 51.24,
+     "peak_rss_mb": 290.9,
+     "arm_mode": "hybrid"
+    },
+    "sparse": {
+     "cold_ms_all": [
+      678.19,
+      648.32,
+      715.63,
+      690.22,
+      641.28,
+      748.23,
+      650.11,
+      680.94,
+      622.47,
+      666.02,
+      768.53,
+      633.27,
+      626.9,
+      655.2,
+      613.82
+     ],
+     "median": 655.2,
+     "mean": 669.28,
+     "stdev": 44.0,
+     "peak_rss_mb": 246.3,
+     "arm_mode": "sparse"
+    },
+    "auto": {
+     "cold_ms_all": [
+      674.61,
+      685.47,
+      645.16,
+      623.5,
+      677.84,
+      657.09,
+      587.68,
+      580.26,
+      590.5,
+      694.78,
+      630.18,
+      677.94,
+      698.39,
+      634.91,
+      635.86
+     ],
+     "median": 645.16,
+     "mean": 646.28,
+     "stdev": 37.81,
+     "peak_rss_mb": 246.6,
+     "arm_mode": "sparse"
+    }
+   },
+   "paired_diff_sparse_minus_dense": {
+    "values": [
+     -89.24,
+     -77.11,
+     79.1,
+     -68.77,
+     -84.51,
+     144.82,
+     -54.99,
+     22.15,
+     -23.08,
+     -1.43,
+     136.66,
+     10.79,
+     -9.88,
+     -82.12,
+     -86.52
+    ],
+    "median": -23.08,
+    "mean": -12.28,
+    "sparse_faster_reps": 10,
+    "of": 15
+   },
+   "sparse_cold_win_median": true,
+   "sparse_rss_lower": true,
+   "answers_sha_equal_all_arms": true,
+   "answers_sha": [
+    "f3a3c3ef15b1bec7e812dc5af1ffaf75f1b821fa5a258118c186234e10587e8b"
+   ]
+  }
+ }
+}

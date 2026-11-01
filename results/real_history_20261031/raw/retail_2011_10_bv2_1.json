@@ -1,0 +1,35 @@
+{
+ "arm": "batchv2",
+ "mode": "fallback",
+ "family": "real_history",
+ "fixture": "artifact/retail_2011_10_base.bin",
+ "spec": "artifact/retail_2011_10_spec.bin",
+ "repeat": 1,
+ "n_states": 2049,
+ "q": 2,
+ "n_answers": 4096,
+ "answers_fn": "2e9bdb04c453f895",
+ "answers_sha256": "1294975a899b4a39a4e0af42b9126835dfc02fa8947d091b7c5f74dcf460184e",
+ "phases_ns": {
+  "load": 57363,
+  "setup": 7053938,
+  "execute": 436748,
+  "extract": 232054,
+  "cleanup": 801642
+ },
+ "full_ns": 8581745,
+ "peak_rss_kb": 25852,
+ "history": {
+  "n_base": 896392,
+  "n_ins": 1989,
+  "inserts": 1988,
+  "deletes": 4,
+  "credits": 1,
+  "factor_edits": 55,
+  "endpoints": 11,
+  "period_lo": 963360,
+  "period_hi": 1008000,
+  "bucket": 60
+ },
+ "stats": {}
+}

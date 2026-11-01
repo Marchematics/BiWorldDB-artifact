@@ -1,0 +1,138 @@
+{
+ "ref2049_intel": {
+  "arm": "hybrid",
+  "base": "intel",
+  "q": 2,
+  "factor_period": 37,
+  "full_ms": 21.23,
+  "phases": {
+   "load": 0.03,
+   "setup": 16.93,
+   "execute": 1.31,
+   "extract": 0.25,
+   "cleanup": 2.7
+  },
+  "rss_mb": 58.4,
+  "sha": "0255193f0061e016",
+  "n_answers": 4096
+ },
+ "ref2049_taxi2024": {
+  "arm": "hybrid",
+  "base": "taxi2024",
+  "q": 2,
+  "factor_period": 37,
+  "full_ms": 28.13,
+  "phases": {
+   "load": 0.08,
+   "setup": 23.31,
+   "execute": 1.45,
+   "extract": 0.26,
+   "cleanup": 3.03
+  },
+  "rss_mb": 73.2,
+  "sha": "0ad4863a6caf99ec",
+  "n_answers": 4096
+ },
+ "v7fix2049_intel": {
+  "arm": "batch_fallback",
+  "base": "intel",
+  "q": 2,
+  "factor_period": 37,
+  "full_ms": 24.33,
+  "phases": {
+   "load": 0.03,
+   "setup": 19.18,
+   "execute": 1.18,
+   "extract": 1.1,
+   "cleanup": 2.85
+  },
+  "rss_mb": 62.2,
+  "sha": "0255193f0061e016",
+  "n_answers": 4096
+ },
+ "v7fix2049_taxi2024": {
+  "arm": "batch_fallback",
+  "base": "taxi2024",
+  "q": 2,
+  "factor_period": 37,
+  "full_ms": 31.85,
+  "phases": {
+   "load": 0.04,
+   "setup": 25.89,
+   "execute": 1.59,
+   "extract": 1.14,
+   "cleanup": 3.19
+  },
+  "rss_mb": 77.1,
+  "sha": "0ad4863a6caf99ec",
+  "n_answers": 4096
+ },
+ "v7fix300_i": {
+  "arm": "batch",
+  "base": "intel",
+  "q": 2,
+  "factor_period": 37,
+  "full_ms": 133.65,
+  "phases": {
+   "load": 0.06,
+   "setup": 90.83,
+   "execute": 26.54,
+   "extract": 13.51,
+   "cleanup": 2.71
+  },
+  "rss_mb": 187.8,
+  "sha": "33c3132f3f690def",
+  "n_answers": 599998
+ },
+ "v7fix300_t": {
+  "arm": "batch",
+  "base": "taxi2024",
+  "q": 2,
+  "factor_period": 37,
+  "full_ms": 151.69,
+  "phases": {
+   "load": 0.03,
+   "setup": 112.81,
+   "execute": 21.4,
+   "extract": 14.39,
+   "cleanup": 3.06
+  },
+  "rss_mb": 216.8,
+  "sha": "7fea044d7094a50d",
+  "n_answers": 599998
+ },
+ "v7fix_q2": {
+  "arm": "batch_fallback",
+  "base": "real1d_100k",
+  "q": 2,
+  "factor_period": 59,
+  "full_ms": 5.27,
+  "phases": {
+   "load": 0.03,
+   "setup": 2.94,
+   "execute": 1.04,
+   "extract": 1.05,
+   "cleanup": 0.22
+  },
+  "rss_mb": 11.1,
+  "sha": "a58138a37faa5290",
+  "n_answers": 4096
+ },
+ "v7fix_q8": {
+  "arm": "batch_fallback",
+  "base": "real1d_100k",
+  "q": 8,
+  "factor_period": 59,
+  "full_ms": 13.6,
+  "phases": {
+   "load": 0.02,
+   "setup": 8.95,
+   "execute": 2.75,
+   "extract": 1.22,
+   "cleanup": 0.67
+  },
+  "rss_mb": 18.6,
+  "sha": "d67cf365ee29772c",
+  "n_answers": 16384
+ }
+}

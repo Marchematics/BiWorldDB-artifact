@@ -1,0 +1,39 @@
+{
+ "mode": "oracle",
+ "rows": 20000,
+ "groups": 4,
+ "states": 500,
+ "q": 2,
+ "factor_period": 2,
+ "topology": 1,
+ "seed": 7,
+ "repeat": 0,
+ "max_v": 499,
+ "variant": "skip",
+ "burst": 4,
+ "n_answers": 3992,
+ "counters": {
+  "skipped_same": 0,
+  "skipped_empty": 0,
+  "deferred_assign": 0,
+  "lazy_flushes": 747,
+  "factor_edits": 249,
+  "extra_assigns": 747
+ },
+ "split_ns": {
+  "update": 37171,
+  "query": 2210047197
+ },
+ "answers_fn": "0799f43ad97d68fb",
+ "answers_sha256": "94f9d5ce7e79e289e36a0072460a6e7cdf1c9cc0974f123b4182c1aa42a1477c",
+ "phases_ns": {
+  "gen": 205776,
+  "build": 156615,
+  "execute": 2210247430,
+  "extract": 326729,
+  "cleanup": 21071
+ },
+ "full_ns": 2210957621,
+ "peak_rss_kb": 4360,
+ "static_bytes": 0
+}

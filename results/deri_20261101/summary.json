@@ -1,0 +1,180 @@
+{
+ "v7_oracle": {
+  "intel": 129.2,
+  "taxi2024": 146.2
+ },
+ "union": {
+  "u4_intel_0": {
+   "base": "intel",
+   "adhoc": 0,
+   "pool": 1024,
+   "full_ms": 201.7,
+   "build_ms": 57.2,
+   "exec_ms": 48.5,
+   "C": 4326,
+   "n_endpoints": 4325,
+   "ratio_v7": 1.561
+  },
+  "u4_intel_100": {
+   "base": "intel",
+   "adhoc": 100,
+   "pool": 1024,
+   "full_ms": 170.7,
+   "build_ms": 43.5,
+   "exec_ms": 22.6,
+   "C": 1462,
+   "n_endpoints": 1461,
+   "ratio_v7": 1.321
+  },
+  "u4_intel_20": {
+   "base": "intel",
+   "adhoc": 20,
+   "pool": 1024,
+   "full_ms": 236.6,
+   "build_ms": 68.4,
+   "exec_ms": 63.4,
+   "C": 5454,
+   "n_endpoints": 5453,
+   "ratio_v7": 1.831
+  },
+  "u4_intel_50": {
+   "base": "intel",
+   "adhoc": 50,
+   "pool": 1024,
+   "full_ms": 245.2,
+   "build_ms": 70.9,
+   "exec_ms": 66.5,
+   "C": 5605,
+   "n_endpoints": 5604,
+   "ratio_v7": 1.898
+  },
+  "u4_taxi2024_0": {
+   "base": "taxi2024",
+   "adhoc": 0,
+   "pool": 1024,
+   "full_ms": 216.4,
+   "build_ms": 74.4,
+   "exec_ms": 45.2,
+   "C": 3430,
+   "n_endpoints": 3429,
+   "ratio_v7": 1.481
+  },
+  "u4_taxi2024_100": {
+   "base": "taxi2024",
+   "adhoc": 100,
+   "pool": 1024,
+   "full_ms": 204.2,
+   "build_ms": 57.9,
+   "exec_ms": 41.7,
+   "C": 1462,
+   "n_endpoints": 1461,
+   "ratio_v7": 1.397
+  },
+  "u4_taxi2024_20": {
+   "base": "taxi2024",
+   "adhoc": 20,
+   "pool": 1024,
+   "full_ms": 251.7,
+   "build_ms": 82.2,
+   "exec_ms": 64.4,
+   "C": 4558,
+   "n_endpoints": 4557,
+   "ratio_v7": 1.722
+  },
+  "u4_taxi2024_50": {
+   "base": "taxi2024",
+   "adhoc": 50,
+   "pool": 1024,
+   "full_ms": 254.4,
+   "build_ms": 82.2,
+   "exec_ms": 62.7,
+   "C": 4709,
+   "n_endpoints": 4708,
+   "ratio_v7": 1.741
+  },
+  "u4u_intel": {
+   "base": "intel",
+   "adhoc": 20,
+   "pool": 2000000,
+   "full_ms": 231.3,
+   "build_ms": 0.5,
+   "exec_ms": 0.0,
+   "C": 0,
+   "n_endpoints": 201596,
+   "ratio_v7": 1.791
+  },
+  "u4u_taxi2024": {
+   "base": "taxi2024",
+   "adhoc": 20,
+   "pool": 2000000,
+   "full_ms": 231.7,
+   "build_ms": 0.5,
+   "exec_ms": 0.0,
+   "C": 0,
+   "n_endpoints": 200700,
+   "ratio_v7": 1.585
+  }
+ },
+ "verify": {
+  "uv_intel_100": {
+   "adhoc": 100,
+   "C": 1462,
+   "brute_mismatch": 0
+  },
+  "uv_intel_20": {
+   "adhoc": 20,
+   "C": 5454,
+   "brute_mismatch": 0
+  },
+  "uv_intel_50": {
+   "adhoc": 50,
+   "C": 5605,
+   "brute_mismatch": 0
+  },
+  "uv_taxi2024_100": {
+   "adhoc": 100,
+   "C": 1462,
+   "brute_mismatch": 0
+  },
+  "uv_taxi2024_20": {
+   "adhoc": 20,
+   "C": 4558,
+   "brute_mismatch": 0
+  },
+  "uv_taxi2024_50": {
+   "adhoc": 50,
+   "C": 4709,
+   "brute_mismatch": 0
+  }
+ },
+ "adapt": {
+  "ad_intel": {
+   "adhoc": 20,
+   "pool": 1024,
+   "unsupported": 0,
+   "C": 5454,
+   "full_ms": 234.0
+  },
+  "ad_taxi2024": {
+   "adhoc": 20,
+   "pool": 1024,
+   "unsupported": 0,
+   "C": 4558,
+   "full_ms": 242.9
+  },
+  "adu_intel": {
+   "adhoc": 20,
+   "pool": 2000000,
+   "unsupported": 1,
+   "C": 0,
+   "full_ms": 230.2
+  },
+  "adu_taxi2024": {
+   "adhoc": 20,
+   "pool": 2000000,
+   "unsupported": 1,
+   "C": 0,
+   "full_ms": 230.1
+  }
+ }
+}

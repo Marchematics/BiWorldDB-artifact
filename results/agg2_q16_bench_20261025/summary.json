@@ -1,0 +1,49 @@
+{
+ "note": "Interleaved same-window comparison of the lazy factor-value aggregation with the auto rule (sparse factor edits AND Q>=16) against the dense-prefix baseline, both with overlay + bucketed lookup + automatic class-major layout + active group-prefix, 5 repetitions each; host load ~12 recorded.",
+ "rows": [
+  {
+   "cohort": "Taxi Q32 fp37",
+   "base_total_ms": 149.5,
+   "agg2_total_ms": 123.9,
+   "gain_pct": 17.1,
+   "base_setup_ms": 89.1,
+   "agg2_setup_ms": 91.0,
+   "base_execute_ms": 47.2,
+   "agg2_execute_ms": 18.7,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q32 fp37",
+   "base_total_ms": 136.4,
+   "agg2_total_ms": 135.8,
+   "gain_pct": 0.4,
+   "base_setup_ms": 78.0,
+   "agg2_setup_ms": 95.4,
+   "base_execute_ms": 44.7,
+   "agg2_execute_ms": 24.2,
+   "n": 5
+  },
+  {
+   "cohort": "Retail Q32 fp37",
+   "base_total_ms": 78.1,
+   "agg2_total_ms": 77.3,
+   "gain_pct": 1.0,
+   "base_setup_ms": 40.8,
+   "agg2_setup_ms": 49.4,
+   "base_execute_ms": 27.1,
+   "agg2_execute_ms": 16.8,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q8 fp37",
+   "base_total_ms": 66.1,
+   "agg2_total_ms": 66.0,
+   "gain_pct": 0.1,
+   "base_setup_ms": 51.1,
+   "agg2_setup_ms": 51.1,
+   "base_execute_ms": 8.4,
+   "agg2_execute_ms": 8.2,
+   "n": 5
+  }
+ ]
+}

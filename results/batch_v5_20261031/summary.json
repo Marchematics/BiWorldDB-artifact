@@ -1,0 +1,100 @@
+{
+ "intel": {
+  "v4": {
+   "full": 221.8,
+   "setup": 111.9,
+   "execute": 80.5,
+   "extract": 24.6,
+   "rss": 140700
+  },
+  "v5nf": {
+   "full": 205.7,
+   "setup": 111.1,
+   "execute": 78.8,
+   "extract": 13.2,
+   "rss": 142100
+  },
+  "v5sw": {
+   "full": 217.0,
+   "setup": 110.2,
+   "execute": 79.5,
+   "extract": 24.5,
+   "rss": 133848
+  },
+  "v5ni": {
+   "full": 205.0,
+   "setup": 109.6,
+   "execute": 79.4,
+   "extract": 13.2,
+   "rss": 133900
+  },
+  "al": {
+   "full": 309.2,
+   "setup": 166.1,
+   "execute": 123.2,
+   "extract": 13.5,
+   "rss": 126352
+  },
+  "alsw": {
+   "full": 314.0,
+   "setup": 160.4,
+   "execute": 123.6,
+   "extract": 24.6,
+   "rss": 126356
+  },
+  "ratios": {
+   "v5ni_over_v4": 1.082,
+   "v5ni_over_aligned_ni": 1.508,
+   "v5ni_over_aligned_sw": 1.532
+  }
+ },
+ "taxi2024": {
+  "v4": {
+   "full": 204.9,
+   "setup": 127.5,
+   "execute": 48.9,
+   "extract": 24.5,
+   "rss": 167068
+  },
+  "v5nf": {
+   "full": 199.8,
+   "setup": 133.9,
+   "execute": 48.2,
+   "extract": 14.1,
+   "rss": 169452
+  },
+  "v5sw": {
+   "full": 207.0,
+   "setup": 130.4,
+   "execute": 48.8,
+   "extract": 24.8,
+   "rss": 160140
+  },
+  "v5ni": {
+   "full": 191.9,
+   "setup": 127.3,
+   "execute": 48.3,
+   "extract": 12.9,
+   "rss": 161312
+  },
+  "al": {
+   "full": 289.8,
+   "setup": 169.3,
+   "execute": 100.9,
+   "extract": 13.2,
+   "rss": 146132
+  },
+  "alsw": {
+   "full": 301.8,
+   "setup": 169.3,
+   "execute": 101.2,
+   "extract": 25.1,
+   "rss": 146132
+  },
+  "ratios": {
+   "v5ni_over_v4": 1.068,
+   "v5ni_over_aligned_ni": 1.51,
+   "v5ni_over_aligned_sw": 1.573
+  }
+ }
+}

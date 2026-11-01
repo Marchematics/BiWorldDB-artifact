@@ -1,0 +1,24 @@
+{
+ "arm": "hybrid",
+ "base_id": "syn10m",
+ "fixture": "out/syn10m.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 0,
+ "n_states": 2049,
+ "n_answers": 4096,
+ "range_scope": "per_state",
+ "answers_fn": "0d1d3593b274adfd",
+ "answers_sha256": "023c84806a141d12f817decdb8041a311ee1e645c3b6fdaa2cc67b80804bf0d0",
+ "phases_ns": {
+  "load": 39096,
+  "setup": 456716317,
+  "execute": 2380425,
+  "extract": 283888,
+  "cleanup": 34952206
+ },
+ "full_ns": 494371932,
+ "peak_rss_kb": 453392
+}

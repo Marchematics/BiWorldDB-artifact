@@ -1,0 +1,41 @@
+{
+ "run": "roster11_taxi",
+ "answers_checked": 324,
+ "answers_bad": [],
+ "fixtures": 54,
+ "rows": [
+  {
+   "cohort": "Q2",
+   "cases": 18,
+   "dd_median": 8.82,
+   "dd_min": 8.01,
+   "dd_max": 11.8,
+   "dbsp_median": 10.67,
+   "dbsp_min": 9.08,
+   "dbsp_max": 13.37,
+   "wins": 18
+  },
+  {
+   "cohort": "Q8",
+   "cases": 18,
+   "dd_median": 11.72,
+   "dd_min": 8.08,
+   "dd_max": 18.21,
+   "dbsp_median": 12.74,
+   "dbsp_min": 9.09,
+   "dbsp_max": 25.46,
+   "wins": 18
+  },
+  {
+   "cohort": "Q32",
+   "cases": 18,
+   "dd_median": 11.14,
+   "dd_min": 6.78,
+   "dd_max": 19.43,
+   "dbsp_median": 12.39,
+   "dbsp_min": 6.47,
+   "dbsp_max": 21.93,
+   "wins": 18
+  }
+ ]
+}

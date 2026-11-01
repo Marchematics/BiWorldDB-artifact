@@ -1,0 +1,15 @@
+{
+ "arm": "oracle_bruteforce",
+ "family": "real_history",
+ "fixture": "artifact/retail_2011_11_base.bin",
+ "spec": "artifact/retail_2011_11_spec.bin",
+ "repeat": 0,
+ "n_states": 87065,
+ "q": 2,
+ "stride": 680,
+ "sampled_states": 129,
+ "sampled_answers": 258,
+ "sampled_sha256": "6649434715a9456c200c4ff3e3c2259da7df11eefa4061e0ef63f0fe552f3e87",
+ "answers_sha256": "9036ec93ce144b8fdc88d276aa6c71d63d37033ca0935326d48e5869721117d5",
+ "oracle_ns": 167708486
+}

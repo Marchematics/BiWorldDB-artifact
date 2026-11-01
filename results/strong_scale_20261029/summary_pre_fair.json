@@ -1,0 +1,45 @@
+{
+ "note": "same-information classic baseline vs production hybrid on the final binary (new qlb sizing + extended layout rule)",
+ "rows": [
+  {
+   "base": "intel",
+   "states": 100000,
+   "fp": 37,
+   "q": 2,
+   "hybrid_ms": 249.9,
+   "pgd_ms": 382.4,
+   "hybrid_speedup_vs_pgd": 1.53,
+   "exact": true
+  },
+  {
+   "base": "taxi",
+   "states": 100000,
+   "fp": 37,
+   "q": 2,
+   "hybrid_ms": 346.8,
+   "pgd_ms": 908.2,
+   "hybrid_speedup_vs_pgd": 2.62,
+   "exact": true
+  },
+  {
+   "base": "intel",
+   "states": 300000,
+   "fp": 37,
+   "q": 2,
+   "hybrid_ms": 836.6,
+   "pgd_ms": 1021.1,
+   "hybrid_speedup_vs_pgd": 1.22,
+   "exact": true
+  },
+  {
+   "base": "taxi",
+   "states": 300000,
+   "fp": 37,
+   "q": 2,
+   "hybrid_ms": 1012.1,
+   "pgd_ms": 2597.1,
+   "hybrid_speedup_vs_pgd": 2.57,
+   "exact": true
+  }
+ ]
+}

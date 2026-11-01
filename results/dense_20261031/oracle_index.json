@@ -1,0 +1,13 @@
+{
+ "dense2m_t0_s7_f37_q2": {
+  "answers_path": "artifact/dense2m_t0_s7_f37_q2.answers.bin",
+  "sha256": "f83ad43186cffa068b3c816d7e3df38d2717de106f9345c0c8d3c1190a253b48",
+  "n_answers": 4096,
+  "factor_pct": null,
+  "fixture": "artifact/dense2m.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2
+ }
+}

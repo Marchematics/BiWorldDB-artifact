@@ -1,0 +1,8 @@
+[package]
+name = "dd_probe"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+differential-dataflow = "0.25"
+timely = "0.31"

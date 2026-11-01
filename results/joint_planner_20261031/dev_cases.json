@@ -1,0 +1,1490 @@
+{
+ "created_utc": "2026-10-31T09:27:40Z",
+ "sources": [
+  "results/dev_run_main.json",
+  "results/dev_run_rf.json"
+ ],
+ "cases": [
+  {
+   "case_id": "dev_16385_dev_320k_g256_f37_q2",
+   "features": {
+    "base": "dev_320k_g256",
+    "rows": 320000,
+    "groups": 256,
+    "states": 16385,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 442,
+    "row_edits": 15942,
+    "span": 86400000000,
+    "rows_per_group": 1250.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 22.87,
+    "corr": 33.373,
+    "hybrid": 53.585,
+    "pgdg": 50.148,
+    "rf": 167.247
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_16385_dev_320k_g256_f37_q32",
+   "features": {
+    "base": "dev_320k_g256",
+    "rows": 320000,
+    "groups": 256,
+    "states": 16385,
+    "q": 32,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 442,
+    "row_edits": 15942,
+    "span": 86400000000,
+    "rows_per_group": 1250.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 854.162,
+    "corr": 899.945,
+    "hybrid": 905.959,
+    "pgdg": 2217.009,
+    "rf": 249.207
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_16385_dev_320k_g256_f37_q8",
+   "features": {
+    "base": "dev_320k_g256",
+    "rows": 320000,
+    "groups": 256,
+    "states": 16385,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 442,
+    "row_edits": 15942,
+    "span": 86400000000,
+    "rows_per_group": 1250.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 541.92,
+    "corr": 546.718,
+    "hybrid": 551.252,
+    "pgdg": 500.095,
+    "rf": 179.084
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_16385_dev_40k_g48_f37_q2",
+   "features": {
+    "base": "dev_40k_g48",
+    "rows": 40000,
+    "groups": 48,
+    "states": 16385,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 442,
+    "row_edits": 15942,
+    "span": 86400000000,
+    "rows_per_group": 833.3333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 15.872,
+    "corr": 27.047,
+    "hybrid": 29.976,
+    "pgdg": 27.456,
+    "rf": 95.263
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_16385_dev_40k_g48_f37_q32",
+   "features": {
+    "base": "dev_40k_g48",
+    "rows": 40000,
+    "groups": 48,
+    "states": 16385,
+    "q": 32,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 442,
+    "row_edits": 15942,
+    "span": 86400000000,
+    "rows_per_group": 833.3333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 859.607,
+    "corr": 898.204,
+    "hybrid": 902.529,
+    "pgdg": 608.696,
+    "rf": 175.364
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_16385_dev_40k_g48_f37_q8",
+   "features": {
+    "base": "dev_40k_g48",
+    "rows": 40000,
+    "groups": 48,
+    "states": 16385,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 442,
+    "row_edits": 15942,
+    "span": 86400000000,
+    "rows_per_group": 833.3333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 148.735,
+    "corr": 143.601,
+    "hybrid": 142.347,
+    "pgdg": 153.267,
+    "rf": 111.535
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_1200k_g512_f37_q2",
+   "features": {
+    "base": "dev_1200k_g512",
+    "rows": 1200000,
+    "groups": 512,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 2343.75,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 18.117,
+    "corr": 17.945,
+    "hybrid": 17.883,
+    "pgdg": 44.545,
+    "rf": 132.494
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_1200k_g512_f37_q32",
+   "features": {
+    "base": "dev_1200k_g512",
+    "rows": 1200000,
+    "groups": 512,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 2343.75,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 51.474,
+    "corr": 53.775,
+    "hybrid": 52.716,
+    "pgdg": 331.764,
+    "rf": 142.867
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_1200k_g512_f37_q8",
+   "features": {
+    "base": "dev_1200k_g512",
+    "rows": 1200000,
+    "groups": 512,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 2343.75,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 35.578,
+    "corr": 36.332,
+    "hybrid": 34.801,
+    "pgdg": 110.921,
+    "rf": 134.093
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_1200k_g512_f4_q2",
+   "features": {
+    "base": "dev_1200k_g512",
+    "rows": 1200000,
+    "groups": 512,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 2343.75,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 25.239,
+    "corr": 25.343,
+    "hybrid": 28.023,
+    "pgdg": 52.084,
+    "rf": 239.708
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_1200k_g512_f4_q32",
+   "features": {
+    "base": "dev_1200k_g512",
+    "rows": 1200000,
+    "groups": 512,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 2343.75,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 142.662,
+    "corr": 147.779,
+    "hybrid": 148.493,
+    "pgdg": 584.353,
+    "rf": 248.355
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_1200k_g512_f4_q8",
+   "features": {
+    "base": "dev_1200k_g512",
+    "rows": 1200000,
+    "groups": 512,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 2343.75,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 124.625,
+    "corr": 130.591,
+    "hybrid": 126.027,
+    "pgdg": 194.527,
+    "rf": 242.424
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_120k_g128_f37_q2",
+   "features": {
+    "base": "dev_120k_g128",
+    "rows": 120000,
+    "groups": 128,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 937.5,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 5.631,
+    "corr": 5.969,
+    "hybrid": 6.24,
+    "pgdg": 9.316,
+    "rf": 23.514
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_120k_g128_f37_q32",
+   "features": {
+    "base": "dev_120k_g128",
+    "rows": 120000,
+    "groups": 128,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 937.5,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 31.694,
+    "corr": 34.428,
+    "hybrid": 34.228,
+    "pgdg": 127.942,
+    "rf": 34.328
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_120k_g128_f37_q8",
+   "features": {
+    "base": "dev_120k_g128",
+    "rows": 120000,
+    "groups": 128,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 937.5,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 19.958,
+    "corr": 16.27,
+    "hybrid": 18.637,
+    "pgdg": 36.72,
+    "rf": 27.36
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_120k_g128_f4_q2",
+   "features": {
+    "base": "dev_120k_g128",
+    "rows": 120000,
+    "groups": 128,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 937.5,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 6.099,
+    "corr": 6.461,
+    "hybrid": 7.54,
+    "pgdg": 8.965,
+    "rf": 39.743
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_120k_g128_f4_q32",
+   "features": {
+    "base": "dev_120k_g128",
+    "rows": 120000,
+    "groups": 128,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 937.5,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 116.035,
+    "corr": 123.059,
+    "hybrid": 123.147,
+    "pgdg": 177.459,
+    "rf": 49.867
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_120k_g128_f4_q8",
+   "features": {
+    "base": "dev_120k_g128",
+    "rows": 120000,
+    "groups": 128,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 937.5,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 31.871,
+    "corr": 29.92,
+    "hybrid": 27.801,
+    "pgdg": 49.797,
+    "rf": 42.453
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_320k_g256_f37_q2",
+   "features": {
+    "base": "dev_320k_g256",
+    "rows": 320000,
+    "groups": 256,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 1250.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 7.798,
+    "corr": 7.758,
+    "hybrid": 7.604,
+    "pgdg": 16.876,
+    "rf": 44.438
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_320k_g256_f37_q32",
+   "features": {
+    "base": "dev_320k_g256",
+    "rows": 320000,
+    "groups": 256,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 1250.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 35.98,
+    "corr": 37.536,
+    "hybrid": 37.089,
+    "pgdg": 190.957,
+    "rf": 56.465
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_320k_g256_f37_q8",
+   "features": {
+    "base": "dev_320k_g256",
+    "rows": 320000,
+    "groups": 256,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 1250.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 22.692,
+    "corr": 21.33,
+    "hybrid": 21.802,
+    "pgdg": 55.373,
+    "rf": 50.15
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_320k_g256_f4_q2",
+   "features": {
+    "base": "dev_320k_g256",
+    "rows": 320000,
+    "groups": 256,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 1250.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 10.854,
+    "corr": 11.498,
+    "hybrid": 11.454,
+    "pgdg": 18.512,
+    "rf": 76.63
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_320k_g256_f4_q32",
+   "features": {
+    "base": "dev_320k_g256",
+    "rows": 320000,
+    "groups": 256,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 1250.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 121.374,
+    "corr": 125.55,
+    "hybrid": 128.488,
+    "pgdg": 324.822,
+    "rf": 87.191
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_320k_g256_f4_q8",
+   "features": {
+    "base": "dev_320k_g256",
+    "rows": 320000,
+    "groups": 256,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 1250.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 59.108,
+    "corr": 53.242,
+    "hybrid": 59.016,
+    "pgdg": 92.047,
+    "rf": 79.253
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_40k_g48_f37_q2",
+   "features": {
+    "base": "dev_40k_g48",
+    "rows": 40000,
+    "groups": 48,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 833.3333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 4.504,
+    "corr": 4.375,
+    "hybrid": 4.258,
+    "pgdg": 5.787,
+    "rf": 14.979
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_40k_g48_f37_q32",
+   "features": {
+    "base": "dev_40k_g48",
+    "rows": 40000,
+    "groups": 48,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 833.3333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 31.451,
+    "corr": 32.861,
+    "hybrid": 33.626,
+    "pgdg": 85.671,
+    "rf": 25.245
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_40k_g48_f37_q8",
+   "features": {
+    "base": "dev_40k_g48",
+    "rows": 40000,
+    "groups": 48,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 833.3333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 14.882,
+    "corr": 15.401,
+    "hybrid": 14.75,
+    "pgdg": 22.801,
+    "rf": 17.206
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_40k_g48_f4_q2",
+   "features": {
+    "base": "dev_40k_g48",
+    "rows": 40000,
+    "groups": 48,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 833.3333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 3.554,
+    "corr": 4.294,
+    "hybrid": 4.925,
+    "pgdg": 5.599,
+    "rf": 26.601
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_40k_g48_f4_q32",
+   "features": {
+    "base": "dev_40k_g48",
+    "rows": 40000,
+    "groups": 48,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 833.3333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 62.421,
+    "corr": 53.369,
+    "hybrid": 53.191,
+    "pgdg": 87.756,
+    "rf": 37.135
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_40k_g48_f4_q8",
+   "features": {
+    "base": "dev_40k_g48",
+    "rows": 40000,
+    "groups": 48,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 833.3333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 13.475,
+    "corr": 14.514,
+    "hybrid": 15.417,
+    "pgdg": 21.977,
+    "rf": 28.341
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_tiny2k_g16_f37_q2",
+   "features": {
+    "base": "dev_tiny2k_g16",
+    "rows": 2000,
+    "groups": 16,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 125.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 3.258,
+    "corr": 3.06,
+    "hybrid": 3.585,
+    "pgdg": 3.196,
+    "rf": 7.36
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_tiny2k_g16_f37_q32",
+   "features": {
+    "base": "dev_tiny2k_g16",
+    "rows": 2000,
+    "groups": 16,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 125.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 29.714,
+    "corr": 31.603,
+    "hybrid": 31.737,
+    "pgdg": 39.197,
+    "rf": 16.93
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_tiny2k_g16_f37_q8",
+   "features": {
+    "base": "dev_tiny2k_g16",
+    "rows": 2000,
+    "groups": 16,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 55,
+    "row_edits": 1993,
+    "span": 86400000000,
+    "rows_per_group": 125.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 7.951,
+    "corr": 9.726,
+    "hybrid": 9.343,
+    "pgdg": 11.2,
+    "rf": 8.796
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_tiny2k_g16_f4_q2",
+   "features": {
+    "base": "dev_tiny2k_g16",
+    "rows": 2000,
+    "groups": 16,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 125.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 3.271,
+    "corr": 3.733,
+    "hybrid": 3.558,
+    "pgdg": 3.271,
+    "rf": 8.512
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_tiny2k_g16_f4_q32",
+   "features": {
+    "base": "dev_tiny2k_g16",
+    "rows": 2000,
+    "groups": 16,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 125.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 32.663,
+    "corr": 30.762,
+    "hybrid": 32.284,
+    "pgdg": 41.879,
+    "rf": 17.716
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_2049_dev_tiny2k_g16_f4_q8",
+   "features": {
+    "base": "dev_tiny2k_g16",
+    "rows": 2000,
+    "groups": 16,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 512,
+    "row_edits": 1536,
+    "span": 86400000000,
+    "rows_per_group": 125.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 9.151,
+    "corr": 9.279,
+    "hybrid": 8.473,
+    "pgdg": 11.585,
+    "rf": 9.609
+   },
+   "n_samples": {
+    "batch": 2,
+    "corr": 2,
+    "hybrid": 2,
+    "pgdg": 2,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json"
+   ]
+  },
+  {
+   "case_id": "dev_300k_dev_1200k_g512_f37_q2",
+   "features": {
+    "base": "dev_1200k_g512",
+    "rows": 1200000,
+    "groups": 512,
+    "states": 300000,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 8108,
+    "row_edits": 291891,
+    "span": 86400000000,
+    "rows_per_group": 2343.75,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 298.526,
+    "corr": 632.946,
+    "hybrid": 1401.07,
+    "pgdg": 853.041,
+    "rf": 4779.269
+   },
+   "n_samples": {
+    "batch": 4,
+    "corr": 4,
+    "hybrid": 4,
+    "pgdg": 4,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json",
+    "results/dev_run_rf.json"
+   ]
+  },
+  {
+   "case_id": "dev_300k_dev_1200k_g512_f37_q8",
+   "features": {
+    "base": "dev_1200k_g512",
+    "rows": 1200000,
+    "groups": 512,
+    "states": 300000,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 8108,
+    "row_edits": 291891,
+    "span": 86400000000,
+    "rows_per_group": 2343.75,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 9583.442,
+    "corr": 10294.921,
+    "hybrid": 10310.873,
+    "pgdg": 14932.037,
+    "rf": 5055.815
+   },
+   "n_samples": {
+    "batch": 4,
+    "corr": 4,
+    "hybrid": 4,
+    "pgdg": 4,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json",
+    "results/dev_run_rf.json"
+   ]
+  },
+  {
+   "case_id": "dev_300k_dev_120k_g128_f37_q2",
+   "features": {
+    "base": "dev_120k_g128",
+    "rows": 120000,
+    "groups": 128,
+    "states": 300000,
+    "q": 2,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 8108,
+    "row_edits": 291891,
+    "span": 86400000000,
+    "rows_per_group": 937.5,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 262.607,
+    "corr": 565.611,
+    "hybrid": 724.27,
+    "pgdg": 654.105,
+    "rf": 2225.161
+   },
+   "n_samples": {
+    "batch": 4,
+    "corr": 4,
+    "hybrid": 4,
+    "pgdg": 4,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json",
+    "results/dev_run_rf.json"
+   ]
+  },
+  {
+   "case_id": "dev_300k_dev_120k_g128_f37_q8",
+   "features": {
+    "base": "dev_120k_g128",
+    "rows": 120000,
+    "groups": 128,
+    "states": 300000,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 37,
+    "factor_edits": 8108,
+    "row_edits": 291891,
+    "span": 86400000000,
+    "rows_per_group": 937.5,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 4285.738,
+    "corr": 3971.664,
+    "hybrid": 4004.016,
+    "pgdg": 6176.596,
+    "rf": 2560.211
+   },
+   "n_samples": {
+    "batch": 4,
+    "corr": 4,
+    "hybrid": 4,
+    "pgdg": 4,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json",
+    "results/dev_run_rf.json"
+   ]
+  },
+  {
+   "case_id": "dev_300k_dev_120k_g128_f4_q8",
+   "features": {
+    "base": "dev_120k_g128",
+    "rows": 120000,
+    "groups": 128,
+    "states": 300000,
+    "q": 8,
+    "topology": 0,
+    "seed": 7,
+    "factor_period": 4,
+    "factor_edits": 74999,
+    "row_edits": 225000,
+    "span": 86400000000,
+    "rows_per_group": 937.5,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 6423.679,
+    "corr": 6164.217,
+    "hybrid": 6145.677,
+    "pgdg": 10958.639,
+    "rf": 5610.521
+   },
+   "n_samples": {
+    "batch": 4,
+    "corr": 4,
+    "hybrid": 4,
+    "pgdg": 4,
+    "rf": 2
+   },
+   "sources": [
+    "results/dev_run_main.json",
+    "results/dev_run_rf.json"
+   ]
+  }
+ ]
+}

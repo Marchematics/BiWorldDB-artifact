@@ -1,0 +1,236 @@
+[
+ {
+  "key": "intel_t0_s7_f4_q2",
+  "base_id": "intel",
+  "fixture": "artifact/intel.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 4,
+  "q": 2,
+  "sha256": "966adc3a3a6762ca845bfbafdd6ee9080a6f3ac5b983e9a8a05e18cbd836879c",
+  "n_answers": 4096
+ },
+ {
+  "key": "intel_t0_s7_f4_q8",
+  "base_id": "intel",
+  "fixture": "artifact/intel.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 4,
+  "q": 8,
+  "sha256": "f2c0584b173b84512cad07f9781e50fca57a41885e538a6ba179103d66dc1736",
+  "n_answers": 16384
+ },
+ {
+  "key": "intel_t0_s7_f4_q32",
+  "base_id": "intel",
+  "fixture": "artifact/intel.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 4,
+  "q": 32,
+  "sha256": "b394963f64e6239888e0eb6e2ee6121a264777087dde3fa33ca0f339db8aa7d6",
+  "n_answers": 65536
+ },
+ {
+  "key": "intel_t0_s7_f37_q2",
+  "base_id": "intel",
+  "fixture": "artifact/intel.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2,
+  "sha256": "4d64d71ce3a024345b498342d43b24411751b7e759d02c25d988f0ccf8511b84",
+  "n_answers": 4096
+ },
+ {
+  "key": "intel_t0_s7_f37_q8",
+  "base_id": "intel",
+  "fixture": "artifact/intel.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 8,
+  "sha256": "a61fa26bbd3a1ec31a43808302e86ad4430a446ff8c9730f933c86cccd2f8fad",
+  "n_answers": 16384
+ },
+ {
+  "key": "intel_t0_s7_f37_q32",
+  "base_id": "intel",
+  "fixture": "artifact/intel.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 32,
+  "sha256": "f5252feed079b244552f2470f12e321ddd82293b81dfec1f44c3674733fe28cf",
+  "n_answers": 65536
+ },
+ {
+  "key": "taxi2024_t0_s7_f4_q2",
+  "base_id": "taxi2024",
+  "fixture": "artifact/taxi2024.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 4,
+  "q": 2,
+  "sha256": "4e305509b7ec8063a8d5829722f8d600cb7d57ef3a181ece5ed636f887d642bf",
+  "n_answers": 4096,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "taxi2024_t0_s7_f4_q8",
+  "base_id": "taxi2024",
+  "fixture": "artifact/taxi2024.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 4,
+  "q": 8,
+  "sha256": "31bf16688e6898f8adcbdefd77f2344fc3feaee8d759f3a8ddd3700983848580",
+  "n_answers": 16384,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "taxi2024_t0_s7_f4_q32",
+  "base_id": "taxi2024",
+  "fixture": "artifact/taxi2024.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 4,
+  "q": 32,
+  "sha256": "af8333a2f35506596460e1704e4a363e9df7bcb4456751b63284e1b35d6370b2",
+  "n_answers": 65536,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "taxi2024_t0_s7_f37_q2",
+  "base_id": "taxi2024",
+  "fixture": "artifact/taxi2024.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2,
+  "sha256": "0ad4863a6caf99ecd9209665c7c7b16b7358d29194318e5e24a2328c73a7e745",
+  "n_answers": 4096,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "taxi2024_t0_s7_f37_q8",
+  "base_id": "taxi2024",
+  "fixture": "artifact/taxi2024.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 8,
+  "sha256": "19906dd00943ef927a869d2a1f148995ccf02ab53f078c30b3adaab3d7b4646b",
+  "n_answers": 16384,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "taxi2024_t0_s7_f37_q32",
+  "base_id": "taxi2024",
+  "fixture": "artifact/taxi2024.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 32,
+  "sha256": "7b7f5457c6f337fa6cb7087c4b93ea6a2dc6c42145f318832bd578c85758052b",
+  "n_answers": 65536,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "retail2009_t0_s7_f4_q2",
+  "base_id": "retail2009",
+  "fixture": "artifact/retail2009.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 4,
+  "q": 2,
+  "sha256": "22b7bb557be3564a22e2624d20abf9d1842a8e17382fa560876b749ede1536cf",
+  "n_answers": 4096,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "retail2009_t0_s7_f4_q8",
+  "base_id": "retail2009",
+  "fixture": "artifact/retail2009.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 4,
+  "q": 8,
+  "sha256": "981ba83e787e3b7f78b44da2168890a423f651985831d0ada644cad5d1b51066",
+  "n_answers": 16384,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "retail2009_t0_s7_f4_q32",
+  "base_id": "retail2009",
+  "fixture": "artifact/retail2009.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 4,
+  "q": 32,
+  "sha256": "a6b59c988d5695cc501777dc69e95058354ef74c3134430b972ff2179c0370e4",
+  "n_answers": 65536,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "retail2009_t0_s7_f37_q2",
+  "base_id": "retail2009",
+  "fixture": "artifact/retail2009.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2,
+  "sha256": "9847cd2edf8847ad602c963105d909c550829abde817416e8e08daa8356073b7",
+  "n_answers": 4096,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "retail2009_t0_s7_f37_q8",
+  "base_id": "retail2009",
+  "fixture": "artifact/retail2009.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 8,
+  "sha256": "aa162f6d76e7fb6d133e44bcabcd0872b8e79287070a028df3959bef853f04b7",
+  "n_answers": 16384,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "key": "retail2009_t0_s7_f37_q32",
+  "base_id": "retail2009",
+  "fixture": "artifact/retail2009.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 32,
+  "sha256": "cd550e6494168a739ccd4f1feb6d8a56d2e69b28da55c4b630d8b1569173b0d2",
+  "n_answers": 65536,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ }
+]

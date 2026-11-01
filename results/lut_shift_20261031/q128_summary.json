@@ -1,0 +1,14 @@
+{
+ "cases": [
+  "tiny_1000_256",
+  "tiny_2000_512",
+  "tiny_1000_512"
+ ],
+ "new_hybrid_ms": [
+  35.48,
+  37.24,
+  36.9
+ ],
+ "answers_match_previous_engine": true,
+ "note": "Q128 answers SHA-identical before/after the shift-LUT change"
+}

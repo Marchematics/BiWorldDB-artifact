@@ -1,0 +1,28 @@
+{
+ "base_id": "intel",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 8,
+ "n_answers": 16384,
+ "answers_fn": "ca16b4c94a73ad11",
+ "answers_sha256": "71b97e75f0b36e344e0444b53aa190b9b8b64bac160ed7958fcbc534d630f50f",
+ "phases_ns": {
+  "load": 50882,
+  "setup": 127132212,
+  "execute": 40243571,
+  "extract": 1861008,
+  "cleanup": 11081828
+ },
+ "full_ns": 180369501,
+ "adhoc_per_state": 0,
+ "adhoc_count": 0,
+ "adhoc_ns": 0,
+ "adhoc_first_query_ns": -1,
+ "fallback_build_ns": 0,
+ "total_with_fallback_ns": 180369501,
+ "adhoc_median_query_ns": 0,
+ "brute_checked": 0,
+ "brute_mismatches": 0,
+ "adhoc_checksum": "14650fb0739d0383"
+}

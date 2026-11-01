@@ -1,0 +1,10 @@
+{
+ "runs": 216,
+ "all_exact": true,
+ "engines": [
+  "dd",
+  "dbsp"
+ ],
+ "repeats": 2,
+ "fixtures": 54
+}

@@ -1,0 +1,30 @@
+{
+ "arm": "scan",
+ "base_id": "intel",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 0,
+ "adhoc_fraction": 100,
+ "n_states": 300000,
+ "answers_n": 599998,
+ "range_scope": "per_state",
+ "phases_ns": {
+  "load": 29633,
+  "setup": 61572846,
+  "execute": 10068401,
+  "extract": 6998274,
+  "cleanup": 2952657
+ },
+ "deri": {
+  "build_ns": 26660650,
+  "first_query_ns": 3765522,
+  "adhoc_query_total_ns": 10066658,
+  "adhoc_query_count": 3,
+  "per_adhoc_query_ns": 3355552,
+  "gen_ns": 29416954
+ },
+ "full_ns": 81621811,
+ "peak_rss_kb": 127828
+}

@@ -1,0 +1,13 @@
+{
+ "counts": {
+  "fail": 0,
+  "pass": 972,
+  "skipped": 0,
+  "workers": 972
+ },
+ "failures": [],
+ "failures_by_status": {},
+ "generated_utc": "2026-10-24T20:12:11Z",
+ "outdir": "../taxi_run_opt",
+ "schema_version": 1
+}

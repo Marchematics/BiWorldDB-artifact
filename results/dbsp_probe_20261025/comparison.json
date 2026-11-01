@@ -1,0 +1,101 @@
+{
+ "note": "bounded external DBSP 0.369 probe, single worker, apply_mut operator over the declared event stream (batch 64 events per tick) maintaining the authored per-group Fenwick prefix; 2 fresh-process repeats per fixture; all answers byte-exact vs oracle; wall = supervisor process wall, work = probe complete work",
+ "rows": [
+  {
+   "fixture": "intel_t0_s7_f37_q2",
+   "label": "chain Q2",
+   "hybrid_wall_s": 0.102407072,
+   "dbsp_wall_s": 0.2853961615,
+   "wall_ratio": 2.786879420788439,
+   "hybrid_work_s": 0.098796694,
+   "dbsp_work_s": 0.276817688,
+   "work_ratio": 2.801892217162651,
+   "dbsp_peak_rss_mib": 100.6953125,
+   "dbsp_phase_ms": {
+    "load": 67.2,
+    "setup": 144.9,
+    "execute": 63.2,
+    "extract": 1.6
+   },
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "fixture": "intel_t1_s7_f37_q2",
+   "label": "bushy Q2",
+   "hybrid_wall_s": 0.100700602,
+   "dbsp_wall_s": 0.2809936125,
+   "wall_ratio": 2.7903866205288423,
+   "hybrid_work_s": 0.0974936715,
+   "dbsp_work_s": 0.2731294405,
+   "work_ratio": 2.801509434384159,
+   "dbsp_peak_rss_mib": 100.6953125,
+   "dbsp_phase_ms": {
+    "load": 65.8,
+    "setup": 143.1,
+    "execute": 62.6,
+    "extract": 1.6
+   },
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "fixture": "intel_t2_s7_f37_q2",
+   "label": "star Q2",
+   "hybrid_wall_s": 0.103102476,
+   "dbsp_wall_s": 0.28590176,
+   "wall_ratio": 2.7729863635864573,
+   "hybrid_work_s": 0.1000526705,
+   "dbsp_work_s": 0.2774348405,
+   "work_ratio": 2.7728879110727984,
+   "dbsp_peak_rss_mib": 100.6953125,
+   "dbsp_phase_ms": {
+    "load": 69.0,
+    "setup": 144.2,
+    "execute": 62.7,
+    "extract": 1.6
+   },
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "fixture": "intel_t0_s7_f37_q8",
+   "label": "chain Q8",
+   "hybrid_wall_s": 0.149299425,
+   "dbsp_wall_s": 0.5009771905,
+   "wall_ratio": 3.355519892323765,
+   "hybrid_work_s": 0.145425272,
+   "dbsp_work_s": 0.483649243,
+   "work_ratio": 3.325757871025333,
+   "dbsp_peak_rss_mib": 100.6953125,
+   "dbsp_phase_ms": {
+    "load": 70.1,
+    "setup": 143.8,
+    "execute": 269.2,
+    "extract": 0.5
+   },
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "fixture": "intel_t0_s7_f37_q32",
+   "label": "chain Q32",
+   "hybrid_wall_s": 0.2224460635,
+   "dbsp_wall_s": 0.9874149425,
+   "wall_ratio": 4.438896004558876,
+   "hybrid_work_s": 0.218750409,
+   "dbsp_work_s": 0.966802564,
+   "work_ratio": 4.419660600497437,
+   "dbsp_peak_rss_mib": 100.705078125,
+   "dbsp_phase_ms": {
+    "load": 72.4,
+    "setup": 142.1,
+    "execute": 750.9,
+    "extract": 1.4
+   },
+   "exact": true,
+   "runs": 2
+  }
+ ],
+ "all_exact": true
+}

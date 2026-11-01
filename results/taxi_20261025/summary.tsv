@@ -1,0 +1,145 @@
+kind	Q	arm_or_numerator	denominator	metric	unit	estimate	conditional_interval_low	conditional_interval_high	case_min	case_max	cases	paired_repeats	denominator_wins	ties	numerator_wins	scope
+arm_phase	2	hybrid		wall	s	0.133971			0.131608	0.138119	18	6				taxi2024_q2
+arm_phase	2	hybrid		full	s	0.130591			0.127793	0.134792	18	6				taxi2024_q2
+arm_phase	2	hybrid		load	s	0.042247			0.041819	0.042645	18	6				taxi2024_q2
+arm_phase	2	hybrid		setup	s	0.074225			0.073731	0.076950	18	6				taxi2024_q2
+arm_phase	2	hybrid		execute	s	0.002224			0.001820	0.004613	18	6				taxi2024_q2
+arm_phase	2	hybrid		extract	s	0.000681			0.000408	0.000831	18	6				taxi2024_q2
+arm_phase	2	hybrid		cleanup	s	0.010794			0.010637	0.010865	18	6				taxi2024_q2
+arm_phase	2	hybrid		peak_rss	MiB	136.71			136.65	136.95	18	6				taxi2024_q2
+arm_phase	2	full_raw		wall	s	0.695071			0.687513	0.707609	18	6				taxi2024_q2
+arm_phase	2	full_raw		full	s	0.689925			0.682489	0.701615	18	6				taxi2024_q2
+arm_phase	2	full_raw		load	s	0.042172			0.041306	0.042584	18	6				taxi2024_q2
+arm_phase	2	full_raw		setup	s	0.514337			0.507435	0.525589	18	6				taxi2024_q2
+arm_phase	2	full_raw		execute	s	0.120715			0.119958	0.121811	18	6				taxi2024_q2
+arm_phase	2	full_raw		extract	s	0.000757			0.000472	0.001167	18	6				taxi2024_q2
+arm_phase	2	full_raw		cleanup	s	0.012144			0.010944	0.012351	18	6				taxi2024_q2
+arm_phase	2	full_raw		peak_rss	MiB	230.88			230.83	230.93	18	6				taxi2024_q2
+arm_phase	2	full_projected		wall	s	0.339340			0.335463	0.360072	18	6				taxi2024_q2
+arm_phase	2	full_projected		full	s	0.333547			0.329592	0.353987	18	6				taxi2024_q2
+arm_phase	2	full_projected		load	s	0.042406			0.041780	0.042733	18	6				taxi2024_q2
+arm_phase	2	full_projected		setup	s	0.201931			0.197772	0.220538	18	6				taxi2024_q2
+arm_phase	2	full_projected		execute	s	0.077370			0.076565	0.077965	18	6				taxi2024_q2
+arm_phase	2	full_projected		extract	s	0.000788			0.000646	0.001396	18	6				taxi2024_q2
+arm_phase	2	full_projected		cleanup	s	0.011293			0.010807	0.011399	18	6				taxi2024_q2
+arm_phase	2	full_projected		peak_rss	MiB	173.47			173.19	174.21	18	6				taxi2024_q2
+contrast	2	full_raw	hybrid	wall	ratio	5.193505	5.163413	5.214130	5.035304	5.309843	18	6	0	0	18	taxi2024_q2|conditional_repeat_noise
+contrast	2	full_projected	hybrid	wall	ratio	2.542799	2.526719	2.553336	2.424909	2.679060	18	6	0	0	18	taxi2024_q2|conditional_repeat_noise
+envelope	2	envelope	hybrid	wall	ratio	2.542799	2.526719	2.553336	2.424909	2.679060	18	6	0	0	18	taxi2024_q2|conditional_repeat_noise
+sensitivity	2	min_full_state	hybrid	wall	ratio	2.530061	2.525710	2.551795	2.428803	2.700895	18	6	0	0	18	taxi2024_q2|conditional_repeat_noise
+contrast	2	full_raw	hybrid	full	ratio	5.290505	5.257816	5.313624	5.118822	5.407599	18	6	0	0	18	taxi2024_q2|conditional_repeat_noise
+contrast	2	full_projected	hybrid	full	ratio	2.567384	2.548755	2.578464	2.445194	2.704243	18	6	0	0	18	taxi2024_q2|conditional_repeat_noise
+envelope	2	envelope	hybrid	full	ratio	2.567384	2.548755	2.578464	2.445194	2.704243	18	6	0	0	18	taxi2024_q2|conditional_repeat_noise
+sensitivity	2	min_full_state	hybrid	full	ratio	2.554945	2.547195	2.575906	2.445192	2.725537	18	6	0	0	18	taxi2024_q2|conditional_repeat_noise
+contrast	2	full_raw	hybrid	peak_rss	ratio	1.688855	1.688370	1.689129	1.685810	1.689955	18	6	0	0	18	taxi2024_q2|conditional_repeat_noise
+contrast	2	full_projected	hybrid	peak_rss	ratio	1.268554	1.268060	1.268710	1.265930	1.273669	18	6	0	0	18	taxi2024_q2|conditional_repeat_noise
+envelope	2	envelope	hybrid	peak_rss	ratio	1.268554	1.268060	1.268710	1.265930	1.273669	18	6	0	0	18	taxi2024_q2|conditional_repeat_noise
+sensitivity	2	min_full_state	hybrid	peak_rss	ratio	1.268477	1.268038	1.268766	1.266220	1.273672	18	6	0	0	18	taxi2024_q2|conditional_repeat_noise
+bootstrap	2	envelope	hybrid	wall	ratio	2.541466	2.526719	2.553336			18	6				taxi2024_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	min_full_state	hybrid	wall	ratio	2.537881	2.525710	2.551795			18	6				taxi2024_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_raw	hybrid	wall	ratio	5.190467	5.163413	5.214130			18	6				taxi2024_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_projected	hybrid	wall	ratio	2.541466	2.526719	2.553336			18	6				taxi2024_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	envelope	hybrid	full	ratio	2.565132	2.548755	2.578464			18	6				taxi2024_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	min_full_state	hybrid	full	ratio	2.561287	2.547195	2.575906			18	6				taxi2024_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_raw	hybrid	full	ratio	5.287304	5.257816	5.313624			18	6				taxi2024_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_projected	hybrid	full	ratio	2.565132	2.548755	2.578464			18	6				taxi2024_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	envelope	hybrid	peak_rss	ratio	1.268353	1.268060	1.268710			18	6				taxi2024_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	min_full_state	hybrid	peak_rss	ratio	1.268361	1.268038	1.268766			18	6				taxi2024_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_raw	hybrid	peak_rss	ratio	1.688827	1.688370	1.689129			18	6				taxi2024_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_projected	hybrid	peak_rss	ratio	1.268353	1.268060	1.268710			18	6				taxi2024_q2|conditional_repeat_noise|draws=2000|seed=20261025
+arm_phase	8	hybrid		wall	s	0.212264			0.210307	0.237083	18	6				taxi2024_q8
+arm_phase	8	hybrid		full	s	0.208723			0.207229	0.233542	18	6				taxi2024_q8
+arm_phase	8	hybrid		load	s	0.042327			0.041875	0.042721	18	6				taxi2024_q8
+arm_phase	8	hybrid		setup	s	0.144257			0.143507	0.145523	18	6				taxi2024_q8
+arm_phase	8	hybrid		execute	s	0.006735			0.005296	0.031182	18	6				taxi2024_q8
+arm_phase	8	hybrid		extract	s	0.001290			0.001180	0.001406	18	6				taxi2024_q8
+arm_phase	8	hybrid		cleanup	s	0.014535			0.013920	0.014725	18	6				taxi2024_q8
+arm_phase	8	hybrid		peak_rss	MiB	185.43			185.39	185.72	18	6				taxi2024_q8
+arm_phase	8	full_raw		wall	s	1.097126			1.085304	1.110144	18	6				taxi2024_q8
+arm_phase	8	full_raw		full	s	1.092046			1.080593	1.105304	18	6				taxi2024_q8
+arm_phase	8	full_raw		load	s	0.042229			0.041406	0.042711	18	6				taxi2024_q8
+arm_phase	8	full_raw		setup	s	0.516524			0.506916	0.530283	18	6				taxi2024_q8
+arm_phase	8	full_raw		execute	s	0.519864			0.512689	0.523148	18	6				taxi2024_q8
+arm_phase	8	full_raw		extract	s	0.001365			0.001101	0.001707	18	6				taxi2024_q8
+arm_phase	8	full_raw		cleanup	s	0.012269			0.010883	0.012416	18	6				taxi2024_q8
+arm_phase	8	full_raw		peak_rss	MiB	231.03			231.00	231.09	18	6				taxi2024_q8
+arm_phase	8	full_projected		wall	s	0.819797			0.806693	0.837314	18	6				taxi2024_q8
+arm_phase	8	full_projected		full	s	0.813809			0.800806	0.831523	18	6				taxi2024_q8
+arm_phase	8	full_projected		load	s	0.042311			0.042010	0.042762	18	6				taxi2024_q8
+arm_phase	8	full_projected		setup	s	0.320461			0.313514	0.336539	18	6				taxi2024_q8
+arm_phase	8	full_projected		execute	s	0.435705			0.429637	0.438820	18	6				taxi2024_q8
+arm_phase	8	full_projected		extract	s	0.001294			0.001085	0.001705	18	6				taxi2024_q8
+arm_phase	8	full_projected		cleanup	s	0.013357			0.012594	0.013648	18	6				taxi2024_q8
+arm_phase	8	full_projected		peak_rss	MiB	202.01			201.76	203.36	18	6				taxi2024_q8
+contrast	8	full_raw	hybrid	wall	ratio	5.150221	5.133227	5.167989	4.615072	5.276517	18	6	0	0	18	taxi2024_q8|conditional_repeat_noise
+contrast	8	full_projected	hybrid	wall	ratio	3.870992	3.852327	3.880169	3.415859	3.946497	18	6	0	0	18	taxi2024_q8|conditional_repeat_noise
+envelope	8	envelope	hybrid	wall	ratio	3.870992	3.852327	3.880169	3.415859	3.946497	18	6	0	0	18	taxi2024_q8|conditional_repeat_noise
+sensitivity	8	min_full_state	hybrid	wall	ratio	3.867205	3.845339	3.877086	3.416969	3.930757	18	6	0	0	18	taxi2024_q8|conditional_repeat_noise
+contrast	8	full_raw	hybrid	full	ratio	5.220508	5.194521	5.232816	4.667510	5.348422	18	6	0	0	18	taxi2024_q8|conditional_repeat_noise
+contrast	8	full_projected	hybrid	full	ratio	3.904419	3.886771	3.916883	3.447473	3.988520	18	6	0	0	18	taxi2024_q8|conditional_repeat_noise
+envelope	8	envelope	hybrid	full	ratio	3.904419	3.886771	3.916883	3.447473	3.988520	18	6	0	0	18	taxi2024_q8|conditional_repeat_noise
+sensitivity	8	min_full_state	hybrid	full	ratio	3.898744	3.881046	3.912560	3.443031	3.973273	18	6	0	0	18	taxi2024_q8|conditional_repeat_noise
+contrast	8	full_raw	hybrid	peak_rss	ratio	1.245978	1.245772	1.246114	1.243799	1.246297	18	6	0	0	18	taxi2024_q8|conditional_repeat_noise
+contrast	8	full_projected	hybrid	peak_rss	ratio	1.089112	1.088916	1.089365	1.087215	1.096696	18	6	0	0	18	taxi2024_q8|conditional_repeat_noise
+envelope	8	envelope	hybrid	peak_rss	ratio	1.089112	1.088916	1.089365	1.087215	1.096696	18	6	0	0	18	taxi2024_q8|conditional_repeat_noise
+sensitivity	8	min_full_state	hybrid	peak_rss	ratio	1.089078	1.088887	1.089387	1.087274	1.096761	18	6	0	0	18	taxi2024_q8|conditional_repeat_noise
+bootstrap	8	envelope	hybrid	wall	ratio	3.868080	3.852327	3.880169			18	6				taxi2024_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	min_full_state	hybrid	wall	ratio	3.863446	3.845339	3.877086			18	6				taxi2024_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_raw	hybrid	wall	ratio	5.152300	5.133227	5.167989			18	6				taxi2024_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_projected	hybrid	wall	ratio	3.868080	3.852327	3.880169			18	6				taxi2024_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	envelope	hybrid	full	ratio	3.903522	3.886771	3.916883			18	6				taxi2024_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	min_full_state	hybrid	full	ratio	3.898725	3.881046	3.912560			18	6				taxi2024_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_raw	hybrid	full	ratio	5.217254	5.194521	5.232816			18	6				taxi2024_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_projected	hybrid	full	ratio	3.903522	3.886771	3.916883			18	6				taxi2024_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	envelope	hybrid	peak_rss	ratio	1.089099	1.088916	1.089365			18	6				taxi2024_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	min_full_state	hybrid	peak_rss	ratio	1.089102	1.088887	1.089387			18	6				taxi2024_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_raw	hybrid	peak_rss	ratio	1.245962	1.245772	1.246114			18	6				taxi2024_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_projected	hybrid	peak_rss	ratio	1.089099	1.088916	1.089365			18	6				taxi2024_q8|conditional_repeat_noise|draws=2000|seed=20261025
+arm_phase	32	hybrid		wall	s	0.372204			0.366108	0.503980	18	6				taxi2024_q32
+arm_phase	32	hybrid		full	s	0.368625			0.362308	0.500213	18	6				taxi2024_q32
+arm_phase	32	hybrid		load	s	0.042317			0.041308	0.042871	18	6				taxi2024_q32
+arm_phase	32	hybrid		setup	s	0.272397			0.271220	0.274184	18	6				taxi2024_q32
+arm_phase	32	hybrid		execute	s	0.022272			0.016105	0.154511	18	6				taxi2024_q32
+arm_phase	32	hybrid		extract	s	0.003286			0.003132	0.003799	18	6				taxi2024_q32
+arm_phase	32	hybrid		cleanup	s	0.028248			0.027605	0.028436	18	6				taxi2024_q32
+arm_phase	32	hybrid		peak_rss	MiB	382.40			382.04	382.58	18	6				taxi2024_q32
+arm_phase	32	full_raw		wall	s	2.006726			1.986003	2.028599	18	6				taxi2024_q32
+arm_phase	32	full_raw		full	s	1.999362			1.976047	2.019956	18	6				taxi2024_q32
+arm_phase	32	full_raw		load	s	0.042139			0.041627	0.042479	18	6				taxi2024_q32
+arm_phase	32	full_raw		setup	s	0.520028			0.511293	0.531214	18	6				taxi2024_q32
+arm_phase	32	full_raw		execute	s	1.422980			1.408261	1.437080	18	6				taxi2024_q32
+arm_phase	32	full_raw		extract	s	0.003363			0.002927	0.003816	18	6				taxi2024_q32
+arm_phase	32	full_raw		cleanup	s	0.007583			0.007211	0.011225	18	6				taxi2024_q32
+arm_phase	32	full_raw		peak_rss	MiB	231.79			231.73	231.89	18	6				taxi2024_q32
+arm_phase	32	full_projected		wall	s	1.817494			1.804888	1.835015	18	6				taxi2024_q32
+arm_phase	32	full_projected		full	s	1.811506			1.799159	1.829231	18	6				taxi2024_q32
+arm_phase	32	full_projected		load	s	0.042446			0.041507	0.042700	18	6				taxi2024_q32
+arm_phase	32	full_projected		setup	s	0.410495			0.403196	0.425761	18	6				taxi2024_q32
+arm_phase	32	full_projected		execute	s	1.333660			1.321805	1.343808	18	6				taxi2024_q32
+arm_phase	32	full_projected		extract	s	0.003278			0.002966	0.003891	18	6				taxi2024_q32
+arm_phase	32	full_projected		cleanup	s	0.020416			0.020114	0.020708	18	6				taxi2024_q32
+arm_phase	32	full_projected		peak_rss	MiB	302.92			302.65	304.25	18	6				taxi2024_q32
+contrast	32	full_raw	hybrid	wall	ratio	5.403407	5.345196	5.432120	3.969599	5.545295	18	6	0	0	18	taxi2024_q32|conditional_repeat_noise
+contrast	32	full_projected	hybrid	wall	ratio	4.885314	4.844073	4.918045	3.585784	5.005549	18	6	0	0	18	taxi2024_q32|conditional_repeat_noise
+envelope	32	envelope	hybrid	wall	ratio	4.885314	4.844073	4.918045	3.585784	5.005549	18	6	0	0	18	taxi2024_q32|conditional_repeat_noise
+sensitivity	32	min_full_state	hybrid	wall	ratio	4.892338	4.850466	4.924424	3.585774	4.990259	18	6	0	0	18	taxi2024_q32|conditional_repeat_noise
+contrast	32	full_raw	hybrid	full	ratio	5.432091	5.370315	5.459480	3.980854	5.576052	18	6	0	0	18	taxi2024_q32|conditional_repeat_noise
+contrast	32	full_projected	hybrid	full	ratio	4.917313	4.875349	4.948403	3.600515	5.042537	18	6	0	0	18	taxi2024_q32|conditional_repeat_noise
+envelope	32	envelope	hybrid	full	ratio	4.917313	4.875349	4.948403	3.600515	5.042537	18	6	0	0	18	taxi2024_q32|conditional_repeat_noise
+sensitivity	32	min_full_state	hybrid	full	ratio	4.920088	4.880917	4.955311	3.600484	5.024866	18	6	0	0	18	taxi2024_q32|conditional_repeat_noise
+contrast	32	full_raw	hybrid	peak_rss	ratio	0.606132	0.606082	0.606233	0.605783	0.606617	18	6	18	0	0	taxi2024_q32|conditional_repeat_noise
+contrast	32	full_projected	hybrid	peak_rss	ratio	0.792208	0.792023	0.792252	0.791494	0.796177	18	6	18	0	0	taxi2024_q32|conditional_repeat_noise
+envelope	32	envelope	hybrid	peak_rss	ratio	0.606132	0.606082	0.606233	0.605783	0.606617	18	6	18	0	0	taxi2024_q32|conditional_repeat_noise
+sensitivity	32	min_full_state	hybrid	peak_rss	ratio	0.606150	0.606089	0.606223	0.605808	0.606720	18	6	18	0	0	taxi2024_q32|conditional_repeat_noise
+bootstrap	32	envelope	hybrid	wall	ratio	4.881091	4.844073	4.918045			18	6				taxi2024_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	min_full_state	hybrid	wall	ratio	4.884802	4.850466	4.924424			18	6				taxi2024_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_raw	hybrid	wall	ratio	5.389547	5.345196	5.432120			18	6				taxi2024_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_projected	hybrid	wall	ratio	4.881091	4.844073	4.918045			18	6				taxi2024_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	envelope	hybrid	full	ratio	4.913147	4.875349	4.948403			18	6				taxi2024_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	min_full_state	hybrid	full	ratio	4.915876	4.880917	4.955311			18	6				taxi2024_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_raw	hybrid	full	ratio	5.418808	5.370315	5.459480			18	6				taxi2024_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_projected	hybrid	full	ratio	4.913147	4.875349	4.948403			18	6				taxi2024_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	envelope	hybrid	peak_rss	ratio	0.606151	0.606082	0.606233			18	6				taxi2024_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	min_full_state	hybrid	peak_rss	ratio	0.606151	0.606089	0.606223			18	6				taxi2024_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_raw	hybrid	peak_rss	ratio	0.606151	0.606082	0.606233			18	6				taxi2024_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_projected	hybrid	peak_rss	ratio	0.792148	0.792023	0.792252			18	6				taxi2024_q32|conditional_repeat_noise|draws=2000|seed=20261025

@@ -1,0 +1,41 @@
+{
+ "arm": "sparse",
+ "arm_mode": "hybrid",
+ "base_id": "syn300k",
+ "fixture": "artifact/fix300k.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 8,
+ "repeat": 0,
+ "n_states": 2049,
+ "n_answers": 16384,
+ "range_scope": "per_state",
+ "cold": false,
+ "preload_fadvise_dontneed": false,
+ "sparse_base_env": "auto",
+ "answers_fn": "072d661e77f0d495",
+ "answers_sha256": "71517ad5be160e95d57e9e5cf803f214deb0e254c393a32b966392423051d3d3",
+ "phases_ns": {
+  "load": 526143,
+  "setup": 32621679,
+  "execute": 2872511,
+  "extract": 1769494,
+  "cleanup": 1201861
+ },
+ "full_ns": 38991688,
+ "peak_rss_kb": 24256,
+ "base_stats": {
+  "mode": "dense",
+  "n_active": 55,
+  "classes": 26350,
+  "nnz": 0,
+  "csr_bytes": 0,
+  "dense_bytes": 11594000,
+  "bitmap_bytes": 0,
+  "lut_bytes": 0,
+  "transient_bytes": 0,
+  "est_nnz": 0,
+  "build_us": 0
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "arm": "hybrid",
+ "mode": "hybrid",
+ "family": "real_history",
+ "fixture": "artifact/taxi_2024_01_base.bin",
+ "spec": "artifact/taxi_2024_01_spec.bin",
+ "repeat": 0,
+ "n_states": 2049,
+ "q": 2,
+ "n_answers": 4096,
+ "answers_fn": "32bb5fee0179af62",
+ "answers_sha256": "5ca4417698d7ecca330eb13e571aa8fea911e911bc11261d040ed4316e484412",
+ "phases_ns": {
+  "load": 83991,
+  "setup": 9199292,
+  "execute": 1052853,
+  "extract": 254185,
+  "cleanup": 1060945
+ },
+ "full_ns": 11651266,
+ "peak_rss_kb": 34924,
+ "history": {
+  "n_base": 1286537,
+  "n_ins": 1970,
+  "inserts": 1969,
+  "deletes": 23,
+  "credits": 1,
+  "factor_edits": 55,
+  "endpoints": 3,
+  "period_lo": 1209600000000,
+  "period_hi": 2678395000001,
+  "bucket": 3600000000
+ },
+ "stats": {}
+}

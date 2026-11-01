@@ -1,0 +1,22 @@
+{
+ "engine": "polars",
+ "polars_version": "2.0.0",
+ "fixture": "fixtures/intel.bin",
+ "topology": 2,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 1,
+ "n_answers": 4096,
+ "answers_sha256": "8cdd5f4f2a2c65658928d5efda9a6c9393c8ce59681460971c20083c14675cc6",
+ "oracle_ok": true,
+ "oracle_detail": "exact match",
+ "phases_ns": {
+  "load": 49805923,
+  "setup": 102368303,
+  "execute": 71626569082,
+  "extract": 1193239,
+  "cleanup": 240
+ },
+ "full_ns": 71779936787
+}

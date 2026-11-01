@@ -1,0 +1,10 @@
+[
+ {
+  "base": "Intel",
+  "hybrid_with_corr_and_shift_ms": 745.5
+ },
+ {
+  "base": "Taxi",
+  "hybrid_with_corr_and_shift_ms": 610.8
+ }
+]

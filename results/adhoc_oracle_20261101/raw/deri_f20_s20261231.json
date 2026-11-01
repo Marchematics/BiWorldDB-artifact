@@ -1,0 +1,37 @@
+{
+ "arm": "deri",
+ "base_id": "real1d_100k",
+ "topology": 0,
+ "seed": 20261231,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 0,
+ "adhoc_fraction": 20,
+ "n_states": 2049,
+ "answers_n": 4096,
+ "range_scope": "per_state",
+ "phases_ns": {
+  "load": 52455,
+  "setup": 8955586,
+  "execute": 24248813,
+  "extract": 99362,
+  "cleanup": 93824
+ },
+ "deri": {
+  "build_ns": 7727009,
+  "first_query_ns": 955336,
+  "adhoc_query_total_ns": 4519752,
+  "adhoc_query_count": 833,
+  "per_adhoc_query_ns": 5425,
+  "gen_ns": 696045
+ },
+ "pool": 4096,
+ "adapt_unsupported": 0,
+ "union": {
+  "ncls": 0,
+  "n_endpoints": 0,
+  "brute_mismatch": 0
+ },
+ "full_ns": 33450040,
+ "peak_rss_kb": 14292
+}

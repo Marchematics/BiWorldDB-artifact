@@ -1,0 +1,114 @@
+{
+ "note": "Two-window reproducibility of the six-optimization formal rosters: the same 54-fixture rosters with all six declared optimizations were run in two independent same-window sessions, 2 repetitions per fixture per base per session, all answer vectors validated (324 per base per session, 1,944 in total). Rows give cohort medians of engine/optimized-hybrid work ratios in each session and their min-max envelope.",
+ "total_vectors": 1944,
+ "rows": [
+  {
+   "base": "Intel",
+   "cohort": "Q2",
+   "dd_w1": 7.45,
+   "dd_w2": 7.6,
+   "dd_min": 7.45,
+   "dd_max": 7.6,
+   "dbsp_w1": 7.96,
+   "dbsp_w2": 8.04,
+   "dbsp_min": 7.96,
+   "dbsp_max": 8.04
+  },
+  {
+   "base": "Intel",
+   "cohort": "Q8",
+   "dd_w1": 9.17,
+   "dd_w2": 8.95,
+   "dd_min": 8.95,
+   "dd_max": 9.17,
+   "dbsp_w1": 9.9,
+   "dbsp_w2": 9.76,
+   "dbsp_min": 9.76,
+   "dbsp_max": 9.9
+  },
+  {
+   "base": "Intel",
+   "cohort": "Q32",
+   "dd_w1": 8.52,
+   "dd_w2": 8.89,
+   "dd_min": 8.52,
+   "dd_max": 8.89,
+   "dbsp_w1": 9.37,
+   "dbsp_w2": 9.55,
+   "dbsp_min": 9.37,
+   "dbsp_max": 9.55
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q2",
+   "dd_w1": 9.42,
+   "dd_w2": 10.27,
+   "dd_min": 9.42,
+   "dd_max": 10.27,
+   "dbsp_w1": 11.3,
+   "dbsp_w2": 12.31,
+   "dbsp_min": 11.3,
+   "dbsp_max": 12.31
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q8",
+   "dd_w1": 11.01,
+   "dd_w2": 11.67,
+   "dd_min": 11.01,
+   "dd_max": 11.67,
+   "dbsp_w1": 12.14,
+   "dbsp_w2": 13.23,
+   "dbsp_min": 12.14,
+   "dbsp_max": 13.23
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q32",
+   "dd_w1": 11.39,
+   "dd_w2": 10.87,
+   "dd_min": 10.87,
+   "dd_max": 11.39,
+   "dbsp_w1": 12.06,
+   "dbsp_w2": 11.75,
+   "dbsp_min": 11.75,
+   "dbsp_max": 12.06
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q2",
+   "dd_w1": 4.99,
+   "dd_w2": 5.12,
+   "dd_min": 4.99,
+   "dd_max": 5.12,
+   "dbsp_w1": 5.76,
+   "dbsp_w2": 5.63,
+   "dbsp_min": 5.63,
+   "dbsp_max": 5.76
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q8",
+   "dd_w1": 3.61,
+   "dd_w2": 3.61,
+   "dd_min": 3.61,
+   "dd_max": 3.61,
+   "dbsp_w1": 4.12,
+   "dbsp_w2": 4.06,
+   "dbsp_min": 4.06,
+   "dbsp_max": 4.12
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q32",
+   "dd_w1": 2.86,
+   "dd_w2": 2.74,
+   "dd_min": 2.74,
+   "dd_max": 2.86,
+   "dbsp_w1": 3.44,
+   "dbsp_w2": 3.35,
+   "dbsp_min": 3.35,
+   "dbsp_max": 3.44
+  }
+ ]
+}

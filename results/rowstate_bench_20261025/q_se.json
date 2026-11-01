@@ -1,0 +1,13 @@
+{
+ "columns": [
+  {
+   "name": "City",
+   "type": "VARCHAR"
+  },
+  {
+   "name": "TEMP(Calculation_383650433986449409)(2109769841)(0)",
+   "type": "HUGEINT"
+  }
+ ],
+ "rows": []
+}

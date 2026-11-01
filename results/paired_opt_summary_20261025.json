@@ -1,0 +1,77 @@
+{
+ "note": "Measured optimized external comparison: same-window interleaved runs with the optimized hybrid binary (zero-copy loader + bucketed class lookup; active group-prefix layout on taxi), five fixtures x 6 repetitions per base, inside a quiet window (1-minute load 2-5 during the runs, recorded). Ratios are engine/optimized-hybrid work-time medians on the chain cohort of each Q. Formal columns are the 54-fixture panel ratios with the default binary, for reference.",
+ "rows": [
+  {
+   "base": "Intel",
+   "cohort": "Q2",
+   "dd_measured": 3.6,
+   "dbsp_measured": 3.84,
+   "dd_formal": 2.512,
+   "dbsp_formal": 2.721
+  },
+  {
+   "base": "Intel",
+   "cohort": "Q8",
+   "dd_measured": 4.86,
+   "dbsp_measured": 5.26,
+   "dd_formal": 3.061,
+   "dbsp_formal": 3.313
+  },
+  {
+   "base": "Intel",
+   "cohort": "Q32",
+   "dd_measured": 5.92,
+   "dbsp_measured": 6.49,
+   "dd_formal": 4.379,
+   "dbsp_formal": 4.777
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q2",
+   "dd_measured": 5.24,
+   "dbsp_measured": 6.33,
+   "dd_formal": 3.354,
+   "dbsp_formal": 4.084
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q8",
+   "dd_measured": 7.94,
+   "dbsp_measured": 9.0,
+   "dd_formal": 3.974,
+   "dbsp_formal": 4.508
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q32",
+   "dd_measured": 10.3,
+   "dbsp_measured": 11.08,
+   "dd_formal": 4.706,
+   "dbsp_formal": 5.209
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q2",
+   "dd_measured": 2.51,
+   "dbsp_measured": 2.85,
+   "dd_formal": 1.691,
+   "dbsp_formal": 1.83
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q8",
+   "dd_measured": 2.28,
+   "dbsp_measured": 2.57,
+   "dd_formal": 1.599,
+   "dbsp_formal": 1.795
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q32",
+   "dd_measured": 2.12,
+   "dbsp_measured": 2.54,
+   "dd_formal": 1.607,
+   "dbsp_formal": 1.976
+  }
+ ]
+}

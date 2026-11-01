@@ -1,0 +1,24 @@
+{
+ "arm": "hybrid",
+ "base_id": "taxi",
+ "fixture": "artifact/taxi2024.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 0,
+ "n_states": 100000,
+ "n_answers": 199998,
+ "range_scope": "per_state",
+ "answers_fn": "c5868c091a895cf3",
+ "answers_sha256": "078c5cab4edb3259a790079725330c2dc4eff374d23a9ab2d59a34c13f76bbda",
+ "phases_ns": {
+  "load": 29883,
+  "setup": 254268218,
+  "execute": 203132037,
+  "extract": 8418456,
+  "cleanup": 11378255
+ },
+ "full_ns": 477226849,
+ "peak_rss_kb": 262964
+}

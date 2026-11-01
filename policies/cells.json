@@ -1,0 +1,361 @@
+{
+  "mixed": [
+    {
+      "cid": "1d_q2",
+      "cls": "1d_declared",
+      "fixture": "real1d_100k",
+      "rows": 100000,
+      "groups": 64,
+      "states": 2049,
+      "q": 2,
+      "fp": 59,
+      "seed": 20261201,
+      "topo": 0,
+      "backends": {
+        "static_declared": [
+          "panel",
+          [
+            "--arm",
+            "hybrid"
+          ]
+        ],
+        "aligned_pgdg": [
+          "panel_pgdg_align",
+          [
+            "--arm",
+            "pgdg_auto"
+          ]
+        ],
+        "rf": [
+          "panel_classic",
+          [
+            "--arm",
+            "rf"
+          ]
+        ],
+        "batch_v2": [
+          "panel_batch_v2",
+          []
+        ]
+      }
+    },
+    {
+      "cid": "1d_q8",
+      "cls": "1d_declared",
+      "fixture": "real1d_100k",
+      "rows": 100000,
+      "groups": 64,
+      "states": 2049,
+      "q": 8,
+      "fp": 59,
+      "seed": 20261202,
+      "topo": 0,
+      "backends": {
+        "static_declared": [
+          "panel",
+          [
+            "--arm",
+            "hybrid"
+          ]
+        ],
+        "aligned_pgdg": [
+          "panel_pgdg_align",
+          [
+            "--arm",
+            "pgdg_auto"
+          ]
+        ],
+        "rf": [
+          "panel_classic",
+          [
+            "--arm",
+            "rf"
+          ]
+        ],
+        "batch_v2": [
+          "panel_batch_v2",
+          []
+        ]
+      }
+    },
+    {
+      "cid": "2d_low_product",
+      "cls": "2d_rectangle",
+      "rows": 200000,
+      "c0": 64,
+      "c1": 64,
+      "groups": 8,
+      "states": 2049,
+      "q": 2,
+      "fp": 37,
+      "seed": 20261211,
+      "topo": 0,
+      "backends": {
+        "fmd": [
+          "panel_fmd",
+          [
+            "--arm",
+            "fmd"
+          ]
+        ],
+        "dense2d": [
+          "panel_fmd_align",
+          [
+            "--arm",
+            "dyn2d"
+          ]
+        ],
+        "naive2d": [
+          "panel_fmd",
+          [
+            "--arm",
+            "naive"
+          ]
+        ]
+      }
+    },
+    {
+      "cid": "2d_high_product",
+      "cls": "2d_rectangle",
+      "rows": 200000,
+      "c0": 1024,
+      "c1": 1024,
+      "groups": 64,
+      "states": 2049,
+      "q": 2,
+      "fp": 37,
+      "seed": 20261212,
+      "topo": 0,
+      "backends": {
+        "fmd": [
+          "panel_fmd",
+          [
+            "--arm",
+            "fmd"
+          ]
+        ],
+        "dense2d": [
+          "panel_fmd_align",
+          [
+            "--arm",
+            "dyn2d"
+          ]
+        ],
+        "naive2d": [
+          "panel_fmd",
+          [
+            "--arm",
+            "naive"
+          ]
+        ]
+      }
+    },
+    {
+      "cid": "hol_fp2",
+      "cls": "holistic",
+      "rows": 20000,
+      "groups": 4,
+      "states": 2049,
+      "q": 2,
+      "fp": 2,
+      "seed": 20261221,
+      "topo": 0,
+      "backends": {
+        "hros_f": [
+          "panel_hros_factor",
+          [
+            "--mode",
+            "hros"
+          ]
+        ],
+        "fenwick_mat": [
+          "panel_hros_factor",
+          [
+            "--mode",
+            "fenwick"
+          ]
+        ],
+        "scan": [
+          "panel_hros_factor",
+          [
+            "--mode",
+            "oracle"
+          ]
+        ]
+      }
+    },
+    {
+      "cid": "hol_fp4",
+      "cls": "holistic",
+      "rows": 20000,
+      "groups": 8,
+      "states": 2049,
+      "q": 2,
+      "fp": 4,
+      "seed": 20261222,
+      "topo": 0,
+      "backends": {
+        "hros_f": [
+          "panel_hros_factor",
+          [
+            "--mode",
+            "hros"
+          ]
+        ],
+        "fenwick_mat": [
+          "panel_hros_factor",
+          [
+            "--mode",
+            "fenwick"
+          ]
+        ],
+        "scan": [
+          "panel_hros_factor",
+          [
+            "--mode",
+            "oracle"
+          ]
+        ]
+      }
+    },
+    {
+      "cid": "adhoc_f50",
+      "cls": "adhoc_1d",
+      "fixture": "real1d_100k",
+      "rows": 100000,
+      "groups": 64,
+      "states": 2049,
+      "q": 2,
+      "fp": 37,
+      "seed": 20261231,
+      "topo": 0,
+      "adhoc": 50,
+      "backends": {
+        "deri_union": [
+          "panel_deri",
+          [
+            "--arm",
+            "deri",
+            "--adhoc-fraction",
+            "50"
+          ]
+        ],
+        "scan": [
+          "panel_deri",
+          [
+            "--arm",
+            "scan",
+            "--adhoc-fraction",
+            "50"
+          ]
+        ]
+      }
+    },
+    {
+      "cid": "adhoc_f100",
+      "cls": "adhoc_1d",
+      "fixture": "real1d_100k",
+      "rows": 100000,
+      "groups": 64,
+      "states": 2049,
+      "q": 2,
+      "fp": 37,
+      "seed": 20261232,
+      "topo": 0,
+      "adhoc": 100,
+      "backends": {
+        "deri_union": [
+          "panel_deri",
+          [
+            "--arm",
+            "deri",
+            "--adhoc-fraction",
+            "100"
+          ]
+        ],
+        "scan": [
+          "panel_deri",
+          [
+            "--arm",
+            "scan",
+            "--adhoc-fraction",
+            "100"
+          ]
+        ]
+      }
+    }
+  ],
+  "holistic": [
+    [
+      "E_20k_g4_500_fp2_q2_bushy_burst4",
+      20000,
+      4,
+      500,
+      2,
+      2,
+      1,
+      4,
+      [
+        "hros",
+        "fenwick",
+        "oracle"
+      ]
+    ],
+    [
+      "A_100k_g4_2049_fp2_q2",
+      100000,
+      4,
+      2049,
+      2,
+      2,
+      0,
+      1,
+      [
+        "hros",
+        "fenwick"
+      ]
+    ],
+    [
+      "B_300k_g8_2049_fp4_q2",
+      300000,
+      8,
+      2049,
+      2,
+      4,
+      0,
+      1,
+      [
+        "hros",
+        "fenwick"
+      ]
+    ],
+    [
+      "A8_20k_g4_2049_fp2_q2_burst8",
+      20000,
+      4,
+      2049,
+      2,
+      2,
+      0,
+      8,
+      [
+        "hros",
+        "fenwick"
+      ]
+    ],
+    [
+      "L_100k_g4_2049_fp64_q2",
+      100000,
+      4,
+      2049,
+      2,
+      64,
+      0,
+      1,
+      [
+        "hros",
+        "fenwick"
+      ]
+    ]
+  ]
+}

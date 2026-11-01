@@ -1,0 +1,66 @@
+{
+ "engine": "duckdb",
+ "note": "bounded external probe, 2 repeats per fixture, seed 7, factor period 37, per-state declared ranges; complete-work statistic excludes interpreter and import startup for both sides",
+ "rows": [
+  {
+   "fixture": "intel_t0_s7_f37_q2",
+   "duckdb_full_ns": 21939922635.5,
+   "duckdb_wall_ns": 22168783769.5,
+   "duckdb_repeats": 2,
+   "hybrid_full_ns": 98796694.0,
+   "full_raw_full_ns": 400176495.5,
+   "full_projected_full_ns": 210488807.5,
+   "duckdb_over_hybrid": 222.07142513797072,
+   "duckdb_over_raw": 54.82561540274171,
+   "duckdb_over_projected": 104.23320316212063
+  },
+  {
+   "fixture": "intel_t0_s7_f37_q8",
+   "duckdb_full_ns": 51671447093.5,
+   "duckdb_wall_ns": 51923212519.5,
+   "duckdb_repeats": 2,
+   "hybrid_full_ns": 145425272.0,
+   "full_raw_full_ns": 583329279.5,
+   "full_projected_full_ns": 425596045.5,
+   "duckdb_over_hybrid": 355.3127072267054,
+   "duckdb_over_raw": 88.5802391709021,
+   "duckdb_over_projected": 121.40960340173086
+  },
+  {
+   "fixture": "intel_t0_s7_f37_q32",
+   "duckdb_full_ns": 125456079038.0,
+   "duckdb_wall_ns": 125711595025.5,
+   "duckdb_repeats": 2,
+   "hybrid_full_ns": 218750409.0,
+   "full_raw_full_ns": 1030473942.5,
+   "full_projected_full_ns": 914661594.5,
+   "duckdb_over_hybrid": 573.5124318693274,
+   "duckdb_over_raw": 121.74599848069424,
+   "duckdb_over_projected": 137.16119687585723
+  },
+  {
+   "fixture": "intel_t1_s7_f37_q2",
+   "duckdb_full_ns": 20912958800.0,
+   "duckdb_wall_ns": 21144296882.5,
+   "duckdb_repeats": 2,
+   "hybrid_full_ns": 97493671.5,
+   "full_raw_full_ns": 399281828.5,
+   "full_projected_full_ns": 208467238.0,
+   "duckdb_over_hybrid": 214.50580820520233,
+   "duckdb_over_raw": 52.3764351575043,
+   "duckdb_over_projected": 100.3177237854516
+  },
+  {
+   "fixture": "intel_t2_s7_f37_q2",
+   "duckdb_full_ns": 20232199814.0,
+   "duckdb_wall_ns": 20476353156.5,
+   "duckdb_repeats": 2,
+   "hybrid_full_ns": 100052670.5,
+   "full_raw_full_ns": 399918848.0,
+   "full_projected_full_ns": 212489053.0,
+   "duckdb_over_hybrid": 202.21549023021828,
+   "duckdb_over_raw": 50.59076338907638,
+   "duckdb_over_projected": 95.21525710785676
+  }
+ ]
+}

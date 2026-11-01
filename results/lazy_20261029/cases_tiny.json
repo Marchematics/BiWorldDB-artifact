@@ -1,0 +1,38 @@
+[
+ {
+  "key": "tiny_t0_s7_f4_q2",
+  "base_id": "tiny",
+  "fixture": "artifact/tiny.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 4,
+  "q": 2,
+  "sha256": "f2faebab829cbad0b3f1df9666c8dcd1b98c257be84e102c888f469ac4ab8762",
+  "n_answers": 4096,
+  "oracle_wall_s": 0.088082
+ },
+ {
+  "key": "tiny_t0_s7_f37_q8",
+  "base_id": "tiny",
+  "fixture": "artifact/tiny.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 8,
+  "sha256": "deec26e22a7dfb27a9b47ac5e38165036a6ab9ab3b2c08ecdb96d4377f9b9a18",
+  "n_answers": 16384,
+  "oracle_wall_s": 0.106594
+ },
+ {
+  "key": "tiny_t2_s7_f37_q2",
+  "base_id": "tiny",
+  "fixture": "artifact/tiny.bin",
+  "topology": 2,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 2,
+  "sha256": "31442ba42d33403d4cff034cca4c94f9a6de5d577df85a596a208c3b27e409b0",
+  "n_answers": 4096,
+  "oracle_wall_s": 0.070315
+ }
+]

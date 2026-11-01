@@ -1,0 +1,74 @@
+[
+ {
+  "label": "default_intel_q128",
+  "base_id": "intel",
+  "fixture": "artifact/intel.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 128,
+  "env": {}
+ },
+ {
+  "label": "default_taxi2024_q128",
+  "base_id": "taxi2024",
+  "fixture": "artifact/taxi2024.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 128,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "label": "default_retail2009_q128",
+  "base_id": "retail2009",
+  "fixture": "artifact/retail2009.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 128,
+  "env": {
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "label": "factor50_intel_q128",
+  "base_id": "intel",
+  "fixture": "artifact/intel.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 128,
+  "env": {
+   "BWH_FACTOR_PCT": "50"
+  }
+ },
+ {
+  "label": "factor50_taxi2024_q128",
+  "base_id": "taxi2024",
+  "fixture": "artifact/taxi2024.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 128,
+  "env": {
+   "BWH_FACTOR_PCT": "50",
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ },
+ {
+  "label": "factor50_retail2009_q128",
+  "base_id": "retail2009",
+  "fixture": "artifact/retail2009.bin",
+  "topology": 0,
+  "seed": 7,
+  "factor_period": 37,
+  "q": 128,
+  "env": {
+   "BWH_FACTOR_PCT": "50",
+   "BWH_RANGE_SCOPE": "per_state"
+  }
+ }
+]

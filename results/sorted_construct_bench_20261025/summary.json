@@ -1,0 +1,71 @@
+{
+ "note": "Interleaved same-window comparison of time-ordered construction (pre-sorted fixture copy, monotone class order) against timestamp-order construction, both with forced class-major layout + overlay + bucketed lookup, 5 repetitions each, host load ~11-31 recorded.",
+ "rows": [
+  {
+   "cohort": "Taxi Q32 fp4",
+   "plain_total_ms": 347.9,
+   "sorted_total_ms": 342.4,
+   "gain_pct": 1.6,
+   "plain_setup_ms": 245.7,
+   "sorted_setup_ms": 240.7,
+   "plain_execute_ms": 65.7,
+   "sorted_execute_ms": 65.4,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q8 fp4",
+   "plain_total_ms": 129.0,
+   "sorted_total_ms": 120.4,
+   "gain_pct": 6.7,
+   "plain_setup_ms": 101.6,
+   "sorted_setup_ms": 94.2,
+   "plain_execute_ms": 15.8,
+   "sorted_execute_ms": 15.8,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q32 fp37",
+   "plain_total_ms": 313.8,
+   "sorted_total_ms": 307.8,
+   "gain_pct": 1.9,
+   "plain_setup_ms": 245.8,
+   "sorted_setup_ms": 240.3,
+   "plain_execute_ms": 31.7,
+   "sorted_execute_ms": 31.2,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q32 fp37",
+   "plain_total_ms": 140.5,
+   "sorted_total_ms": 133.0,
+   "gain_pct": 5.3,
+   "plain_setup_ms": 100.5,
+   "sorted_setup_ms": 93.3,
+   "plain_execute_ms": 25.9,
+   "sorted_execute_ms": 25.7,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q2 fp37",
+   "plain_total_ms": 37.2,
+   "sorted_total_ms": 44.9,
+   "gain_pct": -20.6,
+   "plain_setup_ms": 32.1,
+   "sorted_setup_ms": 39.7,
+   "plain_execute_ms": 1.6,
+   "sorted_execute_ms": 1.6,
+   "n": 5
+  },
+  {
+   "cohort": "Retail Q32 fp37",
+   "plain_total_ms": 68.9,
+   "sorted_total_ms": 72.2,
+   "gain_pct": -4.8,
+   "plain_setup_ms": 42.4,
+   "sorted_setup_ms": 46.0,
+   "plain_execute_ms": 17.4,
+   "sorted_execute_ms": 16.9,
+   "n": 5
+  }
+ ]
+}

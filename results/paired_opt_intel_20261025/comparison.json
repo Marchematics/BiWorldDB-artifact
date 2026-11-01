@@ -1,0 +1,50 @@
+{
+ "note": "same-window interleaved paired runs; hybrid is bin/panel_lut with BWH_CLASS_LUT=1 (zero-copy loader + bucketed class lookup); ratios are engine/hybrid work-time medians per fixture",
+ "rows": [
+  {
+   "label": "chain_q2",
+   "fixture_id": "intel_t0_s7_f37_q2",
+   "hybrid_work_s": 0.07143553,
+   "dd_work_s": 0.251889964,
+   "dbsp_work_s": 0.263145043,
+   "dd_ratio": 3.5261159817810555,
+   "dbsp_ratio": 3.6836717386992164
+  },
+  {
+   "label": "bushy_q2",
+   "fixture_id": "intel_t1_s7_f37_q2",
+   "hybrid_work_s": 0.070750358,
+   "dd_work_s": 0.247792781,
+   "dbsp_work_s": 0.264634969,
+   "dd_ratio": 3.502353740740082,
+   "dbsp_ratio": 3.7404046633940706
+  },
+  {
+   "label": "star_q2",
+   "fixture_id": "intel_t2_s7_f37_q2",
+   "hybrid_work_s": 0.068222765,
+   "dd_work_s": 0.245565968,
+   "dbsp_work_s": 0.265273272,
+   "dd_ratio": 3.599472522111937,
+   "dbsp_ratio": 3.888339500751692
+  },
+  {
+   "label": "chain_q8",
+   "fixture_id": "intel_t0_s7_f37_q8",
+   "hybrid_work_s": 0.0911822,
+   "dd_work_s": 0.434965991,
+   "dbsp_work_s": 0.473885938,
+   "dd_ratio": 4.770294980818624,
+   "dbsp_ratio": 5.197132093763914
+  },
+  {
+   "label": "chain_q32",
+   "fixture_id": "intel_t0_s7_f37_q32",
+   "hybrid_work_s": 0.152882326,
+   "dd_work_s": 0.889931805,
+   "dbsp_work_s": 0.982147969,
+   "dd_ratio": 5.821024759918945,
+   "dbsp_ratio": 6.424208701534276
+  }
+ ]
+}

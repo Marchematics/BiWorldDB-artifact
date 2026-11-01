@@ -1,0 +1,137 @@
+{
+ "note": "Interleaved same-window comparison of the lazy factor-value aggregation (BWH_AGG2, revised: no dense-table allocation) against the baseline, both with overlay + bucketed lookup + automatic class-major layout + active group-prefix, 5 repetitions per cohort; host load ~18-20 recorded.",
+ "rows": [
+  {
+   "cohort": "Taxi Q32 fp37",
+   "base_total_ms": 148.6,
+   "agg2_total_ms": 90.3,
+   "gain_pct": 39.2,
+   "base_setup_ms": 87.8,
+   "agg2_setup_ms": 62.6,
+   "base_execute_ms": 48.7,
+   "agg2_execute_ms": 19.1,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q8 fp37",
+   "base_total_ms": 63.8,
+   "agg2_total_ms": 60.2,
+   "gain_pct": 5.6,
+   "base_setup_ms": 49.9,
+   "agg2_setup_ms": 48.8,
+   "base_execute_ms": 7.7,
+   "agg2_execute_ms": 5.9,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q32 fp4",
+   "base_total_ms": 333.6,
+   "agg2_total_ms": 209.1,
+   "gain_pct": 37.3,
+   "base_setup_ms": 240.0,
+   "agg2_setup_ms": 75.5,
+   "base_execute_ms": 68.6,
+   "agg2_execute_ms": 123.0,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q32 fp37",
+   "base_total_ms": 131.9,
+   "agg2_total_ms": 96.7,
+   "gain_pct": 26.6,
+   "base_setup_ms": 75.8,
+   "agg2_setup_ms": 61.1,
+   "base_execute_ms": 44.0,
+   "agg2_execute_ms": 24.6,
+   "n": 5
+  },
+  {
+   "cohort": "Retail Q32 fp37",
+   "base_total_ms": 75.8,
+   "agg2_total_ms": 55.2,
+   "gain_pct": 27.2,
+   "base_setup_ms": 39.2,
+   "agg2_setup_ms": 31.2,
+   "base_execute_ms": 26.6,
+   "agg2_execute_ms": 16.2,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q2 fp37",
+   "base_total_ms": 46.2,
+   "agg2_total_ms": 51.3,
+   "gain_pct": -11.0,
+   "base_setup_ms": 39.6,
+   "agg2_setup_ms": 44.7,
+   "base_execute_ms": 2.2,
+   "agg2_execute_ms": 2.0,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q8 fp4",
+   "base_total_ms": 127.4,
+   "agg2_total_ms": 109.4,
+   "gain_pct": 14.1,
+   "base_setup_ms": 102.1,
+   "agg2_setup_ms": 65.5,
+   "base_execute_ms": 16.9,
+   "agg2_execute_ms": 35.1,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q2 fp4",
+   "base_total_ms": 53.1,
+   "agg2_total_ms": 79.7,
+   "gain_pct": -50.2,
+   "base_setup_ms": 46.0,
+   "agg2_setup_ms": 58.5,
+   "base_execute_ms": 3.2,
+   "agg2_execute_ms": 13.1,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q8 fp37",
+   "base_total_ms": 60.2,
+   "agg2_total_ms": 69.7,
+   "gain_pct": -15.7,
+   "base_setup_ms": 47.3,
+   "agg2_setup_ms": 51.3,
+   "base_execute_ms": 7.0,
+   "agg2_execute_ms": 11.2,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q2 fp37",
+   "base_total_ms": 35.2,
+   "agg2_total_ms": 60.8,
+   "gain_pct": -72.8,
+   "base_setup_ms": 30.2,
+   "agg2_setup_ms": 47.7,
+   "base_execute_ms": 1.8,
+   "agg2_execute_ms": 7.1,
+   "n": 5
+  },
+  {
+   "cohort": "Retail Q8 fp37",
+   "base_total_ms": 34.1,
+   "agg2_total_ms": 37.8,
+   "gain_pct": -10.8,
+   "base_setup_ms": 24.3,
+   "agg2_setup_ms": 25.2,
+   "base_execute_ms": 5.6,
+   "agg2_execute_ms": 7.6,
+   "n": 5
+  },
+  {
+   "cohort": "Retail Q2 fp37",
+   "base_total_ms": 17.7,
+   "agg2_total_ms": 29.5,
+   "gain_pct": -66.5,
+   "base_setup_ms": 14.4,
+   "agg2_setup_ms": 23.3,
+   "base_execute_ms": 1.7,
+   "agg2_execute_ms": 3.2,
+   "n": 5
+  }
+ ]
+}

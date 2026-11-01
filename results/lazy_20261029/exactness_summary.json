@@ -1,0 +1,32 @@
+{
+ "exactness": {
+  "default": {
+   "runs": 90,
+   "exact": 90,
+   "all_exact": true
+  },
+  "factorheavy": {
+   "runs": 45,
+   "exact": 45,
+   "all_exact": true
+  },
+  "q128": {
+   "runs": 10,
+   "exact": 10,
+   "all_exact": true
+  },
+  "stress": {
+   "runs": 25,
+   "exact": 25,
+   "all_exact": true
+  },
+  "tiny": {
+   "runs": 15,
+   "exact": 15,
+   "all_exact": true
+  }
+ },
+ "total_runs": 185,
+ "total_exact": 185,
+ "all_exact": true
+}

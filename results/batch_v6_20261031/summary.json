@@ -1,0 +1,106 @@
+{
+ "intel": {
+  "v6_T1": {
+   "full": 218.9,
+   "setup": 120.8,
+   "execute": 81.3,
+   "extract": 14.2,
+   "rss": 133664
+  },
+  "v6_T8": {
+   "full": 171.9,
+   "setup": 74.2,
+   "execute": 81.3,
+   "extract": 13.4,
+   "rss": 136116
+  },
+  "v6_T32": {
+   "full": 170.1,
+   "setup": 72.5,
+   "execute": 80.8,
+   "extract": 13.8,
+   "rss": 148328
+  },
+  "v6_T64": {
+   "full": 174.7,
+   "setup": 76.4,
+   "execute": 81.5,
+   "extract": 13.5,
+   "rss": 149184
+  },
+  "v5_1T": {
+   "full": 204.9,
+   "setup": 110.2,
+   "execute": 78.9,
+   "extract": 13.0,
+   "rss": 133862
+  },
+  "aligned_1T": {
+   "full": 296.5,
+   "setup": 154.3,
+   "execute": 123.5,
+   "extract": 13.1,
+   "rss": 126338
+  },
+  "best_threads": [
+   32
+  ],
+  "ratios": {
+   "best_v6_over_v5_1T": 1.205,
+   "best_v6_over_aligned_1T": 1.743,
+   "v6_1T_over_v5_1T": 0.936
+  }
+ },
+ "taxi2024": {
+  "v6_T1": {
+   "full": 196.2,
+   "setup": 131.7,
+   "execute": 48.2,
+   "extract": 13.4,
+   "rss": 158068
+  },
+  "v6_T8": {
+   "full": 155.5,
+   "setup": 90.7,
+   "execute": 48.1,
+   "extract": 13.4,
+   "rss": 161600
+  },
+  "v6_T32": {
+   "full": 154.3,
+   "setup": 89.3,
+   "execute": 48.2,
+   "extract": 13.8,
+   "rss": 171532
+  },
+  "v6_T64": {
+   "full": 165.1,
+   "setup": 99.5,
+   "execute": 48.4,
+   "extract": 13.8,
+   "rss": 173636
+  },
+  "v5_1T": {
+   "full": 196.2,
+   "setup": 130.4,
+   "execute": 48.8,
+   "extract": 14.0,
+   "rss": 161260
+  },
+  "aligned_1T": {
+   "full": 291.4,
+   "setup": 169.2,
+   "execute": 101.3,
+   "extract": 14.1,
+   "rss": 146088
+  },
+  "best_threads": [
+   32
+  ],
+  "ratios": {
+   "best_v6_over_v5_1T": 1.272,
+   "best_v6_over_aligned_1T": 1.889,
+   "v6_1T_over_v5_1T": 1.0
+  }
+ }
+}

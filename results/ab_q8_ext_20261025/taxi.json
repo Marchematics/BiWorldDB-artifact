@@ -1,0 +1,202 @@
+{
+ "rows": [
+  {
+   "fid": "taxi2024_t0_s7_f4_q8",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "exact": true,
+   "work_a": 113275192.5,
+   "work_b": 111336571.5,
+   "ratio_b_over_a": 0.9828857408474498
+  },
+  {
+   "fid": "taxi2024_t0_s7_f37_q8",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "exact": true,
+   "work_a": 57216472.0,
+   "work_b": 56832472.0,
+   "ratio_b_over_a": 0.9932886459689441
+  },
+  {
+   "fid": "taxi2024_t0_s17_f4_q8",
+   "topology": 0,
+   "seed": 17,
+   "factor_period": 4,
+   "q": 8,
+   "exact": true,
+   "work_a": 107408617.0,
+   "work_b": 103248587.0,
+   "ratio_b_over_a": 0.9612691223833559
+  },
+  {
+   "fid": "taxi2024_t0_s17_f37_q8",
+   "topology": 0,
+   "seed": 17,
+   "factor_period": 37,
+   "q": 8,
+   "exact": true,
+   "work_a": 59876570.5,
+   "work_b": 61369268.0,
+   "ratio_b_over_a": 1.0249295757511696
+  },
+  {
+   "fid": "taxi2024_t0_s29_f4_q8",
+   "topology": 0,
+   "seed": 29,
+   "factor_period": 4,
+   "q": 8,
+   "exact": true,
+   "work_a": 105987643.0,
+   "work_b": 99763066.5,
+   "ratio_b_over_a": 0.9412707337967691
+  },
+  {
+   "fid": "taxi2024_t0_s29_f37_q8",
+   "topology": 0,
+   "seed": 29,
+   "factor_period": 37,
+   "q": 8,
+   "exact": true,
+   "work_a": 53639181.5,
+   "work_b": 53894506.5,
+   "ratio_b_over_a": 1.0047600465342672
+  },
+  {
+   "fid": "taxi2024_t1_s7_f4_q8",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "exact": true,
+   "work_a": 96404032.5,
+   "work_b": 93434766.0,
+   "ratio_b_over_a": 0.9691997686922484
+  },
+  {
+   "fid": "taxi2024_t1_s7_f37_q8",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "exact": true,
+   "work_a": 50024285.0,
+   "work_b": 49790250.5,
+   "ratio_b_over_a": 0.9953215823074733
+  },
+  {
+   "fid": "taxi2024_t1_s17_f4_q8",
+   "topology": 1,
+   "seed": 17,
+   "factor_period": 4,
+   "q": 8,
+   "exact": true,
+   "work_a": 94226800.0,
+   "work_b": 94408245.0,
+   "ratio_b_over_a": 1.0019256198873356
+  },
+  {
+   "fid": "taxi2024_t1_s17_f37_q8",
+   "topology": 1,
+   "seed": 17,
+   "factor_period": 37,
+   "q": 8,
+   "exact": true,
+   "work_a": 50467695.0,
+   "work_b": 51050715.0,
+   "ratio_b_over_a": 1.0115523405616207
+  },
+  {
+   "fid": "taxi2024_t1_s29_f4_q8",
+   "topology": 1,
+   "seed": 29,
+   "factor_period": 4,
+   "q": 8,
+   "exact": true,
+   "work_a": 94074202.0,
+   "work_b": 95022959.5,
+   "ratio_b_over_a": 1.010085203805396
+  },
+  {
+   "fid": "taxi2024_t1_s29_f37_q8",
+   "topology": 1,
+   "seed": 29,
+   "factor_period": 37,
+   "q": 8,
+   "exact": true,
+   "work_a": 51058506.0,
+   "work_b": 50958773.0,
+   "ratio_b_over_a": 0.9980466917696338
+  },
+  {
+   "fid": "taxi2024_t2_s7_f4_q8",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "exact": true,
+   "work_a": 93395640.5,
+   "work_b": 92613756.0,
+   "ratio_b_over_a": 0.9916282548541439
+  },
+  {
+   "fid": "taxi2024_t2_s7_f37_q8",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "exact": true,
+   "work_a": 51071694.5,
+   "work_b": 51285065.0,
+   "ratio_b_over_a": 1.0041778621619848
+  },
+  {
+   "fid": "taxi2024_t2_s17_f4_q8",
+   "topology": 2,
+   "seed": 17,
+   "factor_period": 4,
+   "q": 8,
+   "exact": true,
+   "work_a": 96105951.0,
+   "work_b": 94861693.5,
+   "ratio_b_over_a": 0.9870532731110481
+  },
+  {
+   "fid": "taxi2024_t2_s17_f37_q8",
+   "topology": 2,
+   "seed": 17,
+   "factor_period": 37,
+   "q": 8,
+   "exact": true,
+   "work_a": 52831369.0,
+   "work_b": 54441078.5,
+   "ratio_b_over_a": 1.0304688205221408
+  },
+  {
+   "fid": "taxi2024_t2_s29_f4_q8",
+   "topology": 2,
+   "seed": 29,
+   "factor_period": 4,
+   "q": 8,
+   "exact": true,
+   "work_a": 95633559.0,
+   "work_b": 109345776.0,
+   "ratio_b_over_a": 1.1433828997203794
+  },
+  {
+   "fid": "taxi2024_t2_s29_f37_q8",
+   "topology": 2,
+   "seed": 29,
+   "factor_period": 37,
+   "q": 8,
+   "exact": true,
+   "work_a": 53536769.5,
+   "work_b": 53320079.5,
+   "ratio_b_over_a": 0.9959525013925242
+  }
+ ]
+}

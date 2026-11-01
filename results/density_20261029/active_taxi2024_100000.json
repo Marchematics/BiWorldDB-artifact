@@ -1,0 +1,17 @@
+{
+ "fixture": "artifact/taxi2024.bin",
+ "states": 100000,
+ "rows": 2964606,
+ "groups": 260,
+ "q": 2,
+ "factor_period": 37,
+ "edits": 99999,
+ "factor_edits": 2702,
+ "active_rows_max": 96286,
+ "rho_active_max": 0.03248,
+ "active_rows_median": 48397,
+ "rho_active_median": 0.01632,
+ "cumulative_edits_over_rows": 0.03373,
+ "nonzero_dev_coords_max": 46884,
+ "nonzero_dev_coords_median": 26132
+}

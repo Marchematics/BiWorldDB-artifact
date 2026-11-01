@@ -1,0 +1,41 @@
+{
+ "run": "results/roster4_taxi_20261025",
+ "answers_checked": 324,
+ "answers_bad": [],
+ "fixtures": 54,
+ "rows": [
+  {
+   "cohort": "Q2",
+   "cases": 18,
+   "dd_median": 10.67,
+   "dd_min": 9.45,
+   "dd_max": 11.64,
+   "dbsp_median": 12.63,
+   "dbsp_min": 11.39,
+   "dbsp_max": 13.83,
+   "wins": 18
+  },
+  {
+   "cohort": "Q8",
+   "cases": 18,
+   "dd_median": 11.96,
+   "dd_min": 7.5,
+   "dd_max": 17.12,
+   "dbsp_median": 13.31,
+   "dbsp_min": 8.16,
+   "dbsp_max": 18.74,
+   "wins": 18
+  },
+  {
+   "cohort": "Q32",
+   "cases": 18,
+   "dd_median": 10.62,
+   "dd_min": 5.66,
+   "dd_max": 17.79,
+   "dbsp_median": 11.33,
+   "dbsp_min": 6.29,
+   "dbsp_max": 20.78,
+   "wins": 18
+  }
+ ]
+}

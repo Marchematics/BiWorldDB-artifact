@@ -1,0 +1,15 @@
+{
+ "arm": "oracle_bruteforce",
+ "family": "real_history",
+ "fixture": "artifact/taxi_2024_01_base.bin",
+ "spec": "artifact/taxi_2024_01_spec.bin",
+ "repeat": 0,
+ "n_states": 2049,
+ "q": 2,
+ "stride": 16,
+ "sampled_states": 128,
+ "sampled_answers": 256,
+ "sampled_sha256": "e9b2a751bb7924eabbef46f7eb7f3f19c28132738e5b8ee0b061cf50b2086a51",
+ "answers_sha256": "814981276f581de27f89d3d4a9204ef45b418a6165341db99c59d17c81bce214",
+ "oracle_ns": 284238209
+}

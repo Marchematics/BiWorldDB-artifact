@@ -1,0 +1,13 @@
+{
+ "fixture": "artifact/syn10m_fullspan.bin",
+ "rows": 10000000,
+ "groups": 512,
+ "span_us": 86400000000,
+ "seed": 20261029,
+ "bytes": 240006208,
+ "sha256": "9677f2fd2e47e506d55c6d7fbc2ac64daa57a335b5e446bd623c69f6e8bf03ed",
+ "declared_span": [
+  0,
+  86399999999
+ ]
+}

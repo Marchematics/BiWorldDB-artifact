@@ -1,0 +1,13 @@
+{
+ "fixture": "artifact/syn1m_dense.bin",
+ "rows": 1000000,
+ "groups": 61,
+ "span_us": 86400000000,
+ "seed": 20261029,
+ "bytes": 24000796,
+ "sha256": "eb2f545b86bd4e482d0ff7a7f8288cf022907b2d32344f5c97331fe11cd9fe35",
+ "declared_span": [
+  0,
+  86399999999
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "note": "Formal rosters with all six declared optimizations (five of C.7.8 plus the lazy factor-value aggregation of C.7.10, selected automatically), same-window interleaved against actual DD/DBSP, 54 fixtures x 2 repetitions per base, every answer vector validated: 324/324 per base, 972/972 total, 18/18 wins per cohort.",
+ "rows": [
+  {
+   "base": "Intel",
+   "cohort": "Q2",
+   "dd_median": 7.45,
+   "dd_min": 7.12,
+   "dd_max": 8.0,
+   "dbsp_median": 7.96,
+   "dbsp_min": 7.6,
+   "dbsp_max": 8.56,
+   "wins": 18,
+   "cases": 18
+  },
+  {
+   "base": "Intel",
+   "cohort": "Q8",
+   "dd_median": 9.17,
+   "dd_min": 8.77,
+   "dd_max": 10.29,
+   "dbsp_median": 9.9,
+   "dbsp_min": 9.06,
+   "dbsp_max": 10.94,
+   "wins": 18,
+   "cases": 18
+  },
+  {
+   "base": "Intel",
+   "cohort": "Q32",
+   "dd_median": 8.52,
+   "dd_min": 6.93,
+   "dd_max": 10.56,
+   "dbsp_median": 9.37,
+   "dbsp_min": 8.25,
+   "dbsp_max": 11.53,
+   "wins": 18,
+   "cases": 18
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q2",
+   "dd_median": 9.42,
+   "dd_min": 8.15,
+   "dd_max": 11.31,
+   "dbsp_median": 11.3,
+   "dbsp_min": 9.74,
+   "dbsp_max": 13.71,
+   "wins": 18,
+   "cases": 18
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q8",
+   "dd_median": 11.01,
+   "dd_min": 7.75,
+   "dd_max": 16.91,
+   "dbsp_median": 12.14,
+   "dbsp_min": 8.61,
+   "dbsp_max": 18.78,
+   "wins": 18,
+   "cases": 18
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q32",
+   "dd_median": 11.39,
+   "dd_min": 6.42,
+   "dd_max": 20.2,
+   "dbsp_median": 12.06,
+   "dbsp_min": 6.86,
+   "dbsp_max": 19.56,
+   "wins": 18,
+   "cases": 18
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q2",
+   "dd_median": 4.99,
+   "dd_min": 4.66,
+   "dd_max": 5.43,
+   "dbsp_median": 5.76,
+   "dbsp_min": 5.18,
+   "dbsp_max": 5.99,
+   "wins": 18,
+   "cases": 18
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q8",
+   "dd_median": 3.61,
+   "dd_min": 3.39,
+   "dd_max": 3.79,
+   "dbsp_median": 4.12,
+   "dbsp_min": 3.76,
+   "dbsp_max": 4.34,
+   "wins": 18,
+   "cases": 18
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q32",
+   "dd_median": 2.86,
+   "dd_min": 2.3,
+   "dd_max": 3.03,
+   "dbsp_median": 3.44,
+   "dbsp_min": 2.74,
+   "dbsp_max": 3.79,
+   "wins": 18,
+   "cases": 18
+  }
+ ]
+}

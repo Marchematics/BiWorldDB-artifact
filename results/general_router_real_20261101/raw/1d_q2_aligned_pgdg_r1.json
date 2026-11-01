@@ -1,0 +1,50 @@
+{
+ "arm": "pgdg_auto",
+ "base_id": "real1d_100k",
+ "mode": "pgdg_dense_corr",
+ "family": "pgdg_aligned",
+ "fixture": "artifact/real1d_100k.bin",
+ "topology": 0,
+ "seed": 20261201,
+ "factor_period": 59,
+ "q": 2,
+ "repeat": 1,
+ "n_states": 2049,
+ "n_answers": 4096,
+ "range_scope": "per_state",
+ "answers_fn": "ccb23cb0e16ab4c4",
+ "answers_sha256": "a58138a37faa5290d288ac6f62127c7002a7475437a16ffa0e200b6a2fb14daf",
+ "phases_ns": {
+  "load": 29092,
+  "setup": 2320165,
+  "execute": 359580,
+  "extract": 360762,
+  "cleanup": 128786
+ },
+ "full_ns": 3198385,
+ "peak_rss_kb": 6640,
+ "stats": {
+  "n_active": 34,
+  "n_groups": 64,
+  "classes": 2120,
+  "union_classes": 785,
+  "dense_frame": false,
+  "sparse_base": false,
+  "corr": true,
+  "n_factor_edits": 34,
+  "n_ins": 414,
+  "nnz": 0,
+  "base_bytes": 610848,
+  "dense_base_bytes": 593880,
+  "plan_bytes": 205188,
+  "plan_us": 416,
+  "base_us": 1249
+ },
+ "auto": {
+  "classes": 2120,
+  "dense_bytes": 593880,
+  "est_nnz": 37587,
+  "sparse_bytes": 481782,
+  "occ": 0.521466
+ }
+}

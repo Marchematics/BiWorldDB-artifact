@@ -1,0 +1,389 @@
+{
+ "host": "benchmark-host",
+ "fixtures": {
+  "hros_100k_g64": {
+   "rows": 100000,
+   "groups": 64,
+   "fixture_seed": 20261121,
+   "sha256": "00769cbb3d3134736e4d62a46478ac4382bc19468b4aa1822eb031042833a60b",
+   "span": 86400000000
+  },
+  "hros_300k_g128": {
+   "rows": 300000,
+   "groups": 128,
+   "fixture_seed": 20261122,
+   "sha256": "d2823995f35a5c3009771de63a912152321b11b2c5c611b0df083f80dcd4e173",
+   "span": 86400000000
+  },
+  "hros_1m_g256": {
+   "rows": 1000000,
+   "groups": 256,
+   "fixture_seed": 20261123,
+   "sha256": "222557001b132866d7938d2a073744da3bda4a1d6ad884b1be56f77049fe78d9",
+   "span": 86400000000
+  }
+ },
+ "configs": {
+  "A_100k_2049_q2": {
+   "hros_ms": 29.329,
+   "hros_runs_ms": [
+    29.329,
+    29.626,
+    28.746
+   ],
+   "rebuild_ms": 5871.005,
+   "sortall_ms": 9775.704,
+   "prefix_panel_ms": 4.83,
+   "speedup_vs_rebuild": 200.177,
+   "speedup_vs_sortall": 333.312,
+   "hros_phases": {
+    "load": 0.035,
+    "setup": 22.093,
+    "execute": 5.346,
+    "extract": 1.523,
+    "cleanup": 0.332
+   },
+   "hros_update_ms": 3.405,
+   "hros_query_ms": 1.701,
+   "rebuild_phases": {
+    "load": 0.071,
+    "setup": 3.967,
+    "execute": 5864.705,
+    "extract": 2.157,
+    "cleanup": 0.106
+   },
+   "hros_peak_rss_kb": 10980,
+   "rebuild_peak_rss_kb": 8620,
+   "sortall_peak_rss_kb": 8484,
+   "n_rows": 100408,
+   "sigma": 46745,
+   "n_queries": 4096,
+   "n_updates": 5979,
+   "answers_sha256": "0c6c318a2c2ed25035071ffcd818d4221e41e341a7969b332e9c4b4eeb0eaa41",
+   "answers_prefix_sha256": null,
+   "rebuild_answers_sha256": "0c6c318a2c2ed25035071ffcd818d4221e41e341a7969b332e9c4b4eeb0eaa41",
+   "hros_sha_identical_to_rebuild": true,
+   "hros_answers_fn": "37a3fb2dd7753611",
+   "rebuild_answers_fn": "37a3fb2dd7753611",
+   "max_v": 2048
+  },
+  "A_100k_2049_q8": {
+   "hros_ms": 35.229,
+   "hros_runs_ms": [
+    34.161,
+    35.796,
+    35.229
+   ],
+   "rebuild_ms": 6722.44,
+   "sortall_ms": 9777.606,
+   "prefix_panel_ms": 16.245,
+   "speedup_vs_rebuild": 196.787,
+   "speedup_vs_sortall": 286.221,
+   "hros_phases": {
+    "load": 0.019,
+    "setup": 21.307,
+    "execute": 9.4,
+    "extract": 3.112,
+    "cleanup": 0.323
+   },
+   "hros_update_ms": 3.451,
+   "hros_query_ms": 5.701,
+   "rebuild_phases": {
+    "load": 0.055,
+    "setup": 3.235,
+    "execute": 6714.53,
+    "extract": 4.516,
+    "cleanup": 0.105
+   },
+   "hros_peak_rss_kb": 11732,
+   "rebuild_peak_rss_kb": 9132,
+   "sortall_peak_rss_kb": 8832,
+   "n_rows": 100408,
+   "sigma": 46745,
+   "n_queries": 16384,
+   "n_updates": 5979,
+   "answers_sha256": "8432d06456bcafb4e8cf69220ec523ab3b0c4aeb4fe24c06b3f331cef81f9445",
+   "answers_prefix_sha256": null,
+   "rebuild_answers_sha256": "8432d06456bcafb4e8cf69220ec523ab3b0c4aeb4fe24c06b3f331cef81f9445",
+   "hros_sha_identical_to_rebuild": true,
+   "hros_answers_fn": "d948fc7e2bfe0ac6",
+   "rebuild_answers_fn": "d948fc7e2bfe0ac6",
+   "max_v": 2048
+  },
+  "B_300k_2049_q2": {
+   "hros_ms": 63.395,
+   "hros_runs_ms": [
+    64.003,
+    63.395,
+    62.461
+   ],
+   "rebuild_ms": 9776.845,
+   "sortall_ms": 30100.482,
+   "prefix_panel_ms": 8.238,
+   "speedup_vs_rebuild": 152.756,
+   "speedup_vs_sortall": 470.298,
+   "hros_phases": {
+    "load": 0.06,
+    "setup": 56.019,
+    "execute": 5.703,
+    "extract": 1.305,
+    "cleanup": 0.916
+   },
+   "hros_update_ms": 3.681,
+   "hros_query_ms": 1.772,
+   "rebuild_phases": {
+    "load": 0.078,
+    "setup": 4.847,
+    "execute": 9770.723,
+    "extract": 0.791,
+    "cleanup": 0.407
+   },
+   "hros_peak_rss_kb": 21580,
+   "rebuild_peak_rss_kb": 18184,
+   "sortall_peak_rss_kb": 16284,
+   "n_rows": 300408,
+   "sigma": 73977,
+   "n_queries": 4096,
+   "n_updates": 5979,
+   "answers_sha256": "58a35e8b9aa991d1228803eb54c0874b4526e7c37ae0a81c7e794636ae090153",
+   "answers_prefix_sha256": null,
+   "rebuild_answers_sha256": "58a35e8b9aa991d1228803eb54c0874b4526e7c37ae0a81c7e794636ae090153",
+   "hros_sha_identical_to_rebuild": true,
+   "hros_answers_fn": "17e760fd99abdd56",
+   "rebuild_answers_fn": "17e760fd99abdd56",
+   "max_v": 2048
+  },
+  "B_300k_2049_q8": {
+   "hros_ms": 68.719,
+   "hros_runs_ms": [
+    67.845,
+    68.719,
+    69.612
+   ],
+   "rebuild_ms": 11841.766,
+   "sortall_ms": 30108.002,
+   "prefix_panel_ms": 19.295,
+   "speedup_vs_rebuild": 174.541,
+   "speedup_vs_sortall": 443.776,
+   "hros_phases": {
+    "load": 0.039,
+    "setup": 54.273,
+    "execute": 9.251,
+    "extract": 3.326,
+    "cleanup": 0.956
+   },
+   "hros_update_ms": 3.75,
+   "hros_query_ms": 5.249,
+   "rebuild_phases": {
+    "load": 0.032,
+    "setup": 5.197,
+    "execute": 11833.422,
+    "extract": 2.722,
+    "cleanup": 0.393
+   },
+   "hros_peak_rss_kb": 21996,
+   "rebuild_peak_rss_kb": 18816,
+   "sortall_peak_rss_kb": 17028,
+   "n_rows": 300408,
+   "sigma": 73977,
+   "n_queries": 16384,
+   "n_updates": 5979,
+   "answers_sha256": "9a358b513effe0eb367218de9bcb5355d35b093f75863cc625a87bc3aed7d2f8",
+   "answers_prefix_sha256": null,
+   "rebuild_answers_sha256": "9a358b513effe0eb367218de9bcb5355d35b093f75863cc625a87bc3aed7d2f8",
+   "hros_sha_identical_to_rebuild": true,
+   "hros_answers_fn": "c303a13a9b7f0fdd",
+   "rebuild_answers_fn": "c303a13a9b7f0fdd",
+   "max_v": 2048
+  },
+  "C_1m_2049_q2": {
+   "hros_ms": 169.399,
+   "hros_runs_ms": [
+    169.399,
+    169.862,
+    169.314
+   ],
+   "rebuild_ms": 742.868,
+   "sortall_ms": 3179.448,
+   "prefix_panel_ms": 15.0,
+   "speedup_vs_rebuild": 4.385,
+   "speedup_vs_sortall": 18.769,
+   "hros_phases": {
+    "load": 0.034,
+    "setup": 159.187,
+    "execute": 6.07,
+    "extract": 1.657,
+    "cleanup": 2.452
+   },
+   "hros_update_ms": 4.039,
+   "hros_query_ms": 1.762,
+   "rebuild_phases": {
+    "load": 0.042,
+    "setup": 9.013,
+    "execute": 731.563,
+    "extract": 1.23,
+    "cleanup": 1.021
+   },
+   "hros_peak_rss_kb": 54368,
+   "rebuild_peak_rss_kb": 44900,
+   "sortall_peak_rss_kb": 44356,
+   "n_rows": 1000408,
+   "sigma": 112786,
+   "n_queries": 4096,
+   "n_updates": 5979,
+   "answers_sha256": "1e54338629fe6c22261ae84c7b88c748e24fca23dec54242d4b981b338ddfea6",
+   "answers_prefix_sha256": "cf9f81606bcb554da751b8416f57e815bff92fec842b31c8e282b2605fc7b166",
+   "rebuild_answers_sha256": "cf9f81606bcb554da751b8416f57e815bff92fec842b31c8e282b2605fc7b166",
+   "hros_sha_identical_to_rebuild": true,
+   "hros_answers_fn": "021b0617ac666aab",
+   "rebuild_answers_fn": "27d0c2bee7e30ad6",
+   "max_v": 64
+  },
+  "C_1m_2049_q8": {
+   "hros_ms": 174.796,
+   "hros_runs_ms": [
+    174.796,
+    173.501,
+    176.072
+   ],
+   "rebuild_ms": 950.518,
+   "sortall_ms": 3179.035,
+   "prefix_panel_ms": 30.979,
+   "speedup_vs_rebuild": 5.438,
+   "speedup_vs_sortall": 18.187,
+   "hros_phases": {
+    "load": 0.031,
+    "setup": 158.247,
+    "execute": 9.921,
+    "extract": 4.147,
+    "cleanup": 2.451
+   },
+   "hros_update_ms": 4.158,
+   "hros_query_ms": 5.5,
+   "rebuild_phases": {
+    "load": 0.065,
+    "setup": 9.777,
+    "execute": 939.476,
+    "extract": 0.204,
+    "cleanup": 0.996
+   },
+   "hros_peak_rss_kb": 54984,
+   "rebuild_peak_rss_kb": 45016,
+   "sortall_peak_rss_kb": 44488,
+   "n_rows": 1000408,
+   "sigma": 112786,
+   "n_queries": 16384,
+   "n_updates": 5979,
+   "answers_sha256": "f38b7fd3424f4cd2f1a42e951dbe550df55fbfeac54788c7d064139b61bb4dac",
+   "answers_prefix_sha256": "9bbeee707fe12d3e8a3cef31b3507d2c57e9bcfe7a63d6739b76711014cf63cc",
+   "rebuild_answers_sha256": "9bbeee707fe12d3e8a3cef31b3507d2c57e9bcfe7a63d6739b76711014cf63cc",
+   "hros_sha_identical_to_rebuild": true,
+   "hros_answers_fn": "9117c2f62a476b3d",
+   "rebuild_answers_fn": "ddafba9260e23356",
+   "max_v": 64
+  },
+  "D_100k_300k_q2": {
+   "hros_ms": 1265.453,
+   "hros_runs_ms": [
+    1271.204,
+    1265.453,
+    1258.977
+   ],
+   "rebuild_ms": 287.763,
+   "sortall_ms": 436.379,
+   "prefix_panel_ms": null,
+   "speedup_vs_rebuild": 0.226,
+   "speedup_vs_sortall": 0.343,
+   "hros_phases": {
+    "load": 0.071,
+    "setup": 175.941,
+    "execute": 999.453,
+    "extract": 95.623,
+    "cleanup": 0.116
+   },
+   "hros_update_ms": 629.92,
+   "hros_query_ms": 327.933,
+   "rebuild_phases": {
+    "load": 0.076,
+    "setup": 123.3,
+    "execute": 162.957,
+    "extract": 1.313,
+    "cleanup": 0.117
+   },
+   "hros_peak_rss_kb": 231156,
+   "rebuild_peak_rss_kb": 200476,
+   "sortall_peak_rss_kb": 199408,
+   "n_rows": 158366,
+   "sigma": 167241,
+   "n_queries": 599998,
+   "n_updates": 875673,
+   "answers_sha256": "694924e7b9fae67f5ea8399246f8c3fcbc284f8e9d181dfc83afc267a711611c",
+   "answers_prefix_sha256": "3bbe239336582db8222f7c6e5bb779e7ee544f22153c015559818dbdbe7aa83d",
+   "rebuild_answers_sha256": "3bbe239336582db8222f7c6e5bb779e7ee544f22153c015559818dbdbe7aa83d",
+   "hros_sha_identical_to_rebuild": true,
+   "hros_answers_fn": "1ab4b709e46c0092",
+   "rebuild_answers_fn": "afdc1046b2828406",
+   "max_v": 64
+  },
+  "D_300k_300k_q2": {
+   "hros_ms": 1310.472,
+   "hros_runs_ms": [
+    1310.387,
+    1316.447,
+    1310.472
+   ],
+   "rebuild_ms": 473.951,
+   "sortall_ms": 1074.619,
+   "prefix_panel_ms": null,
+   "speedup_vs_rebuild": 0.362,
+   "speedup_vs_sortall": 0.82,
+   "hros_phases": {
+    "load": 0.062,
+    "setup": 205.852,
+    "execute": 1008.445,
+    "extract": 95.61,
+    "cleanup": 0.417
+   },
+   "hros_update_ms": 678.906,
+   "hros_query_ms": 282.822,
+   "rebuild_phases": {
+    "load": 0.041,
+    "setup": 128.779,
+    "execute": 344.594,
+    "extract": 0.141,
+    "cleanup": 0.397
+   },
+   "hros_peak_rss_kb": 239192,
+   "rebuild_peak_rss_kb": 211556,
+   "sortall_peak_rss_kb": 207412,
+   "n_rows": 358366,
+   "sigma": 177848,
+   "n_queries": 599998,
+   "n_updates": 875673,
+   "answers_sha256": "6cfb7f97558b0c57484e8c98bf51842d8e0c66169cfd0e5bfe3eedaaa1b132b9",
+   "answers_prefix_sha256": "8541d6e47a1fe6e691111112fbd714dd75a3af27dedce5f964bcf6a5a00a44b5",
+   "rebuild_answers_sha256": "8541d6e47a1fe6e691111112fbd714dd75a3af27dedce5f964bcf6a5a00a44b5",
+   "hros_sha_identical_to_rebuild": true,
+   "hros_answers_fn": "85b679f6a9713bf0",
+   "rebuild_answers_fn": "6de7e7b7dc1ecd04",
+   "max_v": 64
+  }
+ },
+ "exactness": {
+  "A_100k_2049_q2": true,
+  "A_100k_2049_q8": true,
+  "B_300k_2049_q2": true,
+  "B_300k_2049_q8": true,
+  "C_1m_2049_q2": true,
+  "C_1m_2049_q8": true,
+  "D_100k_300k_q2": true,
+  "D_300k_300k_q2": true
+ },
+ "protocol": {
+  "reps_hros": 3,
+  "reps_reference": 1,
+  "timing": "in-process full = load+setup+execute+extract+cleanup; update_ns/query_ns are worker sub-counters",
+  "measure": "exact lower median (and count/sum/distinct) over 1D MEASURE ranges; the shipped prefix backend has no such operator",
+  "query_ranges": "deterministic nested ranges over the fixture possible-amount domain, per state, q ranges"
+ }
+}

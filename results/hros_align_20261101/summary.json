@@ -1,0 +1,845 @@
+{
+ "host": "benchmark-host",
+ "protocol": {
+  "reps": {
+   "hros": 3,
+   "fenwick": 3,
+   "avl": 3,
+   "rebuild": 1
+  },
+  "timing": "in-process full = load+setup+execute+extract+cleanup; setup/update/query/extract are worker phases/sub-counters",
+  "semantics": "same value universe, same row state, same per-version apply/undo, same deterministic magnitude ranges",
+  "fixtures": {
+   "hros_100k_g64": {
+    "rows": 100000,
+    "groups": 64,
+    "fixture_seed": 20261121,
+    "sha256": "00769cbb3d3134736e4d62a46478ac4382bc19468b4aa1822eb031042833a60b",
+    "span": 86400000000
+   },
+   "hros_300k_g128": {
+    "rows": 300000,
+    "groups": 128,
+    "fixture_seed": 20261122,
+    "sha256": "d2823995f35a5c3009771de63a912152321b11b2c5c611b0df083f80dcd4e173",
+    "span": 86400000000
+   }
+  }
+ },
+ "configs": {
+  "A_100k_2049_q2": {
+   "fixture": "hros_100k_g64",
+   "states": 2049,
+   "q": 2,
+   "reference": "full",
+   "modes": {
+    "hros": {
+     "full_ms_median": 28.517,
+     "full_ms_runs": [
+      29.479,
+      28.403,
+      28.517
+     ],
+     "setup_ms": 21.729,
+     "execute_ms": 5.33,
+     "load_ms": 0.07,
+     "extract_ms": 1.992,
+     "cleanup_ms": 0.359,
+     "update_ms": 3.385,
+     "query_ms": 1.667,
+     "peak_rss_mb": 10.83,
+     "sigma": 46745,
+     "n_rows": 100408,
+     "n_updates": 5979,
+     "n_queries": 4096,
+     "sha": "0c6c318a2c2ed25035071ffcd818d4221e41e341a7969b332e9c4b4eeb0eaa41"
+    },
+    "fenwick": {
+     "full_ms_median": 18.639,
+     "full_ms_runs": [
+      18.774,
+      18.639,
+      18.001
+     ],
+     "setup_ms": 15.857,
+     "execute_ms": 1.452,
+     "load_ms": 0.066,
+     "extract_ms": 1.22,
+     "cleanup_ms": 0.178,
+     "update_ms": 0.481,
+     "query_ms": 0.695,
+     "peak_rss_mb": 9.23,
+     "sigma": 46745,
+     "n_rows": 100408,
+     "n_updates": 3986,
+     "n_queries": 4096,
+     "sha": "0c6c318a2c2ed25035071ffcd818d4221e41e341a7969b332e9c4b4eeb0eaa41",
+     "vs_hros_ratio": 0.6536,
+     "vs_hros_speedup": 1.53,
+     "faster_than_hros": true
+    },
+    "avl": {
+     "full_ms_median": 21.857,
+     "full_ms_runs": [
+      21.649,
+      22.979,
+      21.857
+     ],
+     "setup_ms": 16.287,
+     "execute_ms": 3.833,
+     "load_ms": 0.031,
+     "extract_ms": 1.167,
+     "cleanup_ms": 0.331,
+     "update_ms": 1.673,
+     "query_ms": 1.942,
+     "peak_rss_mb": 10.71,
+     "sigma": 46745,
+     "n_rows": 100408,
+     "n_updates": 3986,
+     "n_queries": 4096,
+     "sha": "0c6c318a2c2ed25035071ffcd818d4221e41e341a7969b332e9c4b4eeb0eaa41",
+     "vs_hros_ratio": 0.7665,
+     "vs_hros_speedup": 1.3047,
+     "faster_than_hros": true
+    },
+    "rebuild": {
+     "full_ms": 5877.83,
+     "phases": {
+      "load": 0.039,
+      "setup": 2.327,
+      "execute": 5874.415,
+      "extract": 0.777,
+      "cleanup": 0.272
+     },
+     "peak_rss_mb": 8.31,
+     "max_v": 2048,
+     "sha": "0c6c318a2c2ed25035071ffcd818d4221e41e341a7969b332e9c4b4eeb0eaa41"
+    }
+   },
+   "exact": true,
+   "answers_sha": [
+    "0c6c318a2c2ed25035071ffcd818d4221e41e341a7969b332e9c4b4eeb0eaa41"
+   ]
+  },
+  "A_100k_2049_q8": {
+   "fixture": "hros_100k_g64",
+   "states": 2049,
+   "q": 8,
+   "reference": "full",
+   "modes": {
+    "hros": {
+     "full_ms_median": 35.055,
+     "full_ms_runs": [
+      36.003,
+      35.055,
+      34.895
+     ],
+     "setup_ms": 21.983,
+     "execute_ms": 9.44,
+     "load_ms": 0.079,
+     "extract_ms": 4.155,
+     "cleanup_ms": 0.346,
+     "update_ms": 3.511,
+     "query_ms": 5.634,
+     "peak_rss_mb": 11.48,
+     "sigma": 46745,
+     "n_rows": 100408,
+     "n_updates": 5979,
+     "n_queries": 16384,
+     "sha": "8432d06456bcafb4e8cf69220ec523ab3b0c4aeb4fe24c06b3f331cef81f9445"
+    },
+    "fenwick": {
+     "full_ms_median": 22.931,
+     "full_ms_runs": [
+      22.931,
+      23.662,
+      22.746
+     ],
+     "setup_ms": 16.421,
+     "execute_ms": 3.201,
+     "load_ms": 0.078,
+     "extract_ms": 3.016,
+     "cleanup_ms": 0.216,
+     "update_ms": 0.486,
+     "query_ms": 2.431,
+     "peak_rss_mb": 9.84,
+     "sigma": 46745,
+     "n_rows": 100408,
+     "n_updates": 3986,
+     "n_queries": 16384,
+     "sha": "8432d06456bcafb4e8cf69220ec523ab3b0c4aeb4fe24c06b3f331cef81f9445",
+     "vs_hros_ratio": 0.6541,
+     "vs_hros_speedup": 1.5287,
+     "faster_than_hros": true
+    },
+    "avl": {
+     "full_ms_median": 30.367,
+     "full_ms_runs": [
+      30.007,
+      30.501,
+      30.367
+     ],
+     "setup_ms": 17.099,
+     "execute_ms": 9.467,
+     "load_ms": 0.029,
+     "extract_ms": 3.073,
+     "cleanup_ms": 0.339,
+     "update_ms": 1.764,
+     "query_ms": 7.477,
+     "peak_rss_mb": 11.31,
+     "sigma": 46745,
+     "n_rows": 100408,
+     "n_updates": 3986,
+     "n_queries": 16384,
+     "sha": "8432d06456bcafb4e8cf69220ec523ab3b0c4aeb4fe24c06b3f331cef81f9445",
+     "vs_hros_ratio": 0.8663,
+     "vs_hros_speedup": 1.1544,
+     "faster_than_hros": true
+    },
+    "rebuild": {
+     "full_ms": 6983.183,
+     "phases": {
+      "load": 0.034,
+      "setup": 3.058,
+      "execute": 6975.871,
+      "extract": 3.939,
+      "cleanup": 0.282
+     },
+     "peak_rss_mb": 8.98,
+     "max_v": 2048,
+     "sha": "8432d06456bcafb4e8cf69220ec523ab3b0c4aeb4fe24c06b3f331cef81f9445"
+    }
+   },
+   "exact": true,
+   "answers_sha": [
+    "8432d06456bcafb4e8cf69220ec523ab3b0c4aeb4fe24c06b3f331cef81f9445"
+   ]
+  },
+  "B_300k_2049_q2": {
+   "fixture": "hros_300k_g128",
+   "states": 2049,
+   "q": 2,
+   "reference": "full",
+   "modes": {
+    "hros": {
+     "full_ms_median": 61.252,
+     "full_ms_runs": [
+      59.621,
+      61.252,
+      61.465
+     ],
+     "setup_ms": 51.589,
+     "execute_ms": 5.656,
+     "load_ms": 0.03,
+     "extract_ms": 1.217,
+     "cleanup_ms": 1.129,
+     "update_ms": 3.646,
+     "query_ms": 1.727,
+     "peak_rss_mb": 21.12,
+     "sigma": 73977,
+     "n_rows": 300408,
+     "n_updates": 5979,
+     "n_queries": 4096,
+     "sha": "58a35e8b9aa991d1228803eb54c0874b4526e7c37ae0a81c7e794636ae090153"
+    },
+    "fenwick": {
+     "full_ms_median": 47.62,
+     "full_ms_runs": [
+      47.62,
+      47.503,
+      49.923
+     ],
+     "setup_ms": 44.208,
+     "execute_ms": 1.519,
+     "load_ms": 0.073,
+     "extract_ms": 1.25,
+     "cleanup_ms": 0.57,
+     "update_ms": 0.538,
+     "query_ms": 0.682,
+     "peak_rss_mb": 17.37,
+     "sigma": 73977,
+     "n_rows": 300408,
+     "n_updates": 3986,
+     "n_queries": 4096,
+     "sha": "58a35e8b9aa991d1228803eb54c0874b4526e7c37ae0a81c7e794636ae090153",
+     "vs_hros_ratio": 0.7774,
+     "vs_hros_speedup": 1.2863,
+     "faster_than_hros": true
+    },
+    "avl": {
+     "full_ms_median": 52.518,
+     "full_ms_runs": [
+      52.273,
+      52.518,
+      52.548
+     ],
+     "setup_ms": 44.885,
+     "execute_ms": 3.933,
+     "load_ms": 0.093,
+     "extract_ms": 2.391,
+     "cleanup_ms": 0.973,
+     "update_ms": 1.838,
+     "query_ms": 1.875,
+     "peak_rss_mb": 19.43,
+     "sigma": 73977,
+     "n_rows": 300408,
+     "n_updates": 3986,
+     "n_queries": 4096,
+     "sha": "58a35e8b9aa991d1228803eb54c0874b4526e7c37ae0a81c7e794636ae090153",
+     "vs_hros_ratio": 0.8574,
+     "vs_hros_speedup": 1.1663,
+     "faster_than_hros": true
+    },
+    "rebuild": {
+     "full_ms": 9909.196,
+     "phases": {
+      "load": 0.07,
+      "setup": 5.461,
+      "execute": 9901.691,
+      "extract": 0.833,
+      "cleanup": 1.141
+     },
+     "peak_rss_mb": 17.77,
+     "max_v": 2048,
+     "sha": "58a35e8b9aa991d1228803eb54c0874b4526e7c37ae0a81c7e794636ae090153"
+    }
+   },
+   "exact": true,
+   "answers_sha": [
+    "58a35e8b9aa991d1228803eb54c0874b4526e7c37ae0a81c7e794636ae090153"
+   ]
+  },
+  "B_300k_2049_q8": {
+   "fixture": "hros_300k_g128",
+   "states": 2049,
+   "q": 8,
+   "reference": "full",
+   "modes": {
+    "hros": {
+     "full_ms_median": 68.711,
+     "full_ms_runs": [
+      68.575,
+      69.204,
+      68.711
+     ],
+     "setup_ms": 54.284,
+     "execute_ms": 9.261,
+     "load_ms": 0.046,
+     "extract_ms": 3.831,
+     "cleanup_ms": 1.153,
+     "update_ms": 3.791,
+     "query_ms": 5.178,
+     "peak_rss_mb": 21.4,
+     "sigma": 73977,
+     "n_rows": 300408,
+     "n_updates": 5979,
+     "n_queries": 16384,
+     "sha": "9a358b513effe0eb367218de9bcb5355d35b093f75863cc625a87bc3aed7d2f8"
+    },
+    "fenwick": {
+     "full_ms_median": 51.613,
+     "full_ms_runs": [
+      52.551,
+      51.613,
+      51.359
+     ],
+     "setup_ms": 45.515,
+     "execute_ms": 2.956,
+     "load_ms": 0.072,
+     "extract_ms": 3.228,
+     "cleanup_ms": 0.78,
+     "update_ms": 0.535,
+     "query_ms": 2.136,
+     "peak_rss_mb": 18.16,
+     "sigma": 73977,
+     "n_rows": 300408,
+     "n_updates": 3986,
+     "n_queries": 16384,
+     "sha": "9a358b513effe0eb367218de9bcb5355d35b093f75863cc625a87bc3aed7d2f8",
+     "vs_hros_ratio": 0.7512,
+     "vs_hros_speedup": 1.3313,
+     "faster_than_hros": true
+    },
+    "avl": {
+     "full_ms_median": 60.258,
+     "full_ms_runs": [
+      59.549,
+      60.519,
+      60.258
+     ],
+     "setup_ms": 46.309,
+     "execute_ms": 8.872,
+     "load_ms": 0.05,
+     "extract_ms": 3.334,
+     "cleanup_ms": 0.983,
+     "update_ms": 1.895,
+     "query_ms": 6.758,
+     "peak_rss_mb": 20.01,
+     "sigma": 73977,
+     "n_rows": 300408,
+     "n_updates": 3986,
+     "n_queries": 16384,
+     "sha": "9a358b513effe0eb367218de9bcb5355d35b093f75863cc625a87bc3aed7d2f8",
+     "vs_hros_ratio": 0.877,
+     "vs_hros_speedup": 1.1403,
+     "faster_than_hros": true
+    },
+    "rebuild": {
+     "full_ms": 12691.906,
+     "phases": {
+      "load": 0.044,
+      "setup": 5.552,
+      "execute": 12681.514,
+      "extract": 3.702,
+      "cleanup": 1.093
+     },
+     "peak_rss_mb": 18.39,
+     "max_v": 2048,
+     "sha": "9a358b513effe0eb367218de9bcb5355d35b093f75863cc625a87bc3aed7d2f8"
+    }
+   },
+   "exact": true,
+   "answers_sha": [
+    "9a358b513effe0eb367218de9bcb5355d35b093f75863cc625a87bc3aed7d2f8"
+   ]
+  },
+  "D_100k_300k_q2": {
+   "fixture": "hros_100k_g64",
+   "states": 300000,
+   "q": 2,
+   "reference": "prefix64",
+   "modes": {
+    "hros": {
+     "full_ms_median": 1257.518,
+     "full_ms_runs": [
+      1248.669,
+      1257.518,
+      1260.646
+     ],
+     "setup_ms": 170.795,
+     "execute_ms": 981.012,
+     "load_ms": 0.087,
+     "extract_ms": 96.515,
+     "cleanup_ms": 0.26,
+     "update_ms": 620.0,
+     "query_ms": 320.256,
+     "peak_rss_mb": 225.68,
+     "sigma": 167241,
+     "n_rows": 158366,
+     "n_updates": 875673,
+     "n_queries": 599998,
+     "sha": "694924e7b9fae67f5ea8399246f8c3fcbc284f8e9d181dfc83afc267a711611c"
+    },
+    "fenwick": {
+     "full_ms_median": 516.604,
+     "full_ms_runs": [
+      516.604,
+      513.114,
+      517.277
+     ],
+     "setup_ms": 161.288,
+     "execute_ms": 257.787,
+     "load_ms": 0.072,
+     "extract_ms": 97.204,
+     "cleanup_ms": 0.253,
+     "update_ms": 87.834,
+     "query_ms": 128.608,
+     "peak_rss_mb": 221.66,
+     "sigma": 167241,
+     "n_rows": 158366,
+     "n_updates": 583782,
+     "n_queries": 599998,
+     "sha": "694924e7b9fae67f5ea8399246f8c3fcbc284f8e9d181dfc83afc267a711611c",
+     "vs_hros_ratio": 0.4108,
+     "vs_hros_speedup": 2.4342,
+     "faster_than_hros": true
+    },
+    "avl": {
+     "full_ms_median": 993.672,
+     "full_ms_runs": [
+      985.126,
+      993.672,
+      998.706
+     ],
+     "setup_ms": 163.611,
+     "execute_ms": 724.847,
+     "load_ms": 0.039,
+     "extract_ms": 96.389,
+     "cleanup_ms": 0.24,
+     "update_ms": 337.806,
+     "query_ms": 334.712,
+     "peak_rss_mb": 225.05,
+     "sigma": 167241,
+     "n_rows": 158366,
+     "n_updates": 583782,
+     "n_queries": 599998,
+     "sha": "694924e7b9fae67f5ea8399246f8c3fcbc284f8e9d181dfc83afc267a711611c",
+     "vs_hros_ratio": 0.7902,
+     "vs_hros_speedup": 1.2655,
+     "faster_than_hros": true
+    },
+    "rebuild": {
+     "full_ms": 301.697,
+     "phases": {
+      "load": 0.047,
+      "setup": 122.674,
+      "execute": 178.561,
+      "extract": 0.194,
+      "cleanup": 0.221
+     },
+     "peak_rss_mb": 195.68,
+     "max_v": 64,
+     "sha": "3bbe239336582db8222f7c6e5bb779e7ee544f22153c015559818dbdbe7aa83d"
+    }
+   },
+   "exact": true,
+   "answers_sha": {
+    "prefix": [
+     "3bbe239336582db8222f7c6e5bb779e7ee544f22153c015559818dbdbe7aa83d"
+    ],
+    "rebuild": "3bbe239336582db8222f7c6e5bb779e7ee544f22153c015559818dbdbe7aa83d"
+   }
+  },
+  "D_100k_300k_q8": {
+   "fixture": "hros_100k_g64",
+   "states": 300000,
+   "q": 8,
+   "reference": "prefix64",
+   "modes": {
+    "hros": {
+     "full_ms_median": 2314.743,
+     "full_ms_runs": [
+      2312.492,
+      2315.999,
+      2314.743
+     ],
+     "setup_ms": 289.721,
+     "execute_ms": 1639.721,
+     "load_ms": 0.066,
+     "extract_ms": 381.582,
+     "cleanup_ms": 1.402,
+     "update_ms": 641.799,
+     "query_ms": 955.635,
+     "peak_rss_mb": 308.09,
+     "sigma": 167241,
+     "n_rows": 158366,
+     "n_updates": 875673,
+     "n_queries": 2399992,
+     "sha": "97a9ba5f69f49b0c0491b510f1c372b675b02a9a7b2fa7a94d8af90a33c8a2dc"
+    },
+    "fenwick": {
+     "full_ms_median": 1240.163,
+     "full_ms_runs": [
+      1240.163,
+      1238.16,
+      1241.626
+     ],
+     "setup_ms": 280.322,
+     "execute_ms": 577.67,
+     "load_ms": 0.047,
+     "extract_ms": 381.31,
+     "cleanup_ms": 0.814,
+     "update_ms": 97.992,
+     "query_ms": 438.719,
+     "peak_rss_mb": 303.91,
+     "sigma": 167241,
+     "n_rows": 158366,
+     "n_updates": 583782,
+     "n_queries": 2399992,
+     "sha": "97a9ba5f69f49b0c0491b510f1c372b675b02a9a7b2fa7a94d8af90a33c8a2dc",
+     "vs_hros_ratio": 0.5358,
+     "vs_hros_speedup": 1.8665,
+     "faster_than_hros": true
+    },
+    "avl": {
+     "full_ms_median": 2332.223,
+     "full_ms_runs": [
+      2326.975,
+      2349.768,
+      2332.223
+     ],
+     "setup_ms": 283.256,
+     "execute_ms": 1658.791,
+     "load_ms": 0.036,
+     "extract_ms": 383.585,
+     "cleanup_ms": 1.307,
+     "update_ms": 365.255,
+     "query_ms": 1239.692,
+     "peak_rss_mb": 307.44,
+     "sigma": 167241,
+     "n_rows": 158366,
+     "n_updates": 583782,
+     "n_queries": 2399992,
+     "sha": "97a9ba5f69f49b0c0491b510f1c372b675b02a9a7b2fa7a94d8af90a33c8a2dc",
+     "vs_hros_ratio": 1.0076,
+     "vs_hros_speedup": 0.9925,
+     "faster_than_hros": false
+    },
+    "rebuild": {
+     "full_ms": 439.904,
+     "phases": {
+      "load": 0.056,
+      "setup": 219.746,
+      "execute": 219.215,
+      "extract": 0.267,
+      "cleanup": 0.619
+     },
+     "peak_rss_mb": 238.57,
+     "max_v": 64,
+     "sha": "999bbfa1972a9f41012b73b302f6bd991fa30d269d1a0b4a8f5f3be40a54a76a"
+    }
+   },
+   "exact": true,
+   "answers_sha": {
+    "prefix": [
+     "999bbfa1972a9f41012b73b302f6bd991fa30d269d1a0b4a8f5f3be40a54a76a"
+    ],
+    "rebuild": "999bbfa1972a9f41012b73b302f6bd991fa30d269d1a0b4a8f5f3be40a54a76a"
+   }
+  },
+  "D_300k_300k_q2": {
+   "fixture": "hros_300k_g128",
+   "states": 300000,
+   "q": 2,
+   "reference": "prefix64",
+   "modes": {
+    "hros": {
+     "full_ms_median": 1306.333,
+     "full_ms_runs": [
+      1299.154,
+      1306.35,
+      1306.333
+     ],
+     "setup_ms": 202.171,
+     "execute_ms": 999.428,
+     "load_ms": 0.077,
+     "extract_ms": 96.858,
+     "cleanup_ms": 0.62,
+     "update_ms": 680.239,
+     "query_ms": 277.882,
+     "peak_rss_mb": 233.52,
+     "sigma": 177848,
+     "n_rows": 358366,
+     "n_updates": 875673,
+     "n_queries": 599998,
+     "sha": "6cfb7f97558b0c57484e8c98bf51842d8e0c66169cfd0e5bfe3eedaaa1b132b9"
+    },
+    "fenwick": {
+     "full_ms_median": 537.117,
+     "full_ms_runs": [
+      537.155,
+      535.509,
+      537.117
+     ],
+     "setup_ms": 192.69,
+     "execute_ms": 247.458,
+     "load_ms": 0.052,
+     "extract_ms": 96.335,
+     "cleanup_ms": 0.62,
+     "update_ms": 93.131,
+     "query_ms": 113.052,
+     "peak_rss_mb": 228.62,
+     "sigma": 177848,
+     "n_rows": 358366,
+     "n_updates": 583782,
+     "n_queries": 599998,
+     "sha": "6cfb7f97558b0c57484e8c98bf51842d8e0c66169cfd0e5bfe3eedaaa1b132b9",
+     "vs_hros_ratio": 0.4112,
+     "vs_hros_speedup": 2.4321,
+     "faster_than_hros": true
+    },
+    "avl": {
+     "full_ms_median": 1003.334,
+     "full_ms_runs": [
+      999.435,
+      1005.055,
+      1003.334
+     ],
+     "setup_ms": 195.803,
+     "execute_ms": 707.09,
+     "load_ms": 0.063,
+     "extract_ms": 95.86,
+     "cleanup_ms": 0.619,
+     "update_ms": 356.546,
+     "query_ms": 299.091,
+     "peak_rss_mb": 233.02,
+     "sigma": 177848,
+     "n_rows": 358366,
+     "n_updates": 583782,
+     "n_queries": 599998,
+     "sha": "6cfb7f97558b0c57484e8c98bf51842d8e0c66169cfd0e5bfe3eedaaa1b132b9",
+     "vs_hros_ratio": 0.7681,
+     "vs_hros_speedup": 1.302,
+     "faster_than_hros": true
+    },
+    "rebuild": {
+     "full_ms": 491.68,
+     "phases": {
+      "load": 0.051,
+      "setup": 128.382,
+      "execute": 360.523,
+      "extract": 2.124,
+      "cleanup": 0.599
+     },
+     "peak_rss_mb": 206.62,
+     "max_v": 64,
+     "sha": "8541d6e47a1fe6e691111112fbd714dd75a3af27dedce5f964bcf6a5a00a44b5"
+    }
+   },
+   "exact": true,
+   "answers_sha": {
+    "prefix": [
+     "8541d6e47a1fe6e691111112fbd714dd75a3af27dedce5f964bcf6a5a00a44b5"
+    ],
+    "rebuild": "8541d6e47a1fe6e691111112fbd714dd75a3af27dedce5f964bcf6a5a00a44b5"
+   }
+  },
+  "D_300k_300k_q8": {
+   "fixture": "hros_300k_g128",
+   "states": 300000,
+   "q": 8,
+   "reference": "prefix64",
+   "modes": {
+    "hros": {
+     "full_ms_median": 2291.784,
+     "full_ms_runs": [
+      2291.784,
+      2267.589,
+      2301.331
+     ],
+     "setup_ms": 326.325,
+     "execute_ms": 1581.246,
+     "load_ms": 0.05,
+     "extract_ms": 382.418,
+     "cleanup_ms": 1.745,
+     "update_ms": 720.714,
+     "query_ms": 819.127,
+     "peak_rss_mb": 316.07,
+     "sigma": 177848,
+     "n_rows": 358366,
+     "n_updates": 875673,
+     "n_queries": 2399992,
+     "sha": "df36c9fb69d235442b3a33b00537c8e4290e1d851c6e5c1996ea4d2ab27b2761"
+    },
+    "fenwick": {
+     "full_ms_median": 1217.75,
+     "full_ms_runs": [
+      1216.128,
+      1222.314,
+      1217.75
+     ],
+     "setup_ms": 314.181,
+     "execute_ms": 520.26,
+     "load_ms": 0.076,
+     "extract_ms": 380.387,
+     "cleanup_ms": 1.224,
+     "update_ms": 103.826,
+     "query_ms": 375.985,
+     "peak_rss_mb": 311.02,
+     "sigma": 177848,
+     "n_rows": 358366,
+     "n_updates": 583782,
+     "n_queries": 2399992,
+     "sha": "df36c9fb69d235442b3a33b00537c8e4290e1d851c6e5c1996ea4d2ab27b2761",
+     "vs_hros_ratio": 0.5314,
+     "vs_hros_speedup": 1.882,
+     "faster_than_hros": true
+    },
+    "avl": {
+     "full_ms_median": 2252.064,
+     "full_ms_runs": [
+      2232.383,
+      2252.064,
+      2274.001
+     ],
+     "setup_ms": 318.207,
+     "execute_ms": 1530.331,
+     "load_ms": 0.044,
+     "extract_ms": 382.119,
+     "cleanup_ms": 1.682,
+     "update_ms": 379.882,
+     "query_ms": 1097.493,
+     "peak_rss_mb": 315.49,
+     "sigma": 177848,
+     "n_rows": 358366,
+     "n_updates": 583782,
+     "n_queries": 2399992,
+     "sha": "df36c9fb69d235442b3a33b00537c8e4290e1d851c6e5c1996ea4d2ab27b2761",
+     "vs_hros_ratio": 0.9827,
+     "vs_hros_speedup": 1.0176,
+     "faster_than_hros": true
+    },
+    "rebuild": {
+     "full_ms": 689.15,
+     "phases": {
+      "load": 0.071,
+      "setup": 229.656,
+      "execute": 456.466,
+      "extract": 1.689,
+      "cleanup": 1.268
+     },
+     "peak_rss_mb": 243.03,
+     "max_v": 64,
+     "sha": "0cd40a8b6b68471228d82cb29ef31b478767067ecc3a0e0aa93778d35cec8dbb"
+    }
+   },
+   "exact": true,
+   "answers_sha": {
+    "prefix": [
+     "0cd40a8b6b68471228d82cb29ef31b478767067ecc3a0e0aa93778d35cec8dbb"
+    ],
+    "rebuild": "0cd40a8b6b68471228d82cb29ef31b478767067ecc3a0e0aa93778d35cec8dbb"
+   }
+  }
+ },
+ "exactness": {
+  "A_100k_2049_q2": true,
+  "A_100k_2049_q8": true,
+  "B_300k_2049_q2": true,
+  "B_300k_2049_q8": true,
+  "D_100k_300k_q2": true,
+  "D_100k_300k_q8": true,
+  "D_300k_300k_q2": true,
+  "D_300k_300k_q8": true
+ },
+ "losses": {
+  "A_100k_2049_q2_fenwick": 0.6536,
+  "A_100k_2049_q2_avl": 0.7665,
+  "A_100k_2049_q8_fenwick": 0.6541,
+  "A_100k_2049_q8_avl": 0.8663,
+  "B_300k_2049_q2_fenwick": 0.7774,
+  "B_300k_2049_q2_avl": 0.8574,
+  "B_300k_2049_q8_fenwick": 0.7512,
+  "B_300k_2049_q8_avl": 0.877,
+  "D_100k_300k_q2_fenwick": 0.4108,
+  "D_100k_300k_q2_avl": 0.7902,
+  "D_100k_300k_q8_fenwick": 0.5358,
+  "D_300k_300k_q2_fenwick": 0.4112,
+  "D_300k_300k_q2_avl": 0.7681,
+  "D_300k_300k_q8_fenwick": 0.5314,
+  "D_300k_300k_q8_avl": 0.9827
+ },
+ "loss_summary": {
+  "cells_hros_loses_to_fenwick": [
+   "A_100k_2049_q2_fenwick",
+   "A_100k_2049_q8_fenwick",
+   "B_300k_2049_q2_fenwick",
+   "B_300k_2049_q8_fenwick",
+   "D_100k_300k_q2_fenwick",
+   "D_100k_300k_q8_fenwick",
+   "D_300k_300k_q2_fenwick",
+   "D_300k_300k_q8_fenwick"
+  ],
+  "cells_hros_loses_to_avl": [
+   "A_100k_2049_q2_avl",
+   "A_100k_2049_q8_avl",
+   "B_300k_2049_q2_avl",
+   "B_300k_2049_q8_avl",
+   "D_100k_300k_q2_avl",
+   "D_300k_300k_q2_avl",
+   "D_300k_300k_q8_avl"
+  ],
+  "worst_fenwick_ratio": 0.7774,
+  "worst_avl_ratio": 0.9827
+ }
+}

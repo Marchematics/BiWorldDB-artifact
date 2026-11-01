@@ -1,0 +1,307 @@
+{
+ "host": "benchmark-host",
+ "created": "2026-11-01",
+ "contract": {
+  "semantics": "sum over current rows in rectangle of amount * fac(group); reversible versions",
+  "arms": {
+   "fmd": "FMDI factorised (no C0*C1 product)",
+   "dyn2d": "dynamic dense per-group 2D Fenwick baseline (point updates, 4 prefix sums x G groups per query)"
+  },
+  "workload": {
+   "rows": 1000000,
+   "states": 300000,
+   "q": 2,
+   "factor_period": 37,
+   "topology": "chain",
+   "seed": 7
+  },
+  "run_timeout_s": 900,
+  "no_extrapolation": true
+ },
+ "configs": {
+  "c64_g8": {
+   "config": {
+    "c0": 64,
+    "c1": 64,
+    "groups": 8,
+    "rows": 1000000,
+    "states": 300000,
+    "topology": 0
+   },
+   "arms": {
+    "fmd": {
+     "status": "ok",
+     "full_ms": 1615.324,
+     "phases_ms": {
+      "gen": 48.072,
+      "build": 548.851,
+      "execute": 981.712,
+      "extract": 26.185,
+      "cleanup": 10.503
+     },
+     "peak_rss_mb": 276.6,
+     "static_bytes": 1291052,
+     "product_bytes": 32768,
+     "dynamic_bytes": 403976,
+     "n_answers": 599998,
+     "answers_sha256": "a7a51591b19f8bbdfda6f577140101e4d030f747857b8635e33bef2da5c22afe",
+     "wall_ms": 2098.8
+    },
+    "dyn2d": {
+     "status": "ok",
+     "full_ms": 288.94,
+     "phases_ms": {
+      "gen": 48.027,
+      "build": 35.117,
+      "execute": 180.491,
+      "extract": 23.675,
+      "cleanup": 1.63
+     },
+     "peak_rss_mb": 84.8,
+     "static_bytes": 270400,
+     "product_bytes": 32768,
+     "dynamic_bytes": 270400,
+     "n_answers": 599998,
+     "answers_sha256": "a7a51591b19f8bbdfda6f577140101e4d030f747857b8635e33bef2da5c22afe",
+     "wall_ms": 737.9
+    }
+   },
+   "comparison": {
+    "full_ratio_dyn_over_fmd": 0.179,
+    "execute_ratio_dyn_over_fmd": 0.184,
+    "build_ratio_dyn_over_fmd": 0.064,
+    "rss_ratio_dyn_over_fmd": 0.307,
+    "static_bytes_ratio_dyn_over_fmd": 0.209,
+    "sha_equal": true,
+    "n_answers_equal": true
+   }
+  },
+  "c64_g64": {
+   "config": {
+    "c0": 64,
+    "c1": 64,
+    "groups": 64,
+    "rows": 1000000,
+    "states": 300000,
+    "topology": 0
+   },
+   "arms": {
+    "fmd": {
+     "status": "ok",
+     "full_ms": 10046.455,
+     "phases_ms": {
+      "gen": 48.262,
+      "build": 598.985,
+      "execute": 9364.636,
+      "extract": 24.623,
+      "cleanup": 9.949
+     },
+     "peak_rss_mb": 276.7,
+     "static_bytes": 8975684,
+     "product_bytes": 32768,
+     "dynamic_bytes": 2638360,
+     "n_answers": 599998,
+     "answers_sha256": "ad408070360972858671f8e1a24ba4b0e70d9821df9d833b5c89523677f0bbad",
+     "wall_ms": 10720.0
+    },
+    "dyn2d": {
+     "status": "ok",
+     "full_ms": 1458.65,
+     "phases_ms": {
+      "gen": 49.541,
+      "build": 37.557,
+      "execute": 1345.127,
+      "extract": 24.638,
+      "cleanup": 1.787
+     },
+     "peak_rss_mb": 86.6,
+     "static_bytes": 2163200,
+     "product_bytes": 32768,
+     "dynamic_bytes": 2163200,
+     "n_answers": 599998,
+     "answers_sha256": "ad408070360972858671f8e1a24ba4b0e70d9821df9d833b5c89523677f0bbad",
+     "wall_ms": 1906.3
+    }
+   },
+   "comparison": {
+    "full_ratio_dyn_over_fmd": 0.145,
+    "execute_ratio_dyn_over_fmd": 0.144,
+    "build_ratio_dyn_over_fmd": 0.063,
+    "rss_ratio_dyn_over_fmd": 0.313,
+    "static_bytes_ratio_dyn_over_fmd": 0.241,
+    "sha_equal": true,
+    "n_answers_equal": true
+   }
+  },
+  "c1024_g8": {
+   "config": {
+    "c0": 1024,
+    "c1": 1024,
+    "groups": 8,
+    "rows": 1000000,
+    "states": 300000,
+    "topology": 0
+   },
+   "arms": {
+    "fmd": {
+     "status": "ok",
+     "full_ms": 9848.046,
+     "phases_ms": {
+      "gen": 46.833,
+      "build": 1125.238,
+      "execute": 8641.042,
+      "extract": 23.733,
+      "cleanup": 11.201
+     },
+     "peak_rss_mb": 371.2,
+     "static_bytes": 80933036,
+     "product_bytes": 8388608,
+     "dynamic_bytes": 10747916,
+     "n_answers": 599998,
+     "answers_sha256": "2008457796f01c5aaa4962d9df7db23248341236f5be658ea5632820fa544172",
+     "wall_ms": 10310.9
+    },
+    "dyn2d": {
+     "status": "ok",
+     "full_ms": 2157.563,
+     "phases_ms": {
+      "gen": 46.726,
+      "build": 178.154,
+      "execute": 1902.013,
+      "extract": 25.045,
+      "cleanup": 5.625
+     },
+     "peak_rss_mb": 148.7,
+     "static_bytes": 67240000,
+     "product_bytes": 8388608,
+     "dynamic_bytes": 67240000,
+     "n_answers": 599998,
+     "answers_sha256": "2008457796f01c5aaa4962d9df7db23248341236f5be658ea5632820fa544172",
+     "wall_ms": 2622.3
+    }
+   },
+   "comparison": {
+    "full_ratio_dyn_over_fmd": 0.219,
+    "execute_ratio_dyn_over_fmd": 0.22,
+    "build_ratio_dyn_over_fmd": 0.158,
+    "rss_ratio_dyn_over_fmd": 0.401,
+    "static_bytes_ratio_dyn_over_fmd": 0.831,
+    "sha_equal": true,
+    "n_answers_equal": true
+   }
+  },
+  "c1024_g64": {
+   "config": {
+    "c0": 1024,
+    "c1": 1024,
+    "groups": 64,
+    "rows": 1000000,
+    "states": 300000,
+    "topology": 0
+   },
+   "arms": {
+    "fmd": {
+     "status": "ok",
+     "full_ms": 56101.624,
+     "phases_ms": {
+      "gen": 46.421,
+      "build": 1126.208,
+      "execute": 54894.286,
+      "extract": 24.028,
+      "cleanup": 10.681
+     },
+     "peak_rss_mb": 371.2,
+     "static_bytes": 123022328,
+     "product_bytes": 8388608,
+     "dynamic_bytes": 17239396,
+     "n_answers": 599998,
+     "answers_sha256": "8db4fd014f767dc67b356efa17d7cadb26dc92bcad14e598ebec2e60277b701f",
+     "wall_ms": 56568.8
+    },
+    "dyn2d": {
+     "status": "ok",
+     "full_ms": 19659.618,
+     "phases_ms": {
+      "gen": 47.359,
+      "build": 410.484,
+      "execute": 19146.028,
+      "extract": 24.524,
+      "cleanup": 31.223
+     },
+     "peak_rss_mb": 597.6,
+     "static_bytes": 537920000,
+     "product_bytes": 8388608,
+     "dynamic_bytes": 537920000,
+     "n_answers": 599998,
+     "answers_sha256": "8db4fd014f767dc67b356efa17d7cadb26dc92bcad14e598ebec2e60277b701f",
+     "wall_ms": 20111.6
+    }
+   },
+   "comparison": {
+    "full_ratio_dyn_over_fmd": 0.35,
+    "execute_ratio_dyn_over_fmd": 0.349,
+    "build_ratio_dyn_over_fmd": 0.364,
+    "rss_ratio_dyn_over_fmd": 1.61,
+    "static_bytes_ratio_dyn_over_fmd": 4.373,
+    "sha_equal": true,
+    "n_answers_equal": true
+   }
+  }
+ },
+ "reversibility_check": {
+  "config": {
+   "c0": 64,
+   "c1": 64,
+   "groups": 8,
+   "rows": 200000,
+   "states": 2000,
+   "topology": 1
+  },
+  "arms": {
+   "fmd": {
+    "status": "ok",
+    "full_ms": 118.019,
+    "phases_ms": {
+     "gen": 3.943,
+     "build": 102.07,
+     "execute": 10.55,
+     "extract": 0.376,
+     "cleanup": 1.08
+    },
+    "peak_rss_mb": 53.2,
+    "static_bytes": 962780,
+    "product_bytes": 32768,
+    "dynamic_bytes": 76688,
+    "n_answers": 3998,
+    "answers_sha256": "5351dc4533551e63e6356b8c708a9f978cbbeb7cdc99aae4d6c85339b7455615",
+    "wall_ms": 571.8
+   },
+   "dyn2d": {
+    "status": "ok",
+    "full_ms": 13.254,
+    "phases_ms": {
+     "gen": 4.134,
+     "build": 7.048,
+     "execute": 1.406,
+     "extract": 0.32,
+     "cleanup": 0.346
+    },
+    "peak_rss_mb": 11.4,
+    "static_bytes": 270400,
+    "product_bytes": 32768,
+    "dynamic_bytes": 270400,
+    "n_answers": 3998,
+    "answers_sha256": "5351dc4533551e63e6356b8c708a9f978cbbeb7cdc99aae4d6c85339b7455615",
+    "wall_ms": 469.8
+   }
+  },
+  "sha_equal": true
+ },
+ "exactness": {
+  "c64_g8": true,
+  "c64_g64": true,
+  "c1024_g8": true,
+  "c1024_g64": true,
+  "c64_g8_bushy": true
+ }
+}

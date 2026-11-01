@@ -1,0 +1,722 @@
+[
+ {
+  "case": {
+   "base": "intel",
+   "topology": 1,
+   "fp": 4,
+   "q": 2,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 39.802,
+  "predicted_classic_ms": 981.304,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 36.587423,
+  "best_ms": 36.587423,
+  "probe_wall_ms": 8.66,
+  "planned_ms": 45.247,
+  "planned_regret": 1.2367
+ },
+ {
+  "case": {
+   "base": "intel",
+   "topology": 1,
+   "fp": 4,
+   "q": 8,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 62.268,
+  "predicted_classic_ms": 917.95,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 50.249042,
+  "best_ms": 50.249042,
+  "probe_wall_ms": 9.3,
+  "planned_ms": 59.549,
+  "planned_regret": 1.1851
+ },
+ {
+  "case": {
+   "base": "intel",
+   "topology": 1,
+   "fp": 4,
+   "q": 32,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 104.29,
+  "predicted_classic_ms": 992.39,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 102.446695,
+  "best_ms": 102.446695,
+  "probe_wall_ms": 13.314,
+  "planned_ms": 115.761,
+  "planned_regret": 1.13
+ },
+ {
+  "case": {
+   "base": "intel",
+   "topology": 1,
+   "fp": 37,
+   "q": 2,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 30.998,
+  "predicted_classic_ms": 357.064,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 35.130437,
+  "best_ms": 35.130437,
+  "probe_wall_ms": 7.921,
+  "planned_ms": 43.051,
+  "planned_regret": 1.2255
+ },
+ {
+  "case": {
+   "base": "intel",
+   "topology": 1,
+   "fp": 37,
+   "q": 8,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 48.495,
+  "predicted_classic_ms": 334.206,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 45.574049,
+  "best_ms": 45.574049,
+  "probe_wall_ms": 8.845,
+  "planned_ms": 54.419,
+  "planned_regret": 1.1941
+ },
+ {
+  "case": {
+   "base": "intel",
+   "topology": 1,
+   "fp": 37,
+   "q": 32,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 81.224,
+  "predicted_classic_ms": 361.314,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 78.310428,
+  "best_ms": 78.310428,
+  "probe_wall_ms": 13.458,
+  "planned_ms": 91.768,
+  "planned_regret": 1.1719
+ },
+ {
+  "case": {
+   "base": "intel",
+   "topology": 2,
+   "fp": 4,
+   "q": 2,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 39.808,
+  "predicted_classic_ms": 984.219,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 35.243679,
+  "best_ms": 35.243679,
+  "probe_wall_ms": 8.449,
+  "planned_ms": 43.693,
+  "planned_regret": 1.2397
+ },
+ {
+  "case": {
+   "base": "intel",
+   "topology": 2,
+   "fp": 4,
+   "q": 8,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 62.269,
+  "predicted_classic_ms": 918.263,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 49.635965,
+  "best_ms": 49.635965,
+  "probe_wall_ms": 9.388,
+  "planned_ms": 59.024,
+  "planned_regret": 1.1891
+ },
+ {
+  "case": {
+   "base": "intel",
+   "topology": 2,
+   "fp": 4,
+   "q": 32,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 104.291,
+  "predicted_classic_ms": 992.463,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 93.015993,
+  "best_ms": 93.015993,
+  "probe_wall_ms": 14.826,
+  "planned_ms": 107.842,
+  "planned_regret": 1.1594
+ },
+ {
+  "case": {
+   "base": "intel",
+   "topology": 2,
+   "fp": 37,
+   "q": 2,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 31.0,
+  "predicted_classic_ms": 357.468,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 34.840081,
+  "best_ms": 34.840081,
+  "probe_wall_ms": 8.303,
+  "planned_ms": 43.143,
+  "planned_regret": 1.2383
+ },
+ {
+  "case": {
+   "base": "intel",
+   "topology": 2,
+   "fp": 37,
+   "q": 8,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 48.495,
+  "predicted_classic_ms": 334.166,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 44.8345,
+  "best_ms": 44.8345,
+  "probe_wall_ms": 10.365,
+  "planned_ms": 55.2,
+  "planned_regret": 1.2312
+ },
+ {
+  "case": {
+   "base": "intel",
+   "topology": 2,
+   "fp": 37,
+   "q": 32,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 81.223,
+  "predicted_classic_ms": 361.305,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 78.686057,
+  "best_ms": 78.686057,
+  "probe_wall_ms": 13.706,
+  "planned_ms": 92.392,
+  "planned_regret": 1.1742
+ },
+ {
+  "case": {
+   "base": "taxi2024",
+   "topology": 1,
+   "fp": 4,
+   "q": 2,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 50.326,
+  "predicted_classic_ms": 742.121,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 49.657016,
+  "best_ms": 49.657016,
+  "probe_wall_ms": 8.342,
+  "planned_ms": 57.999,
+  "planned_regret": 1.168
+ },
+ {
+  "case": {
+   "base": "taxi2024",
+   "topology": 1,
+   "fp": 4,
+   "q": 8,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 78.659,
+  "predicted_classic_ms": 681.158,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 94.810534,
+  "best_ms": 94.810534,
+  "probe_wall_ms": 8.762,
+  "planned_ms": 103.573,
+  "planned_regret": 1.0924
+ },
+ {
+  "case": {
+   "base": "taxi2024",
+   "topology": 1,
+   "fp": 4,
+   "q": 32,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 131.731,
+  "predicted_classic_ms": 735.011,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 187.415029,
+  "best_ms": 187.415029,
+  "probe_wall_ms": 13.779,
+  "planned_ms": 201.194,
+  "planned_regret": 1.0735
+ },
+ {
+  "case": {
+   "base": "taxi2024",
+   "topology": 1,
+   "fp": 37,
+   "q": 2,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 39.195,
+  "predicted_classic_ms": 270.196,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 43.339791,
+  "best_ms": 43.339791,
+  "probe_wall_ms": 8.88,
+  "planned_ms": 52.22,
+  "planned_regret": 1.2049
+ },
+ {
+  "case": {
+   "base": "taxi2024",
+   "topology": 1,
+   "fp": 37,
+   "q": 8,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 61.261,
+  "predicted_classic_ms": 248.005,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 52.778065,
+  "best_ms": 52.778065,
+  "probe_wall_ms": 9.518,
+  "planned_ms": 62.296,
+  "planned_regret": 1.1803
+ },
+ {
+  "case": {
+   "base": "taxi2024",
+   "topology": 1,
+   "fp": 37,
+   "q": 32,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 102.595,
+  "predicted_classic_ms": 267.609,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 76.274555,
+  "best_ms": 76.274555,
+  "probe_wall_ms": 14.196,
+  "planned_ms": 90.471,
+  "planned_regret": 1.1861
+ },
+ {
+  "case": {
+   "base": "taxi2024",
+   "topology": 2,
+   "fp": 4,
+   "q": 2,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 50.336,
+  "predicted_classic_ms": 745.126,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 49.097735,
+  "best_ms": 49.097735,
+  "probe_wall_ms": 8.199,
+  "planned_ms": 57.297,
+  "planned_regret": 1.167
+ },
+ {
+  "case": {
+   "base": "taxi2024",
+   "topology": 2,
+   "fp": 4,
+   "q": 8,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 78.66,
+  "predicted_classic_ms": 681.435,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 94.319181,
+  "best_ms": 94.319181,
+  "probe_wall_ms": 9.111,
+  "planned_ms": 103.43,
+  "planned_regret": 1.0966
+ },
+ {
+  "case": {
+   "base": "taxi2024",
+   "topology": 2,
+   "fp": 4,
+   "q": 32,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 131.731,
+  "predicted_classic_ms": 735.074,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 225.114135,
+  "best_ms": 225.114135,
+  "probe_wall_ms": 13.448,
+  "planned_ms": 238.562,
+  "planned_regret": 1.0597
+ },
+ {
+  "case": {
+   "base": "taxi2024",
+   "topology": 2,
+   "fp": 37,
+   "q": 2,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 39.198,
+  "predicted_classic_ms": 270.565,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 41.940749,
+  "best_ms": 41.940749,
+  "probe_wall_ms": 9.761,
+  "planned_ms": 51.702,
+  "planned_regret": 1.2327
+ },
+ {
+  "case": {
+   "base": "taxi2024",
+   "topology": 2,
+   "fp": 37,
+   "q": 8,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 61.261,
+  "predicted_classic_ms": 247.965,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 52.710337,
+  "best_ms": 52.710337,
+  "probe_wall_ms": 9.462,
+  "planned_ms": 62.172,
+  "planned_regret": 1.1795
+ },
+ {
+  "case": {
+   "base": "taxi2024",
+   "topology": 2,
+   "fp": 37,
+   "q": 32,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 102.595,
+  "predicted_classic_ms": 267.599,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 76.161384,
+  "best_ms": 76.161384,
+  "probe_wall_ms": 15.465,
+  "planned_ms": 91.626,
+  "planned_regret": 1.2031
+ },
+ {
+  "case": {
+   "base": "retail2009",
+   "topology": 1,
+   "fp": 4,
+   "q": 2,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 20.862,
+  "predicted_classic_ms": 255.73,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 16.928247,
+  "best_ms": 16.928247,
+  "probe_wall_ms": 7.193,
+  "planned_ms": 24.121,
+  "planned_regret": 1.4249
+ },
+ {
+  "case": {
+   "base": "retail2009",
+   "topology": 1,
+   "fp": 4,
+   "q": 8,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 32.641,
+  "predicted_classic_ms": 239.93,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 23.689196,
+  "best_ms": 23.689196,
+  "probe_wall_ms": 6.601,
+  "planned_ms": 30.29,
+  "planned_regret": 1.2787
+ },
+ {
+  "case": {
+   "base": "retail2009",
+   "topology": 1,
+   "fp": 4,
+   "q": 32,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 54.872,
+  "predicted_classic_ms": 279.62,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 47.352997,
+  "best_ms": 47.352997,
+  "probe_wall_ms": 10.703,
+  "planned_ms": 58.056,
+  "planned_regret": 1.226
+ },
+ {
+  "case": {
+   "base": "retail2009",
+   "topology": 1,
+   "fp": 37,
+   "q": 2,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 16.247,
+  "predicted_classic_ms": 93.072,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 17.593489,
+  "best_ms": 17.593489,
+  "probe_wall_ms": 7.791,
+  "planned_ms": 25.384,
+  "planned_regret": 1.4428
+ },
+ {
+  "case": {
+   "base": "retail2009",
+   "topology": 1,
+   "fp": 37,
+   "q": 8,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 25.422,
+  "predicted_classic_ms": 87.337,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 23.012748,
+  "best_ms": 23.012748,
+  "probe_wall_ms": 6.734,
+  "planned_ms": 29.747,
+  "planned_regret": 1.2926
+ },
+ {
+  "case": {
+   "base": "retail2009",
+   "topology": 1,
+   "fp": 37,
+   "q": 32,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 42.733,
+  "predicted_classic_ms": 101.675,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 43.783546,
+  "best_ms": 43.783546,
+  "probe_wall_ms": 11.408,
+  "planned_ms": 55.192,
+  "planned_regret": 1.2606
+ },
+ {
+  "case": {
+   "base": "retail2009",
+   "topology": 2,
+   "fp": 4,
+   "q": 2,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 20.863,
+  "predicted_classic_ms": 256.157,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 16.688254,
+  "best_ms": 16.688254,
+  "probe_wall_ms": 7.838,
+  "planned_ms": 24.526,
+  "planned_regret": 1.4697
+ },
+ {
+  "case": {
+   "base": "retail2009",
+   "topology": 2,
+   "fp": 4,
+   "q": 8,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 32.641,
+  "predicted_classic_ms": 239.941,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 23.585338,
+  "best_ms": 23.585338,
+  "probe_wall_ms": 8.431,
+  "planned_ms": 32.016,
+  "planned_regret": 1.3575
+ },
+ {
+  "case": {
+   "base": "retail2009",
+   "topology": 2,
+   "fp": 4,
+   "q": 32,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 54.873,
+  "predicted_classic_ms": 279.679,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 43.338991,
+  "best_ms": 43.338991,
+  "probe_wall_ms": 10.804,
+  "planned_ms": 54.143,
+  "planned_regret": 1.2493
+ },
+ {
+  "case": {
+   "base": "retail2009",
+   "topology": 2,
+   "fp": 37,
+   "q": 2,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 16.248,
+  "predicted_classic_ms": 93.143,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 17.295653,
+  "best_ms": 17.295653,
+  "probe_wall_ms": 5.479,
+  "planned_ms": 22.775,
+  "planned_regret": 1.3168
+ },
+ {
+  "case": {
+   "base": "retail2009",
+   "topology": 2,
+   "fp": 37,
+   "q": 8,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 25.421,
+  "predicted_classic_ms": 87.327,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 24.130709,
+  "best_ms": 24.130709,
+  "probe_wall_ms": 6.472,
+  "planned_ms": 30.603,
+  "planned_regret": 1.2682
+ },
+ {
+  "case": {
+   "base": "retail2009",
+   "topology": 2,
+   "fp": 37,
+   "q": 32,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 42.734,
+  "predicted_classic_ms": 101.739,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 44.180395,
+  "best_ms": 44.180395,
+  "probe_wall_ms": 10.837,
+  "planned_ms": 55.017,
+  "planned_regret": 1.2453
+ },
+ {
+  "case": {
+   "base": "syn50k",
+   "topology": 0,
+   "fp": 37,
+   "q": 128,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 38.942,
+  "predicted_classic_ms": 42.523,
+  "choice": "hybrid",
+  "choice_matches_best": true,
+  "chosen_ms": 38.57,
+  "best_ms": 38.57,
+  "probe_wall_ms": 18.668,
+  "planned_ms": 57.238,
+  "planned_regret": 1.484
+ },
+ {
+  "case": {
+   "base": "tiny1000_256",
+   "topology": 0,
+   "fp": 37,
+   "q": 128,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 36.351,
+  "predicted_classic_ms": 47.802,
+  "choice": "hybrid",
+  "choice_matches_best": false,
+  "chosen_ms": 35.88,
+  "best_ms": 35.42,
+  "probe_wall_ms": 0.0,
+  "planned_ms": 35.88,
+  "planned_regret": 1.013
+ },
+ {
+  "case": {
+   "base": "tiny2000_512",
+   "topology": 0,
+   "fp": 37,
+   "q": 128,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 38.369,
+  "predicted_classic_ms": 34.079,
+  "choice": "classic",
+  "choice_matches_best": true,
+  "chosen_ms": 36.76,
+  "best_ms": 36.76,
+  "probe_wall_ms": 0.0,
+  "planned_ms": 36.76,
+  "planned_regret": 1.0
+ },
+ {
+  "case": {
+   "base": "tiny1000_512",
+   "topology": 0,
+   "fp": 37,
+   "q": 128,
+   "states": 2049
+  },
+  "predicted_hybrid_ms": 34.75,
+  "predicted_classic_ms": 28.23,
+  "choice": "classic",
+  "choice_matches_best": true,
+  "chosen_ms": 35.32,
+  "best_ms": 35.32,
+  "probe_wall_ms": 0.0,
+  "planned_ms": 35.32,
+  "planned_regret": 1.0
+ }
+]

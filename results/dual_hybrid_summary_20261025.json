@@ -1,0 +1,95 @@
+{
+ "note": "Same-window dual-hybrid comparison: overlay-storage hybrid (BWH_OVERLAY=1 + LUT + automatic class-major) against the default full-copy hybrid (LUT only), interleaved with the actual DD/DBSP probes in the same window; four repetitions per fixture; every answer vector validated. Ratios are engine/hybrid work medians; ratio_gain_pct is how much the measured engine/hybrid ratio rises when the overlay hybrid is used.",
+ "rows": [
+  {
+   "base": "Intel",
+   "cohort": "Q2",
+   "dd_ratio_base": 3.5,
+   "dd_ratio_overlay": 3.49,
+   "dbsp_ratio_base": 3.8,
+   "dbsp_ratio_overlay": 3.78,
+   "dd_gain_pct": -0.3,
+   "dbsp_gain_pct": -0.3
+  },
+  {
+   "base": "Intel",
+   "cohort": "Q8",
+   "dd_ratio_base": 4.72,
+   "dd_ratio_overlay": 4.85,
+   "dbsp_ratio_base": 5.12,
+   "dbsp_ratio_overlay": 5.25,
+   "dd_gain_pct": 2.7,
+   "dbsp_gain_pct": 2.7
+  },
+  {
+   "base": "Intel",
+   "cohort": "Q32",
+   "dd_ratio_base": 5.9,
+   "dd_ratio_overlay": 6.04,
+   "dbsp_ratio_base": 6.26,
+   "dbsp_ratio_overlay": 6.41,
+   "dd_gain_pct": 2.4,
+   "dbsp_gain_pct": 2.4
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q2",
+   "dd_ratio_base": 5.1,
+   "dd_ratio_overlay": 5.2,
+   "dbsp_ratio_base": 6.22,
+   "dbsp_ratio_overlay": 6.34,
+   "dd_gain_pct": 1.9,
+   "dbsp_gain_pct": 1.9
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q8",
+   "dd_ratio_base": 7.79,
+   "dd_ratio_overlay": 7.92,
+   "dbsp_ratio_base": 8.93,
+   "dbsp_ratio_overlay": 9.07,
+   "dd_gain_pct": 1.6,
+   "dbsp_gain_pct": 1.6
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q32",
+   "dd_ratio_base": 9.98,
+   "dd_ratio_overlay": 10.19,
+   "dbsp_ratio_base": 11.04,
+   "dbsp_ratio_overlay": 11.27,
+   "dd_gain_pct": 2.1,
+   "dbsp_gain_pct": 2.1
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q2",
+   "dd_ratio_base": 2.51,
+   "dd_ratio_overlay": 2.55,
+   "dbsp_ratio_base": 2.85,
+   "dbsp_ratio_overlay": 2.9,
+   "dd_gain_pct": 1.5,
+   "dbsp_gain_pct": 1.5
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q8",
+   "dd_ratio_base": 2.17,
+   "dd_ratio_overlay": 2.3,
+   "dbsp_ratio_base": 2.44,
+   "dbsp_ratio_overlay": 2.6,
+   "dd_gain_pct": 6.3,
+   "dbsp_gain_pct": 6.3
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q32",
+   "dd_ratio_base": 1.97,
+   "dd_ratio_overlay": 2.04,
+   "dbsp_ratio_base": 2.4,
+   "dbsp_ratio_overlay": 2.49,
+   "dd_gain_pct": 3.8,
+   "dbsp_gain_pct": 3.8
+  }
+ ]
+}

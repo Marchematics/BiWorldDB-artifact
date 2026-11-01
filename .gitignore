@@ -1,0 +1,9 @@
+/build/
+/out/
+/data/
+/fixtures/
+/.venv/
+__pycache__/
+*.pyc
+.DS_Store
+external/*/target/

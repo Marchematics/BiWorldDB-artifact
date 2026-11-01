@@ -1,0 +1,3774 @@
+{
+ "protocol": {
+  "driver": "ext/bench_joint.py (remote benchmark-host, CPU-only, fresh process per worker)",
+  "host": "benchmark-host",
+  "grid": "unseen",
+  "reps": 3,
+  "started_utc": "2026-10-31T09:39:41Z",
+  "finished_utc": "2026-10-31T09:44:47Z",
+  "loadavg_start": "3.40 3.24 3.11 3/11165 3822712",
+  "loadavg_end": "2.56 2.91 3.00 2/11007 3829139",
+  "elapsed_s": 305.8,
+  "timing_boundary": "in-process full_ns = load+setup+execute+extract+cleanup; planned_ms = full_ns + planner decision time (plan_ns)",
+  "policy_path": "results/policy_frozen.json",
+  "policy_sha256": "ad7737732cbce80e8beacca8ce105750c9bf82ce9876f0a7e79d744068c3b17d"
+ },
+ "metrics": {
+  "cases": 31,
+  "route_accuracy_strict": 0.9355,
+  "route_accuracy_all_arms": 0.5806,
+  "route_accuracy_within_1pct": 0.9355,
+  "regret_median": 1.01,
+  "regret_p95": 1.2386,
+  "regret_max": 1.3409,
+  "regret_all_arms_median": 1.0451,
+  "regret_all_arms_p95": 1.2873,
+  "regret_all_arms_max": 1.4968,
+  "regret_gt_1_05": 8,
+  "regret_gt_1_10": 3,
+  "selection_counts": {
+   "hybrid": 22,
+   "corr": 0,
+   "batch": 6,
+   "pgdg": 0,
+   "rf": 3
+  },
+  "p95_target_met": false,
+  "p95_target_met_all_arms": false,
+  "regret_yardstick": "primary = best eligible forced arm (frozen structural gates); all_arms = best forced arm over every measured work point",
+  "percentile_method": "nearest-rank: sorted[ceil(q*(n-1))]; bootstrap over cases",
+  "regret_median_ci95": [
+   0.9991,
+   1.0357
+  ],
+  "regret_p95_ci95": [
+   1.0683,
+   1.3409
+  ],
+  "bootstrap_resamples": 10000,
+  "regret_all_arms_p95_ci95": [
+   1.0847,
+   1.4968
+  ]
+ },
+ "exactness": {
+  "cases": 31,
+  "all_arms_sha_identical": true,
+  "oracle_cases": 24,
+  "oracle_exact_all": true,
+  "deep_cases_without_oracle": 7,
+  "batch_modes": [
+   "batch",
+   "fallback"
+  ]
+ },
+ "memory": [
+  {
+   "case_id": "u_2049_u200k_g256_f41_q2",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 10520,
+   "max_arm_rss_kb": 28236,
+   "all_arm_rss_kb": {
+    "hybrid": 10520,
+    "batch": 10524,
+    "rf": 28236,
+    "pgdg": 19292,
+    "corr": 10452
+   }
+  },
+  {
+   "case_id": "u_2049_u200k_g256_f41_q8",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 20508,
+   "max_arm_rss_kb": 78920,
+   "all_arm_rss_kb": {
+    "rf": 28496,
+    "corr": 20512,
+    "pgdg": 78920,
+    "batch": 21300,
+    "hybrid": 20508
+   }
+  },
+  {
+   "case_id": "u_2049_u200k_g256_f41_q32",
+   "chosen": "rf",
+   "chosen_rss_kb": 29248,
+   "max_arm_rss_kb": 317844,
+   "all_arm_rss_kb": {
+    "batch": 19952,
+    "hybrid": 17904,
+    "rf": 29248,
+    "corr": 17912,
+    "pgdg": 317844
+   }
+  },
+  {
+   "case_id": "u_2049_u200k_g256_f73_q2",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 10164,
+   "max_arm_rss_kb": 28276,
+   "all_arm_rss_kb": {
+    "pgdg": 18984,
+    "batch": 10304,
+    "corr": 10160,
+    "hybrid": 10164,
+    "rf": 28276
+   }
+  },
+  {
+   "case_id": "u_2049_u200k_g256_f73_q8",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 16288,
+   "max_arm_rss_kb": 74716,
+   "all_arm_rss_kb": {
+    "hybrid": 16288,
+    "corr": 16184,
+    "pgdg": 74716,
+    "rf": 28508,
+    "batch": 16820
+   }
+  },
+  {
+   "case_id": "u_2049_u200k_g256_f73_q32",
+   "chosen": "rf",
+   "chosen_rss_kb": 29308,
+   "max_arm_rss_kb": 297532,
+   "all_arm_rss_kb": {
+    "corr": 17604,
+    "rf": 29308,
+    "pgdg": 297532,
+    "batch": 19924,
+    "hybrid": 17600
+   }
+  },
+  {
+   "case_id": "u_2049_u800k_g96_f41_q2",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 24228,
+   "max_arm_rss_kb": 99716,
+   "all_arm_rss_kb": {
+    "rf": 99716,
+    "hybrid": 24228,
+    "batch": 24624,
+    "corr": 24224,
+    "pgdg": 45436
+   }
+  },
+  {
+   "case_id": "u_2049_u800k_g96_f41_q8",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 34804,
+   "max_arm_rss_kb": 100312,
+   "all_arm_rss_kb": {
+    "pgdg": 74416,
+    "hybrid": 34804,
+    "corr": 34824,
+    "batch": 35068,
+    "rf": 100312
+   }
+  },
+  {
+   "case_id": "u_2049_u800k_g96_f41_q32",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 36340,
+   "max_arm_rss_kb": 190656,
+   "all_arm_rss_kb": {
+    "rf": 101056,
+    "batch": 38480,
+    "corr": 36320,
+    "hybrid": 36340,
+    "pgdg": 190656
+   }
+  },
+  {
+   "case_id": "u_2049_u800k_g96_f73_q2",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 23988,
+   "max_arm_rss_kb": 99736,
+   "all_arm_rss_kb": {
+    "corr": 24000,
+    "batch": 24412,
+    "rf": 99736,
+    "hybrid": 23988,
+    "pgdg": 44792
+   }
+  },
+  {
+   "case_id": "u_2049_u800k_g96_f73_q8",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 30248,
+   "max_arm_rss_kb": 100272,
+   "all_arm_rss_kb": {
+    "hybrid": 30248,
+    "corr": 30300,
+    "rf": 100272,
+    "batch": 30864,
+    "pgdg": 69984
+   }
+  },
+  {
+   "case_id": "u_2049_u800k_g96_f73_q32",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 34552,
+   "max_arm_rss_kb": 170056,
+   "all_arm_rss_kb": {
+    "batch": 36308,
+    "corr": 34492,
+    "hybrid": 34552,
+    "pgdg": 170056,
+    "rf": 101048
+   }
+  },
+  {
+   "case_id": "u_2049_u2m_g512_f41_q2",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 52464,
+   "max_arm_rss_kb": 235988,
+   "all_arm_rss_kb": {
+    "hybrid": 52464,
+    "batch": 52724,
+    "pgdg": 109576,
+    "corr": 52484,
+    "rf": 235988
+   }
+  },
+  {
+   "case_id": "u_2049_u2m_g512_f41_q8",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 62776,
+   "max_arm_rss_kb": 236000,
+   "all_arm_rss_kb": {
+    "corr": 62716,
+    "pgdg": 216968,
+    "hybrid": 62776,
+    "rf": 236000,
+    "batch": 63504
+   }
+  },
+  {
+   "case_id": "u_2049_u2m_g512_f41_q32",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 61996,
+   "max_arm_rss_kb": 647328,
+   "all_arm_rss_kb": {
+    "batch": 63920,
+    "corr": 61912,
+    "hybrid": 61996,
+    "pgdg": 647328,
+    "rf": 236748
+   }
+  },
+  {
+   "case_id": "u_2049_u2m_g512_f73_q2",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 52308,
+   "max_arm_rss_kb": 235904,
+   "all_arm_rss_kb": {
+    "corr": 52400,
+    "hybrid": 52308,
+    "rf": 235904,
+    "batch": 52380,
+    "pgdg": 109308
+   }
+  },
+  {
+   "case_id": "u_2049_u2m_g512_f73_q8",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 58548,
+   "max_arm_rss_kb": 235952,
+   "all_arm_rss_kb": {
+    "corr": 58556,
+    "batch": 58996,
+    "pgdg": 212504,
+    "hybrid": 58548,
+    "rf": 235952
+   }
+  },
+  {
+   "case_id": "u_2049_u2m_g512_f73_q32",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 61220,
+   "max_arm_rss_kb": 626752,
+   "all_arm_rss_kb": {
+    "hybrid": 61220,
+    "batch": 63128,
+    "corr": 61168,
+    "pgdg": 626752,
+    "rf": 236772
+   }
+  },
+  {
+   "case_id": "u_2049_u600k_g16_f41_q2",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 18988,
+   "max_arm_rss_kb": 73376,
+   "all_arm_rss_kb": {
+    "batch": 19532,
+    "corr": 19072,
+    "pgdg": 33936,
+    "rf": 73376,
+    "hybrid": 18988
+   }
+  },
+  {
+   "case_id": "u_2049_u600k_g16_f41_q8",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 23256,
+   "max_arm_rss_kb": 73652,
+   "all_arm_rss_kb": {
+    "pgdg": 41320,
+    "rf": 73652,
+    "hybrid": 23256,
+    "batch": 23796,
+    "corr": 23220
+   }
+  },
+  {
+   "case_id": "u_2049_u600k_g16_f41_q32",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 35952,
+   "max_arm_rss_kb": 74348,
+   "all_arm_rss_kb": {
+    "hybrid": 35952,
+    "pgdg": 70612,
+    "corr": 35908,
+    "batch": 38000,
+    "rf": 74348
+   }
+  },
+  {
+   "case_id": "u_2049_u600k_g16_f73_q2",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 19052,
+   "max_arm_rss_kb": 73392,
+   "all_arm_rss_kb": {
+    "rf": 73392,
+    "pgdg": 33868,
+    "hybrid": 19052,
+    "corr": 19056,
+    "batch": 19388
+   }
+  },
+  {
+   "case_id": "u_2049_u600k_g16_f73_q8",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 23296,
+   "max_arm_rss_kb": 73644,
+   "all_arm_rss_kb": {
+    "corr": 23220,
+    "pgdg": 41328,
+    "batch": 23816,
+    "rf": 73644,
+    "hybrid": 23296
+   }
+  },
+  {
+   "case_id": "u_2049_u600k_g16_f73_q32",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 35948,
+   "max_arm_rss_kb": 74412,
+   "all_arm_rss_kb": {
+    "batch": 38028,
+    "pgdg": 70496,
+    "corr": 35904,
+    "hybrid": 35948,
+    "rf": 74412
+   }
+  },
+  {
+   "case_id": "u_300k_u200k_g256_f41_q2",
+   "chosen": "batch",
+   "chosen_rss_kb": 96992,
+   "max_arm_rss_kb": 307156,
+   "all_arm_rss_kb": {
+    "hybrid": 255076,
+    "batch": 96992,
+    "rf": 307156,
+    "pgdg": 249908,
+    "corr": 254880
+   }
+  },
+  {
+   "case_id": "u_300k_u800k_g96_f41_q2",
+   "chosen": "batch",
+   "chosen_rss_kb": 108168,
+   "max_arm_rss_kb": 355008,
+   "all_arm_rss_kb": {
+    "rf": 355008,
+    "pgdg": 270340,
+    "hybrid": 267028,
+    "corr": 267224,
+    "batch": 108168
+   }
+  },
+  {
+   "case_id": "u_300k_u2m_g512_f41_q2",
+   "chosen": "batch",
+   "chosen_rss_kb": 146124,
+   "max_arm_rss_kb": 487956,
+   "all_arm_rss_kb": {
+    "pgdg": 352856,
+    "corr": 314400,
+    "rf": 487956,
+    "hybrid": 314324,
+    "batch": 146124
+   }
+  },
+  {
+   "case_id": "u_300k_u600k_g16_f41_q2",
+   "chosen": "batch",
+   "chosen_rss_kb": 99808,
+   "max_arm_rss_kb": 338404,
+   "all_arm_rss_kb": {
+    "corr": 258488,
+    "batch": 99808,
+    "pgdg": 252352,
+    "hybrid": 258404,
+    "rf": 338404
+   }
+  },
+  {
+   "case_id": "u_300k_u200k_g256_t1_f41_q2",
+   "chosen": "batch",
+   "chosen_rss_kb": 96472,
+   "max_arm_rss_kb": 300028,
+   "all_arm_rss_kb": {
+    "pgdg": 235776,
+    "hybrid": 247808,
+    "rf": 300028,
+    "corr": 247700,
+    "batch": 96472
+   }
+  },
+  {
+   "case_id": "u_300k_u200k_g256_t2_f41_q2",
+   "chosen": "batch",
+   "chosen_rss_kb": 96776,
+   "max_arm_rss_kb": 301072,
+   "all_arm_rss_kb": {
+    "corr": 246848,
+    "hybrid": 246896,
+    "pgdg": 234804,
+    "batch": 96776,
+    "rf": 301072
+   }
+  },
+  {
+   "case_id": "u_300k_u200k_g256_f41_q8",
+   "chosen": "rf",
+   "chosen_rss_kb": 349216,
+   "max_arm_rss_kb": 12711520,
+   "all_arm_rss_kb": {
+    "corr": 6529580,
+    "batch": 6593748,
+    "rf": 349216,
+    "hybrid": 6529512,
+    "pgdg": 12711520
+   }
+  }
+ ],
+ "cases": [
+  {
+   "case_id": "u_2049_u200k_g256_f41_q2",
+   "base": "u200k_g256",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 2,
+   "rows": 200000,
+   "groups": 256,
+   "features": {
+    "base": "u200k_g256",
+    "rows": 200000,
+    "groups": 256,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 49,
+    "row_edits": 1999,
+    "span": 86400000000,
+    "rows_per_group": 781.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 6.386,
+    "batch": 6.295,
+    "rf": 29.538,
+    "pgdg": 12.626,
+    "corr": 6.293
+   },
+   "rss_kb": {
+    "hybrid": 10520,
+    "batch": 10524,
+    "rf": 28236,
+    "pgdg": 19292,
+    "corr": 10452
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "70258cc3938dd7be9e145f98a89dce56b016bc11d0e0a6ba61408859df102b7a",
+   "best_forced": "corr",
+   "best_forced_ms": 6.293,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.077,
+     "rf": 539.023
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 6.079,
+   "plan_ns": 159878,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "70258cc3938dd7be9e145f98a89dce56b016bc11d0e0a6ba61408859df102b7a",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u200k_g256_f41_q8",
+   "base": "u200k_g256",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 8,
+   "rows": 200000,
+   "groups": 256,
+   "features": {
+    "base": "u200k_g256",
+    "rows": 200000,
+    "groups": 256,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 49,
+    "row_edits": 1999,
+    "span": 86400000000,
+    "rows_per_group": 781.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "rf": 34.618,
+    "corr": 17.946,
+    "pgdg": 51.317,
+    "batch": 20.29,
+    "hybrid": 18.953
+   },
+   "rss_kb": {
+    "rf": 28496,
+    "corr": 20512,
+    "pgdg": 78920,
+    "batch": 21300,
+    "hybrid": 20508
+   },
+   "batch_modes": {
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "499905b941c1688c2aec4fffd158d70eed8200d53f5d4d328d1bfc050d287ca7",
+   "best_forced": "corr",
+   "best_forced_ms": 17.946,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.293,
+     "rf": 653.984
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 18.746,
+   "plan_ns": 85182,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "499905b941c1688c2aec4fffd158d70eed8200d53f5d4d328d1bfc050d287ca7",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u200k_g256_f41_q32",
+   "base": "u200k_g256",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 32,
+   "rows": 200000,
+   "groups": 256,
+   "features": {
+    "base": "u200k_g256",
+    "rows": 200000,
+    "groups": 256,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 49,
+    "row_edits": 1999,
+    "span": 86400000000,
+    "rows_per_group": 781.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 33.093,
+    "hybrid": 34.395,
+    "rf": 41.361,
+    "corr": 34.466,
+    "pgdg": 184.819
+   },
+   "rss_kb": {
+    "batch": 19952,
+    "hybrid": 17904,
+    "rf": 29248,
+    "corr": 17912,
+    "pgdg": 317844
+   },
+   "batch_modes": {
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "b2c2ef36e89b9d716319a7b57ad0d4404d955c6e7560caab38d0c1a391d4d25f",
+   "best_forced": "batch",
+   "best_forced_ms": 33.093,
+   "decision": {
+    "chosen": "rf",
+    "regime": "shallow_q>=32_rf_eligible",
+    "shortlist": [
+     "rf",
+     "hybrid",
+     "corr"
+    ],
+    "designated": "rf",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 1.14,
+     "rf": 793.608
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 42.601,
+   "plan_ns": 159118,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "b2c2ef36e89b9d716319a7b57ad0d4404d955c6e7560caab38d0c1a391d4d25f",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u200k_g256_f73_q2",
+   "base": "u200k_g256",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 73,
+   "q": 2,
+   "rows": 200000,
+   "groups": 256,
+   "features": {
+    "base": "u200k_g256",
+    "rows": 200000,
+    "groups": 256,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 73,
+    "factor_edits": 28,
+    "row_edits": 2020,
+    "span": 86400000000,
+    "rows_per_group": 781.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "pgdg": 11.86,
+    "batch": 5.758,
+    "corr": 6.186,
+    "hybrid": 5.737,
+    "rf": 28.473
+   },
+   "rss_kb": {
+    "pgdg": 18984,
+    "batch": 10304,
+    "corr": 10160,
+    "hybrid": 10164,
+    "rf": 28276
+   },
+   "batch_modes": {
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "372c75c154761770b317f4d60e1941a349876426c35764b2c714cbfe6eef0167",
+   "best_forced": "hybrid",
+   "best_forced_ms": 5.737,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.0,
+     "rf": 4328080.475
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 6.223,
+   "plan_ns": 162021,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "372c75c154761770b317f4d60e1941a349876426c35764b2c714cbfe6eef0167",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u200k_g256_f73_q8",
+   "base": "u200k_g256",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 73,
+   "q": 8,
+   "rows": 200000,
+   "groups": 256,
+   "features": {
+    "base": "u200k_g256",
+    "rows": 200000,
+    "groups": 256,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 73,
+    "factor_edits": 28,
+    "row_edits": 2020,
+    "span": 86400000000,
+    "rows_per_group": 781.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 14.022,
+    "corr": 14.843,
+    "pgdg": 50.086,
+    "rf": 33.123,
+    "batch": 15.772
+   },
+   "rss_kb": {
+    "hybrid": 16288,
+    "corr": 16184,
+    "pgdg": 74716,
+    "rf": 28508,
+    "batch": 16820
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "ce46be70f497eab80c33d6e28b3907e39320517bbcbc0832d78410e22800004e",
+   "best_forced": "hybrid",
+   "best_forced_ms": 14.022,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.0,
+     "rf": 5251158.812
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 15.718,
+   "plan_ns": 170323,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "ce46be70f497eab80c33d6e28b3907e39320517bbcbc0832d78410e22800004e",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u200k_g256_f73_q32",
+   "base": "u200k_g256",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 73,
+   "q": 32,
+   "rows": 200000,
+   "groups": 256,
+   "features": {
+    "base": "u200k_g256",
+    "rows": 200000,
+    "groups": 256,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 73,
+    "factor_edits": 28,
+    "row_edits": 2020,
+    "span": 86400000000,
+    "rows_per_group": 781.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 30.107,
+    "rf": 40.283,
+    "pgdg": 173.488,
+    "batch": 27.587,
+    "hybrid": 30.793
+   },
+   "rss_kb": {
+    "corr": 17604,
+    "rf": 29308,
+    "pgdg": 297532,
+    "batch": 19924,
+    "hybrid": 17600
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "262354008f6d113046a46271f57137bd3e3066745d8be1f8df3ee05fedc5fe1e",
+   "best_forced": "batch",
+   "best_forced_ms": 27.587,
+   "decision": {
+    "chosen": "rf",
+    "regime": "shallow_q>=32_rf_eligible",
+    "shortlist": [
+     "rf",
+     "hybrid",
+     "corr"
+    ],
+    "designated": "rf",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.0,
+     "rf": 6372274.722
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 41.291,
+   "plan_ns": 161692,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "262354008f6d113046a46271f57137bd3e3066745d8be1f8df3ee05fedc5fe1e",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u2m_g512_f41_q2",
+   "base": "u2m_g512",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 2,
+   "rows": 2000000,
+   "groups": 512,
+   "features": {
+    "base": "u2m_g512",
+    "rows": 2000000,
+    "groups": 512,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 49,
+    "row_edits": 1999,
+    "span": 86400000000,
+    "rows_per_group": 3906.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 24.464,
+    "batch": 24.218,
+    "pgdg": 65.997,
+    "corr": 26.56,
+    "rf": 215.878
+   },
+   "rss_kb": {
+    "hybrid": 52464,
+    "batch": 52724,
+    "pgdg": 109576,
+    "corr": 52484,
+    "rf": 235988
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "87ad09866051f708db73537b5a5795b575f2fc4a738474401888220221f76099",
+   "best_forced": "batch",
+   "best_forced_ms": 24.218,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.086,
+     "rf": 306.72
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 25.808,
+   "plan_ns": 181169,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "87ad09866051f708db73537b5a5795b575f2fc4a738474401888220221f76099",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u2m_g512_f41_q8",
+   "base": "u2m_g512",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 8,
+   "rows": 2000000,
+   "groups": 512,
+   "features": {
+    "base": "u2m_g512",
+    "rows": 2000000,
+    "groups": 512,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 49,
+    "row_edits": 1999,
+    "span": 86400000000,
+    "rows_per_group": 3906.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 44.619,
+    "pgdg": 137.989,
+    "hybrid": 44.364,
+    "rf": 222.137,
+    "batch": 48.084
+   },
+   "rss_kb": {
+    "corr": 62716,
+    "pgdg": 216968,
+    "hybrid": 62776,
+    "rf": 236000,
+    "batch": 63504
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "cd6618f9ea4dd64be9d0fb4c7fd596ba4b81b844194efc2b1d20d8d746fde86b",
+   "best_forced": "hybrid",
+   "best_forced_ms": 44.364,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.324,
+     "rf": 372.136
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 46.433,
+   "plan_ns": 159858,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "cd6618f9ea4dd64be9d0fb4c7fd596ba4b81b844194efc2b1d20d8d746fde86b",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u2m_g512_f41_q32",
+   "base": "u2m_g512",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 32,
+   "rows": 2000000,
+   "groups": 512,
+   "features": {
+    "base": "u2m_g512",
+    "rows": 2000000,
+    "groups": 512,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 49,
+    "row_edits": 1999,
+    "span": 86400000000,
+    "rows_per_group": 3906.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 65.774,
+    "corr": 67.459,
+    "hybrid": 67.158,
+    "pgdg": 363.981,
+    "rf": 229.349
+   },
+   "rss_kb": {
+    "batch": 63920,
+    "corr": 61912,
+    "hybrid": 61996,
+    "pgdg": 647328,
+    "rf": 236748
+   },
+   "batch_modes": {
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "433e0b7bdd98349854118942bb2c0d2d7b21cdc1fe7d6b3ab8d0363fd33d6e3c",
+   "best_forced": "batch",
+   "best_forced_ms": 65.774,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q>=32",
+    "shortlist": [
+     "hybrid",
+     "corr",
+     "rf"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 1.263,
+     "rf": 451.587
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 65.277,
+   "plan_ns": 163252,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "433e0b7bdd98349854118942bb2c0d2d7b21cdc1fe7d6b3ab8d0363fd33d6e3c",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u2m_g512_f73_q2",
+   "base": "u2m_g512",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 73,
+   "q": 2,
+   "rows": 2000000,
+   "groups": 512,
+   "features": {
+    "base": "u2m_g512",
+    "rows": 2000000,
+    "groups": 512,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 73,
+    "factor_edits": 28,
+    "row_edits": 2020,
+    "span": 86400000000,
+    "rows_per_group": 3906.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 26.725,
+    "hybrid": 27.61,
+    "rf": 205.237,
+    "batch": 24.541,
+    "pgdg": 66.773
+   },
+   "rss_kb": {
+    "corr": 52400,
+    "hybrid": 52308,
+    "rf": 235904,
+    "batch": 52380,
+    "pgdg": 109308
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "2293282cce67895a7e7ee744b22508165a3df33441ddcc1ce42ac888b65f75ff",
+   "best_forced": "batch",
+   "best_forced_ms": 24.541,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.0,
+     "rf": 2462807.464
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 25.906,
+   "plan_ns": 172187,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "2293282cce67895a7e7ee744b22508165a3df33441ddcc1ce42ac888b65f75ff",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u2m_g512_f73_q8",
+   "base": "u2m_g512",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 73,
+   "q": 8,
+   "rows": 2000000,
+   "groups": 512,
+   "features": {
+    "base": "u2m_g512",
+    "rows": 2000000,
+    "groups": 512,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 73,
+    "factor_edits": 28,
+    "row_edits": 2020,
+    "span": 86400000000,
+    "rows_per_group": 3906.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 39.876,
+    "batch": 41.816,
+    "pgdg": 132.989,
+    "hybrid": 39.355,
+    "rf": 206.805
+   },
+   "rss_kb": {
+    "corr": 58556,
+    "batch": 58996,
+    "pgdg": 212504,
+    "hybrid": 58548,
+    "rf": 235952
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "3dc5669202247b286543de0e28449db13a74bc31056fe0e3b1aa89e52aad7bc9",
+   "best_forced": "hybrid",
+   "best_forced_ms": 39.355,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.0,
+     "rf": 2988066.694
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 38.412,
+   "plan_ns": 158957,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "3dc5669202247b286543de0e28449db13a74bc31056fe0e3b1aa89e52aad7bc9",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u2m_g512_f73_q32",
+   "base": "u2m_g512",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 73,
+   "q": 32,
+   "rows": 2000000,
+   "groups": 512,
+   "features": {
+    "base": "u2m_g512",
+    "rows": 2000000,
+    "groups": 512,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 73,
+    "factor_edits": 28,
+    "row_edits": 2020,
+    "span": 86400000000,
+    "rows_per_group": 3906.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 62.696,
+    "batch": 59.836,
+    "corr": 61.372,
+    "pgdg": 348.099,
+    "rf": 213.874
+   },
+   "rss_kb": {
+    "hybrid": 61220,
+    "batch": 63128,
+    "corr": 61168,
+    "pgdg": 626752,
+    "rf": 236772
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "ff56ec80651de5a09e1b37c485b79d5d08be3275db7b072566786c806b4f6860",
+   "best_forced": "batch",
+   "best_forced_ms": 59.836,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q>=32",
+    "shortlist": [
+     "hybrid",
+     "corr",
+     "rf"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.0,
+     "rf": 3626015.237
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 60.95,
+   "plan_ns": 160729,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "ff56ec80651de5a09e1b37c485b79d5d08be3275db7b072566786c806b4f6860",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u600k_g16_f41_q2",
+   "base": "u600k_g16",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 2,
+   "rows": 600000,
+   "groups": 16,
+   "features": {
+    "base": "u600k_g16",
+    "rows": 600000,
+    "groups": 16,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 49,
+    "row_edits": 1999,
+    "span": 86400000000,
+    "rows_per_group": 37500.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 9.877,
+    "corr": 11.337,
+    "pgdg": 22.416,
+    "rf": 205.213,
+    "hybrid": 9.498
+   },
+   "rss_kb": {
+    "batch": 19532,
+    "corr": 19072,
+    "pgdg": 33936,
+    "rf": 73376,
+    "hybrid": 18988
+   },
+   "batch_modes": {
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "cb12d7e048e1acd875b0e6d07d6b242c4a43a365166ea4c1ad15e8127dabc659",
+   "best_forced": "hybrid",
+   "best_forced_ms": 9.498,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.002,
+     "rf": 0.221
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 10.358,
+   "plan_ns": 164776,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "cb12d7e048e1acd875b0e6d07d6b242c4a43a365166ea4c1ad15e8127dabc659",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u600k_g16_f41_q8",
+   "base": "u600k_g16",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 8,
+   "rows": 600000,
+   "groups": 16,
+   "features": {
+    "base": "u600k_g16",
+    "rows": 600000,
+    "groups": 16,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 49,
+    "row_edits": 1999,
+    "span": 86400000000,
+    "rows_per_group": 37500.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "pgdg": 33.267,
+    "rf": 209.28,
+    "hybrid": 18.211,
+    "batch": 18.624,
+    "corr": 18.801
+   },
+   "rss_kb": {
+    "pgdg": 41320,
+    "rf": 73652,
+    "hybrid": 23256,
+    "batch": 23796,
+    "corr": 23220
+   },
+   "batch_modes": {
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "3f00aca19c81f346b2ee9b81e086096fbf75e548cae1d57d115b53db7c0de3f4",
+   "best_forced": "hybrid",
+   "best_forced_ms": 18.211,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.006,
+     "rf": 0.268
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 19.454,
+   "plan_ns": 159578,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "3f00aca19c81f346b2ee9b81e086096fbf75e548cae1d57d115b53db7c0de3f4",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u600k_g16_f41_q32",
+   "base": "u600k_g16",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 32,
+   "rows": 600000,
+   "groups": 16,
+   "features": {
+    "base": "u600k_g16",
+    "rows": 600000,
+    "groups": 16,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 49,
+    "row_edits": 1999,
+    "span": 86400000000,
+    "rows_per_group": 37500.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 51.599,
+    "pgdg": 69.439,
+    "corr": 52.578,
+    "batch": 49.725,
+    "rf": 213.991
+   },
+   "rss_kb": {
+    "hybrid": 35952,
+    "pgdg": 70612,
+    "corr": 35908,
+    "batch": 38000,
+    "rf": 74348
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "5e43d307254c958592fdd9e9919f1adb5a843bea7611e93f718da608c4f508e4",
+   "best_forced": "batch",
+   "best_forced_ms": 49.725,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q>=32",
+    "shortlist": [
+     "hybrid",
+     "corr",
+     "rf"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.022,
+     "rf": 0.325
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 52.153,
+   "plan_ns": 159398,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "5e43d307254c958592fdd9e9919f1adb5a843bea7611e93f718da608c4f508e4",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u600k_g16_f73_q2",
+   "base": "u600k_g16",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 73,
+   "q": 2,
+   "rows": 600000,
+   "groups": 16,
+   "features": {
+    "base": "u600k_g16",
+    "rows": 600000,
+    "groups": 16,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 73,
+    "factor_edits": 28,
+    "row_edits": 2020,
+    "span": 86400000000,
+    "rows_per_group": 37500.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "rf": 147.718,
+    "pgdg": 21.82,
+    "hybrid": 9.78,
+    "corr": 10.209,
+    "batch": 9.812
+   },
+   "rss_kb": {
+    "rf": 73392,
+    "pgdg": 33868,
+    "hybrid": 19052,
+    "corr": 19056,
+    "batch": 19388
+   },
+   "batch_modes": {
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "36784cb417c145da16f73bf520b3d306da08abb1fda98d43af81441f0616df02",
+   "best_forced": "hybrid",
+   "best_forced_ms": 9.78,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.0,
+     "rf": 1772.022
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 10.307,
+   "plan_ns": 165716,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "36784cb417c145da16f73bf520b3d306da08abb1fda98d43af81441f0616df02",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u600k_g16_f73_q8",
+   "base": "u600k_g16",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 73,
+   "q": 8,
+   "rows": 600000,
+   "groups": 16,
+   "features": {
+    "base": "u600k_g16",
+    "rows": 600000,
+    "groups": 16,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 73,
+    "factor_edits": 28,
+    "row_edits": 2020,
+    "span": 86400000000,
+    "rows_per_group": 37500.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 17.858,
+    "pgdg": 34.064,
+    "batch": 18.64,
+    "rf": 148.05,
+    "hybrid": 18.072
+   },
+   "rss_kb": {
+    "corr": 23220,
+    "pgdg": 41328,
+    "batch": 23816,
+    "rf": 73644,
+    "hybrid": 23296
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "9f8cb522458022128e0ab13ad8ff42615d4258cf4c999b93a5298fe9714ddae6",
+   "best_forced": "corr",
+   "best_forced_ms": 17.858,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.0,
+     "rf": 2149.953
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 18.909,
+   "plan_ns": 163614,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "9f8cb522458022128e0ab13ad8ff42615d4258cf4c999b93a5298fe9714ddae6",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u600k_g16_f73_q32",
+   "base": "u600k_g16",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 73,
+   "q": 32,
+   "rows": 600000,
+   "groups": 16,
+   "features": {
+    "base": "u600k_g16",
+    "rows": 600000,
+    "groups": 16,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 73,
+    "factor_edits": 28,
+    "row_edits": 2020,
+    "span": 86400000000,
+    "rows_per_group": 37500.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 42.345,
+    "pgdg": 70.802,
+    "corr": 46.883,
+    "hybrid": 47.794,
+    "rf": 159.228
+   },
+   "rss_kb": {
+    "batch": 38028,
+    "pgdg": 70496,
+    "corr": 35904,
+    "hybrid": 35948,
+    "rf": 74412
+   },
+   "batch_modes": {
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "4f03390434b1d259f0dc864054356a59b547b350bc061d0e6fe6c13796994cba",
+   "best_forced": "batch",
+   "best_forced_ms": 42.345,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q>=32",
+    "shortlist": [
+     "hybrid",
+     "corr",
+     "rf"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.0,
+     "rf": 2608.966
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 46.701,
+   "plan_ns": 158136,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "4f03390434b1d259f0dc864054356a59b547b350bc061d0e6fe6c13796994cba",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u800k_g96_f41_q2",
+   "base": "u800k_g96",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 2,
+   "rows": 800000,
+   "groups": 96,
+   "features": {
+    "base": "u800k_g96",
+    "rows": 800000,
+    "groups": 96,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 49,
+    "row_edits": 1999,
+    "span": 86400000000,
+    "rows_per_group": 8333.333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "rf": 116.274,
+    "hybrid": 14.852,
+    "batch": 14.001,
+    "corr": 14.215,
+    "pgdg": 30.108
+   },
+   "rss_kb": {
+    "rf": 99716,
+    "hybrid": 24228,
+    "batch": 24624,
+    "corr": 24224,
+    "pgdg": 45436
+   },
+   "batch_modes": {
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "fbc76a6321c281424bf2e5d108894364b256b4552dd1713623448b1215190dc9",
+   "best_forced": "batch",
+   "best_forced_ms": 14.001,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.014,
+     "rf": 12.897
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 14.632,
+   "plan_ns": 162122,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "fbc76a6321c281424bf2e5d108894364b256b4552dd1713623448b1215190dc9",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u800k_g96_f41_q8",
+   "base": "u800k_g96",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 8,
+   "rows": 800000,
+   "groups": 96,
+   "features": {
+    "base": "u800k_g96",
+    "rows": 800000,
+    "groups": 96,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 49,
+    "row_edits": 1999,
+    "span": 86400000000,
+    "rows_per_group": 8333.333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "pgdg": 55.826,
+    "hybrid": 29.673,
+    "corr": 30.54,
+    "batch": 30.515,
+    "rf": 120.756
+   },
+   "rss_kb": {
+    "pgdg": 74416,
+    "hybrid": 34804,
+    "corr": 34824,
+    "batch": 35068,
+    "rf": 100312
+   },
+   "batch_modes": {
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "c0f27ed691ca1dc7363ea77be92f208f6f8a8871c027f69aa348c6d7a153d0e4",
+   "best_forced": "hybrid",
+   "best_forced_ms": 29.673,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.052,
+     "rf": 15.648
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 29.857,
+   "plan_ns": 160970,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "c0f27ed691ca1dc7363ea77be92f208f6f8a8871c027f69aa348c6d7a153d0e4",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u800k_g96_f41_q32",
+   "base": "u800k_g96",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 32,
+   "rows": 800000,
+   "groups": 96,
+   "features": {
+    "base": "u800k_g96",
+    "rows": 800000,
+    "groups": 96,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 49,
+    "row_edits": 1999,
+    "span": 86400000000,
+    "rows_per_group": 8333.333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "rf": 129.14,
+    "batch": 49.937,
+    "corr": 53.573,
+    "hybrid": 52.867,
+    "pgdg": 141.731
+   },
+   "rss_kb": {
+    "rf": 101056,
+    "batch": 38480,
+    "corr": 36320,
+    "hybrid": 36340,
+    "pgdg": 190656
+   },
+   "batch_modes": {
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "3a3adea5c59bbe3bb6eabf8c8c56fbc7c4d63590080881d34d417b641026c511",
+   "best_forced": "batch",
+   "best_forced_ms": 49.937,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q>=32",
+    "shortlist": [
+     "hybrid",
+     "corr",
+     "rf"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.201,
+     "rf": 18.988
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 53.448,
+   "plan_ns": 158326,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "3a3adea5c59bbe3bb6eabf8c8c56fbc7c4d63590080881d34d417b641026c511",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u800k_g96_f73_q2",
+   "base": "u800k_g96",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 73,
+   "q": 2,
+   "rows": 800000,
+   "groups": 96,
+   "features": {
+    "base": "u800k_g96",
+    "rows": 800000,
+    "groups": 96,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 73,
+    "factor_edits": 28,
+    "row_edits": 2020,
+    "span": 86400000000,
+    "rows_per_group": 8333.333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 13.405,
+    "batch": 13.57,
+    "rf": 105.089,
+    "hybrid": 13.694,
+    "pgdg": 29.003
+   },
+   "rss_kb": {
+    "corr": 24000,
+    "batch": 24412,
+    "rf": 99736,
+    "hybrid": 23988,
+    "pgdg": 44792
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "2f878a5e949e57f6f2d31e88267bbfd9931a8068fbe1745aec1c044f1115b0e1",
+   "best_forced": "corr",
+   "best_forced_ms": 13.405,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.0,
+     "rf": 103556.068
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 13.943,
+   "plan_ns": 160238,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "2f878a5e949e57f6f2d31e88267bbfd9931a8068fbe1745aec1c044f1115b0e1",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u800k_g96_f73_q8",
+   "base": "u800k_g96",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 73,
+   "q": 8,
+   "rows": 800000,
+   "groups": 96,
+   "features": {
+    "base": "u800k_g96",
+    "rows": 800000,
+    "groups": 96,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 73,
+    "factor_edits": 28,
+    "row_edits": 2020,
+    "span": 86400000000,
+    "rows_per_group": 8333.333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 23.297,
+    "corr": 24.274,
+    "rf": 106.834,
+    "batch": 24.222,
+    "pgdg": 52.546
+   },
+   "rss_kb": {
+    "hybrid": 30248,
+    "corr": 30300,
+    "rf": 100272,
+    "batch": 30864,
+    "pgdg": 69984
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "2b6435a1619491f9048224af45bc41a303493bc142b827dc2168dbefebc9f291",
+   "best_forced": "hybrid",
+   "best_forced_ms": 23.297,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q<=8",
+    "shortlist": [
+     "hybrid",
+     "corr"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.0,
+     "rf": 125642.155
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 24.129,
+   "plan_ns": 162082,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "2b6435a1619491f9048224af45bc41a303493bc142b827dc2168dbefebc9f291",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_2049_u800k_g96_f73_q32",
+   "base": "u800k_g96",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 73,
+   "q": 32,
+   "rows": 800000,
+   "groups": 96,
+   "features": {
+    "base": "u800k_g96",
+    "rows": 800000,
+    "groups": 96,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 73,
+    "factor_edits": 28,
+    "row_edits": 2020,
+    "span": 86400000000,
+    "rows_per_group": 8333.333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch": 42.114,
+    "corr": 44.818,
+    "hybrid": 45.069,
+    "pgdg": 123.469,
+    "rf": 114.861
+   },
+   "rss_kb": {
+    "batch": 36308,
+    "corr": 34492,
+    "hybrid": 34552,
+    "pgdg": 170056,
+    "rf": 101048
+   },
+   "batch_modes": {
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "8458d82a92d7b2ce6fd8a15ed0956da83ffb42a7aabf0fa5e71d1e5aace7bc61",
+   "best_forced": "batch",
+   "best_forced_ms": 42.114,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_q>=32",
+    "shortlist": [
+     "hybrid",
+     "corr",
+     "rf"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.0,
+     "rf": 152466.6
+    },
+    "allowed": [
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 44.769,
+   "plan_ns": 158907,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "8458d82a92d7b2ce6fd8a15ed0956da83ffb42a7aabf0fa5e71d1e5aace7bc61",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "u_300k_u200k_g256_f41_q2",
+   "base": "u200k_g256",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 2,
+   "rows": 200000,
+   "groups": 256,
+   "features": {
+    "base": "u200k_g256",
+    "rows": 200000,
+    "groups": 256,
+    "states": 300000,
+    "q": 2,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 7317,
+    "row_edits": 292682,
+    "span": 86400000000,
+    "rows_per_group": 781.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 890.526,
+    "batch": 255.554,
+    "rf": 2259.86,
+    "pgdg": 658.994,
+    "corr": 547.433
+   },
+   "rss_kb": {
+    "hybrid": 255076,
+    "batch": 96992,
+    "rf": 307156,
+    "pgdg": 249908,
+    "corr": 254880
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "batch",
+     "batch",
+     "batch"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "d45f8565141ac96ee794210f2e05c24b61aeda5f11452dd792eb42aa21cb87f2",
+   "best_forced": "batch",
+   "best_forced_ms": 255.554,
+   "decision": {
+    "chosen": "batch",
+    "regime": "deep_q<=2",
+    "shortlist": [
+     "batch",
+     "corr",
+     "hybrid"
+    ],
+    "designated": "batch",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.002,
+     "corr": 0.0,
+     "pgdg": 7.1,
+     "batch": 0.001,
+     "rf": 29682.458
+    },
+    "allowed": [
+     "batch",
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 258.106,
+   "plan_ns": 177143,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  },
+  {
+   "case_id": "u_300k_u200k_g256_t1_f41_q2",
+   "base": "u200k_g256",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 1,
+   "factor_period": 41,
+   "q": 2,
+   "rows": 200000,
+   "groups": 256,
+   "features": {
+    "base": "u200k_g256",
+    "rows": 200000,
+    "groups": 256,
+    "states": 300000,
+    "q": 2,
+    "topology": 1,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 7317,
+    "row_edits": 292682,
+    "span": 86400000000,
+    "rows_per_group": 781.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "pgdg": 335.765,
+    "hybrid": 533.355,
+    "rf": 2158.057,
+    "corr": 480.543,
+    "batch": 250.474
+   },
+   "rss_kb": {
+    "pgdg": 235776,
+    "hybrid": 247808,
+    "rf": 300028,
+    "corr": 247700,
+    "batch": 96472
+   },
+   "batch_modes": {
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "batch",
+     "batch",
+     "batch"
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "944f55106735bc33874a1d22d98e4aea414cc96d99847b2c37d148c4aec70e92",
+   "best_forced": "batch",
+   "best_forced_ms": 250.474,
+   "decision": {
+    "chosen": "batch",
+    "regime": "deep_q<=2",
+    "shortlist": [
+     "batch",
+     "corr",
+     "hybrid"
+    ],
+    "designated": "batch",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.002,
+     "corr": 0.0,
+     "pgdg": 7.1,
+     "batch": 0.001,
+     "rf": 29682.458
+    },
+    "allowed": [
+     "batch",
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 253.139,
+   "plan_ns": 180228,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  },
+  {
+   "case_id": "u_300k_u200k_g256_t2_f41_q2",
+   "base": "u200k_g256",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 2,
+   "factor_period": 41,
+   "q": 2,
+   "rows": 200000,
+   "groups": 256,
+   "features": {
+    "base": "u200k_g256",
+    "rows": 200000,
+    "groups": 256,
+    "states": 300000,
+    "q": 2,
+    "topology": 2,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 7317,
+    "row_edits": 292682,
+    "span": 86400000000,
+    "rows_per_group": 781.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 451.57,
+    "hybrid": 489.859,
+    "pgdg": 300.474,
+    "batch": 242.552,
+    "rf": 2122.842
+   },
+   "rss_kb": {
+    "corr": 246848,
+    "hybrid": 246896,
+    "pgdg": 234804,
+    "batch": 96776,
+    "rf": 301072
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "batch",
+     "batch",
+     "batch"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "cd5f8d04bf7ba8810d40b9bcf072a93af28a47db02070722fe773c37bf0e0d75",
+   "best_forced": "batch",
+   "best_forced_ms": 242.552,
+   "decision": {
+    "chosen": "batch",
+    "regime": "deep_q<=2",
+    "shortlist": [
+     "batch",
+     "corr",
+     "hybrid"
+    ],
+    "designated": "batch",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.002,
+     "corr": 0.0,
+     "pgdg": 7.1,
+     "batch": 0.001,
+     "rf": 29682.458
+    },
+    "allowed": [
+     "batch",
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 242.337,
+   "plan_ns": 182411,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  },
+  {
+   "case_id": "u_300k_u200k_g256_f41_q8",
+   "base": "u200k_g256",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 8,
+   "rows": 200000,
+   "groups": 256,
+   "features": {
+    "base": "u200k_g256",
+    "rows": 200000,
+    "groups": 256,
+    "states": 300000,
+    "q": 8,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 7317,
+    "row_edits": 292682,
+    "span": 86400000000,
+    "rows_per_group": 781.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 5701.307,
+    "batch": 5945.059,
+    "rf": 2610.452,
+    "hybrid": 5667.65,
+    "pgdg": 8796.41
+   },
+   "rss_kb": {
+    "corr": 6529580,
+    "batch": 6593748,
+    "rf": 349216,
+    "hybrid": 6529512,
+    "pgdg": 12711520
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "aa01b7de58605c2fdf562e4c8c4d5616425f3122950d31ea38fa9bd6dd2bacae",
+   "best_forced": "rf",
+   "best_forced_ms": 2610.452,
+   "decision": {
+    "chosen": "rf",
+    "regime": "deep_q>=8_rf_eligible",
+    "shortlist": [
+     "rf",
+     "corr",
+     "hybrid",
+     "batch"
+    ],
+    "designated": "rf",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.013,
+     "corr": 0.002,
+     "pgdg": 104.616,
+     "batch": 0.012,
+     "rf": 36334.043
+    },
+    "allowed": [
+     "batch",
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 2612.477,
+   "plan_ns": 183543,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  },
+  {
+   "case_id": "u_300k_u2m_g512_f41_q2",
+   "base": "u2m_g512",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 2,
+   "rows": 2000000,
+   "groups": 512,
+   "features": {
+    "base": "u2m_g512",
+    "rows": 2000000,
+    "groups": 512,
+    "states": 300000,
+    "q": 2,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 7317,
+    "row_edits": 292682,
+    "span": 86400000000,
+    "rows_per_group": 3906.25,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "pgdg": 899.693,
+    "corr": 649.817,
+    "rf": 7204.517,
+    "hybrid": 1443.46,
+    "batch": 311.239
+   },
+   "rss_kb": {
+    "pgdg": 352856,
+    "corr": 314400,
+    "rf": 487956,
+    "hybrid": 314324,
+    "batch": 146124
+   },
+   "batch_modes": {
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "batch",
+     "batch",
+     "batch"
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "5e758ef440b17183aed4777f2eb53a81fe2f82db6beaed30d25b7bff71b81c99",
+   "best_forced": "batch",
+   "best_forced_ms": 311.239,
+   "decision": {
+    "chosen": "batch",
+    "regime": "deep_q<=2",
+    "shortlist": [
+     "batch",
+     "corr",
+     "hybrid"
+    ],
+    "designated": "batch",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.001,
+     "corr": 0.0,
+     "pgdg": 7.864,
+     "batch": 0.0,
+     "rf": 16890.208
+    },
+    "allowed": [
+     "batch",
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 308.793,
+   "plan_ns": 188529,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  },
+  {
+   "case_id": "u_300k_u600k_g16_f41_q2",
+   "base": "u600k_g16",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 2,
+   "rows": 600000,
+   "groups": 16,
+   "features": {
+    "base": "u600k_g16",
+    "rows": 600000,
+    "groups": 16,
+    "states": 300000,
+    "q": 2,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 7317,
+    "row_edits": 292682,
+    "span": 86400000000,
+    "rows_per_group": 37500.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 802.828,
+    "batch": 284.637,
+    "pgdg": 1214.242,
+    "hybrid": 808.122,
+    "rf": 23138.325
+   },
+   "rss_kb": {
+    "corr": 258488,
+    "batch": 99808,
+    "pgdg": 252352,
+    "hybrid": 258404,
+    "rf": 338404
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "batch",
+     "batch",
+     "batch"
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "f5059400503d533ee13e0b38270a8a035b4fa7c791d932a019277a1ac19206e9",
+   "best_forced": "batch",
+   "best_forced_ms": 284.637,
+   "decision": {
+    "chosen": "batch",
+    "regime": "deep_q<=2",
+    "shortlist": [
+     "batch",
+     "corr",
+     "hybrid"
+    ],
+    "designated": "batch",
+    "model_argmin": "batch",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 0.138,
+     "batch": 0.0,
+     "rf": 12.153
+    },
+    "allowed": [
+     "batch",
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 286.711,
+   "plan_ns": 200917,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  },
+  {
+   "case_id": "u_300k_u800k_g96_f41_q2",
+   "base": "u800k_g96",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 0,
+   "factor_period": 41,
+   "q": 2,
+   "rows": 800000,
+   "groups": 96,
+   "features": {
+    "base": "u800k_g96",
+    "rows": 800000,
+    "groups": 96,
+    "states": 300000,
+    "q": 2,
+    "topology": 0,
+    "seed": 47,
+    "factor_period": 41,
+    "factor_edits": 7317,
+    "row_edits": 292682,
+    "span": 86400000000,
+    "rows_per_group": 8333.333333333334,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "rf": 7342.201,
+    "pgdg": 817.974,
+    "hybrid": 795.583,
+    "corr": 686.444,
+    "batch": 286.196
+   },
+   "rss_kb": {
+    "rf": 355008,
+    "pgdg": 270340,
+    "hybrid": 267028,
+    "corr": 267224,
+    "batch": 108168
+   },
+   "batch_modes": {
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch": [
+     "batch",
+     "batch",
+     "batch"
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "679cc8ed12af7dff9fb458d75eb4f7105cd9768e670a29ccd0bc3cd6e82cc563",
+   "best_forced": "batch",
+   "best_forced_ms": 286.196,
+   "decision": {
+    "chosen": "batch",
+    "regime": "deep_q<=2",
+    "shortlist": [
+     "batch",
+     "corr",
+     "hybrid"
+    ],
+    "designated": "batch",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "corr": 0.0,
+     "pgdg": 1.253,
+     "batch": 0.0,
+     "rf": 710.199
+    },
+    "allowed": [
+     "batch",
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 286.287,
+   "plan_ns": 184534,
+   "arms_measured": [
+    "batch",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  }
+ ]
+}

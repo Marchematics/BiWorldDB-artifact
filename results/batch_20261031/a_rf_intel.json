@@ -1,0 +1,24 @@
+{
+ "arm": "rf",
+ "base_id": "intel",
+ "fixture": "artifact/intel.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 0,
+ "n_states": 300000,
+ "n_answers": 599998,
+ "range_scope": "per_state",
+ "answers_fn": "848e61ad01257a08",
+ "answers_sha256": "33c3132f3f690defed29a5f9c57ce91ed0f8b7ec6cf95717b16d4815edee14f8",
+ "phases_ns": {
+  "load": 52125,
+  "setup": 2635624893,
+  "execute": 18024525700,
+  "extract": 25868942,
+  "cleanup": 15448991
+ },
+ "full_ns": 20701520651,
+ "peak_rss_kb": 522380
+}

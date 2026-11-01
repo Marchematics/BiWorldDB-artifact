@@ -1,0 +1,17 @@
+{
+ "intel": {
+  "hybrid_ms": 713.9,
+  "pgd_ms": 901.9,
+  "pgdg_ms": 982.8,
+  "vs_pgd": 1.263,
+  "vs_pgdg": 1.377
+ },
+ "taxi2024": {
+  "hybrid_ms": 579.9,
+  "pgd_ms": 2394.9,
+  "pgdg_ms": 775.8,
+  "vs_pgd": 4.13,
+  "vs_pgdg": 1.338
+ },
+ "answers_identical": true
+}

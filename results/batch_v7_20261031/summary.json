@@ -1,0 +1,124 @@
+{
+ "intel": {
+  "v7_T8": {
+   "full": 143.8,
+   "setup": 87.9,
+   "execute": 38.8,
+   "extract": 14.3,
+   "rss": 157520
+  },
+  "v7_T32": {
+   "full": 137.2,
+   "setup": 93.9,
+   "execute": 26.7,
+   "extract": 13.8,
+   "rss": 193010
+  },
+  "v7_T64": {
+   "full": 172.8,
+   "setup": 114.1,
+   "execute": 42.2,
+   "extract": 13.8,
+   "rss": 245212
+  },
+  "v6_T32": {
+   "full": 173.1,
+   "setup": 74.7,
+   "execute": 81.7,
+   "extract": 13.9,
+   "rss": 148422
+  },
+  "v6_T1": {
+   "full": 219.5,
+   "setup": 121.6,
+   "execute": 81.2,
+   "extract": 14.0,
+   "rss": 133780
+  },
+  "v5_T1": {
+   "full": 207.6,
+   "setup": 112.3,
+   "execute": 78.7,
+   "extract": 13.9,
+   "rss": 133852
+  },
+  "aligned_T1": {
+   "full": 299.2,
+   "setup": 156.6,
+   "execute": 123.3,
+   "extract": 13.0,
+   "rss": 126416
+  },
+  "best_v7": 137.2,
+  "best_threads": [
+   32
+  ],
+  "ratios": {
+   "v7best_over_v6_1T": 1.6,
+   "v7best_over_v6_32T": 1.262,
+   "v7best_over_v5_1T": 1.513,
+   "v7best_over_aligned_1T": 2.181
+  }
+ },
+ "taxi2024": {
+  "v7_T8": {
+   "full": 140.2,
+   "setup": 105.7,
+   "execute": 18.1,
+   "extract": 13.3,
+   "rss": 182820
+  },
+  "v7_T32": {
+   "full": 149.6,
+   "setup": 111.7,
+   "execute": 20.5,
+   "extract": 14.4,
+   "rss": 220460
+  },
+  "v7_T64": {
+   "full": 154.6,
+   "setup": 127.5,
+   "execute": 9.8,
+   "extract": 14.2,
+   "rss": 224660
+  },
+  "v6_T32": {
+   "full": 155.7,
+   "setup": 90.3,
+   "execute": 48.6,
+   "extract": 13.7,
+   "rss": 171438
+  },
+  "v6_T1": {
+   "full": 199.3,
+   "setup": 134.3,
+   "execute": 48.3,
+   "extract": 13.6,
+   "rss": 158068
+  },
+  "v5_T1": {
+   "full": 194.1,
+   "setup": 128.3,
+   "execute": 48.9,
+   "extract": 13.9,
+   "rss": 161288
+  },
+  "aligned_T1": {
+   "full": 293.8,
+   "setup": 171.8,
+   "execute": 101.2,
+   "extract": 13.9,
+   "rss": 147144
+  },
+  "best_v7": 140.2,
+  "best_threads": [
+   8
+  ],
+  "ratios": {
+   "v7best_over_v6_1T": 1.422,
+   "v7best_over_v6_32T": 1.111,
+   "v7best_over_v5_1T": 1.384,
+   "v7best_over_aligned_1T": 2.096
+  }
+ }
+}

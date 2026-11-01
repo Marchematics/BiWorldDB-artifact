@@ -1,0 +1,73 @@
+{
+ "panel": "formal 54-fixture Intel roster, 2 fresh-process repeats per engine/fixture",
+ "hybrid_source": "results/panel_pstate_20261025 (6 repeats, per-case medians)",
+ "cohorts": {
+  "q2": {
+   "dd": {
+    "wall_median": 2.5330058547693186,
+    "wall_min": 2.4581665293785324,
+    "wall_max": 2.598521207414944,
+    "work_median": 2.5119673087443486,
+    "work_min": 2.4548010213323894,
+    "work_max": 2.5812893059636166,
+    "wins": 18,
+    "cases": 18
+   },
+   "dbsp": {
+    "wall_median": 2.73853071226458,
+    "wall_min": 2.6647613077274417,
+    "wall_max": 2.801263028179721,
+    "work_median": 2.720862721928556,
+    "work_min": 2.643217277949704,
+    "work_max": 2.778164627542511,
+    "wins": 18,
+    "cases": 18
+   }
+  },
+  "q8": {
+   "dd": {
+    "wall_median": 3.0749211070250526,
+    "wall_min": 2.92786873117361,
+    "wall_max": 3.1898841951430827,
+    "work_median": 3.0609731679620236,
+    "work_min": 2.9180236574811844,
+    "work_max": 3.1790692000336067,
+    "wins": 18,
+    "cases": 18
+   },
+   "dbsp": {
+    "wall_median": 3.34215652271061,
+    "wall_min": 3.1915187687841144,
+    "wall_max": 3.3960721147104516,
+    "work_median": 3.3126440897075025,
+    "work_min": 3.160640582260954,
+    "work_max": 3.3597853938757924,
+    "wins": 18,
+    "cases": 18
+   }
+  },
+  "q32": {
+   "dd": {
+    "wall_median": 4.355803398468878,
+    "wall_min": 3.897353286452542,
+    "wall_max": 4.610589516394008,
+    "work_median": 4.378698883377415,
+    "work_min": 3.894383180448399,
+    "work_max": 4.626445715193337,
+    "wins": 18,
+    "cases": 18
+   },
+   "dbsp": {
+    "wall_median": 4.773961734878895,
+    "wall_min": 4.2262849219565615,
+    "wall_max": 5.379954129832199,
+    "work_median": 4.777137552828584,
+    "work_min": 4.214368012100031,
+    "work_max": 5.3800155558818235,
+    "wins": 18,
+    "cases": 18
+   }
+  }
+ },
+ "all_exact": true
+}

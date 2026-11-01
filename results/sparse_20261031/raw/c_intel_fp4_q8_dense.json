@@ -1,0 +1,28 @@
+{
+ "arm": "hybrid",
+ "arm_mode": "hybrid",
+ "base_id": "intel",
+ "fixture": "artifact/intel.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 4,
+ "q": 8,
+ "repeat": 0,
+ "n_states": 2049,
+ "n_answers": 16384,
+ "range_scope": "per_state",
+ "cold": false,
+ "preload_fadvise_dontneed": false,
+ "sparse_base_env": "auto",
+ "answers_fn": "6e2de5ecbf0d446c",
+ "answers_sha256": "3522bea8ac415bdbc4f938f8ef46ceebd16faf07035752396cf083c42ef82762",
+ "phases_ns": {
+  "load": 68468,
+  "setup": 32922178,
+  "execute": 3894651,
+  "extract": 2026885,
+  "cleanup": 3867702
+ },
+ "full_ns": 42779884,
+ "peak_rss_kb": 72756
+}

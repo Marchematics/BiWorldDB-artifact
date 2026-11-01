@@ -1,0 +1,193 @@
+kind	Q	arm_or_numerator	denominator	metric	unit	estimate	conditional_interval_low	conditional_interval_high	case_min	case_max	cases	paired_repeats	denominator_wins	ties	numerator_wins	scope
+arm_phase	2	hybrid		wall	s	0.101870			0.099184	0.103413	18	6				intel_q2
+arm_phase	2	hybrid		full	s	0.098483			0.095726	0.100053	18	6				intel_q2
+arm_phase	2	hybrid		load	s	0.032775			0.032204	0.033120	18	6				intel_q2
+arm_phase	2	hybrid		setup	s	0.054690			0.053224	0.056610	18	6				intel_q2
+arm_phase	2	hybrid		execute	s	0.001633			0.001313	0.002293	18	6				intel_q2
+arm_phase	2	hybrid		extract	s	0.000672			0.000258	0.000837	18	6				intel_q2
+arm_phase	2	hybrid		cleanup	s	0.008177			0.007761	0.008292	18	6				intel_q2
+arm_phase	2	hybrid		peak_rss	MiB	105.78			105.72	105.92	18	6				intel_q2
+arm_phase	2	full_raw		wall	s	0.401596			0.394828	0.406798	18	6				intel_q2
+arm_phase	2	full_raw		full	s	0.397527			0.389882	0.402683	18	6				intel_q2
+arm_phase	2	full_raw		load	s	0.032311			0.031868	0.032846	18	6				intel_q2
+arm_phase	2	full_raw		setup	s	0.310125			0.302782	0.315607	18	6				intel_q2
+arm_phase	2	full_raw		execute	s	0.044011			0.043052	0.044779	18	6				intel_q2
+arm_phase	2	full_raw		extract	s	0.000759			0.000271	0.001070	18	6				intel_q2
+arm_phase	2	full_raw		cleanup	s	0.009988			0.008928	0.010136	18	6				intel_q2
+arm_phase	2	full_raw		peak_rss	MiB	181.57			181.50	181.64	18	6				intel_q2
+arm_phase	2	full_projected		wall	s	0.216751			0.212047	0.219411	18	6				intel_q2
+arm_phase	2	full_projected		full	s	0.212343			0.207515	0.214785	18	6				intel_q2
+arm_phase	2	full_projected		load	s	0.032628			0.032122	0.033169	18	6				intel_q2
+arm_phase	2	full_projected		setup	s	0.148970			0.144759	0.151503	18	6				intel_q2
+arm_phase	2	full_projected		execute	s	0.020720			0.020286	0.021088	18	6				intel_q2
+arm_phase	2	full_projected		extract	s	0.000739			0.000263	0.001223	18	6				intel_q2
+arm_phase	2	full_projected		cleanup	s	0.009076			0.008778	0.009282	18	6				intel_q2
+arm_phase	2	full_projected		peak_rss	MiB	131.31			131.25	131.38	18	6				intel_q2
+contrast	2	full_raw	hybrid	wall	ratio	3.932733	3.920768	3.966938	3.876573	4.046775	18	6	0	0	18	intel_q2|conditional_repeat_noise
+contrast	2	full_projected	hybrid	wall	ratio	2.124984	2.117894	2.136349	2.067647	2.184051	18	6	0	0	18	intel_q2|conditional_repeat_noise
+envelope	2	envelope	hybrid	wall	ratio	2.124984	2.117894	2.136349	2.067647	2.184051	18	6	0	0	18	intel_q2|conditional_repeat_noise
+sensitivity	2	min_full_state	hybrid	wall	ratio	2.129815	2.115993	2.137787	2.050589	2.175982	18	6	0	0	18	intel_q2|conditional_repeat_noise
+contrast	2	full_raw	hybrid	full	ratio	4.018734	4.012710	4.065343	3.958729	4.144638	18	6	0	0	18	intel_q2|conditional_repeat_noise
+contrast	2	full_projected	hybrid	full	ratio	2.152052	2.147202	2.165293	2.099286	2.215291	18	6	0	0	18	intel_q2|conditional_repeat_noise
+envelope	2	envelope	hybrid	full	ratio	2.152052	2.147202	2.165293	2.099286	2.215291	18	6	0	0	18	intel_q2|conditional_repeat_noise
+sensitivity	2	min_full_state	hybrid	full	ratio	2.157719	2.145439	2.166832	2.087808	2.212963	18	6	0	0	18	intel_q2|conditional_repeat_noise
+contrast	2	full_raw	hybrid	peak_rss	ratio	1.716400	1.716103	1.716918	1.714017	1.718178	18	6	0	0	18	intel_q2|conditional_repeat_noise
+contrast	2	full_projected	hybrid	peak_rss	ratio	1.241329	1.240957	1.241539	1.239708	1.242505	18	6	0	0	18	intel_q2|conditional_repeat_noise
+envelope	2	envelope	hybrid	peak_rss	ratio	1.241329	1.240957	1.241539	1.239708	1.242505	18	6	0	0	18	intel_q2|conditional_repeat_noise
+sensitivity	2	min_full_state	hybrid	peak_rss	ratio	1.241244	1.240946	1.241518	1.239601	1.242444	18	6	0	0	18	intel_q2|conditional_repeat_noise
+bootstrap	2	envelope	hybrid	wall	ratio	2.128115	2.117894	2.136349			18	6				intel_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	min_full_state	hybrid	wall	ratio	2.127311	2.115993	2.137787			18	6				intel_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_raw	hybrid	wall	ratio	3.944367	3.920768	3.966938			18	6				intel_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_projected	hybrid	wall	ratio	2.128115	2.117894	2.136349			18	6				intel_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	envelope	hybrid	full	ratio	2.154822	2.147202	2.165293			18	6				intel_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	min_full_state	hybrid	full	ratio	2.155097	2.145439	2.166832			18	6				intel_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_raw	hybrid	full	ratio	4.038018	4.012710	4.065343			18	6				intel_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_projected	hybrid	full	ratio	2.154822	2.147202	2.165293			18	6				intel_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	envelope	hybrid	peak_rss	ratio	1.241247	1.240957	1.241539			18	6				intel_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	min_full_state	hybrid	peak_rss	ratio	1.241226	1.240946	1.241518			18	6				intel_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_raw	hybrid	peak_rss	ratio	1.716445	1.716103	1.716918			18	6				intel_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_projected	hybrid	peak_rss	ratio	1.241247	1.240957	1.241539			18	6				intel_q2|conditional_repeat_noise|draws=2000|seed=20261025
+arm_phase	8	hybrid		wall	s	0.145879			0.143023	0.151546	18	6				intel_q8
+arm_phase	8	hybrid		full	s	0.141869			0.139815	0.147850	18	6				intel_q8
+arm_phase	8	hybrid		load	s	0.032729			0.032348	0.033214	18	6				intel_q8
+arm_phase	8	hybrid		setup	s	0.094782			0.094005	0.095610	18	6				intel_q8
+arm_phase	8	hybrid		execute	s	0.004544			0.003466	0.009290	18	6				intel_q8
+arm_phase	8	hybrid		extract	s	0.001208			0.001130	0.001264	18	6				intel_q8
+arm_phase	8	hybrid		cleanup	s	0.009082			0.008677	0.009173	18	6				intel_q8
+arm_phase	8	hybrid		peak_rss	MiB	117.62			117.54	117.69	18	6				intel_q8
+arm_phase	8	full_raw		wall	s	0.578280			0.567259	0.587685	18	6				intel_q8
+arm_phase	8	full_raw		full	s	0.574048			0.563256	0.583329	18	6				intel_q8
+arm_phase	8	full_raw		load	s	0.032565			0.032185	0.033210	18	6				intel_q8
+arm_phase	8	full_raw		setup	s	0.311178			0.303558	0.316294	18	6				intel_q8
+arm_phase	8	full_raw		execute	s	0.218532			0.216071	0.224211	18	6				intel_q8
+arm_phase	8	full_raw		extract	s	0.001379			0.000907	0.001696	18	6				intel_q8
+arm_phase	8	full_raw		cleanup	s	0.010002			0.009221	0.010151	18	6				intel_q8
+arm_phase	8	full_raw		peak_rss	MiB	181.78			181.71	181.81	18	6				intel_q8
+arm_phase	8	full_projected		wall	s	0.431361			0.429004	0.437072	18	6				intel_q8
+arm_phase	8	full_projected		full	s	0.426977			0.424333	0.432444	18	6				intel_q8
+arm_phase	8	full_projected		load	s	0.032775			0.032054	0.033461	18	6				intel_q8
+arm_phase	8	full_projected		setup	s	0.221088			0.218177	0.226440	18	6				intel_q8
+arm_phase	8	full_projected		execute	s	0.162271			0.160719	0.163454	18	6				intel_q8
+arm_phase	8	full_projected		extract	s	0.001315			0.000952	0.001967	18	6				intel_q8
+arm_phase	8	full_projected		cleanup	s	0.009885			0.009647	0.009994	18	6				intel_q8
+arm_phase	8	full_projected		peak_rss	MiB	141.88			141.78	141.92	18	6				intel_q8
+contrast	8	full_raw	hybrid	wall	ratio	3.963329	3.938828	3.979758	3.798205	4.055659	18	6	0	0	18	intel_q8|conditional_repeat_noise
+contrast	8	full_projected	hybrid	wall	ratio	2.972960	2.949699	2.978968	2.838065	3.022385	18	6	0	0	18	intel_q8|conditional_repeat_noise
+envelope	8	envelope	hybrid	wall	ratio	2.972960	2.949699	2.978968	2.838065	3.022385	18	6	0	0	18	intel_q8|conditional_repeat_noise
+sensitivity	8	min_full_state	hybrid	wall	ratio	2.958056	2.942877	2.976673	2.833625	3.011532	18	6	0	0	18	intel_q8|conditional_repeat_noise
+contrast	8	full_raw	hybrid	full	ratio	4.029769	4.009629	4.051470	3.864615	4.120810	18	6	0	0	18	intel_q8|conditional_repeat_noise
+contrast	8	full_projected	hybrid	full	ratio	3.014645	2.993580	3.021011	2.876967	3.064404	18	6	0	0	18	intel_q8|conditional_repeat_noise
+envelope	8	envelope	hybrid	full	ratio	3.014645	2.993580	3.021011	2.876967	3.064404	18	6	0	0	18	intel_q8|conditional_repeat_noise
+sensitivity	8	min_full_state	hybrid	full	ratio	3.003639	2.989639	3.018716	2.873263	3.051437	18	6	0	0	18	intel_q8|conditional_repeat_noise
+contrast	8	full_raw	hybrid	peak_rss	ratio	1.545473	1.545127	1.545693	1.544855	1.546515	18	6	0	0	18	intel_q8|conditional_repeat_noise
+contrast	8	full_projected	hybrid	peak_rss	ratio	1.206293	1.205967	1.206500	1.205306	1.207225	18	6	0	0	18	intel_q8|conditional_repeat_noise
+envelope	8	envelope	hybrid	peak_rss	ratio	1.206293	1.205967	1.206500	1.205306	1.207225	18	6	0	0	18	intel_q8|conditional_repeat_noise
+sensitivity	8	min_full_state	hybrid	peak_rss	ratio	1.206298	1.205958	1.206516	1.205253	1.207308	18	6	0	0	18	intel_q8|conditional_repeat_noise
+bootstrap	8	envelope	hybrid	wall	ratio	2.967753	2.949699	2.978968			18	6				intel_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	min_full_state	hybrid	wall	ratio	2.962120	2.942877	2.976673			18	6				intel_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_raw	hybrid	wall	ratio	3.959955	3.938828	3.979758			18	6				intel_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_projected	hybrid	wall	ratio	2.967753	2.949699	2.978968			18	6				intel_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	envelope	hybrid	full	ratio	3.010650	2.993580	3.021011			18	6				intel_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	min_full_state	hybrid	full	ratio	3.005428	2.989639	3.018716			18	6				intel_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_raw	hybrid	full	ratio	4.030451	4.009629	4.051470			18	6				intel_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_projected	hybrid	full	ratio	3.010650	2.993580	3.021011			18	6				intel_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	envelope	hybrid	peak_rss	ratio	1.206255	1.205967	1.206500			18	6				intel_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	min_full_state	hybrid	peak_rss	ratio	1.206251	1.205958	1.206516			18	6				intel_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_raw	hybrid	peak_rss	ratio	1.545406	1.545127	1.545693			18	6				intel_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_projected	hybrid	peak_rss	ratio	1.206255	1.205967	1.206500			18	6				intel_q8|conditional_repeat_noise|draws=2000|seed=20261025
+arm_phase	32	hybrid		wall	s	0.206973			0.200105	0.232300	18	6				intel_q32
+arm_phase	32	hybrid		full	s	0.203420			0.196723	0.228969	18	6				intel_q32
+arm_phase	32	hybrid		load	s	0.032791			0.031967	0.033702	18	6				intel_q32
+arm_phase	32	hybrid		setup	s	0.141135			0.140471	0.142504	18	6				intel_q32
+arm_phase	32	hybrid		execute	s	0.013068			0.009044	0.038062	18	6				intel_q32
+arm_phase	32	hybrid		extract	s	0.003202			0.002908	0.003292	18	6				intel_q32
+arm_phase	32	hybrid		cleanup	s	0.012385			0.012082	0.012603	18	6				intel_q32
+arm_phase	32	hybrid		peak_rss	MiB	165.28			165.04	165.37	18	6				intel_q32
+arm_phase	32	full_raw		wall	s	1.026757			1.013522	1.037995	18	6				intel_q32
+arm_phase	32	full_raw		full	s	1.018939			1.005955	1.030474	18	6				intel_q32
+arm_phase	32	full_raw		load	s	0.032640			0.032223	0.033209	18	6				intel_q32
+arm_phase	32	full_raw		setup	s	0.316078			0.309979	0.322658	18	6				intel_q32
+arm_phase	32	full_raw		execute	s	0.659741			0.651296	0.666324	18	6				intel_q32
+arm_phase	32	full_raw		extract	s	0.003230			0.002936	0.004042	18	6				intel_q32
+arm_phase	32	full_raw		cleanup	s	0.006407			0.006274	0.009181	18	6				intel_q32
+arm_phase	32	full_raw		peak_rss	MiB	182.50			182.41	182.61	18	6				intel_q32
+arm_phase	32	full_projected		wall	s	0.917885			0.914514	0.928707	18	6				intel_q32
+arm_phase	32	full_projected		full	s	0.913743			0.910048	0.924031	18	6				intel_q32
+arm_phase	32	full_projected		load	s	0.032640			0.032204	0.033420	18	6				intel_q32
+arm_phase	32	full_projected		setup	s	0.271307			0.268631	0.279931	18	6				intel_q32
+arm_phase	32	full_projected		execute	s	0.594746			0.587157	0.598379	18	6				intel_q32
+arm_phase	32	full_projected		extract	s	0.003176			0.002736	0.003810	18	6				intel_q32
+arm_phase	32	full_projected		cleanup	s	0.011696			0.011529	0.011914	18	6				intel_q32
+arm_phase	32	full_projected		peak_rss	MiB	168.39			168.28	168.63	18	6				intel_q32
+contrast	32	full_raw	hybrid	wall	ratio	4.956201	4.903765	5.026728	4.423132	5.127635	18	6	0	0	18	intel_q32|conditional_repeat_noise
+contrast	32	full_projected	hybrid	wall	ratio	4.440473	4.387200	4.464666	3.946104	4.577197	18	6	0	0	18	intel_q32|conditional_repeat_noise
+envelope	32	envelope	hybrid	wall	ratio	4.440473	4.387200	4.464666	3.946104	4.577197	18	6	0	0	18	intel_q32|conditional_repeat_noise
+sensitivity	32	min_full_state	hybrid	wall	ratio	4.438541	4.378390	4.464526	3.941068	4.587735	18	6	0	0	18	intel_q32|conditional_repeat_noise
+contrast	32	full_raw	hybrid	full	ratio	5.011252	4.949155	5.075268	4.457539	5.171793	18	6	0	0	18	intel_q32|conditional_repeat_noise
+contrast	32	full_projected	hybrid	full	ratio	4.505911	4.447021	4.521367	3.981428	4.633985	18	6	0	0	18	intel_q32|conditional_repeat_noise
+envelope	32	envelope	hybrid	full	ratio	4.505911	4.447021	4.521367	3.981428	4.633985	18	6	0	0	18	intel_q32|conditional_repeat_noise
+sensitivity	32	min_full_state	hybrid	full	ratio	4.491741	4.437260	4.520472	3.978104	4.645081	18	6	0	0	18	intel_q32|conditional_repeat_noise
+contrast	32	full_raw	hybrid	peak_rss	ratio	1.104642	1.104379	1.104997	1.103616	1.106072	18	6	0	0	18	intel_q32|conditional_repeat_noise
+contrast	32	full_projected	hybrid	peak_rss	ratio	1.019355	1.018988	1.019748	1.018115	1.020272	18	6	0	0	18	intel_q32|conditional_repeat_noise
+envelope	32	envelope	hybrid	peak_rss	ratio	1.019355	1.018988	1.019748	1.018115	1.020272	18	6	0	0	18	intel_q32|conditional_repeat_noise
+sensitivity	32	min_full_state	hybrid	peak_rss	ratio	1.019255	1.018968	1.019703	1.018079	1.020232	18	6	0	0	18	intel_q32|conditional_repeat_noise
+bootstrap	32	envelope	hybrid	wall	ratio	4.440175	4.387200	4.464666			18	6				intel_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	min_full_state	hybrid	wall	ratio	4.432524	4.378390	4.464526			18	6				intel_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_raw	hybrid	wall	ratio	4.954370	4.903765	5.026728			18	6				intel_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_projected	hybrid	wall	ratio	4.440175	4.387200	4.464666			18	6				intel_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	envelope	hybrid	full	ratio	4.498775	4.447021	4.521367			18	6				intel_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	min_full_state	hybrid	full	ratio	4.490053	4.437260	4.520472			18	6				intel_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_raw	hybrid	full	ratio	5.005577	4.949155	5.075268			18	6				intel_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_projected	hybrid	full	ratio	4.498775	4.447021	4.521367			18	6				intel_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	envelope	hybrid	peak_rss	ratio	1.019365	1.018988	1.019748			18	6				intel_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	min_full_state	hybrid	peak_rss	ratio	1.019329	1.018968	1.019703			18	6				intel_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_raw	hybrid	peak_rss	ratio	1.104636	1.104379	1.104997			18	6				intel_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_projected	hybrid	peak_rss	ratio	1.019365	1.018988	1.019748			18	6				intel_q32|conditional_repeat_noise|draws=2000|seed=20261025
+arm_phase	2	hybrid		wall	s	0.020394			0.020012	0.022532	18	6				uci501_q2
+arm_phase	2	hybrid		full	s	0.017062			0.016606	0.019161	18	6				uci501_q2
+arm_phase	2	hybrid		load	s	0.005162			0.005065	0.005305	18	6				uci501_q2
+arm_phase	2	hybrid		setup	s	0.008431			0.008284	0.008480	18	6				uci501_q2
+arm_phase	2	hybrid		execute	s	0.001338			0.001096	0.003049	18	6				uci501_q2
+arm_phase	2	hybrid		extract	s	0.000460			0.000237	0.000521	18	6				uci501_q2
+arm_phase	2	hybrid		cleanup	s	0.001630			0.001608	0.001660	18	6				uci501_q2
+arm_phase	2	hybrid		peak_rss	MiB	26.61			26.55	26.68	18	6				uci501_q2
+arm_phase	2	full_raw		wall	s	0.068990			0.066473	0.070145	18	6				uci501_q2
+arm_phase	2	full_raw		full	s	0.065743			0.063338	0.066786	18	6				uci501_q2
+arm_phase	2	full_raw		load	s	0.005050			0.004994	0.005322	18	6				uci501_q2
+arm_phase	2	full_raw		setup	s	0.049691			0.047555	0.050848	18	6				uci501_q2
+arm_phase	2	full_raw		execute	s	0.008468			0.008360	0.008655	18	6				uci501_q2
+arm_phase	2	full_raw		extract	s	0.000595			0.000253	0.000755	18	6				uci501_q2
+arm_phase	2	full_raw		cleanup	s	0.001713			0.001688	0.001747	18	6				uci501_q2
+arm_phase	2	full_raw		peak_rss	MiB	35.77			35.71	35.82	18	6				uci501_q2
+arm_phase	2	full_projected		wall	s	0.047186			0.045264	0.048527	18	6				uci501_q2
+arm_phase	2	full_projected		full	s	0.043798			0.041741	0.045016	18	6				uci501_q2
+arm_phase	2	full_projected		load	s	0.005140			0.005049	0.005392	18	6				uci501_q2
+arm_phase	2	full_projected		setup	s	0.031851			0.029531	0.033031	18	6				uci501_q2
+arm_phase	2	full_projected		execute	s	0.004933			0.004733	0.005064	18	6				uci501_q2
+arm_phase	2	full_projected		extract	s	0.000528			0.000236	0.000577	18	6				uci501_q2
+arm_phase	2	full_projected		cleanup	s	0.001513			0.001475	0.001547	18	6				uci501_q2
+arm_phase	2	full_projected		peak_rss	MiB	25.40			25.36	25.49	18	6				uci501_q2
+contrast	2	full_raw	hybrid	wall	ratio	3.382105	3.327433	3.402476	2.936953	3.452564	18	6	0	0	18	uci501_q2|conditional_repeat_noise
+contrast	2	full_projected	hybrid	wall	ratio	2.301738	2.275220	2.331619	2.013989	2.449105	18	6	0	0	18	uci501_q2|conditional_repeat_noise
+envelope	2	envelope	hybrid	wall	ratio	2.301738	2.275220	2.331619	2.013989	2.449105	18	6	0	0	18	uci501_q2|conditional_repeat_noise
+sensitivity	2	min_full_state	hybrid	wall	ratio	2.293867	2.269505	2.326171	2.008907	2.409927	18	6	0	0	18	uci501_q2|conditional_repeat_noise
+contrast	2	full_raw	hybrid	full	ratio	3.849997	3.792600	3.878249	3.283833	3.941142	18	6	0	0	18	uci501_q2|conditional_repeat_noise
+contrast	2	full_projected	hybrid	full	ratio	2.564058	2.515276	2.590441	2.182534	2.721904	18	6	0	0	18	uci501_q2|conditional_repeat_noise
+envelope	2	envelope	hybrid	full	ratio	2.564058	2.515276	2.590441	2.182534	2.721904	18	6	0	0	18	uci501_q2|conditional_repeat_noise
+sensitivity	2	min_full_state	hybrid	full	ratio	2.547715	2.511438	2.584077	2.178400	2.700236	18	6	0	0	18	uci501_q2|conditional_repeat_noise
+contrast	2	full_raw	hybrid	peak_rss	ratio	1.342929	1.342538	1.345159	1.339649	1.349142	18	6	0	0	18	uci501_q2|conditional_repeat_noise
+contrast	2	full_projected	hybrid	peak_rss	ratio	0.954919	0.953452	0.955759	0.950436	0.960200	18	6	18	0	0	uci501_q2|conditional_repeat_noise
+envelope	2	envelope	hybrid	peak_rss	ratio	0.954919	0.953452	0.955759	0.950436	0.960200	18	6	18	0	0	uci501_q2|conditional_repeat_noise
+sensitivity	2	min_full_state	hybrid	peak_rss	ratio	0.954666	0.953418	0.955748	0.950878	0.959979	18	6	18	0	0	uci501_q2|conditional_repeat_noise
+bootstrap	2	envelope	hybrid	wall	ratio	2.310128	2.275220	2.331619			18	6				uci501_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	min_full_state	hybrid	wall	ratio	2.301877	2.269505	2.326171			18	6				uci501_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_raw	hybrid	wall	ratio	3.373620	3.327433	3.402476			18	6				uci501_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_projected	hybrid	wall	ratio	2.310128	2.275220	2.331619			18	6				uci501_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	envelope	hybrid	full	ratio	2.560393	2.515276	2.590441			18	6				uci501_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	min_full_state	hybrid	full	ratio	2.551744	2.511438	2.584077			18	6				uci501_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_raw	hybrid	full	ratio	3.837556	3.792600	3.878249			18	6				uci501_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_projected	hybrid	full	ratio	2.560393	2.515276	2.590441			18	6				uci501_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	envelope	hybrid	peak_rss	ratio	0.954691	0.953452	0.955759			18	6				uci501_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	min_full_state	hybrid	peak_rss	ratio	0.954492	0.953418	0.955748			18	6				uci501_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_raw	hybrid	peak_rss	ratio	1.343775	1.342538	1.345159			18	6				uci501_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_projected	hybrid	peak_rss	ratio	0.954691	0.953452	0.955759			18	6				uci501_q2|conditional_repeat_noise|draws=2000|seed=20261025

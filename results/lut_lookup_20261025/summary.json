@@ -1,0 +1,50 @@
+{
+ "note": "Interleaved same-window benchmark on one pinned core, 7 repetitions each, old (bin/panel_mmap, zero-copy loader only) versus new (same binary source, BWH_CLASS_LUT=1 bucketed endpoint-class lookup); medians interpreted only within-window. Host load ~91-95 (shared, recorded).",
+ "rows": [
+  {
+   "cohort": "Intel Q2",
+   "base_total_ms": 154.1,
+   "lut_total_ms": 149.3,
+   "gain_pct": 3.1,
+   "base_setup_ms": 130.5,
+   "lut_setup_ms": 128.4,
+   "n": 7
+  },
+  {
+   "cohort": "Intel Q32",
+   "base_total_ms": 445.2,
+   "lut_total_ms": 339.9,
+   "gain_pct": 23.7,
+   "base_setup_ms": 319.8,
+   "lut_setup_ms": 227.0,
+   "n": 7
+  },
+  {
+   "cohort": "Taxi Q2",
+   "base_total_ms": 192.6,
+   "lut_total_ms": 191.5,
+   "gain_pct": 0.6,
+   "base_setup_ms": 164.9,
+   "lut_setup_ms": 164.0,
+   "n": 7
+  },
+  {
+   "cohort": "Taxi Q32",
+   "base_total_ms": 779.1,
+   "lut_total_ms": 647.1,
+   "gain_pct": 17.0,
+   "base_setup_ms": 614.2,
+   "lut_setup_ms": 476.2,
+   "n": 7
+  },
+  {
+   "cohort": "Retail Q2",
+   "base_total_ms": 77.9,
+   "lut_total_ms": 72.0,
+   "gain_pct": 7.5,
+   "base_setup_ms": 63.7,
+   "lut_setup_ms": 48.4,
+   "n": 7
+  }
+ ]
+}

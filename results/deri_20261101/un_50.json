@@ -1,0 +1,31 @@
+{
+ "arm": "union",
+ "base_id": "intel",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 0,
+ "adhoc_fraction": 50,
+ "n_states": 300000,
+ "answers_n": 599998,
+ "range_scope": "per_state",
+ "phases_ns": {
+  "load": 35672,
+  "setup": 468855317,
+  "execute": 151308278,
+  "extract": 8205864,
+  "cleanup": 3929878
+ },
+ "deri": {
+  "build_ns": 341334263,
+  "first_query_ns": -1,
+  "adhoc_query_total_ns": 0,
+  "adhoc_query_count": 0,
+  "per_adhoc_query_ns": 0,
+  "gen_ns": 99478903
+ },
+ "pool": 1024,
+ "full_ns": 632335009,
+ "peak_rss_kb": 350156
+}

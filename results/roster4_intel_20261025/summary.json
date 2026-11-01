@@ -1,0 +1,41 @@
+{
+ "run": "results/roster4_intel_20261025",
+ "answers_checked": 324,
+ "answers_bad": [],
+ "fixtures": 54,
+ "rows": [
+  {
+   "cohort": "Q2",
+   "cases": 18,
+   "dd_median": 8.13,
+   "dd_min": 7.51,
+   "dd_max": 9.62,
+   "dbsp_median": 8.42,
+   "dbsp_min": 7.48,
+   "dbsp_max": 11.49,
+   "wins": 18
+  },
+  {
+   "cohort": "Q8",
+   "cases": 18,
+   "dd_median": 10.07,
+   "dd_min": 8.61,
+   "dd_max": 18.68,
+   "dbsp_median": 10.72,
+   "dbsp_min": 9.04,
+   "dbsp_max": 12.9,
+   "wins": 18
+  },
+  {
+   "cohort": "Q32",
+   "cases": 18,
+   "dd_median": 9.58,
+   "dd_min": 7.46,
+   "dd_max": 14.22,
+   "dbsp_median": 10.47,
+   "dbsp_min": 7.89,
+   "dbsp_max": 13.71,
+   "wins": 18
+  }
+ ]
+}

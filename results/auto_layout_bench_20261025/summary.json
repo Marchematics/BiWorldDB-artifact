@@ -1,0 +1,59 @@
+{
+ "note": "Adaptive class-major selection (BWH_TRANSPOSE_BASEP=auto) versus the default row-major layout: interleaved same-window, 5 repetitions each, one pinned core, host load ~97 recorded; only within-window relative gains are interpreted.",
+ "rows": [
+  {
+   "cohort": "Taxi Q32 fp4",
+   "default_total_ms": 498.8,
+   "auto_total_ms": 337.4,
+   "gain_pct": 32.4,
+   "default_execute_ms": 199.8,
+   "auto_execute_ms": 57.3,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q8 fp4",
+   "default_total_ms": 174.9,
+   "auto_total_ms": 176.3,
+   "gain_pct": -0.8,
+   "default_execute_ms": 42.3,
+   "auto_execute_ms": 15.0,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q32 fp37",
+   "default_total_ms": 333.7,
+   "auto_total_ms": 316.4,
+   "gain_pct": 5.2,
+   "default_execute_ms": 51.6,
+   "auto_execute_ms": 42.0,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q32 fp37",
+   "default_total_ms": 180.3,
+   "auto_total_ms": 159.9,
+   "gain_pct": 11.3,
+   "default_execute_ms": 38.9,
+   "auto_execute_ms": 37.1,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q2 fp37",
+   "default_total_ms": 69.4,
+   "auto_total_ms": 71.5,
+   "gain_pct": -3.0,
+   "default_execute_ms": 2.1,
+   "auto_execute_ms": 2.3,
+   "n": 5
+  },
+  {
+   "cohort": "Retail Q32 fp37",
+   "default_total_ms": 90.2,
+   "auto_total_ms": 95.4,
+   "gain_pct": -5.8,
+   "default_execute_ms": 26.0,
+   "auto_execute_ms": 27.5,
+   "n": 5
+  }
+ ]
+}

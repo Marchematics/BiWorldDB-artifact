@@ -1,0 +1,45 @@
+{
+ "note": "fair per-group delta Fenwick baseline (pgd) vs production hybrid at 100k/300k versions, factor period 37, Q2, chain seed 7; answers byte-identical; production hybrid uses the extended class-major layout rule (C>=2^18)",
+ "rows": [
+  {
+   "base": "intel",
+   "states": 100000,
+   "fp": 37,
+   "q": 2,
+   "hybrid_ms": 329.0,
+   "pgd_ms": 380.3,
+   "hybrid_speedup_vs_pgd": 1.16,
+   "exact": true
+  },
+  {
+   "base": "taxi",
+   "states": 100000,
+   "fp": 37,
+   "q": 2,
+   "hybrid_ms": 399.7,
+   "pgd_ms": 908.5,
+   "hybrid_speedup_vs_pgd": 2.27,
+   "exact": true
+  },
+  {
+   "base": "intel",
+   "states": 300000,
+   "fp": 37,
+   "q": 2,
+   "hybrid_ms": 952.6,
+   "pgd_ms": 1007.1,
+   "hybrid_speedup_vs_pgd": 1.06,
+   "exact": true
+  },
+  {
+   "base": "taxi",
+   "states": 300000,
+   "fp": 37,
+   "q": 2,
+   "hybrid_ms": 1134.0,
+   "pgd_ms": 2579.9,
+   "hybrid_speedup_vs_pgd": 2.28,
+   "exact": true
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "arm": "deri",
+ "base_id": "intel",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 0,
+ "adhoc_fraction": 20,
+ "n_states": 300000,
+ "answers_n": 599998,
+ "range_scope": "per_state",
+ "phases_ns": {
+  "load": 58364,
+  "setup": 281193810,
+  "execute": 4699266898,
+  "extract": 7186977,
+  "cleanup": 2708385
+ },
+ "deri": {
+  "build_ns": 235191258,
+  "first_query_ns": 20659592,
+  "adhoc_query_total_ns": 933654141,
+  "adhoc_query_count": 119982,
+  "per_adhoc_query_ns": 7781,
+  "gen_ns": 29334510
+ },
+ "full_ns": 4990414434,
+ "peak_rss_kb": 268920
+}

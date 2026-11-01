@@ -1,0 +1,83 @@
+{
+ "model": "artifact/Llama-3.2-1B-Instruct",
+ "ruler": "artifact/ruler_subset.jsonl",
+ "config": {
+  "model": "artifact/Llama-3.2-1B-Instruct",
+  "ruler_jsonl": "artifact/ruler_subset.jsonl",
+  "tasks": [
+   "niah_multikey_2"
+  ],
+  "lengths": null,
+  "max_records": null,
+  "max_per_task": 1,
+  "policies": [
+   "full",
+   "bounded"
+  ],
+  "budgets": [
+   4096
+  ],
+  "obs": 64,
+  "nsink": 4,
+  "pool": 7,
+  "dilate": 0,
+  "lex_cap": 512,
+  "hops": 0,
+  "key_chunk": 4096,
+  "blend_alpha": 0.5,
+  "accumulate_stride": 1,
+  "max_new": 24,
+  "prefill_chunk": 8192,
+  "no_answer_prefix": false,
+  "out": "artifact/r_smoke.json"
+ },
+ "results": [
+  {
+   "row_id": 0,
+   "task": "niah_multikey_2",
+   "length": 32678,
+   "length_bucket": null,
+   "context_tokens": 32550,
+   "policy": "full",
+   "budget": null,
+   "kept_slots": 32550,
+   "kept_slots_mean": 32550.0,
+   "prediction": "4498054.",
+   "generated": 5,
+   "outputs": [
+    "4498054"
+   ],
+   "answer_recall": 1.0,
+   "selection": null,
+   "decode_s": 0.1374,
+   "prefill_s": 3.087,
+   "peak_cuda_bytes": 5787276800
+  },
+  {
+   "row_id": 0,
+   "task": "niah_multikey_2",
+   "length": 32678,
+   "length_bucket": null,
+   "context_tokens": 32550,
+   "policy": "bounded",
+   "budget": 4096,
+   "kept_slots": 4096,
+   "kept_slots_mean": 4096.0,
+   "prediction": "123.",
+   "generated": 3,
+   "outputs": [
+    "4498054"
+   ],
+   "answer_recall": 0.0,
+   "selection": {
+    "units": 128,
+    "units_with_all_answer_tokens": 53,
+    "answer_token_keep_fraction": 0.4140625,
+    "all_answer_unit_fraction": 0.4140625
+   },
+   "decode_s": 0.0316,
+   "prefill_s": 3.087,
+   "peak_cuda_bytes": 5787276800
+  }
+ ]
+}

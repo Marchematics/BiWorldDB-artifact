@@ -1,0 +1,28 @@
+{
+ "arm": "full_projected",
+ "arm_mode": "full_projected",
+ "base_id": "syn2m512",
+ "fixture": "artifact/fix2m512.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 32,
+ "repeat": 0,
+ "n_states": 2049,
+ "n_answers": 65536,
+ "range_scope": "per_state",
+ "cold": false,
+ "preload_fadvise_dontneed": false,
+ "sparse_base_env": "auto",
+ "answers_fn": "783934fc91b31899",
+ "answers_sha256": "612ebb31cce90434fd3bbba0475fcce3a00df940315311aadb933897020b18a7",
+ "phases_ns": {
+  "load": 37053,
+  "setup": 568968150,
+  "execute": 3393972533,
+  "extract": 4010902,
+  "cleanup": 22272747
+ },
+ "full_ns": 3989261385,
+ "peak_rss_kb": 382908
+}

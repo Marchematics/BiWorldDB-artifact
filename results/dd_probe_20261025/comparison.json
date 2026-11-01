@@ -1,0 +1,101 @@
+{
+ "note": "bounded external Differential Dataflow 0.25.1 probe, single worker, authored prefix-Fenwick stateful operator fed by a differential collection of row deltas/factor sets/queries; 2 fresh-process repeats per fixture; all answers byte-exact vs oracle; wall = supervisor process wall, work = probe complete work (fixed timing: the first run double-counted execute and is superseded)",
+ "rows": [
+  {
+   "fixture": "intel_t0_s7_f37_q2",
+   "label": "chain Q2",
+   "hybrid_wall_s": 0.102407072,
+   "dd_wall_s": 0.2534674915,
+   "wall_ratio": 2.475097535256159,
+   "hybrid_work_s": 0.098796694,
+   "dd_work_s": 0.2440868725,
+   "work_ratio": 2.470597573841894,
+   "dd_peak_rss_mib": 119.462890625,
+   "dd_phase_ms": {
+    "load": 58.8,
+    "setup": 129.7,
+    "execute": 55.6,
+    "extract": 0.0
+   },
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "fixture": "intel_t1_s7_f37_q2",
+   "label": "bushy Q2",
+   "hybrid_wall_s": 0.100700602,
+   "dd_wall_s": 0.2545827825,
+   "wall_ratio": 2.528115795176676,
+   "hybrid_work_s": 0.0974936715,
+   "dd_work_s": 0.244479314,
+   "work_ratio": 2.507642908904092,
+   "dd_peak_rss_mib": 119.5546875,
+   "dd_phase_ms": {
+    "load": 61.3,
+    "setup": 129.5,
+    "execute": 53.6,
+    "extract": 0.1
+   },
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "fixture": "intel_t2_s7_f37_q2",
+   "label": "star Q2",
+   "hybrid_wall_s": 0.103102476,
+   "dd_wall_s": 0.2538342715,
+   "wall_ratio": 2.4619609668733853,
+   "hybrid_work_s": 0.1000526705,
+   "dd_work_s": 0.243052187,
+   "work_ratio": 2.4292423758944044,
+   "dd_peak_rss_mib": 119.5546875,
+   "dd_phase_ms": {
+    "load": 61.8,
+    "setup": 129.7,
+    "execute": 51.5,
+    "extract": 0.0
+   },
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "fixture": "intel_t0_s7_f37_q8",
+   "label": "chain Q8",
+   "hybrid_wall_s": 0.149299425,
+   "dd_wall_s": 0.441758465,
+   "wall_ratio": 2.9588758630517162,
+   "hybrid_work_s": 0.145425272,
+   "dd_work_s": 0.4289252255,
+   "work_ratio": 2.949454517781476,
+   "dd_peak_rss_mib": 120.8125,
+   "dd_phase_ms": {
+    "load": 61.6,
+    "setup": 129.3,
+    "execute": 238.0,
+    "extract": 0.0
+   },
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "fixture": "intel_t0_s7_f37_q32",
+   "label": "chain Q32",
+   "hybrid_wall_s": 0.2224460635,
+   "dd_wall_s": 0.8972643875,
+   "wall_ratio": 4.033626729025034,
+   "hybrid_work_s": 0.218750409,
+   "dd_work_s": 0.884431875,
+   "work_ratio": 4.0431095833973965,
+   "dd_peak_rss_mib": 125.4765625,
+   "dd_phase_ms": {
+    "load": 65.4,
+    "setup": 129.1,
+    "execute": 689.6,
+    "extract": 0.3
+   },
+   "exact": true,
+   "runs": 2
+  }
+ ],
+ "all_exact": true
+}

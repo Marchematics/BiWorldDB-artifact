@@ -1,0 +1,877 @@
+{
+ "note": "same-window interleaved probe of classic direct-algorithm arms (panel_classic: rf rollback Fenwick over raw ranks with eager factor materialization, rs rollback segment tree, pst persistent segment tree) against the shipped hybrid arm; every answer vector validated against the committed oracle index; work_ns = setup+execute medians; run labels: factor_sparse=fp37 chain, factor_heavy=fp4 chain (Intel/taxi/retail), pst=persistent tree fp37 q8, topo=bushy/star fp4/fp37, retail_sparse=retail fp37 chain",
+ "rows": [
+  {
+   "base": "intel",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 2,
+   "fid": "intel_t0_s7_f37_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 299849767.0,
+    "rs": 573192372.0,
+    "hybrid": 63219021.5
+   },
+   "run": "factor_sparse"
+  },
+  {
+   "base": "intel",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "intel_t0_s7_f37_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 304783392.5,
+    "rs": 603800410.5,
+    "hybrid": 107361073.5
+   },
+   "run": "factor_sparse"
+  },
+  {
+   "base": "intel",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "fid": "intel_t0_s7_f37_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 317497029.5,
+    "rs": 553560973.0,
+    "hybrid": 167609033.5
+   },
+   "run": "factor_sparse"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 2,
+   "fid": "taxi2024_t0_s7_f37_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 363667771.5,
+    "rs": 287271318.5,
+    "hybrid": 83533939.0
+   },
+   "run": "factor_sparse"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "taxi2024_t0_s7_f37_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 259194855.5,
+    "rs": 289274251.0,
+    "hybrid": 155477841.5
+   },
+   "run": "factor_sparse"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "fid": "taxi2024_t0_s7_f37_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 266520591.0,
+    "rs": 308441262.5,
+    "hybrid": 297352776.0
+   },
+   "run": "factor_sparse"
+  },
+  {
+   "base": "intel",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 2,
+   "fid": "intel_t0_s7_f4_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 1060119333.0,
+    "rs": 2933014731.0,
+    "hybrid": 62561081.0
+   },
+   "run": "factor_heavy"
+  },
+  {
+   "base": "intel",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "fid": "intel_t0_s7_f4_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 1055128869.0,
+    "rs": 2861422853.5,
+    "hybrid": 107846080.0
+   },
+   "run": "factor_heavy"
+  },
+  {
+   "base": "intel",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "fid": "intel_t0_s7_f4_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 1073879066.5,
+    "rs": 3104879387.0,
+    "hybrid": 180847875.5
+   },
+   "run": "factor_heavy"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 2,
+   "fid": "taxi2024_t0_s7_f4_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 732688544.5,
+    "rs": 1288514945.0,
+    "hybrid": 87584507.5
+   },
+   "run": "factor_heavy"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "fid": "taxi2024_t0_s7_f4_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 733652925.0,
+    "rs": 1297614337.0,
+    "hybrid": 184575569.5
+   },
+   "run": "factor_heavy"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "fid": "taxi2024_t0_s7_f4_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 745196364.5,
+    "rs": 1394139751.5,
+    "hybrid": 426294506.0
+   },
+   "run": "factor_heavy"
+  },
+  {
+   "base": "retail2009",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 2,
+   "fid": "retail2009_t0_s7_f4_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 229615136.5,
+    "rs": 492245004.0,
+    "hybrid": 31858740.5
+   },
+   "run": "factor_heavy"
+  },
+  {
+   "base": "retail2009",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "fid": "retail2009_t0_s7_f4_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 229886061.0,
+    "rs": 492876678.0,
+    "hybrid": 48011275.5
+   },
+   "run": "factor_heavy"
+  },
+  {
+   "base": "retail2009",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "fid": "retail2009_t0_s7_f4_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 238346232.0,
+    "rs": 499856350.5,
+    "hybrid": 78897389.5
+   },
+   "run": "factor_heavy"
+  },
+  {
+   "base": "intel",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "intel_t0_s7_f37_q8",
+   "exact": {
+    "pst": true
+   },
+   "errors": {},
+   "work_ns": {
+    "pst": 1876392453
+   },
+   "run": "pst"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "taxi2024_t0_s7_f37_q8",
+   "exact": {
+    "pst": true
+   },
+   "errors": {},
+   "work_ns": {
+    "pst": 472203306
+   },
+   "run": "pst"
+  },
+  {
+   "base": "intel",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 2,
+   "fid": "intel_t1_s7_f4_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 806175189,
+    "rs": 1931975323,
+    "hybrid": 61311955
+   },
+   "run": "topo"
+  },
+  {
+   "base": "intel",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "fid": "intel_t1_s7_f4_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 809753430,
+    "rs": 1914241024,
+    "hybrid": 100758806
+   },
+   "run": "topo"
+  },
+  {
+   "base": "intel",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "fid": "intel_t1_s7_f4_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 814628114,
+    "rs": 1934551880,
+    "hybrid": 152475588
+   },
+   "run": "topo"
+  },
+  {
+   "base": "intel",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 2,
+   "fid": "intel_t1_s7_f37_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 307104180,
+    "rs": 497605354,
+    "hybrid": 62384890
+   },
+   "run": "topo"
+  },
+  {
+   "base": "intel",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "intel_t1_s7_f37_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 303433529,
+    "rs": 501565781,
+    "hybrid": 99849578
+   },
+   "run": "topo"
+  },
+  {
+   "base": "intel",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "fid": "intel_t1_s7_f37_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 308935123,
+    "rs": 518112109,
+    "hybrid": 149099838
+   },
+   "run": "topo"
+  },
+  {
+   "base": "intel",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 2,
+   "fid": "intel_t2_s7_f4_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 814008855,
+    "rs": 1857993237,
+    "hybrid": 61214167
+   },
+   "run": "topo"
+  },
+  {
+   "base": "intel",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "fid": "intel_t2_s7_f4_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 802920118,
+    "rs": 1867597392,
+    "hybrid": 99221293
+   },
+   "run": "topo"
+  },
+  {
+   "base": "intel",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "fid": "intel_t2_s7_f4_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 820756707,
+    "rs": 1973588927,
+    "hybrid": 147153501
+   },
+   "run": "topo"
+  },
+  {
+   "base": "intel",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 2,
+   "fid": "intel_t2_s7_f37_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 306348653,
+    "rs": 560830448,
+    "hybrid": 60780911
+   },
+   "run": "topo"
+  },
+  {
+   "base": "intel",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "intel_t2_s7_f37_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 314183233,
+    "rs": 542029227,
+    "hybrid": 99199883
+   },
+   "run": "topo"
+  },
+  {
+   "base": "intel",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "fid": "intel_t2_s7_f37_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 310773348,
+    "rs": 727668907,
+    "hybrid": 147459605
+   },
+   "run": "topo"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 2,
+   "fid": "taxi2024_t1_s7_f4_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 701910598,
+    "rs": 1202477008,
+    "hybrid": 83115543
+   },
+   "run": "topo"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "fid": "taxi2024_t1_s7_f4_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 708217412,
+    "rs": 1204754175,
+    "hybrid": 156351861
+   },
+   "run": "topo"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "fid": "taxi2024_t1_s7_f4_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 704500719,
+    "rs": 1208737682,
+    "hybrid": 287855395
+   },
+   "run": "topo"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 2,
+   "fid": "taxi2024_t1_s7_f37_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 260784867,
+    "rs": 285890693,
+    "hybrid": 86854268
+   },
+   "run": "topo"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "taxi2024_t1_s7_f37_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 261004744,
+    "rs": 288640199,
+    "hybrid": 155193191
+   },
+   "run": "topo"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 1,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "fid": "taxi2024_t1_s7_f37_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 274773539,
+    "rs": 293223546,
+    "hybrid": 277482365
+   },
+   "run": "topo"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 2,
+   "fid": "taxi2024_t2_s7_f4_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 701960516,
+    "rs": 1198910389,
+    "hybrid": 84029591
+   },
+   "run": "topo"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 8,
+   "fid": "taxi2024_t2_s7_f4_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 707563722,
+    "rs": 1190601477,
+    "hybrid": 156747876
+   },
+   "run": "topo"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 4,
+   "q": 32,
+   "fid": "taxi2024_t2_s7_f4_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 707203029,
+    "rs": 1492592859,
+    "hybrid": 280871108
+   },
+   "run": "topo"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 2,
+   "fid": "taxi2024_t2_s7_f37_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 265728398,
+    "rs": 289072779,
+    "hybrid": 86085129
+   },
+   "run": "topo"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "taxi2024_t2_s7_f37_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 266898701,
+    "rs": 290083197,
+    "hybrid": 154800915
+   },
+   "run": "topo"
+  },
+  {
+   "base": "taxi2024",
+   "topology": 2,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "fid": "taxi2024_t2_s7_f37_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 276216999,
+    "rs": 306004046,
+    "hybrid": 281659785
+   },
+   "run": "topo"
+  },
+  {
+   "base": "retail2009",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 2,
+   "fid": "retail2009_t0_s7_f37_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 88079618.5,
+    "rs": 114390765.0,
+    "hybrid": 29431925.5
+   },
+   "run": "retail_sparse"
+  },
+  {
+   "base": "retail2009",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "retail2009_t0_s7_f37_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 90928903.0,
+    "rs": 116386257.5,
+    "hybrid": 45094863.5
+   },
+   "run": "retail_sparse"
+  },
+  {
+   "base": "retail2009",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "fid": "retail2009_t0_s7_f37_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 94855096.0,
+    "rs": 122662803.5,
+    "hybrid": 77776217.5
+   },
+   "run": "retail_sparse"
+  }
+ ]
+}

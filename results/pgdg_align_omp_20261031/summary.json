@@ -1,0 +1,20 @@
+{
+ "note": "own build/run of panel_pgdg_align_omp on benchmark-host; Intel 300k fp37 Q2; 1 rep each thread count",
+ "cases": {
+  "8": {
+   "full_ms": 275.806328,
+   "rss_mb": 126.87890625,
+   "sha": "33c3132f3f690defed29a5f9c57ce91ed0f8b7ec6cf95717b16d4815edee14f8"
+  },
+  "1": {
+   "full_ms": 300.594409,
+   "rss_mb": 127.59765625,
+   "sha": "33c3132f3f690defed29a5f9c57ce91ed0f8b7ec6cf95717b16d4815edee14f8"
+  },
+  "32": {
+   "full_ms": 270.04457,
+   "rss_mb": 126.96875,
+   "sha": "33c3132f3f690defed29a5f9c57ce91ed0f8b7ec6cf95717b16d4815edee14f8"
+  }
+ }
+}

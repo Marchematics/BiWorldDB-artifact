@@ -1,0 +1,3757 @@
+{
+ "protocol": {
+  "driver": "ext/bench_joint.py (remote benchmark-host, CPU-only, fresh process per worker)",
+  "host": "benchmark-host",
+  "grid": "all",
+  "reps": 3,
+  "started_utc": "2026-10-31T15:18:40Z",
+  "finished_utc": "2026-10-31T15:23:49Z",
+  "loadavg_start": "11.05 4.74 2.75 2/10692 13126",
+  "loadavg_end": "2.80 3.54 2.79 1/10608 22749",
+  "elapsed_s": 308.8,
+  "timing_boundary": "in-process full_ns = load+setup+execute+extract+cleanup; planned_ms = full_ns + planner decision time (plan_ns)",
+  "policy_path": "results/policy_all_frozen.json",
+  "policy_sha256": "6899ff93f243134f7930ea1a25448528d07dcc36b6c0ef52f438dda04d73e370"
+ },
+ "metrics": {
+  "cases": 31,
+  "route_accuracy_vs_oracle": 0.7742,
+  "regret_median": 1.0289,
+  "regret_p95": 1.0887,
+  "regret_max": 1.1152,
+  "regret_gt_1_05": 8,
+  "regret_gt_1_10": 1,
+  "routing_only_median": 1.0,
+  "routing_only_p95": 1.1002,
+  "routing_only_max": 1.1064,
+  "selection_counts": {
+   "hybrid": 6,
+   "corr": 0,
+   "batch_fast": 18,
+   "batch_deep": 6,
+   "pgdg": 0,
+   "rf": 1
+  },
+  "p95_target_met": false,
+  "oracle": "best measured distinct configuration among {hybrid,corr,batch_fast,batch_deep,pgdg,rf} with corr counted only where its gate is active",
+  "percentile_method": "nearest-rank sorted[ceil(q*(n-1))]; bootstrap over cases",
+  "regret_median_ci95": [
+   1.0112,
+   1.0376
+  ],
+  "regret_p95_ci95": [
+   1.0686,
+   1.1152
+  ],
+  "bootstrap_resamples": 10000
+ },
+ "exactness": {
+  "cases": 31,
+  "all_arms_sha_identical": true,
+  "oracle_cases": 24,
+  "oracle_exact_all": true,
+  "deep_cases_without_oracle": 7,
+  "batch_modes": [
+   "batch",
+   "fallback"
+  ]
+ },
+ "memory": [
+  {
+   "case_id": "all_2049_all_u180k_g224_f47_q2",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 9788,
+   "max_arm_rss_kb": 25940,
+   "all_arm_rss_kb": {
+    "rf": 25940,
+    "corr": 9884,
+    "hybrid": 9932,
+    "pgdg": 17856,
+    "batch_fast": 9788
+   }
+  },
+  {
+   "case_id": "all_2049_all_u180k_g224_f47_q8",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 19016,
+   "max_arm_rss_kb": 69968,
+   "all_arm_rss_kb": {
+    "corr": 19084,
+    "pgdg": 69968,
+    "batch_fast": 19448,
+    "rf": 26212,
+    "hybrid": 19016
+   }
+  },
+  {
+   "case_id": "all_2049_all_u180k_g224_f47_q32",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 17500,
+   "max_arm_rss_kb": 279996,
+   "all_arm_rss_kb": {
+    "batch_fast": 19464,
+    "rf": 27012,
+    "corr": 17472,
+    "hybrid": 17500,
+    "pgdg": 279996
+   }
+  },
+  {
+   "case_id": "all_2049_all_u180k_g224_f83_q2",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 9464,
+   "max_arm_rss_kb": 25904,
+   "all_arm_rss_kb": {
+    "rf": 25904,
+    "corr": 9636,
+    "pgdg": 17464,
+    "hybrid": 9560,
+    "batch_fast": 9464
+   }
+  },
+  {
+   "case_id": "all_2049_all_u180k_g224_f83_q8",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 15132,
+   "max_arm_rss_kb": 66064,
+   "all_arm_rss_kb": {
+    "corr": 15080,
+    "pgdg": 66064,
+    "batch_fast": 15524,
+    "hybrid": 15132,
+    "rf": 26164
+   }
+  },
+  {
+   "case_id": "all_2049_all_u180k_g224_f83_q32",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 17200,
+   "max_arm_rss_kb": 261508,
+   "all_arm_rss_kb": {
+    "pgdg": 261508,
+    "rf": 27012,
+    "hybrid": 17200,
+    "batch_fast": 19196,
+    "corr": 17148
+   }
+  },
+  {
+   "case_id": "all_2049_all_u650k_g80_f47_q2",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 21076,
+   "max_arm_rss_kb": 80364,
+   "all_arm_rss_kb": {
+    "hybrid": 20664,
+    "corr": 20700,
+    "pgdg": 37928,
+    "rf": 80364,
+    "batch_fast": 21076
+   }
+  },
+  {
+   "case_id": "all_2049_all_u650k_g80_f47_q8",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 30456,
+   "max_arm_rss_kb": 80644,
+   "all_arm_rss_kb": {
+    "hybrid": 29872,
+    "rf": 80644,
+    "corr": 29920,
+    "batch_fast": 30456,
+    "pgdg": 62752
+   }
+  },
+  {
+   "case_id": "all_2049_all_u650k_g80_f47_q32",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 34188,
+   "max_arm_rss_kb": 162016,
+   "all_arm_rss_kb": {
+    "corr": 32320,
+    "hybrid": 32372,
+    "pgdg": 162016,
+    "rf": 81396,
+    "batch_fast": 34188
+   }
+  },
+  {
+   "case_id": "all_2049_all_u650k_g80_f83_q2",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 20812,
+   "max_arm_rss_kb": 80364,
+   "all_arm_rss_kb": {
+    "hybrid": 20352,
+    "batch_fast": 20812,
+    "pgdg": 37328,
+    "rf": 80364,
+    "corr": 20356
+   }
+  },
+  {
+   "case_id": "all_2049_all_u650k_g80_f83_q8",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 26512,
+   "max_arm_rss_kb": 80624,
+   "all_arm_rss_kb": {
+    "batch_fast": 26512,
+    "corr": 25936,
+    "pgdg": 58788,
+    "rf": 80624,
+    "hybrid": 25904
+   }
+  },
+  {
+   "case_id": "all_2049_all_u650k_g80_f83_q32",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 32276,
+   "max_arm_rss_kb": 143496,
+   "all_arm_rss_kb": {
+    "pgdg": 143496,
+    "rf": 81392,
+    "hybrid": 30520,
+    "batch_fast": 32276,
+    "corr": 30508
+   }
+  },
+  {
+   "case_id": "all_2049_all_u1100k_g160_f47_q2",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 31640,
+   "max_arm_rss_kb": 132456,
+   "all_arm_rss_kb": {
+    "batch_fast": 31640,
+    "rf": 132456,
+    "corr": 31348,
+    "hybrid": 31332,
+    "pgdg": 60756
+   }
+  },
+  {
+   "case_id": "all_2049_all_u1100k_g160_f47_q8",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 41028,
+   "max_arm_rss_kb": 132508,
+   "all_arm_rss_kb": {
+    "corr": 40620,
+    "batch_fast": 41028,
+    "pgdg": 100868,
+    "rf": 132508,
+    "hybrid": 40460
+   }
+  },
+  {
+   "case_id": "all_2049_all_u1100k_g160_f47_q32",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 44192,
+   "max_arm_rss_kb": 261668,
+   "all_arm_rss_kb": {
+    "hybrid": 42204,
+    "corr": 42116,
+    "rf": 133312,
+    "batch_fast": 44192,
+    "pgdg": 261668
+   }
+  },
+  {
+   "case_id": "all_2049_all_u1100k_g160_f83_q2",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 31312,
+   "max_arm_rss_kb": 132484,
+   "all_arm_rss_kb": {
+    "pgdg": 60360,
+    "rf": 132484,
+    "batch_fast": 31312,
+    "corr": 30832,
+    "hybrid": 30772
+   }
+  },
+  {
+   "case_id": "all_2049_all_u1100k_g160_f83_q8",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 37044,
+   "max_arm_rss_kb": 132524,
+   "all_arm_rss_kb": {
+    "pgdg": 96780,
+    "batch_fast": 37044,
+    "hybrid": 36656,
+    "corr": 36572,
+    "rf": 132524
+   }
+  },
+  {
+   "case_id": "all_2049_all_u1100k_g160_f83_q32",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 42592,
+   "max_arm_rss_kb": 242860,
+   "all_arm_rss_kb": {
+    "corr": 40604,
+    "batch_fast": 42592,
+    "rf": 133288,
+    "hybrid": 40572,
+    "pgdg": 242860
+   }
+  },
+  {
+   "case_id": "all_2049_all_u1600k_g448_f47_q2",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 43212,
+   "max_arm_rss_kb": 190684,
+   "all_arm_rss_kb": {
+    "pgdg": 89340,
+    "hybrid": 42884,
+    "corr": 42856,
+    "rf": 190684,
+    "batch_fast": 43212
+   }
+  },
+  {
+   "case_id": "all_2049_all_u1600k_g448_f47_q8",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 52396,
+   "max_arm_rss_kb": 190980,
+   "all_arm_rss_kb": {
+    "hybrid": 52396,
+    "pgdg": 183896,
+    "corr": 52360,
+    "rf": 190980,
+    "batch_fast": 52864
+   }
+  },
+  {
+   "case_id": "all_2049_all_u1600k_g448_f47_q32",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 54188,
+   "max_arm_rss_kb": 563524,
+   "all_arm_rss_kb": {
+    "corr": 52416,
+    "rf": 191812,
+    "batch_fast": 54188,
+    "hybrid": 52400,
+    "pgdg": 563524
+   }
+  },
+  {
+   "case_id": "all_2049_all_u1600k_g448_f83_q2",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 42920,
+   "max_arm_rss_kb": 190756,
+   "all_arm_rss_kb": {
+    "hybrid": 42828,
+    "corr": 42880,
+    "rf": 190756,
+    "batch_fast": 42920,
+    "pgdg": 88904
+   }
+  },
+  {
+   "case_id": "all_2049_all_u1600k_g448_f83_q8",
+   "chosen": "hybrid",
+   "chosen_rss_kb": 48548,
+   "max_arm_rss_kb": 191004,
+   "all_arm_rss_kb": {
+    "batch_fast": 48744,
+    "rf": 191004,
+    "pgdg": 179724,
+    "hybrid": 48548,
+    "corr": 48568
+   }
+  },
+  {
+   "case_id": "all_2049_all_u1600k_g448_f83_q32",
+   "chosen": "batch_fast",
+   "chosen_rss_kb": 53448,
+   "max_arm_rss_kb": 543180,
+   "all_arm_rss_kb": {
+    "pgdg": 543180,
+    "hybrid": 51612,
+    "batch_fast": 53448,
+    "rf": 191764,
+    "corr": 51460
+   }
+  },
+  {
+   "case_id": "all_300k_all_u180k_g224_f47_q2",
+   "chosen": "batch_deep",
+   "chosen_rss_kb": 96804,
+   "max_arm_rss_kb": 305568,
+   "all_arm_rss_kb": {
+    "corr": 253112,
+    "batch_deep": 96804,
+    "hybrid": 253188,
+    "rf": 305568,
+    "pgdg": 247016
+   }
+  },
+  {
+   "case_id": "all_300k_all_u650k_g80_f47_q2",
+   "chosen": "batch_deep",
+   "chosen_rss_kb": 101272,
+   "max_arm_rss_kb": 343616,
+   "all_arm_rss_kb": {
+    "hybrid": 262268,
+    "batch_deep": 101272,
+    "corr": 262248,
+    "rf": 343616,
+    "pgdg": 262068
+   }
+  },
+  {
+   "case_id": "all_300k_all_u1100k_g160_f47_q2",
+   "chosen": "batch_deep",
+   "chosen_rss_kb": 116516,
+   "max_arm_rss_kb": 384696,
+   "all_arm_rss_kb": {
+    "pgdg": 289256,
+    "corr": 282152,
+    "rf": 384696,
+    "hybrid": 282172,
+    "batch_deep": 116516
+   }
+  },
+  {
+   "case_id": "all_300k_all_u1600k_g448_f47_q2",
+   "chosen": "batch_deep",
+   "chosen_rss_kb": 137256,
+   "max_arm_rss_kb": 442972,
+   "all_arm_rss_kb": {
+    "pgdg": 330012,
+    "batch_deep": 137256,
+    "hybrid": 302876,
+    "corr": 302996,
+    "rf": 442972
+   }
+  },
+  {
+   "case_id": "all_300k_all_u180k_g224_t1_f47_q2",
+   "chosen": "batch_deep",
+   "chosen_rss_kb": 96848,
+   "max_arm_rss_kb": 298424,
+   "all_arm_rss_kb": {
+    "corr": 246208,
+    "pgdg": 233360,
+    "batch_deep": 96848,
+    "hybrid": 246116,
+    "rf": 298424
+   }
+  },
+  {
+   "case_id": "all_300k_all_u180k_g224_t2_f47_q2",
+   "chosen": "batch_deep",
+   "chosen_rss_kb": 97100,
+   "max_arm_rss_kb": 299436,
+   "all_arm_rss_kb": {
+    "corr": 245044,
+    "batch_deep": 97100,
+    "hybrid": 244752,
+    "rf": 299436,
+    "pgdg": 232124
+   }
+  },
+  {
+   "case_id": "all_300k_all_u1600k_g448_f47_q8",
+   "chosen": "rf",
+   "chosen_rss_kb": 471176,
+   "max_arm_rss_kb": 22040516,
+   "all_arm_rss_kb": {
+    "hybrid": 11201380,
+    "batch_deep": 11264508,
+    "corr": 11201372,
+    "rf": 471176,
+    "pgdg": 22040516
+   }
+  }
+ ],
+ "cases": [
+  {
+   "case_id": "all_2049_all_u1100k_g160_f47_q2",
+   "base": "all_u1100k_g160",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 2,
+   "rows": 1100000,
+   "groups": 160,
+   "features": {
+    "base": "all_u1100k_g160",
+    "rows": 1100000,
+    "groups": 160,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 43,
+    "row_edits": 2005,
+    "span": 86400000000,
+    "rows_per_group": 6875.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch_fast": 19.806,
+    "rf": 138.6,
+    "corr": 18.261,
+    "hybrid": 17.902,
+    "pgdg": 40.376
+   },
+   "rss_kb": {
+    "batch_fast": 31640,
+    "rf": 132456,
+    "corr": 31348,
+    "hybrid": 31332,
+    "pgdg": 60756
+   },
+   "batch_modes": {
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "aaf85de3f53b6b928b80979615b2bd650f3e72705592f00a40674bfe1fd34ba9",
+   "best_forced": "hybrid",
+   "best_forced_ms": 17.902,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.001,
+     "rf": 26032980.577,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 18.431,
+   "plan_ns": 173500,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "aaf85de3f53b6b928b80979615b2bd650f3e72705592f00a40674bfe1fd34ba9",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u1100k_g160_f47_q8",
+   "base": "all_u1100k_g160",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 8,
+   "rows": 1100000,
+   "groups": 160,
+   "features": {
+    "base": "all_u1100k_g160",
+    "rows": 1100000,
+    "groups": 160,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 43,
+    "row_edits": 2005,
+    "span": 86400000000,
+    "rows_per_group": 6875.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 35.172,
+    "batch_fast": 35.327,
+    "pgdg": 75.722,
+    "rf": 142.072,
+    "hybrid": 32.111
+   },
+   "rss_kb": {
+    "corr": 40620,
+    "batch_fast": 41028,
+    "pgdg": 100868,
+    "rf": 132508,
+    "hybrid": 40460
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "489b0d5e703c73235e94f068aceb165ed270d36efd59938102e4fe98f54ed72a",
+   "best_forced": "hybrid",
+   "best_forced_ms": 32.111,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.004,
+     "rf": 31542027.129,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 33.155,
+   "plan_ns": 159490,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "489b0d5e703c73235e94f068aceb165ed270d36efd59938102e4fe98f54ed72a",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u1100k_g160_f47_q32",
+   "base": "all_u1100k_g160",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 32,
+   "rows": 1100000,
+   "groups": 160,
+   "features": {
+    "base": "all_u1100k_g160",
+    "rows": 1100000,
+    "groups": 160,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 43,
+    "row_edits": 2005,
+    "span": 86400000000,
+    "rows_per_group": 6875.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 56.266,
+    "corr": 55.364,
+    "rf": 150.371,
+    "batch_fast": 51.942,
+    "pgdg": 178.529
+   },
+   "rss_kb": {
+    "hybrid": 42204,
+    "corr": 42116,
+    "rf": 133312,
+    "batch_fast": 44192,
+    "pgdg": 261668
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "298b78ee9d343161a359956e01ade43c6a18fbb6dfab3cbcc9c7a41fec482b74",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 51.942,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.014,
+     "rf": 38216952.553,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 53.472,
+   "plan_ns": 161763,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "298b78ee9d343161a359956e01ade43c6a18fbb6dfab3cbcc9c7a41fec482b74",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u1100k_g160_f83_q2",
+   "base": "all_u1100k_g160",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 83,
+   "q": 2,
+   "rows": 1100000,
+   "groups": 160,
+   "features": {
+    "base": "all_u1100k_g160",
+    "rows": 1100000,
+    "groups": 160,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 83,
+    "factor_edits": 24,
+    "row_edits": 2024,
+    "span": 86400000000,
+    "rows_per_group": 6875.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "pgdg": 42.672,
+    "rf": 123.334,
+    "batch_fast": 17.306,
+    "corr": 17.978,
+    "hybrid": 18.652
+   },
+   "rss_kb": {
+    "pgdg": 60360,
+    "rf": 132484,
+    "batch_fast": 31312,
+    "corr": 30832,
+    "hybrid": 30772
+   },
+   "batch_modes": {
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "97a1133dc64169c48420f0c3984bbc321aa5f44597676e207fb0c45fb496813d",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 17.306,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.0,
+     "rf": 3.2171135682142205e+21,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 17.965,
+   "plan_ns": 166911,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "97a1133dc64169c48420f0c3984bbc321aa5f44597676e207fb0c45fb496813d",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u1100k_g160_f83_q8",
+   "base": "all_u1100k_g160",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 83,
+   "q": 8,
+   "rows": 1100000,
+   "groups": 160,
+   "features": {
+    "base": "all_u1100k_g160",
+    "rows": 1100000,
+    "groups": 160,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 83,
+    "factor_edits": 24,
+    "row_edits": 2024,
+    "span": 86400000000,
+    "rows_per_group": 6875.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "pgdg": 69.638,
+    "batch_fast": 27.453,
+    "hybrid": 27.896,
+    "corr": 28.666,
+    "rf": 129.424
+   },
+   "rss_kb": {
+    "pgdg": 96780,
+    "batch_fast": 37044,
+    "hybrid": 36656,
+    "corr": 36572,
+    "rf": 132524
+   },
+   "batch_modes": {
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "a9da51ca0faa704e8f1759729100e3b035259f930762fa5e21c0a6e016fa9525",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 27.453,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.0,
+     "rf": 3.897912616831364e+21,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 28.921,
+   "plan_ns": 169784,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "a9da51ca0faa704e8f1759729100e3b035259f930762fa5e21c0a6e016fa9525",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u1100k_g160_f83_q32",
+   "base": "all_u1100k_g160",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 83,
+   "q": 32,
+   "rows": 1100000,
+   "groups": 160,
+   "features": {
+    "base": "all_u1100k_g160",
+    "rows": 1100000,
+    "groups": 160,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 83,
+    "factor_edits": 24,
+    "row_edits": 2024,
+    "span": 86400000000,
+    "rows_per_group": 6875.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 49.615,
+    "batch_fast": 47.006,
+    "rf": 137.239,
+    "hybrid": 49.556,
+    "pgdg": 163.098
+   },
+   "rss_kb": {
+    "corr": 40604,
+    "batch_fast": 42592,
+    "rf": 133288,
+    "hybrid": 40572,
+    "pgdg": 242860
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "739cfe32d9fc2327d68a106bdd73803ec50b1e5ce4fd938be8af4547301a45c0",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 47.006,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.0,
+     "rf": 4.722789087951694e+21,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 46.539,
+   "plan_ns": 169486,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "739cfe32d9fc2327d68a106bdd73803ec50b1e5ce4fd938be8af4547301a45c0",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u1600k_g448_f47_q2",
+   "base": "all_u1600k_g448",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 2,
+   "rows": 1600000,
+   "groups": 448,
+   "features": {
+    "base": "all_u1600k_g448",
+    "rows": 1600000,
+    "groups": 448,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 43,
+    "row_edits": 2005,
+    "span": 86400000000,
+    "rows_per_group": 3571.4285714285716,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "pgdg": 59.081,
+    "hybrid": 23.163,
+    "corr": 24.722,
+    "rf": 176.222,
+    "batch_fast": 22.591
+   },
+   "rss_kb": {
+    "pgdg": 89340,
+    "hybrid": 42884,
+    "corr": 42856,
+    "rf": 190684,
+    "batch_fast": 43212
+   },
+   "batch_modes": {
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "e5bcf326d78a36a6143626268d2ac5b26adfaa81fb5efb253aab154119ce4be0",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 22.591,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.002,
+     "rf": 40888640.169,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 24.348,
+   "plan_ns": 162614,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "e5bcf326d78a36a6143626268d2ac5b26adfaa81fb5efb253aab154119ce4be0",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u1600k_g448_f47_q8",
+   "base": "all_u1600k_g448",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 8,
+   "rows": 1600000,
+   "groups": 448,
+   "features": {
+    "base": "all_u1600k_g448",
+    "rows": 1600000,
+    "groups": 448,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 43,
+    "row_edits": 2005,
+    "span": 86400000000,
+    "rows_per_group": 3571.4285714285716,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 39.035,
+    "pgdg": 122.318,
+    "corr": 39.833,
+    "rf": 177.904,
+    "batch_fast": 41.101
+   },
+   "rss_kb": {
+    "hybrid": 52396,
+    "pgdg": 183896,
+    "corr": 52360,
+    "rf": 190980,
+    "batch_fast": 52864
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "c6d3b4abae09882c3f038db995a3b7f9947a72d16a4a25239da575b150a4ce20",
+   "best_forced": "hybrid",
+   "best_forced_ms": 39.035,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_hybrid_first",
+    "shortlist": [
+     "hybrid",
+     "batch_fast"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "hybrid",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.007,
+     "rf": 49541411.275,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 41.971,
+   "plan_ns": 162475,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "c6d3b4abae09882c3f038db995a3b7f9947a72d16a4a25239da575b150a4ce20",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u1600k_g448_f47_q32",
+   "base": "all_u1600k_g448",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 32,
+   "rows": 1600000,
+   "groups": 448,
+   "features": {
+    "base": "all_u1600k_g448",
+    "rows": 1600000,
+    "groups": 448,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 43,
+    "row_edits": 2005,
+    "span": 86400000000,
+    "rows_per_group": 3571.4285714285716,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 61.515,
+    "rf": 186.874,
+    "batch_fast": 58.344,
+    "hybrid": 62.734,
+    "pgdg": 331.237
+   },
+   "rss_kb": {
+    "corr": 52416,
+    "rf": 191812,
+    "batch_fast": 54188,
+    "hybrid": 52400,
+    "pgdg": 563524
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "4b37e6e6bd68ffbf9e244b59480dea86b9dc879bdc0c9cadef81de9ad2b3b122",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 58.344,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.029,
+     "rf": 60025367.311,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 58.12,
+   "plan_ns": 161994,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "4b37e6e6bd68ffbf9e244b59480dea86b9dc879bdc0c9cadef81de9ad2b3b122",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u1600k_g448_f83_q2",
+   "base": "all_u1600k_g448",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 83,
+   "q": 2,
+   "rows": 1600000,
+   "groups": 448,
+   "features": {
+    "base": "all_u1600k_g448",
+    "rows": 1600000,
+    "groups": 448,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 83,
+    "factor_edits": 24,
+    "row_edits": 2024,
+    "span": 86400000000,
+    "rows_per_group": 3571.4285714285716,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 24.269,
+    "corr": 23.655,
+    "rf": 164.952,
+    "batch_fast": 24.539,
+    "pgdg": 56.471
+   },
+   "rss_kb": {
+    "hybrid": 42828,
+    "corr": 42880,
+    "rf": 190756,
+    "batch_fast": 42920,
+    "pgdg": 88904
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "05c01dc6a26c8e933e06c5f29f111413c5c7c478908a4e4691679d3f8e510686",
+   "best_forced": "corr",
+   "best_forced_ms": 23.655,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.0,
+     "rf": 5.052951915559378e+21,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 24.322,
+   "plan_ns": 166981,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "05c01dc6a26c8e933e06c5f29f111413c5c7c478908a4e4691679d3f8e510686",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u1600k_g448_f83_q8",
+   "base": "all_u1600k_g448",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 83,
+   "q": 8,
+   "rows": 1600000,
+   "groups": 448,
+   "features": {
+    "base": "all_u1600k_g448",
+    "rows": 1600000,
+    "groups": 448,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 83,
+    "factor_edits": 24,
+    "row_edits": 2024,
+    "span": 86400000000,
+    "rows_per_group": 3571.4285714285716,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch_fast": 36.812,
+    "rf": 169.902,
+    "pgdg": 118.878,
+    "hybrid": 34.921,
+    "corr": 34.456
+   },
+   "rss_kb": {
+    "batch_fast": 48744,
+    "rf": 191004,
+    "pgdg": 179724,
+    "hybrid": 48548,
+    "corr": 48568
+   },
+   "batch_modes": {
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "1db2ef8f53c722c8f0e1a3b7aadb86977424bb7b065d307c082b013ba4436cbe",
+   "best_forced": "corr",
+   "best_forced_ms": 34.456,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_hybrid_first",
+    "shortlist": [
+     "hybrid",
+     "batch_fast"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "hybrid",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.0,
+     "rf": 6.122247351943527e+21,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 36.233,
+   "plan_ns": 168273,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "1db2ef8f53c722c8f0e1a3b7aadb86977424bb7b065d307c082b013ba4436cbe",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u1600k_g448_f83_q32",
+   "base": "all_u1600k_g448",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 83,
+   "q": 32,
+   "rows": 1600000,
+   "groups": 448,
+   "features": {
+    "base": "all_u1600k_g448",
+    "rows": 1600000,
+    "groups": 448,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 83,
+    "factor_edits": 24,
+    "row_edits": 2024,
+    "span": 86400000000,
+    "rows_per_group": 3571.4285714285716,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "pgdg": 314.13,
+    "hybrid": 56.612,
+    "batch_fast": 54.111,
+    "rf": 179.329,
+    "corr": 57.808
+   },
+   "rss_kb": {
+    "pgdg": 543180,
+    "hybrid": 51612,
+    "batch_fast": 53448,
+    "rf": 191764,
+    "corr": 51460
+   },
+   "batch_modes": {
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "7392be4264d97fc64692aa036b2f63d887feea076f1f3620f8dad77529cebbf6",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 54.111,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.0,
+     "rf": 7.417837655633355e+21,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 55.676,
+   "plan_ns": 170286,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "7392be4264d97fc64692aa036b2f63d887feea076f1f3620f8dad77529cebbf6",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u180k_g224_f47_q2",
+   "base": "all_u180k_g224",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 2,
+   "rows": 180000,
+   "groups": 224,
+   "features": {
+    "base": "all_u180k_g224",
+    "rows": 180000,
+    "groups": 224,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 43,
+    "row_edits": 2005,
+    "span": 86400000000,
+    "rows_per_group": 803.5714285714286,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "rf": 28.241,
+    "corr": 6.186,
+    "hybrid": 6.693,
+    "pgdg": 10.099,
+    "batch_fast": 6.217
+   },
+   "rss_kb": {
+    "rf": 25940,
+    "corr": 9884,
+    "hybrid": 9932,
+    "pgdg": 17856,
+    "batch_fast": 9788
+   },
+   "batch_modes": {
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "1af9a790d360d0386918d4ecb3300e0786b767c9ceb18bfc540ee6e4d37696c2",
+   "best_forced": "corr",
+   "best_forced_ms": 6.186,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.001,
+     "rf": 9071224.168,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 6.005,
+   "plan_ns": 159929,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "1af9a790d360d0386918d4ecb3300e0786b767c9ceb18bfc540ee6e4d37696c2",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u180k_g224_f47_q8",
+   "base": "all_u180k_g224",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 8,
+   "rows": 180000,
+   "groups": 224,
+   "features": {
+    "base": "all_u180k_g224",
+    "rows": 180000,
+    "groups": 224,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 43,
+    "row_edits": 2005,
+    "span": 86400000000,
+    "rows_per_group": 803.5714285714286,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 17.837,
+    "pgdg": 48.119,
+    "batch_fast": 17.767,
+    "rf": 32.781,
+    "hybrid": 17.872
+   },
+   "rss_kb": {
+    "corr": 19084,
+    "pgdg": 69968,
+    "batch_fast": 19448,
+    "rf": 26212,
+    "hybrid": 19016
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "c9e24f69238f01918544ab9a628c2a5ad714c6f38ef8743973e46443ef96ce02",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 17.767,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_hybrid_first",
+    "shortlist": [
+     "hybrid",
+     "batch_fast"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "hybrid",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.004,
+     "rf": 10990858.229,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 17.529,
+   "plan_ns": 160201,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "c9e24f69238f01918544ab9a628c2a5ad714c6f38ef8743973e46443ef96ce02",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u180k_g224_f47_q32",
+   "base": "all_u180k_g224",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 32,
+   "rows": 180000,
+   "groups": 224,
+   "features": {
+    "base": "all_u180k_g224",
+    "rows": 180000,
+    "groups": 224,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 43,
+    "row_edits": 2005,
+    "span": 86400000000,
+    "rows_per_group": 803.5714285714286,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch_fast": 31.133,
+    "rf": 39.878,
+    "corr": 33.911,
+    "hybrid": 33.146,
+    "pgdg": 169.583
+   },
+   "rss_kb": {
+    "batch_fast": 19464,
+    "rf": 27012,
+    "corr": 17472,
+    "hybrid": 17500,
+    "pgdg": 279996
+   },
+   "batch_modes": {
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "17f73573efc56329fb39f413cbf99c82113235e4de0f2c0c3ccd505ccbd2342c",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 31.133,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_hybrid_first",
+    "shortlist": [
+     "hybrid",
+     "batch_fast"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "hybrid",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.014,
+     "rf": 13316744.22,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 33.682,
+   "plan_ns": 164177,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "17f73573efc56329fb39f413cbf99c82113235e4de0f2c0c3ccd505ccbd2342c",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u180k_g224_f83_q2",
+   "base": "all_u180k_g224",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 83,
+   "q": 2,
+   "rows": 180000,
+   "groups": 224,
+   "features": {
+    "base": "all_u180k_g224",
+    "rows": 180000,
+    "groups": 224,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 83,
+    "factor_edits": 24,
+    "row_edits": 2024,
+    "span": 86400000000,
+    "rows_per_group": 803.5714285714286,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "rf": 29.147,
+    "corr": 6.001,
+    "pgdg": 11.402,
+    "hybrid": 6.153,
+    "batch_fast": 5.693
+   },
+   "rss_kb": {
+    "rf": 25904,
+    "corr": 9636,
+    "pgdg": 17464,
+    "hybrid": 9560,
+    "batch_fast": 9464
+   },
+   "batch_modes": {
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "8bbaaa39c6e3e4f1a39fecdd245b1635af21970ce492313a87714d2374cf8a2d",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 5.693,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.0,
+     "rf": 1.1210071879617268e+21,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 6.042,
+   "plan_ns": 172910,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "8bbaaa39c6e3e4f1a39fecdd245b1635af21970ce492313a87714d2374cf8a2d",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u180k_g224_f83_q8",
+   "base": "all_u180k_g224",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 83,
+   "q": 8,
+   "rows": 180000,
+   "groups": 224,
+   "features": {
+    "base": "all_u180k_g224",
+    "rows": 180000,
+    "groups": 224,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 83,
+    "factor_edits": 24,
+    "row_edits": 2024,
+    "span": 86400000000,
+    "rows_per_group": 803.5714285714286,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 12.632,
+    "pgdg": 45.521,
+    "batch_fast": 14.587,
+    "hybrid": 13.658,
+    "rf": 30.97
+   },
+   "rss_kb": {
+    "corr": 15080,
+    "pgdg": 66064,
+    "batch_fast": 15524,
+    "hybrid": 15132,
+    "rf": 26164
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "ab07a699fb7accf0081d96e26fb406425c61ae09fd41f092f17c59076b6fa467",
+   "best_forced": "corr",
+   "best_forced_ms": 12.632,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_hybrid_first",
+    "shortlist": [
+     "hybrid",
+     "batch_fast"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "hybrid",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.0,
+     "rf": 1.35823245554249e+21,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 14.124,
+   "plan_ns": 164917,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "ab07a699fb7accf0081d96e26fb406425c61ae09fd41f092f17c59076b6fa467",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u180k_g224_f83_q32",
+   "base": "all_u180k_g224",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 83,
+   "q": 32,
+   "rows": 180000,
+   "groups": 224,
+   "features": {
+    "base": "all_u180k_g224",
+    "rows": 180000,
+    "groups": 224,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 83,
+    "factor_edits": 24,
+    "row_edits": 2024,
+    "span": 86400000000,
+    "rows_per_group": 803.5714285714286,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "pgdg": 156.134,
+    "rf": 38.737,
+    "hybrid": 29.538,
+    "batch_fast": 27.388,
+    "corr": 29.682
+   },
+   "rss_kb": {
+    "pgdg": 261508,
+    "rf": 27012,
+    "hybrid": 17200,
+    "batch_fast": 19196,
+    "corr": 17148
+   },
+   "batch_modes": {
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "b71926e582732ef32d401ed75098bd2e0824e4e3e64e408ee81477e13d6532b8",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 27.388,
+   "decision": {
+    "chosen": "hybrid",
+    "regime": "shallow_hybrid_first",
+    "shortlist": [
+     "hybrid",
+     "batch_fast"
+    ],
+    "designated": "hybrid",
+    "model_argmin": "hybrid",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.0,
+     "rf": 1.6456616785710322e+21,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 29.817,
+   "plan_ns": 170575,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "b71926e582732ef32d401ed75098bd2e0824e4e3e64e408ee81477e13d6532b8",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u650k_g80_f47_q2",
+   "base": "all_u650k_g80",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 2,
+   "rows": 650000,
+   "groups": 80,
+   "features": {
+    "base": "all_u650k_g80",
+    "rows": 650000,
+    "groups": 80,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 43,
+    "row_edits": 2005,
+    "span": 86400000000,
+    "rows_per_group": 8125.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 13.719,
+    "corr": 14.211,
+    "pgdg": 25.979,
+    "rf": 94.768,
+    "batch_fast": 12.89
+   },
+   "rss_kb": {
+    "hybrid": 20664,
+    "corr": 20700,
+    "pgdg": 37928,
+    "rf": 80364,
+    "batch_fast": 21076
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "c62791a5711f15ed6012549e766b2dcd4b955e27508eb600294d52abe83c8b0a",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 12.89,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.001,
+     "rf": 16600952.792,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 13.38,
+   "plan_ns": 186959,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "c62791a5711f15ed6012549e766b2dcd4b955e27508eb600294d52abe83c8b0a",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u650k_g80_f47_q8",
+   "base": "all_u650k_g80",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 8,
+   "rows": 650000,
+   "groups": 80,
+   "features": {
+    "base": "all_u650k_g80",
+    "rows": 650000,
+    "groups": 80,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 43,
+    "row_edits": 2005,
+    "span": 86400000000,
+    "rows_per_group": 8125.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 26.727,
+    "rf": 99.025,
+    "corr": 25.551,
+    "batch_fast": 26.918,
+    "pgdg": 51.347
+   },
+   "rss_kb": {
+    "hybrid": 29872,
+    "rf": 80644,
+    "corr": 29920,
+    "batch_fast": 30456,
+    "pgdg": 62752
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "730c11456ff3079e6ef5d766ab6b0ed48acfaccdf4ae7def7aa4b5349d288f98",
+   "best_forced": "corr",
+   "best_forced_ms": 25.551,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.002,
+     "rf": 20114012.753,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 27.288,
+   "plan_ns": 162204,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "730c11456ff3079e6ef5d766ab6b0ed48acfaccdf4ae7def7aa4b5349d288f98",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u650k_g80_f47_q32",
+   "base": "all_u650k_g80",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 32,
+   "rows": 650000,
+   "groups": 80,
+   "features": {
+    "base": "all_u650k_g80",
+    "rows": 650000,
+    "groups": 80,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 43,
+    "row_edits": 2005,
+    "span": 86400000000,
+    "rows_per_group": 8125.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 48.983,
+    "hybrid": 48.765,
+    "pgdg": 125.051,
+    "rf": 108.496,
+    "batch_fast": 45.427
+   },
+   "rss_kb": {
+    "corr": 32320,
+    "hybrid": 32372,
+    "pgdg": 162016,
+    "rf": 81396,
+    "batch_fast": 34188
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "06f840ba960e4a59028e57e3266e9ea3a8b65b212f7729091292c32aed908e50",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 45.427,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.009,
+     "rf": 24370541.181,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 45.934,
+   "plan_ns": 163886,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "06f840ba960e4a59028e57e3266e9ea3a8b65b212f7729091292c32aed908e50",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u650k_g80_f83_q2",
+   "base": "all_u650k_g80",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 83,
+   "q": 2,
+   "rows": 650000,
+   "groups": 80,
+   "features": {
+    "base": "all_u650k_g80",
+    "rows": 650000,
+    "groups": 80,
+    "states": 2049,
+    "q": 2,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 83,
+    "factor_edits": 24,
+    "row_edits": 2024,
+    "span": 86400000000,
+    "rows_per_group": 8125.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 12.77,
+    "batch_fast": 11.408,
+    "pgdg": 25.998,
+    "rf": 83.243,
+    "corr": 12.188
+   },
+   "rss_kb": {
+    "hybrid": 20352,
+    "batch_fast": 20812,
+    "pgdg": 37328,
+    "rf": 80364,
+    "corr": 20356
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "ac1bb5a9cf777eeadacd8c237923e1dd0df430b583e8ad6c8a0f01000c84a960",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 11.408,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.0,
+     "rf": 2.0515188537584992e+21,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 12.191,
+   "plan_ns": 165348,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "ac1bb5a9cf777eeadacd8c237923e1dd0df430b583e8ad6c8a0f01000c84a960",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u650k_g80_f83_q8",
+   "base": "all_u650k_g80",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 83,
+   "q": 8,
+   "rows": 650000,
+   "groups": 80,
+   "features": {
+    "base": "all_u650k_g80",
+    "rows": 650000,
+    "groups": 80,
+    "states": 2049,
+    "q": 8,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 83,
+    "factor_edits": 24,
+    "row_edits": 2024,
+    "span": 86400000000,
+    "rows_per_group": 8125.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "batch_fast": 20.083,
+    "corr": 21.719,
+    "pgdg": 46.961,
+    "rf": 87.159,
+    "hybrid": 22.319
+   },
+   "rss_kb": {
+    "batch_fast": 26512,
+    "corr": 25936,
+    "pgdg": 58788,
+    "rf": 80624,
+    "hybrid": 25904
+   },
+   "batch_modes": {
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "58cae8712e554e54009defce5697bf9f467f1808daef6f6bdcf1543d6daafc88",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 20.083,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.0,
+     "rf": 2.485657112867018e+21,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 22.396,
+   "plan_ns": 172749,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "58cae8712e554e54009defce5697bf9f467f1808daef6f6bdcf1543d6daafc88",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_2049_all_u650k_g80_f83_q32",
+   "base": "all_u650k_g80",
+   "cfg": "cfg2049",
+   "states": 2049,
+   "topology": 0,
+   "factor_period": 83,
+   "q": 32,
+   "rows": 650000,
+   "groups": 80,
+   "features": {
+    "base": "all_u650k_g80",
+    "rows": 650000,
+    "groups": 80,
+    "states": 2049,
+    "q": 32,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 83,
+    "factor_edits": 24,
+    "row_edits": 2024,
+    "span": 86400000000,
+    "rows_per_group": 8125.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "pgdg": 109.366,
+    "rf": 96.859,
+    "hybrid": 41.843,
+    "batch_fast": 39.819,
+    "corr": 40.638
+   },
+   "rss_kb": {
+    "pgdg": 143496,
+    "rf": 81392,
+    "hybrid": 30520,
+    "batch_fast": 32276,
+    "corr": 30508
+   },
+   "batch_modes": {
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch_fast": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "e8508d907c10bde3cadc3a68172917197c4d987154e7ebe9f8b18434d9b39846",
+   "best_forced": "batch_fast",
+   "best_forced_ms": 39.819,
+   "decision": {
+    "chosen": "batch_fast",
+    "regime": "shallow_batch_fast_first",
+    "shortlist": [
+     "batch_fast",
+     "hybrid"
+    ],
+    "designated": "batch_fast",
+    "model_argmin": "batch_fast",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.0,
+     "rf": 3.0116720006362683e+21,
+     "batch_fast": 0.0
+    },
+    "allowed": [
+     "batch_fast",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": false
+   },
+   "planned_ms": 39.81,
+   "plan_ns": 167181,
+   "arms_measured": [
+    "batch_fast",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ],
+   "oracle_sha256": "e8508d907c10bde3cadc3a68172917197c4d987154e7ebe9f8b18434d9b39846",
+   "oracle_exact": true
+  },
+  {
+   "case_id": "all_300k_all_u1100k_g160_f47_q2",
+   "base": "all_u1100k_g160",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 2,
+   "rows": 1100000,
+   "groups": 160,
+   "features": {
+    "base": "all_u1100k_g160",
+    "rows": 1100000,
+    "groups": 160,
+    "states": 300000,
+    "q": 2,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 6382,
+    "row_edits": 293617,
+    "span": 86400000000,
+    "rows_per_group": 6875.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "pgdg": 740.682,
+    "corr": 644.997,
+    "rf": 6961.581,
+    "hybrid": 838.969,
+    "batch_deep": 283.625
+   },
+   "rss_kb": {
+    "pgdg": 289256,
+    "corr": 282152,
+    "rf": 384696,
+    "hybrid": 282172,
+    "batch_deep": 116516
+   },
+   "batch_modes": {
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch_deep": [
+     "batch",
+     "batch",
+     "batch"
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "8755d78c84a43004484c453f1f9baa525e423bf3fcf03d9b47dfa06e611a2eee",
+   "best_forced": "batch_deep",
+   "best_forced_ms": 283.625,
+   "decision": {
+    "chosen": "batch_deep",
+    "regime": "deep_q<=2",
+    "shortlist": [
+     "batch_deep",
+     "corr",
+     "hybrid"
+    ],
+    "designated": "batch_deep",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.062,
+     "rf": 1167757649.445,
+     "batch_deep": 0.0,
+     "corr": 0.0
+    },
+    "allowed": [
+     "batch_deep",
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 288.301,
+   "plan_ns": 184725,
+   "arms_measured": [
+    "batch_deep",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  },
+  {
+   "case_id": "all_300k_all_u1600k_g448_f47_q2",
+   "base": "all_u1600k_g448",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 2,
+   "rows": 1600000,
+   "groups": 448,
+   "features": {
+    "base": "all_u1600k_g448",
+    "rows": 1600000,
+    "groups": 448,
+    "states": 300000,
+    "q": 2,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 6382,
+    "row_edits": 293617,
+    "span": 86400000000,
+    "rows_per_group": 3571.4285714285716,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "pgdg": 844.374,
+    "batch_deep": 297.788,
+    "hybrid": 1281.867,
+    "corr": 631.28,
+    "rf": 5771.1
+   },
+   "rss_kb": {
+    "pgdg": 330012,
+    "batch_deep": 137256,
+    "hybrid": 302876,
+    "corr": 302996,
+    "rf": 442972
+   },
+   "batch_modes": {
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "batch_deep": [
+     "batch",
+     "batch",
+     "batch"
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "a7985f0f2e9b8a54d462bb055dd90f5eab75a958bf9fe3c10b0aece94112967a",
+   "best_forced": "batch_deep",
+   "best_forced_ms": 297.788,
+   "decision": {
+    "chosen": "batch_deep",
+    "regime": "deep_q<=2",
+    "shortlist": [
+     "batch_deep",
+     "corr",
+     "hybrid"
+    ],
+    "designated": "batch_deep",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.125,
+     "rf": 1834135825.969,
+     "batch_deep": 0.0,
+     "corr": 0.0
+    },
+    "allowed": [
+     "batch_deep",
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 302.71,
+   "plan_ns": 189403,
+   "arms_measured": [
+    "batch_deep",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  },
+  {
+   "case_id": "all_300k_all_u1600k_g448_f47_q8",
+   "base": "all_u1600k_g448",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 8,
+   "rows": 1600000,
+   "groups": 448,
+   "features": {
+    "base": "all_u1600k_g448",
+    "rows": 1600000,
+    "groups": 448,
+    "states": 300000,
+    "q": 8,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 6382,
+    "row_edits": 293617,
+    "span": 86400000000,
+    "rows_per_group": 3571.4285714285716,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 8566.672,
+    "batch_deep": 9083.432,
+    "corr": 8541.062,
+    "rf": 6201.305,
+    "pgdg": 13771.172
+   },
+   "rss_kb": {
+    "hybrid": 11201380,
+    "batch_deep": 11264508,
+    "corr": 11201372,
+    "rf": 471176,
+    "pgdg": 22040516
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch_deep": [
+     "fallback",
+     "fallback",
+     "fallback"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "8f3f461f093e515a8c1e3fee74fa59e63cf4dd51f7d0da03e280615274769d90",
+   "best_forced": "rf",
+   "best_forced_ms": 6201.305,
+   "decision": {
+    "chosen": "rf",
+    "regime": "deep_q>=8_rf_eligible",
+    "shortlist": [
+     "rf",
+     "hybrid",
+     "batch_deep"
+    ],
+    "designated": "rf",
+    "model_argmin": "batch_deep",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 1.835,
+     "rf": 2222456874.898,
+     "batch_deep": 0.0
+    },
+    "allowed": [
+     "batch_deep",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 6170.848,
+   "plan_ns": 170115,
+   "arms_measured": [
+    "batch_deep",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  },
+  {
+   "case_id": "all_300k_all_u180k_g224_f47_q2",
+   "base": "all_u180k_g224",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 2,
+   "rows": 180000,
+   "groups": 224,
+   "features": {
+    "base": "all_u180k_g224",
+    "rows": 180000,
+    "groups": 224,
+    "states": 300000,
+    "q": 2,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 6382,
+    "row_edits": 293617,
+    "span": 86400000000,
+    "rows_per_group": 803.5714285714286,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 549.466,
+    "batch_deep": 250.978,
+    "hybrid": 833.22,
+    "rf": 2227.272,
+    "pgdg": 629.536
+   },
+   "rss_kb": {
+    "corr": 253112,
+    "batch_deep": 96804,
+    "hybrid": 253188,
+    "rf": 305568,
+    "pgdg": 247016
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch_deep": [
+     "batch",
+     "batch",
+     "batch"
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "b8244da537371a5025612077ba97f8bc1689109e09905fa20830437ab5997fbf",
+   "best_forced": "batch_deep",
+   "best_forced_ms": 250.978,
+   "decision": {
+    "chosen": "batch_deep",
+    "regime": "deep_q<=2",
+    "shortlist": [
+     "batch_deep",
+     "corr",
+     "hybrid"
+    ],
+    "designated": "batch_deep",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.061,
+     "rf": 406906592.22,
+     "batch_deep": 0.0,
+     "corr": 0.0
+    },
+    "allowed": [
+     "batch_deep",
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 254.646,
+   "plan_ns": 191767,
+   "arms_measured": [
+    "batch_deep",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  },
+  {
+   "case_id": "all_300k_all_u180k_g224_t1_f47_q2",
+   "base": "all_u180k_g224",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 1,
+   "factor_period": 47,
+   "q": 2,
+   "rows": 180000,
+   "groups": 224,
+   "features": {
+    "base": "all_u180k_g224",
+    "rows": 180000,
+    "groups": 224,
+    "states": 300000,
+    "q": 2,
+    "topology": 1,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 6382,
+    "row_edits": 293617,
+    "span": 86400000000,
+    "rows_per_group": 803.5714285714286,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 485.01,
+    "pgdg": 332.642,
+    "batch_deep": 250.607,
+    "hybrid": 522.528,
+    "rf": 2119.163
+   },
+   "rss_kb": {
+    "corr": 246208,
+    "pgdg": 233360,
+    "batch_deep": 96848,
+    "hybrid": 246116,
+    "rf": 298424
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ],
+    "batch_deep": [
+     "batch",
+     "batch",
+     "batch"
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "b4d3d4865587e531a8717fd82c91871cbf1e0622a471eb295aa85a6a6fe876fb",
+   "best_forced": "batch_deep",
+   "best_forced_ms": 250.607,
+   "decision": {
+    "chosen": "batch_deep",
+    "regime": "deep_q<=2",
+    "shortlist": [
+     "batch_deep",
+     "corr",
+     "hybrid"
+    ],
+    "designated": "batch_deep",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.061,
+     "rf": 406906592.22,
+     "batch_deep": 0.0,
+     "corr": 0.0
+    },
+    "allowed": [
+     "batch_deep",
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 250.177,
+   "plan_ns": 188292,
+   "arms_measured": [
+    "batch_deep",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  },
+  {
+   "case_id": "all_300k_all_u180k_g224_t2_f47_q2",
+   "base": "all_u180k_g224",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 2,
+   "factor_period": 47,
+   "q": 2,
+   "rows": 180000,
+   "groups": 224,
+   "features": {
+    "base": "all_u180k_g224",
+    "rows": 180000,
+    "groups": 224,
+    "states": 300000,
+    "q": 2,
+    "topology": 2,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 6382,
+    "row_edits": 293617,
+    "span": 86400000000,
+    "rows_per_group": 803.5714285714286,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "corr": 446.151,
+    "batch_deep": 241.36,
+    "hybrid": 486.906,
+    "rf": 2075.317,
+    "pgdg": 294.757
+   },
+   "rss_kb": {
+    "corr": 245044,
+    "batch_deep": 97100,
+    "hybrid": 244752,
+    "rf": 299436,
+    "pgdg": 232124
+   },
+   "batch_modes": {
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "batch_deep": [
+     "batch",
+     "batch",
+     "batch"
+    ],
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "6d34efc8a4695c25520b5dcf323e995e5976507427004a7e9dab08df3a8b4723",
+   "best_forced": "batch_deep",
+   "best_forced_ms": 241.36,
+   "decision": {
+    "chosen": "batch_deep",
+    "regime": "deep_q<=2",
+    "shortlist": [
+     "batch_deep",
+     "corr",
+     "hybrid"
+    ],
+    "designated": "batch_deep",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.061,
+     "rf": 406906592.22,
+     "batch_deep": 0.0,
+     "corr": 0.0
+    },
+    "allowed": [
+     "batch_deep",
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 240.932,
+   "plan_ns": 192256,
+   "arms_measured": [
+    "batch_deep",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  },
+  {
+   "case_id": "all_300k_all_u650k_g80_f47_q2",
+   "base": "all_u650k_g80",
+   "cfg": "cfg300k",
+   "states": 300000,
+   "topology": 0,
+   "factor_period": 47,
+   "q": 2,
+   "rows": 650000,
+   "groups": 80,
+   "features": {
+    "base": "all_u650k_g80",
+    "rows": 650000,
+    "groups": 80,
+    "states": 300000,
+    "q": 2,
+    "topology": 0,
+    "seed": 59,
+    "factor_period": 47,
+    "factor_edits": 6382,
+    "row_edits": 293617,
+    "span": 86400000000,
+    "rows_per_group": 8125.0,
+    "per_state": 1,
+    "dense_predicate": 0
+   },
+   "measured_ms": {
+    "hybrid": 759.19,
+    "batch_deep": 279.676,
+    "corr": 670.601,
+    "rf": 6240.495,
+    "pgdg": 797.22
+   },
+   "rss_kb": {
+    "hybrid": 262268,
+    "batch_deep": 101272,
+    "corr": 262248,
+    "rf": 343616,
+    "pgdg": 262068
+   },
+   "batch_modes": {
+    "hybrid": [
+     null,
+     null,
+     null
+    ],
+    "batch_deep": [
+     "batch",
+     "batch",
+     "batch"
+    ],
+    "corr": [
+     null,
+     null,
+     null
+    ],
+    "rf": [
+     null,
+     null,
+     null
+    ],
+    "pgdg": [
+     null,
+     null,
+     null
+    ]
+   },
+   "answer_shas_identical": true,
+   "answer_sha256": "462e6e74ad2456a26eab26bdaffa14ab44d79857352f6dfd4d6bc545f585c33b",
+   "best_forced": "batch_deep",
+   "best_forced_ms": 279.676,
+   "decision": {
+    "chosen": "batch_deep",
+    "regime": "deep_q<=2",
+    "shortlist": [
+     "batch_deep",
+     "corr",
+     "hybrid"
+    ],
+    "designated": "batch_deep",
+    "model_argmin": "corr",
+    "predicted_ms": {
+     "hybrid": 0.0,
+     "pgdg": 0.038,
+     "rf": 744666541.501,
+     "batch_deep": 0.0,
+     "corr": 0.0
+    },
+    "allowed": [
+     "batch_deep",
+     "corr",
+     "hybrid",
+     "pgdg",
+     "rf"
+    ],
+    "deep_tree": true
+   },
+   "planned_ms": 280.583,
+   "plan_ns": 183353,
+   "arms_measured": [
+    "batch_deep",
+    "corr",
+    "hybrid",
+    "pgdg",
+    "rf"
+   ]
+  }
+ ]
+}

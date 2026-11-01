@@ -1,0 +1,25 @@
+{
+ "mode": "hros",
+ "rows": 100000,
+ "groups": 4,
+ "states": 2049,
+ "q": 2,
+ "factor_period": 4,
+ "topology": 0,
+ "seed": 7,
+ "repeat": 0,
+ "max_v": 2048,
+ "n_answers": 16384,
+ "answers_fn": "5748526632bf55ab",
+ "answers_sha256": "c9e6cd07a4aefb19dd5955e073eb8149f121cf79b35b35dc8675a8b7cfe17882",
+ "phases_ns": {
+  "gen": 921240,
+  "build": 11337135,
+  "execute": 3723182,
+  "extract": 1091022,
+  "cleanup": 391651
+ },
+ "full_ns": 17464230,
+ "peak_rss_kb": 7328,
+ "static_bytes": 2560360
+}

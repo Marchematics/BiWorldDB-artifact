@@ -1,0 +1,24 @@
+{
+ "arm": "rf",
+ "base_id": "retail2009",
+ "fixture": "artifact/retail2009.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 128,
+ "repeat": 2,
+ "n_states": 2049,
+ "n_answers": 262144,
+ "range_scope": "per_state",
+ "answers_fn": "06adcbe74e716ff2",
+ "answers_sha256": "3ebc44bbbe19f1264659c7746a02e0817bb3e38c595be6c51c289ca3d38f42f6",
+ "phases_ns": {
+  "load": 44253,
+  "setup": 101528415,
+  "execute": 21050845,
+  "extract": 11200624,
+  "cleanup": 4538611
+ },
+ "full_ns": 138362748,
+ "peak_rss_kb": 119704
+}

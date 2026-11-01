@@ -1,0 +1,162 @@
+[
+ {
+  "topology": 0,
+  "seed": 101,
+  "fp": 7,
+  "q": 8,
+  "exact_same": true,
+  "hybrid_ms": 18.09,
+  "pgd_ms": 51.93,
+  "speedup": 2.87
+ },
+ {
+  "topology": 0,
+  "seed": 101,
+  "fp": 7,
+  "q": 32,
+  "exact_same": true,
+  "hybrid_ms": 74.82,
+  "pgd_ms": 379.56,
+  "speedup": 5.07
+ },
+ {
+  "topology": 0,
+  "seed": 101,
+  "fp": 53,
+  "q": 8,
+  "exact_same": true,
+  "hybrid_ms": 14.66,
+  "pgd_ms": 44.73,
+  "speedup": 3.05
+ },
+ {
+  "topology": 0,
+  "seed": 101,
+  "fp": 53,
+  "q": 32,
+  "exact_same": true,
+  "hybrid_ms": 32.32,
+  "pgd_ms": 360.33,
+  "speedup": 11.15
+ },
+ {
+  "topology": 0,
+  "seed": 131,
+  "fp": 7,
+  "q": 8,
+  "exact_same": true,
+  "hybrid_ms": 17.8,
+  "pgd_ms": 51.06,
+  "speedup": 2.87
+ },
+ {
+  "topology": 0,
+  "seed": 131,
+  "fp": 7,
+  "q": 32,
+  "exact_same": true,
+  "hybrid_ms": 74.7,
+  "pgd_ms": 386.25,
+  "speedup": 5.17
+ },
+ {
+  "topology": 0,
+  "seed": 131,
+  "fp": 53,
+  "q": 8,
+  "exact_same": true,
+  "hybrid_ms": 14.9,
+  "pgd_ms": 45.15,
+  "speedup": 3.03
+ },
+ {
+  "topology": 0,
+  "seed": 131,
+  "fp": 53,
+  "q": 32,
+  "exact_same": true,
+  "hybrid_ms": 31.94,
+  "pgd_ms": 359.83,
+  "speedup": 11.26
+ },
+ {
+  "topology": 1,
+  "seed": 101,
+  "fp": 7,
+  "q": 8,
+  "exact_same": true,
+  "hybrid_ms": 17.25,
+  "pgd_ms": 29.15,
+  "speedup": 1.69
+ },
+ {
+  "topology": 1,
+  "seed": 101,
+  "fp": 7,
+  "q": 32,
+  "exact_same": true,
+  "hybrid_ms": 66.62,
+  "pgd_ms": 125.9,
+  "speedup": 1.89
+ },
+ {
+  "topology": 1,
+  "seed": 101,
+  "fp": 53,
+  "q": 8,
+  "exact_same": true,
+  "hybrid_ms": 13.03,
+  "pgd_ms": 24.55,
+  "speedup": 1.88
+ },
+ {
+  "topology": 1,
+  "seed": 101,
+  "fp": 53,
+  "q": 32,
+  "exact_same": true,
+  "hybrid_ms": 30.78,
+  "pgd_ms": 114.64,
+  "speedup": 3.72
+ },
+ {
+  "topology": 1,
+  "seed": 131,
+  "fp": 7,
+  "q": 8,
+  "exact_same": true,
+  "hybrid_ms": 16.68,
+  "pgd_ms": 28.85,
+  "speedup": 1.73
+ },
+ {
+  "topology": 1,
+  "seed": 131,
+  "fp": 7,
+  "q": 32,
+  "exact_same": true,
+  "hybrid_ms": 67.74,
+  "pgd_ms": 126.83,
+  "speedup": 1.87
+ },
+ {
+  "topology": 1,
+  "seed": 131,
+  "fp": 53,
+  "q": 8,
+  "exact_same": true,
+  "hybrid_ms": 13.27,
+  "pgd_ms": 25.09,
+  "speedup": 1.89
+ },
+ {
+  "topology": 1,
+  "seed": 131,
+  "fp": 53,
+  "q": 32,
+  "exact_same": true,
+  "hybrid_ms": 29.91,
+  "pgd_ms": 109.26,
+  "speedup": 3.65
+ }
+]

@@ -1,0 +1,39 @@
+{
+ "mode": "hros",
+ "rows": 20000,
+ "groups": 4,
+ "states": 2049,
+ "q": 2,
+ "factor_period": 2,
+ "topology": 0,
+ "seed": 7,
+ "repeat": 2,
+ "max_v": 2048,
+ "variant": "lazy",
+ "burst": 8,
+ "n_answers": 16384,
+ "counters": {
+  "skipped_same": 1018,
+  "skipped_empty": 0,
+  "deferred_assign": 7174,
+  "lazy_flushes": 4096,
+  "factor_edits": 1024,
+  "extra_assigns": 7168
+ },
+ "split_ns": {
+  "update": 222091,
+  "query": 3594867
+ },
+ "answers_fn": "559c01d75fcd63b7",
+ "answers_sha256": "bffddd4a678fd869e47d7d811b8e17b20a35779eb8338a05faa0e79daabeab34",
+ "phases_ns": {
+  "gen": 233736,
+  "build": 2937173,
+  "execute": 3970966,
+  "extract": 2081525,
+  "cleanup": 188991
+ },
+ "full_ns": 9412391,
+ "peak_rss_kb": 4476,
+ "static_bytes": 633256
+}

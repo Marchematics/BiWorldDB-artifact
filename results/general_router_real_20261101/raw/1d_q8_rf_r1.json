@@ -1,0 +1,24 @@
+{
+ "arm": "rf",
+ "base_id": "real1d_100k",
+ "fixture": "artifact/real1d_100k.bin",
+ "topology": 0,
+ "seed": 20261202,
+ "factor_period": 59,
+ "q": 8,
+ "repeat": 1,
+ "n_states": 2049,
+ "n_answers": 16384,
+ "range_scope": "per_state",
+ "answers_fn": "72b0411970c1fe72",
+ "answers_sha256": "d67cf365ee29772c2bdc6280591fa8c81ace39028d010088de9ebf271893e341",
+ "phases_ns": {
+  "load": 45826,
+  "setup": 15895786,
+  "execute": 3280111,
+  "extract": 1826670,
+  "cleanup": 412286
+ },
+ "full_ns": 21460679,
+ "peak_rss_kb": 16808
+}

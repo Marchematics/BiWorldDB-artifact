@@ -1,0 +1,19 @@
+{
+ "cases": {
+  "taxi2024": {
+   "hybrid_ms": 112.4,
+   "rf_ms": 302.1,
+   "vs_rf": 2.69,
+   "pgdg_ms": 477.6,
+   "vs_pgdg": 4.25
+  },
+  "retail2009": {
+   "hybrid_ms": 67.86,
+   "rf_ms": 122.74,
+   "vs_rf": 1.81,
+   "pgdg_ms": 96.7,
+   "vs_pgdg": 1.42
+  }
+ },
+ "note": "group-outer batch query, 3 reps, answers SHA-identical"
+}

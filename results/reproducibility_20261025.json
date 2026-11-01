@@ -1,0 +1,123 @@
+{
+ "note": "Reproducibility of the formal optimized panels: the same 54-fixture rosters with all declared optimizations were run twice in independent same-window sessions (two quiet windows), 2 repetitions per fixture each, all 1944 answer vectors exact (324 per base per window). Rows give the cohort medians of engine/optimized-hybrid work ratios in each window and their min-max envelope.",
+ "total_vectors": 1944,
+ "rows": [
+  {
+   "base": "Intel",
+   "cohort": "Q2",
+   "dd_w1": 7.42,
+   "dd_w2": 8.13,
+   "dd_min": 7.42,
+   "dd_max": 8.13,
+   "dbsp_w1": 7.85,
+   "dbsp_w2": 8.42,
+   "dbsp_min": 7.85,
+   "dbsp_max": 8.42,
+   "wins": "18/18 each"
+  },
+  {
+   "base": "Intel",
+   "cohort": "Q8",
+   "dd_w1": 8.99,
+   "dd_w2": 10.07,
+   "dd_min": 8.99,
+   "dd_max": 10.07,
+   "dbsp_w1": 9.84,
+   "dbsp_w2": 10.72,
+   "dbsp_min": 9.84,
+   "dbsp_max": 10.72,
+   "wins": "18/18 each"
+  },
+  {
+   "base": "Intel",
+   "cohort": "Q32",
+   "dd_w1": 8.23,
+   "dd_w2": 9.58,
+   "dd_min": 8.23,
+   "dd_max": 9.58,
+   "dbsp_w1": 8.97,
+   "dbsp_w2": 10.47,
+   "dbsp_min": 8.97,
+   "dbsp_max": 10.47,
+   "wins": "18/18 each"
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q2",
+   "dd_w1": 9.46,
+   "dd_w2": 10.67,
+   "dd_min": 9.46,
+   "dd_max": 10.67,
+   "dbsp_w1": 11.54,
+   "dbsp_w2": 12.63,
+   "dbsp_min": 11.54,
+   "dbsp_max": 12.63,
+   "wins": "18/18 each"
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q8",
+   "dd_w1": 11.4,
+   "dd_w2": 11.96,
+   "dd_min": 11.4,
+   "dd_max": 11.96,
+   "dbsp_w1": 13.23,
+   "dbsp_w2": 13.31,
+   "dbsp_min": 13.23,
+   "dbsp_max": 13.31,
+   "wins": "18/18 each"
+  },
+  {
+   "base": "Taxi",
+   "cohort": "Q32",
+   "dd_w1": 10.47,
+   "dd_w2": 10.62,
+   "dd_min": 10.47,
+   "dd_max": 10.62,
+   "dbsp_w1": 11.27,
+   "dbsp_w2": 11.33,
+   "dbsp_min": 11.27,
+   "dbsp_max": 11.33,
+   "wins": "18/18 each"
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q2",
+   "dd_w1": 5.04,
+   "dd_w2": 5.24,
+   "dd_min": 5.04,
+   "dd_max": 5.24,
+   "dbsp_w1": 5.7,
+   "dbsp_w2": 5.54,
+   "dbsp_min": 5.54,
+   "dbsp_max": 5.7,
+   "wins": "18/18 each"
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q8",
+   "dd_w1": 3.64,
+   "dd_w2": 3.62,
+   "dd_min": 3.62,
+   "dd_max": 3.64,
+   "dbsp_w1": 4.12,
+   "dbsp_w2": 4.01,
+   "dbsp_min": 4.01,
+   "dbsp_max": 4.12,
+   "wins": "18/18 each"
+  },
+  {
+   "base": "Retail",
+   "cohort": "Q32",
+   "dd_w1": 2.73,
+   "dd_w2": 2.73,
+   "dd_min": 2.73,
+   "dd_max": 2.73,
+   "dbsp_w1": 3.29,
+   "dbsp_w2": 3.28,
+   "dbsp_min": 3.28,
+   "dbsp_max": 3.29,
+   "wins": "18/18 each"
+  }
+ ]
+}

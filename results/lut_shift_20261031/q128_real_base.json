@@ -1,0 +1,15 @@
+{
+ "cases": {
+  "taxi2024": {
+   "hybrid_ms": 125.8,
+   "rf_ms": 323.1,
+   "speedup": 2.57
+  },
+  "retail2009": {
+   "hybrid_ms": 75.6,
+   "rf_ms": 138.4,
+   "speedup": 1.83
+  }
+ },
+ "note": "Q128, fp37, 2049 states, per-state ranges, 3 reps, shift LUT hybrid vs rollback Fenwick; answers SHA-identical"
+}

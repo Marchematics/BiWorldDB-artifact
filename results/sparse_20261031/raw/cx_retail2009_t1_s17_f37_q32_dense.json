@@ -1,0 +1,28 @@
+{
+ "arm": "hybrid",
+ "arm_mode": "hybrid",
+ "base_id": "retail2009",
+ "fixture": "artifact/retail2009.bin",
+ "topology": 1,
+ "seed": 17,
+ "factor_period": 37,
+ "q": 32,
+ "repeat": 0,
+ "n_states": 2049,
+ "n_answers": 65536,
+ "range_scope": "per_state",
+ "cold": false,
+ "preload_fadvise_dontneed": false,
+ "sparse_base_env": "auto",
+ "answers_fn": "4201ae2845ed49d8",
+ "answers_sha256": "b8a1f41e84c7506394b9c26559389e2e93cd0d5b2280e56d7f05d9e1570e9ae6",
+ "phases_ns": {
+  "load": 69169,
+  "setup": 29891504,
+  "execute": 2765663,
+  "extract": 3285959,
+  "cleanup": 3088456
+ },
+ "full_ns": 39100751,
+ "peak_rss_kb": 61284
+}

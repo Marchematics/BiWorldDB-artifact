@@ -1,0 +1,763 @@
+{
+ "note": "production-env hybrid (final binary: qlb sizing + extended layout rule) vs classic arms, chain + bushy/star topologies, seed 7; speedup = classic/hybrid",
+ "rows": [
+  {
+   "run": "chain_qlb",
+   "base": "intel",
+   "topo": 0,
+   "fp": 4,
+   "q": 2,
+   "speedup_rf": 29.48,
+   "speedup_rs": 82.44,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "intel",
+   "topo": 0,
+   "fp": 4,
+   "q": 8,
+   "speedup_rf": 20.21,
+   "speedup_rs": 56.42,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "intel",
+   "topo": 0,
+   "fp": 4,
+   "q": 32,
+   "speedup_rf": 9.73,
+   "speedup_rs": 27.52,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "intel",
+   "topo": 0,
+   "fp": 37,
+   "q": 2,
+   "speedup_rf": 9.04,
+   "speedup_rs": 16.04,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "intel",
+   "topo": 0,
+   "fp": 37,
+   "q": 8,
+   "speedup_rf": 6.46,
+   "speedup_rs": 11.94,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "intel",
+   "topo": 0,
+   "fp": 37,
+   "q": 32,
+   "speedup_rf": 3.93,
+   "speedup_rs": 7.19,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "taxi2024",
+   "topo": 0,
+   "fp": 4,
+   "q": 2,
+   "speedup_rf": 14.91,
+   "speedup_rs": 26.39,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "taxi2024",
+   "topo": 0,
+   "fp": 4,
+   "q": 8,
+   "speedup_rf": 7.16,
+   "speedup_rs": 12.77,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "taxi2024",
+   "topo": 0,
+   "fp": 4,
+   "q": 32,
+   "speedup_rf": 3.96,
+   "speedup_rs": 7.04,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "taxi2024",
+   "topo": 0,
+   "fp": 37,
+   "q": 2,
+   "speedup_rf": 6.81,
+   "speedup_rs": 7.42,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "taxi2024",
+   "topo": 0,
+   "fp": 37,
+   "q": 8,
+   "speedup_rf": 5.02,
+   "speedup_rs": 5.6,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "taxi2024",
+   "topo": 0,
+   "fp": 37,
+   "q": 32,
+   "speedup_rf": 3.76,
+   "speedup_rs": 4.24,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "retail2009",
+   "topo": 0,
+   "fp": 4,
+   "q": 2,
+   "speedup_rf": 11.7,
+   "speedup_rs": 25.42,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "retail2009",
+   "topo": 0,
+   "fp": 4,
+   "q": 8,
+   "speedup_rf": 8.65,
+   "speedup_rs": 18.58,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "retail2009",
+   "topo": 0,
+   "fp": 4,
+   "q": 32,
+   "speedup_rf": 4.55,
+   "speedup_rs": 9.64,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "retail2009",
+   "topo": 0,
+   "fp": 37,
+   "q": 2,
+   "speedup_rf": 5.17,
+   "speedup_rs": 6.46,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "retail2009",
+   "topo": 0,
+   "fp": 37,
+   "q": 8,
+   "speedup_rf": 3.6,
+   "speedup_rs": 4.69,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "chain_qlb",
+   "base": "retail2009",
+   "topo": 0,
+   "fp": 37,
+   "q": 32,
+   "speedup_rf": 2.11,
+   "speedup_rs": 2.71,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "intel",
+   "topo": 1,
+   "fp": 4,
+   "q": 2,
+   "speedup_rf": 22.71,
+   "speedup_rs": 56.55,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "intel",
+   "topo": 1,
+   "fp": 4,
+   "q": 8,
+   "speedup_rf": 16.3,
+   "speedup_rs": 38.62,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "intel",
+   "topo": 1,
+   "fp": 4,
+   "q": 32,
+   "speedup_rf": 8.14,
+   "speedup_rs": 18.96,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "intel",
+   "topo": 1,
+   "fp": 37,
+   "q": 2,
+   "speedup_rf": 8.66,
+   "speedup_rs": 14.28,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "intel",
+   "topo": 1,
+   "fp": 37,
+   "q": 8,
+   "speedup_rf": 6.51,
+   "speedup_rs": 11.07,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "intel",
+   "topo": 1,
+   "fp": 37,
+   "q": 32,
+   "speedup_rf": 3.9,
+   "speedup_rs": 6.53,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "intel",
+   "topo": 2,
+   "fp": 4,
+   "q": 2,
+   "speedup_rf": 23.45,
+   "speedup_rs": 53.14,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "intel",
+   "topo": 2,
+   "fp": 4,
+   "q": 8,
+   "speedup_rf": 16.47,
+   "speedup_rs": 37.96,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "intel",
+   "topo": 2,
+   "fp": 4,
+   "q": 32,
+   "speedup_rf": 8.88,
+   "speedup_rs": 19.78,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "intel",
+   "topo": 2,
+   "fp": 37,
+   "q": 2,
+   "speedup_rf": 8.61,
+   "speedup_rs": 14.08,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "intel",
+   "topo": 2,
+   "fp": 37,
+   "q": 8,
+   "speedup_rf": 6.52,
+   "speedup_rs": 11.11,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "intel",
+   "topo": 2,
+   "fp": 37,
+   "q": 32,
+   "speedup_rf": 3.82,
+   "speedup_rs": 6.31,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "taxi2024",
+   "topo": 1,
+   "fp": 4,
+   "q": 2,
+   "speedup_rf": 13.74,
+   "speedup_rs": 23.8,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "taxi2024",
+   "topo": 1,
+   "fp": 4,
+   "q": 8,
+   "speedup_rf": 7.26,
+   "speedup_rs": 12.54,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "taxi2024",
+   "topo": 1,
+   "fp": 4,
+   "q": 32,
+   "speedup_rf": 3.71,
+   "speedup_rs": 6.46,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "taxi2024",
+   "topo": 1,
+   "fp": 37,
+   "q": 2,
+   "speedup_rf": 5.98,
+   "speedup_rs": 6.58,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "taxi2024",
+   "topo": 1,
+   "fp": 37,
+   "q": 8,
+   "speedup_rf": 4.92,
+   "speedup_rs": 5.46,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "taxi2024",
+   "topo": 1,
+   "fp": 37,
+   "q": 32,
+   "speedup_rf": 3.49,
+   "speedup_rs": 3.91,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "taxi2024",
+   "topo": 2,
+   "fp": 4,
+   "q": 2,
+   "speedup_rf": 13.9,
+   "speedup_rs": 24.09,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "taxi2024",
+   "topo": 2,
+   "fp": 4,
+   "q": 8,
+   "speedup_rf": 7.31,
+   "speedup_rs": 12.47,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "taxi2024",
+   "topo": 2,
+   "fp": 4,
+   "q": 32,
+   "speedup_rf": 3.13,
+   "speedup_rs": 5.3,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "taxi2024",
+   "topo": 2,
+   "fp": 37,
+   "q": 2,
+   "speedup_rf": 6.22,
+   "speedup_rs": 6.74,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "taxi2024",
+   "topo": 2,
+   "fp": 37,
+   "q": 8,
+   "speedup_rf": 4.94,
+   "speedup_rs": 5.42,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "taxi2024",
+   "topo": 2,
+   "fp": 37,
+   "q": 32,
+   "speedup_rf": 3.48,
+   "speedup_rs": 4.01,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "retail2009",
+   "topo": 1,
+   "fp": 4,
+   "q": 2,
+   "speedup_rf": 10.59,
+   "speedup_rs": 21.9,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "retail2009",
+   "topo": 1,
+   "fp": 4,
+   "q": 8,
+   "speedup_rf": 7.68,
+   "speedup_rs": 15.81,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "retail2009",
+   "topo": 1,
+   "fp": 4,
+   "q": 32,
+   "speedup_rf": 3.95,
+   "speedup_rs": 8.05,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "retail2009",
+   "topo": 1,
+   "fp": 37,
+   "q": 2,
+   "speedup_rf": 5.12,
+   "speedup_rs": 6.52,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "retail2009",
+   "topo": 1,
+   "fp": 37,
+   "q": 8,
+   "speedup_rf": 3.82,
+   "speedup_rs": 5.06,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "retail2009",
+   "topo": 1,
+   "fp": 37,
+   "q": 32,
+   "speedup_rf": 2.12,
+   "speedup_rs": 2.8,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "retail2009",
+   "topo": 2,
+   "fp": 4,
+   "q": 2,
+   "speedup_rf": 10.98,
+   "speedup_rs": 22.25,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "retail2009",
+   "topo": 2,
+   "fp": 4,
+   "q": 8,
+   "speedup_rf": 7.64,
+   "speedup_rs": 15.81,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "retail2009",
+   "topo": 2,
+   "fp": 4,
+   "q": 32,
+   "speedup_rf": 4.29,
+   "speedup_rs": 8.76,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "retail2009",
+   "topo": 2,
+   "fp": 37,
+   "q": 2,
+   "speedup_rf": 5.01,
+   "speedup_rs": 6.64,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "retail2009",
+   "topo": 2,
+   "fp": 37,
+   "q": 8,
+   "speedup_rf": 3.63,
+   "speedup_rs": 4.81,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  },
+  {
+   "run": "topo_qlb",
+   "base": "retail2009",
+   "topo": 2,
+   "fp": 37,
+   "q": 32,
+   "speedup_rf": 2.09,
+   "speedup_rs": 2.78,
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   }
+  }
+ ],
+ "min_speedup_vs_rf": 2.09,
+ "min_speedup_vs_rs": 2.71
+}

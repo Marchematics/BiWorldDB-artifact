@@ -1,0 +1,145 @@
+kind	Q	arm_or_numerator	denominator	metric	unit	estimate	conditional_interval_low	conditional_interval_high	case_min	case_max	cases	paired_repeats	denominator_wins	ties	numerator_wins	scope
+arm_phase	2	hybrid		wall	s	0.058392			0.048323	0.073387	18	6				retail2009_q2
+arm_phase	2	hybrid		full	s	0.054502			0.044761	0.069150	18	6				retail2009_q2
+arm_phase	2	hybrid		load	s	0.018140			0.016119	0.020737	18	6				retail2009_q2
+arm_phase	2	hybrid		setup	s	0.029545			0.023530	0.039466	18	6				retail2009_q2
+arm_phase	2	hybrid		execute	s	0.001517			0.001171	0.002501	18	6				retail2009_q2
+arm_phase	2	hybrid		extract	s	0.000633			0.000506	0.001129	18	6				retail2009_q2
+arm_phase	2	hybrid		cleanup	s	0.004244			0.003384	0.005289	18	6				retail2009_q2
+arm_phase	2	hybrid		peak_rss	MiB	51.90			51.81	52.11	18	6				retail2009_q2
+arm_phase	2	full_raw		wall	s	0.111565			0.094820	0.133203	18	6				retail2009_q2
+arm_phase	2	full_raw		full	s	0.107531			0.090902	0.128807	18	6				retail2009_q2
+arm_phase	2	full_raw		load	s	0.018081			0.015723	0.021378	18	6				retail2009_q2
+arm_phase	2	full_raw		setup	s	0.076365			0.063874	0.091875	18	6				retail2009_q2
+arm_phase	2	full_raw		execute	s	0.008286			0.007087	0.010620	18	6				retail2009_q2
+arm_phase	2	full_raw		extract	s	0.000888			0.000602	0.001355	18	6				retail2009_q2
+arm_phase	2	full_raw		cleanup	s	0.003854			0.003088	0.004592	18	6				retail2009_q2
+arm_phase	2	full_raw		peak_rss	MiB	70.05			69.95	70.12	18	6				retail2009_q2
+arm_phase	2	full_projected		wall	s	0.116121			0.093776	0.162205	18	6				retail2009_q2
+arm_phase	2	full_projected		full	s	0.112134			0.090269	0.157840	18	6				retail2009_q2
+arm_phase	2	full_projected		load	s	0.016600			0.015859	0.021132	18	6				retail2009_q2
+arm_phase	2	full_projected		setup	s	0.083651			0.063071	0.126333	18	6				retail2009_q2
+arm_phase	2	full_projected		execute	s	0.007007			0.006198	0.009476	18	6				retail2009_q2
+arm_phase	2	full_projected		extract	s	0.000697			0.000517	0.001068	18	6				retail2009_q2
+arm_phase	2	full_projected		cleanup	s	0.004066			0.003416	0.005369	18	6				retail2009_q2
+arm_phase	2	full_projected		peak_rss	MiB	59.35			59.29	59.43	18	6				retail2009_q2
+contrast	2	full_raw	hybrid	wall	ratio	1.932893	1.903825	1.949867	1.823204	1.967755	18	6	0	0	18	retail2009_q2|conditional_repeat_noise
+contrast	2	full_projected	hybrid	wall	ratio	2.108214	2.077364	2.118697	1.888570	2.622653	18	6	0	0	18	retail2009_q2|conditional_repeat_noise
+envelope	2	envelope	hybrid	wall	ratio	1.932893	1.901603	1.946286	1.823204	1.967755	18	6	0	0	18	retail2009_q2|conditional_repeat_noise
+sensitivity	2	min_full_state	hybrid	wall	ratio	1.939666	1.890477	1.956572	1.698804	2.090607	18	6	0	0	18	retail2009_q2|conditional_repeat_noise
+contrast	2	full_raw	hybrid	full	ratio	2.001564	1.955963	2.010984	1.872347	2.050977	18	6	0	0	18	retail2009_q2|conditional_repeat_noise
+contrast	2	full_projected	hybrid	full	ratio	2.173239	2.145571	2.182151	1.944291	2.726459	18	6	0	0	18	retail2009_q2|conditional_repeat_noise
+envelope	2	envelope	hybrid	full	ratio	2.001564	1.955636	2.008509	1.872347	2.050977	18	6	0	0	18	retail2009_q2|conditional_repeat_noise
+sensitivity	2	min_full_state	hybrid	full	ratio	2.001061	1.939968	2.020928	1.732604	2.157234	18	6	0	0	18	retail2009_q2|conditional_repeat_noise
+contrast	2	full_raw	hybrid	peak_rss	ratio	1.349705	1.348884	1.350265	1.344002	1.352400	18	6	0	0	18	retail2009_q2|conditional_repeat_noise
+contrast	2	full_projected	hybrid	peak_rss	ratio	1.143413	1.142782	1.144016	1.139815	1.146854	18	6	0	0	18	retail2009_q2|conditional_repeat_noise
+envelope	2	envelope	hybrid	peak_rss	ratio	1.143413	1.142782	1.144016	1.139815	1.146854	18	6	0	0	18	retail2009_q2|conditional_repeat_noise
+sensitivity	2	min_full_state	hybrid	peak_rss	ratio	1.143433	1.142720	1.144126	1.139204	1.146638	18	6	0	0	18	retail2009_q2|conditional_repeat_noise
+bootstrap	2	envelope	hybrid	wall	ratio	1.920376	1.901603	1.946286			18	6				retail2009_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	min_full_state	hybrid	wall	ratio	1.924882	1.890477	1.956572			18	6				retail2009_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_raw	hybrid	wall	ratio	1.921811	1.903825	1.949867			18	6				retail2009_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_projected	hybrid	wall	ratio	2.104063	2.077364	2.118697			18	6				retail2009_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	envelope	hybrid	full	ratio	1.982732	1.955636	2.008509			18	6				retail2009_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	min_full_state	hybrid	full	ratio	1.988239	1.939968	2.020928			18	6				retail2009_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_raw	hybrid	full	ratio	1.984959	1.955963	2.010984			18	6				retail2009_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_projected	hybrid	full	ratio	2.171303	2.145571	2.182151			18	6				retail2009_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	envelope	hybrid	peak_rss	ratio	1.143369	1.142782	1.144016			18	6				retail2009_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	min_full_state	hybrid	peak_rss	ratio	1.143408	1.142720	1.144126			18	6				retail2009_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_raw	hybrid	peak_rss	ratio	1.349685	1.348884	1.350265			18	6				retail2009_q2|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	2	full_projected	hybrid	peak_rss	ratio	1.143369	1.142782	1.144016			18	6				retail2009_q2|conditional_repeat_noise|draws=2000|seed=20261025
+arm_phase	8	hybrid		wall	s	0.070603			0.064358	0.093869	18	6				retail2009_q8
+arm_phase	8	hybrid		full	s	0.067442			0.061330	0.089601	18	6				retail2009_q8
+arm_phase	8	hybrid		load	s	0.016390			0.016032	0.020789	18	6				retail2009_q8
+arm_phase	8	hybrid		setup	s	0.039804			0.036811	0.055030	18	6				retail2009_q8
+arm_phase	8	hybrid		execute	s	0.005072			0.003044	0.008862	18	6				retail2009_q8
+arm_phase	8	hybrid		extract	s	0.001422			0.001079	0.002031	18	6				retail2009_q8
+arm_phase	8	hybrid		cleanup	s	0.004237			0.003946	0.005793	18	6				retail2009_q8
+arm_phase	8	hybrid		peak_rss	MiB	60.38			60.20	60.43	18	6				retail2009_q8
+arm_phase	8	full_raw		wall	s	0.127616			0.121344	0.169589	18	6				retail2009_q8
+arm_phase	8	full_raw		full	s	0.124152			0.117818	0.164745	18	6				retail2009_q8
+arm_phase	8	full_raw		load	s	0.016331			0.016057	0.020391	18	6				retail2009_q8
+arm_phase	8	full_raw		setup	s	0.067060			0.064894	0.092017	18	6				retail2009_q8
+arm_phase	8	full_raw		execute	s	0.035139			0.032416	0.045483	18	6				retail2009_q8
+arm_phase	8	full_raw		extract	s	0.001446			0.001160	0.001986	18	6				retail2009_q8
+arm_phase	8	full_raw		cleanup	s	0.003224			0.003090	0.004656	18	6				retail2009_q8
+arm_phase	8	full_raw		peak_rss	MiB	70.25			70.16	70.31	18	6				retail2009_q8
+arm_phase	8	full_projected		wall	s	0.153489			0.133940	0.204422	18	6				retail2009_q8
+arm_phase	8	full_projected		full	s	0.149394			0.129924	0.199779	18	6				retail2009_q8
+arm_phase	8	full_projected		load	s	0.016435			0.015999	0.020595	18	6				retail2009_q8
+arm_phase	8	full_projected		setup	s	0.091965			0.072068	0.131969	18	6				retail2009_q8
+arm_phase	8	full_projected		execute	s	0.036553			0.034344	0.045910	18	6				retail2009_q8
+arm_phase	8	full_projected		extract	s	0.001362			0.001110	0.002134	18	6				retail2009_q8
+arm_phase	8	full_projected		cleanup	s	0.003591			0.003498	0.005263	18	6				retail2009_q8
+arm_phase	8	full_projected		peak_rss	MiB	63.56			63.51	63.60	18	6				retail2009_q8
+contrast	8	full_raw	hybrid	wall	ratio	1.852359	1.823082	1.871037	1.767511	1.915889	18	6	0	0	18	retail2009_q8|conditional_repeat_noise
+contrast	8	full_projected	hybrid	wall	ratio	2.242891	2.122693	2.320579	2.021029	2.582846	18	6	0	0	18	retail2009_q8|conditional_repeat_noise
+envelope	8	envelope	hybrid	wall	ratio	1.852359	1.819228	1.870344	1.767511	1.915889	18	6	0	0	18	retail2009_q8|conditional_repeat_noise
+sensitivity	8	min_full_state	hybrid	wall	ratio	1.821396	1.798910	1.872443	1.561505	2.045608	18	6	0	0	18	retail2009_q8|conditional_repeat_noise
+contrast	8	full_raw	hybrid	full	ratio	1.888485	1.859106	1.911005	1.797534	1.966577	18	6	0	0	18	retail2009_q8|conditional_repeat_noise
+contrast	8	full_projected	hybrid	full	ratio	2.296654	2.178574	2.375448	2.054191	2.649924	18	6	0	0	18	retail2009_q8|conditional_repeat_noise
+envelope	8	envelope	hybrid	full	ratio	1.888485	1.854046	1.909165	1.797534	1.966577	18	6	0	0	18	retail2009_q8|conditional_repeat_noise
+sensitivity	8	min_full_state	hybrid	full	ratio	1.859846	1.834121	1.912762	1.588528	2.080350	18	6	0	0	18	retail2009_q8|conditional_repeat_noise
+contrast	8	full_raw	hybrid	peak_rss	ratio	1.163519	1.162866	1.163711	1.162042	1.166602	18	6	0	0	18	retail2009_q8|conditional_repeat_noise
+contrast	8	full_projected	hybrid	peak_rss	ratio	1.052643	1.052101	1.052975	1.051049	1.055739	18	6	0	0	18	retail2009_q8|conditional_repeat_noise
+envelope	8	envelope	hybrid	peak_rss	ratio	1.052643	1.052101	1.052975	1.051049	1.055739	18	6	0	0	18	retail2009_q8|conditional_repeat_noise
+sensitivity	8	min_full_state	hybrid	peak_rss	ratio	1.052876	1.052151	1.053168	1.051034	1.055739	18	6	0	0	18	retail2009_q8|conditional_repeat_noise
+bootstrap	8	envelope	hybrid	wall	ratio	1.849428	1.819228	1.870344			18	6				retail2009_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	min_full_state	hybrid	wall	ratio	1.842169	1.798910	1.872443			18	6				retail2009_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_raw	hybrid	wall	ratio	1.852853	1.823082	1.871037			18	6				retail2009_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_projected	hybrid	wall	ratio	2.237629	2.122693	2.320579			18	6				retail2009_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	envelope	hybrid	full	ratio	1.886052	1.854046	1.909165			18	6				retail2009_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	min_full_state	hybrid	full	ratio	1.875853	1.834121	1.912762			18	6				retail2009_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_raw	hybrid	full	ratio	1.889742	1.859106	1.911005			18	6				retail2009_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_projected	hybrid	full	ratio	2.294436	2.178574	2.375448			18	6				retail2009_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	envelope	hybrid	peak_rss	ratio	1.052582	1.052101	1.052975			18	6				retail2009_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	min_full_state	hybrid	peak_rss	ratio	1.052658	1.052151	1.053168			18	6				retail2009_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_raw	hybrid	peak_rss	ratio	1.163367	1.162866	1.163711			18	6				retail2009_q8|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	8	full_projected	hybrid	peak_rss	ratio	1.052582	1.052101	1.052975			18	6				retail2009_q8|conditional_repeat_noise|draws=2000|seed=20261025
+arm_phase	32	hybrid		wall	s	0.104149			0.090376	0.140545	18	6				retail2009_q32
+arm_phase	32	hybrid		full	s	0.100203			0.086615	0.136233	18	6				retail2009_q32
+arm_phase	32	hybrid		load	s	0.017987			0.015794	0.020959	18	6				retail2009_q32
+arm_phase	32	hybrid		setup	s	0.060639			0.053122	0.077694	18	6				retail2009_q32
+arm_phase	32	hybrid		execute	s	0.011988			0.007573	0.028411	18	6				retail2009_q32
+arm_phase	32	hybrid		extract	s	0.003526			0.003008	0.004887	18	6				retail2009_q32
+arm_phase	32	hybrid		cleanup	s	0.005681			0.005078	0.007419	18	6				retail2009_q32
+arm_phase	32	hybrid		peak_rss	MiB	79.73			79.43	79.77	18	6				retail2009_q32
+arm_phase	32	full_raw		wall	s	0.215137			0.183367	0.260245	18	6				retail2009_q32
+arm_phase	32	full_raw		full	s	0.210877			0.179748	0.255260	18	6				retail2009_q32
+arm_phase	32	full_raw		load	s	0.018817			0.016177	0.021629	18	6				retail2009_q32
+arm_phase	32	full_raw		setup	s	0.083916			0.069309	0.102360	18	6				retail2009_q32
+arm_phase	32	full_raw		execute	s	0.097145			0.086950	0.122699	18	6				retail2009_q32
+arm_phase	32	full_raw		extract	s	0.003769			0.003137	0.005073	18	6				retail2009_q32
+arm_phase	32	full_raw		cleanup	s	0.003307			0.003127	0.004676	18	6				retail2009_q32
+arm_phase	32	full_raw		peak_rss	MiB	71.01			70.96	71.06	18	6				retail2009_q32
+arm_phase	32	full_projected		wall	s	0.257577			0.205863	0.344750	18	6				retail2009_q32
+arm_phase	32	full_projected		full	s	0.252789			0.201984	0.339757	18	6				retail2009_q32
+arm_phase	32	full_projected		load	s	0.018364			0.016076	0.021621	18	6				retail2009_q32
+arm_phase	32	full_projected		setup	s	0.110928			0.081213	0.176005	18	6				retail2009_q32
+arm_phase	32	full_projected		execute	s	0.111174			0.097083	0.137993	18	6				retail2009_q32
+arm_phase	32	full_projected		extract	s	0.004037			0.003047	0.005437	18	6				retail2009_q32
+arm_phase	32	full_projected		cleanup	s	0.005453			0.004312	0.006605	18	6				retail2009_q32
+arm_phase	32	full_projected		peak_rss	MiB	73.55			73.48	73.64	18	6				retail2009_q32
+contrast	32	full_raw	hybrid	wall	ratio	1.988976	1.889408	2.019256	1.738069	2.088319	18	6	0	0	18	retail2009_q32|conditional_repeat_noise
+contrast	32	full_projected	hybrid	wall	ratio	2.333497	2.293943	2.370859	2.098410	2.707344	18	6	0	0	18	retail2009_q32|conditional_repeat_noise
+envelope	32	envelope	hybrid	wall	ratio	1.988976	1.888698	2.019256	1.738069	2.088319	18	6	0	0	18	retail2009_q32|conditional_repeat_noise
+sensitivity	32	min_full_state	hybrid	wall	ratio	2.006699	1.850928	2.026250	1.766089	2.374176	18	6	0	0	18	retail2009_q32|conditional_repeat_noise
+contrast	32	full_raw	hybrid	full	ratio	2.020694	1.915037	2.057351	1.757541	2.129138	18	6	0	0	18	retail2009_q32|conditional_repeat_noise
+contrast	32	full_projected	hybrid	full	ratio	2.379171	2.336590	2.414381	2.130752	2.767948	18	6	0	0	18	retail2009_q32|conditional_repeat_noise
+envelope	32	envelope	hybrid	full	ratio	2.020694	1.912985	2.057351	1.757541	2.129138	18	6	0	0	18	retail2009_q32|conditional_repeat_noise
+sensitivity	32	min_full_state	hybrid	full	ratio	2.039867	1.877539	2.065071	1.789833	2.421726	18	6	0	0	18	retail2009_q32|conditional_repeat_noise
+contrast	32	full_raw	hybrid	peak_rss	ratio	0.890589	0.890358	0.890890	0.889817	0.893987	18	6	18	0	0	retail2009_q32|conditional_repeat_noise
+contrast	32	full_projected	hybrid	peak_rss	ratio	0.922478	0.922045	0.922811	0.921517	0.924983	18	6	18	0	0	retail2009_q32|conditional_repeat_noise
+envelope	32	envelope	hybrid	peak_rss	ratio	0.890589	0.890358	0.890890	0.889817	0.893987	18	6	18	0	0	retail2009_q32|conditional_repeat_noise
+sensitivity	32	min_full_state	hybrid	peak_rss	ratio	0.890585	0.890351	0.890972	0.889702	0.894492	18	6	18	0	0	retail2009_q32|conditional_repeat_noise
+bootstrap	32	envelope	hybrid	wall	ratio	1.973549	1.888698	2.019256			18	6				retail2009_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	min_full_state	hybrid	wall	ratio	1.954399	1.850928	2.026250			18	6				retail2009_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_raw	hybrid	wall	ratio	1.974140	1.889408	2.019256			18	6				retail2009_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_projected	hybrid	wall	ratio	2.341327	2.293943	2.370859			18	6				retail2009_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	envelope	hybrid	full	ratio	2.004210	1.912985	2.057351			18	6				retail2009_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	min_full_state	hybrid	full	ratio	1.986486	1.877539	2.065071			18	6				retail2009_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_raw	hybrid	full	ratio	2.004596	1.915037	2.057351			18	6				retail2009_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_projected	hybrid	full	ratio	2.388084	2.336590	2.414381			18	6				retail2009_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	envelope	hybrid	peak_rss	ratio	0.890604	0.890358	0.890890			18	6				retail2009_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	min_full_state	hybrid	peak_rss	ratio	0.890633	0.890351	0.890972			18	6				retail2009_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_raw	hybrid	peak_rss	ratio	0.890604	0.890358	0.890890			18	6				retail2009_q32|conditional_repeat_noise|draws=2000|seed=20261025
+bootstrap	32	full_projected	hybrid	peak_rss	ratio	0.922437	0.922045	0.922811			18	6				retail2009_q32|conditional_repeat_noise|draws=2000|seed=20261025

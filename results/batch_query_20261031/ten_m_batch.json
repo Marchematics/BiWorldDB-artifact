@@ -1,0 +1,10 @@
+{
+ "hybrid_cold_ms": 492.2,
+ "fenwick_cold_ms": 1689.7,
+ "cold_ratio": 3.43,
+ "hybrid_warm_ms": 105.5,
+ "fenwick_warm_ms": 1283.5,
+ "warm_ratio": 12.17,
+ "peak_hybrid_mib": 234.4,
+ "peak_rf_mib": 1138.9
+}

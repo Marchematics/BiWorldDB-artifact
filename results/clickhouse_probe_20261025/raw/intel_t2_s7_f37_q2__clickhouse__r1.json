@@ -1,0 +1,22 @@
+{
+ "engine": "clickhouse",
+ "chdb_version": "4.4.0",
+ "fixture": "fixtures/intel.bin",
+ "topology": 2,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 2,
+ "repeat": 1,
+ "n_answers": 4096,
+ "answers_sha256": "8cdd5f4f2a2c65658928d5efda9a6c9393c8ce59681460971c20083c14675cc6",
+ "oracle_ok": true,
+ "oracle_detail": "exact match",
+ "phases_ns": {
+  "load": 43468813,
+  "setup": 102572174,
+  "execute": 178083218900,
+  "extract": 539634,
+  "cleanup": 161
+ },
+ "full_ns": 178229799682
+}

@@ -1,0 +1,56 @@
+[
+ {
+  "base": "intel",
+  "states": 100000,
+  "fp": 37,
+  "exact": true,
+  "hybrid_ms": 299.6,
+  "rf_ms": 6016.7,
+  "hybrid_speedup_vs_rf": 20.08
+ },
+ {
+  "base": "intel",
+  "states": 100000,
+  "fp": 4,
+  "exact": true,
+  "hybrid_ms": 454.0,
+  "rf_ms": 44430.9,
+  "hybrid_speedup_vs_rf": 97.86
+ },
+ {
+  "base": "taxi",
+  "states": 100000,
+  "fp": 37,
+  "exact": true,
+  "hybrid_ms": 398.4,
+  "rf_ms": 3800.5,
+  "hybrid_speedup_vs_rf": 9.54
+ },
+ {
+  "base": "taxi",
+  "states": 100000,
+  "fp": 4,
+  "exact": true,
+  "hybrid_ms": 366.2,
+  "rf_ms": 25569.0,
+  "hybrid_speedup_vs_rf": 69.82
+ },
+ {
+  "base": "intel",
+  "states": 300000,
+  "fp": 37,
+  "exact": true,
+  "hybrid_ms": 997.7,
+  "rf_ms": 20351.5,
+  "hybrid_speedup_vs_rf": 20.4
+ },
+ {
+  "base": "taxi",
+  "states": 300000,
+  "fp": 37,
+  "exact": true,
+  "hybrid_ms": 1140.9,
+  "rf_ms": 11725.0,
+  "hybrid_speedup_vs_rf": 10.28
+ }
+]

@@ -1,0 +1,59 @@
+{
+ "note": "Interleaved same-window comparison of the overlay current-state storage against the default full-copy state, 5 repetitions each, one pinned core, host load ~90-100 recorded; only within-window relative gains are interpreted.",
+ "rows": [
+  {
+   "cohort": "Intel Q2 fp37",
+   "base_total_ms": 67.8,
+   "overlay_total_ms": 36.8,
+   "gain_pct": 45.8,
+   "base_setup_ms": 58.1,
+   "overlay_setup_ms": 31.3,
+   "n": 5
+  },
+  {
+   "cohort": "Intel Q32 fp37",
+   "base_total_ms": 145.2,
+   "overlay_total_ms": 112.8,
+   "gain_pct": 22.3,
+   "base_setup_ms": 98.8,
+   "overlay_setup_ms": 71.9,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q32 fp4",
+   "base_total_ms": 406.8,
+   "overlay_total_ms": 367.6,
+   "gain_pct": 9.6,
+   "base_setup_ms": 214.8,
+   "overlay_setup_ms": 182.3,
+   "n": 5
+  },
+  {
+   "cohort": "Taxi Q32 fp37",
+   "base_total_ms": 285.8,
+   "overlay_total_ms": 241.7,
+   "gain_pct": 15.4,
+   "base_setup_ms": 212.8,
+   "overlay_setup_ms": 180.7,
+   "n": 5
+  },
+  {
+   "cohort": "Retail Q2 fp37",
+   "base_total_ms": 33.9,
+   "overlay_total_ms": 19.8,
+   "gain_pct": 41.8,
+   "base_setup_ms": 28.0,
+   "overlay_setup_ms": 15.5,
+   "n": 5
+  },
+  {
+   "cohort": "Retail Q32 fp37",
+   "base_total_ms": 79.3,
+   "overlay_total_ms": 63.7,
+   "gain_pct": 19.7,
+   "base_setup_ms": 48.3,
+   "overlay_setup_ms": 35.6,
+   "n": 5
+  }
+ ]
+}

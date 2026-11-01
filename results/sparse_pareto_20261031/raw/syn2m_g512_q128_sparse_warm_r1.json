@@ -1,0 +1,41 @@
+{
+ "arm": "sparse",
+ "arm_mode": "sparse",
+ "base_id": "syn2m512",
+ "fixture": "artifact/fix2m512.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 37,
+ "q": 128,
+ "repeat": 1,
+ "n_states": 2049,
+ "n_answers": 262144,
+ "range_scope": "per_state",
+ "cold": false,
+ "preload_fadvise_dontneed": false,
+ "sparse_base_env": "1",
+ "answers_fn": "c87bce6a2ee98d3a",
+ "answers_sha256": "e99885bdc3694afe707f110be632de9223c503fc35483386cb3a362587dac7f2",
+ "phases_ns": {
+  "load": 74917,
+  "setup": 75513528,
+  "execute": 67295982,
+  "extract": 11142973,
+  "cleanup": 5533642
+ },
+ "full_ns": 159561042,
+ "peak_rss_kb": 74876,
+ "base_stats": {
+  "mode": "sparse",
+  "n_active": 55,
+  "classes": 284696,
+  "nnz": 160991,
+  "csr_bytes": 4224712,
+  "dense_bytes": 125266240,
+  "bitmap_bytes": 1957560,
+  "lut_bytes": 979000,
+  "transient_bytes": 0,
+  "est_nnz": 0,
+  "build_us": 35797
+ }
+}

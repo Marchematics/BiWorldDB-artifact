@@ -1,0 +1,272 @@
+{
+ "taxi2024_t2_s17_f4_q2": {
+  "answers_path": "artifact/taxi2024_t2_s17_f4_q2.answers.bin",
+  "sha256": "8c902414a00772ecae29fd6f7458b6635897d496860d8475d2c7e62bfeac5936",
+  "n_answers": 4096
+ },
+ "taxi2024_t1_s7_f4_q2": {
+  "answers_path": "artifact/taxi2024_t1_s7_f4_q2.answers.bin",
+  "sha256": "abf628d6876fce79d30337c6d5a2d3ee68d96b3ae985ecf3549569bfd8a18d02",
+  "n_answers": 4096
+ },
+ "taxi2024_t0_s7_f37_q2": {
+  "answers_path": "artifact/taxi2024_t0_s7_f37_q2.answers.bin",
+  "sha256": "0ad4863a6caf99ecd9209665c7c7b16b7358d29194318e5e24a2328c73a7e745",
+  "n_answers": 4096
+ },
+ "taxi2024_t1_s17_f4_q2": {
+  "answers_path": "artifact/taxi2024_t1_s17_f4_q2.answers.bin",
+  "sha256": "0bae0f723a94b412c3893fb276b53b3d80b336d46e72593494f37afc43b3c7c3",
+  "n_answers": 4096
+ },
+ "taxi2024_t2_s29_f4_q2": {
+  "answers_path": "artifact/taxi2024_t2_s29_f4_q2.answers.bin",
+  "sha256": "585d2a4c75821d514bc925010eee23d8f0eeb8e225256ec97eb33cb76164b5d9",
+  "n_answers": 4096
+ },
+ "taxi2024_t0_s7_f4_q2": {
+  "answers_path": "artifact/taxi2024_t0_s7_f4_q2.answers.bin",
+  "sha256": "4e305509b7ec8063a8d5829722f8d600cb7d57ef3a181ece5ed636f887d642bf",
+  "n_answers": 4096
+ },
+ "taxi2024_t0_s17_f37_q2": {
+  "answers_path": "artifact/taxi2024_t0_s17_f37_q2.answers.bin",
+  "sha256": "66fd995bf5479e55bed2e25bb448226f139449315ed396e6b81a12dce138d515",
+  "n_answers": 4096
+ },
+ "taxi2024_t2_s29_f37_q2": {
+  "answers_path": "artifact/taxi2024_t2_s29_f37_q2.answers.bin",
+  "sha256": "4285ef61e1c6bc5962d79c43749e9fa8460486c3e28223195a9c447d4e19cdd2",
+  "n_answers": 4096
+ },
+ "taxi2024_t1_s29_f4_q2": {
+  "answers_path": "artifact/taxi2024_t1_s29_f4_q2.answers.bin",
+  "sha256": "4b5a37be9f341567c56273a4cea2071892ca93f0b086292d683b289a1df1ed5c",
+  "n_answers": 4096
+ },
+ "taxi2024_t1_s7_f37_q2": {
+  "answers_path": "artifact/taxi2024_t1_s7_f37_q2.answers.bin",
+  "sha256": "4068e4397ec77aefd2cc87468945d461613dc0bb58cc1c6d618399d4b63f8c96",
+  "n_answers": 4096
+ },
+ "taxi2024_t0_s29_f37_q2": {
+  "answers_path": "artifact/taxi2024_t0_s29_f37_q2.answers.bin",
+  "sha256": "906411ba1552965e12c3a7984f83e67984a491f9f33fed75350cda7a19a4c2af",
+  "n_answers": 4096
+ },
+ "taxi2024_t2_s7_f4_q2": {
+  "answers_path": "artifact/taxi2024_t2_s7_f4_q2.answers.bin",
+  "sha256": "af7acd21fcb79465f9b854239fb3979b2569b097ad771967275e74001b7af848",
+  "n_answers": 4096
+ },
+ "taxi2024_t0_s17_f4_q2": {
+  "answers_path": "artifact/taxi2024_t0_s17_f4_q2.answers.bin",
+  "sha256": "b3feb8a53233f7a77d72ea602600e9f7df613fe8fcbacf8a48f21af32199f92b",
+  "n_answers": 4096
+ },
+ "taxi2024_t2_s17_f37_q2": {
+  "answers_path": "artifact/taxi2024_t2_s17_f37_q2.answers.bin",
+  "sha256": "671146719133d881ae2409084a8c4d50035982174d0cd6625158be003104658c",
+  "n_answers": 4096
+ },
+ "taxi2024_t0_s29_f4_q2": {
+  "answers_path": "artifact/taxi2024_t0_s29_f4_q2.answers.bin",
+  "sha256": "ee9a0b95c918ad333dcc1944aa7f7ae4536eb7f9cc3922ac4e727da78f3c0f55",
+  "n_answers": 4096
+ },
+ "taxi2024_t2_s7_f37_q2": {
+  "answers_path": "artifact/taxi2024_t2_s7_f37_q2.answers.bin",
+  "sha256": "d42987791c8d194b35cd28b48397ea5d3fcf8cb974f825a90b0d09e850ff52da",
+  "n_answers": 4096
+ },
+ "taxi2024_t1_s29_f37_q2": {
+  "answers_path": "artifact/taxi2024_t1_s29_f37_q2.answers.bin",
+  "sha256": "4107807f4d24bedc0a0edc642f702e8941ecc6da4f53403b27e0dea5e2764c67",
+  "n_answers": 4096
+ },
+ "taxi2024_t1_s17_f37_q2": {
+  "answers_path": "artifact/taxi2024_t1_s17_f37_q2.answers.bin",
+  "sha256": "ce8df5d7cab2a4336e143783d10c42a48dcfc6c3bb1edea87101b5e590bab9a9",
+  "n_answers": 4096
+ },
+ "taxi2024_t0_s7_f37_q8": {
+  "answers_path": "artifact/taxi2024_t0_s7_f37_q8.answers.bin",
+  "sha256": "19906dd00943ef927a869d2a1f148995ccf02ab53f078c30b3adaab3d7b4646b",
+  "n_answers": 16384
+ },
+ "taxi2024_t0_s7_f4_q8": {
+  "answers_path": "artifact/taxi2024_t0_s7_f4_q8.answers.bin",
+  "sha256": "31bf16688e6898f8adcbdefd77f2344fc3feaee8d759f3a8ddd3700983848580",
+  "n_answers": 16384
+ },
+ "taxi2024_t2_s17_f37_q8": {
+  "answers_path": "artifact/taxi2024_t2_s17_f37_q8.answers.bin",
+  "sha256": "7f0558ec09845370a9481b39692627377cd42974594510eb76fb1f18aa584747",
+  "n_answers": 16384
+ },
+ "taxi2024_t1_s17_f4_q8": {
+  "answers_path": "artifact/taxi2024_t1_s17_f4_q8.answers.bin",
+  "sha256": "8f88a3f1c181d345f2c9d2229bbd6b3efd8f3376b902c3ed1c112c3d94d1e535",
+  "n_answers": 16384
+ },
+ "taxi2024_t2_s29_f37_q8": {
+  "answers_path": "artifact/taxi2024_t2_s29_f37_q8.answers.bin",
+  "sha256": "77c3de5abbc8948aadcb6e03ff00f80ee8cd3346ee44fec95d7c8bbd103ab3e4",
+  "n_answers": 16384
+ },
+ "taxi2024_t2_s7_f37_q8": {
+  "answers_path": "artifact/taxi2024_t2_s7_f37_q8.answers.bin",
+  "sha256": "ffdd75fc505b1e8e8d797895235a9e1da7c765c38544fac36778dd26f30992de",
+  "n_answers": 16384
+ },
+ "taxi2024_t0_s17_f37_q8": {
+  "answers_path": "artifact/taxi2024_t0_s17_f37_q8.answers.bin",
+  "sha256": "07d608a6e934453fe77162fd61efc8e5e18751627e876b2a27053de47f125ebc",
+  "n_answers": 16384
+ },
+ "taxi2024_t0_s29_f37_q8": {
+  "answers_path": "artifact/taxi2024_t0_s29_f37_q8.answers.bin",
+  "sha256": "87d59a0dbceb174e2495ad05c12bc0fafcc67f99d08e3aca0f6b3a9089a39516",
+  "n_answers": 16384
+ },
+ "taxi2024_t1_s29_f4_q8": {
+  "answers_path": "artifact/taxi2024_t1_s29_f4_q8.answers.bin",
+  "sha256": "6ed55b2407dd17ed41e1248911c6c1c54b351796b6febada360e14f449c9239b",
+  "n_answers": 16384
+ },
+ "taxi2024_t1_s7_f37_q8": {
+  "answers_path": "artifact/taxi2024_t1_s7_f37_q8.answers.bin",
+  "sha256": "4eb8bfc5f4de93044965ea71864b3134c9e0d7e781c27def6a8af54759d99892",
+  "n_answers": 16384
+ },
+ "taxi2024_t0_s29_f4_q8": {
+  "answers_path": "artifact/taxi2024_t0_s29_f4_q8.answers.bin",
+  "sha256": "4b4ada9d79c3e1c772e49e8738a6fe19939433bed909bf8cf18c04e8b2ed1d8c",
+  "n_answers": 16384
+ },
+ "taxi2024_t2_s17_f4_q8": {
+  "answers_path": "artifact/taxi2024_t2_s17_f4_q8.answers.bin",
+  "sha256": "ce39043f76223ce16390dc60f9888960d3113811bc87f2e9f25b69969cc35a04",
+  "n_answers": 16384
+ },
+ "taxi2024_t1_s17_f37_q8": {
+  "answers_path": "artifact/taxi2024_t1_s17_f37_q8.answers.bin",
+  "sha256": "380366a55d7238a6fa588a8a389dd127475b7e9ad3e5d9b0e07a4f551f207631",
+  "n_answers": 16384
+ },
+ "taxi2024_t2_s29_f4_q8": {
+  "answers_path": "artifact/taxi2024_t2_s29_f4_q8.answers.bin",
+  "sha256": "c78e1af643ba468e8cba0fc9431f117040b414aef92a1505eaefe84ab07b3e33",
+  "n_answers": 16384
+ },
+ "taxi2024_t2_s7_f4_q8": {
+  "answers_path": "artifact/taxi2024_t2_s7_f4_q8.answers.bin",
+  "sha256": "b4298a1f1d05b731ea69b567718e49c14792a48f804f2cdc52391faf668e57da",
+  "n_answers": 16384
+ },
+ "taxi2024_t1_s7_f4_q8": {
+  "answers_path": "artifact/taxi2024_t1_s7_f4_q8.answers.bin",
+  "sha256": "fccedef4396be6879c4208f94230787dc0dbbfa48cb0db9bc22b6c212ea0ed13",
+  "n_answers": 16384
+ },
+ "taxi2024_t1_s29_f37_q8": {
+  "answers_path": "artifact/taxi2024_t1_s29_f37_q8.answers.bin",
+  "sha256": "7d7026087d678a63784726dcb854b7e23353a05ccb305790ad456c95ee2491ac",
+  "n_answers": 16384
+ },
+ "taxi2024_t0_s17_f4_q8": {
+  "answers_path": "artifact/taxi2024_t0_s17_f4_q8.answers.bin",
+  "sha256": "9b77214362c04264a68bf782817a8e8f685f3c6b9b3d95142cd9fbda83d8bc63",
+  "n_answers": 16384
+ },
+ "taxi2024_t1_s7_f37_q32": {
+  "answers_path": "artifact/taxi2024_t1_s7_f37_q32.answers.bin",
+  "sha256": "7b84251df14d10fed2b68e615f948dd6a001d48fdf00af3a8c7cc94cf6d46656",
+  "n_answers": 65536
+ },
+ "taxi2024_t2_s17_f37_q32": {
+  "answers_path": "artifact/taxi2024_t2_s17_f37_q32.answers.bin",
+  "sha256": "38d7378a981fa77be236817be47c723b0be749ee447334be3903799019252161",
+  "n_answers": 65536
+ },
+ "taxi2024_t0_s29_f4_q32": {
+  "answers_path": "artifact/taxi2024_t0_s29_f4_q32.answers.bin",
+  "sha256": "3abbb978615a98d50062bd47b95f6bf75fdc8e3d437000beb4a56ed582e3a700",
+  "n_answers": 65536
+ },
+ "taxi2024_t2_s29_f37_q32": {
+  "answers_path": "artifact/taxi2024_t2_s29_f37_q32.answers.bin",
+  "sha256": "272d2272394ed125095e04fe96f3fe5fd62ac88ba41ce9cc40ef1abfd15eae2b",
+  "n_answers": 65536
+ },
+ "taxi2024_t0_s7_f4_q32": {
+  "answers_path": "artifact/taxi2024_t0_s7_f4_q32.answers.bin",
+  "sha256": "af8333a2f35506596460e1704e4a363e9df7bcb4456751b63284e1b35d6370b2",
+  "n_answers": 65536
+ },
+ "taxi2024_t1_s17_f37_q32": {
+  "answers_path": "artifact/taxi2024_t1_s17_f37_q32.answers.bin",
+  "sha256": "f6864b575b3444bd3488c38597b2d7307ffcf0679835a2f9a3a2cae3fcfdc457",
+  "n_answers": 65536
+ },
+ "taxi2024_t1_s7_f4_q32": {
+  "answers_path": "artifact/taxi2024_t1_s7_f4_q32.answers.bin",
+  "sha256": "fc2eeaad95f9690bce936cf7600701e089b6a4ab072f0f9abe1b3825f7975f68",
+  "n_answers": 65536
+ },
+ "taxi2024_t2_s17_f4_q32": {
+  "answers_path": "artifact/taxi2024_t2_s17_f4_q32.answers.bin",
+  "sha256": "ea4dd8283b16f0129db94f12740747cafe3862fa2c116f474649e78bab94faab",
+  "n_answers": 65536
+ },
+ "taxi2024_t1_s17_f4_q32": {
+  "answers_path": "artifact/taxi2024_t1_s17_f4_q32.answers.bin",
+  "sha256": "f2beda8f5b6dbd316e53962db514e8b68c47e0657bbb765067d354b436033f5f",
+  "n_answers": 65536
+ },
+ "taxi2024_t2_s29_f4_q32": {
+  "answers_path": "artifact/taxi2024_t2_s29_f4_q32.answers.bin",
+  "sha256": "97d7a57bb75470c6be453a2aa234d70ef0543480d282ae79d2c0c5e0a0f65963",
+  "n_answers": 65536
+ },
+ "taxi2024_t0_s29_f37_q32": {
+  "answers_path": "artifact/taxi2024_t0_s29_f37_q32.answers.bin",
+  "sha256": "1e257d7de2484e766d5f081cdcad0f1e5fde3086df3b9a530ea9a10917e98656",
+  "n_answers": 65536
+ },
+ "taxi2024_t2_s7_f4_q32": {
+  "answers_path": "artifact/taxi2024_t2_s7_f4_q32.answers.bin",
+  "sha256": "0c9ea802ff17d96dc374d50ddfa0f9ad9233aa8aaf7cef8c579313cd09a84c6a",
+  "n_answers": 65536
+ },
+ "taxi2024_t0_s17_f37_q32": {
+  "answers_path": "artifact/taxi2024_t0_s17_f37_q32.answers.bin",
+  "sha256": "48672b4b067c5eea6e5bff0163f70bf43b5d5679cf2048ec0f95cf01e83dcf8f",
+  "n_answers": 65536
+ },
+ "taxi2024_t1_s29_f37_q32": {
+  "answers_path": "artifact/taxi2024_t1_s29_f37_q32.answers.bin",
+  "sha256": "ca3c23bdbd21f9b07747ee4f7815fb87ae2d4758e0d710602ee9277d19e36cb1",
+  "n_answers": 65536
+ },
+ "taxi2024_t0_s7_f37_q32": {
+  "answers_path": "artifact/taxi2024_t0_s7_f37_q32.answers.bin",
+  "sha256": "7b7f5457c6f337fa6cb7087c4b93ea6a2dc6c42145f318832bd578c85758052b",
+  "n_answers": 65536
+ },
+ "taxi2024_t2_s7_f37_q32": {
+  "answers_path": "artifact/taxi2024_t2_s7_f37_q32.answers.bin",
+  "sha256": "1c8562e13081b0bebefcee35d31cbfbb522aa80ee9dc0a151d0bc1938287e024",
+  "n_answers": 65536
+ },
+ "taxi2024_t0_s17_f4_q32": {
+  "answers_path": "artifact/taxi2024_t0_s17_f4_q32.answers.bin",
+  "sha256": "ec17ae4f3cb95dc95dcf9a648e9d2c8b8a4ff03df3b9bccca9a131a75949dbc8",
+  "n_answers": 65536
+ },
+ "taxi2024_t1_s29_f4_q32": {
+  "answers_path": "artifact/taxi2024_t1_s29_f4_q32.answers.bin",
+  "sha256": "ad2e811916e7fdb896653adea3bfeb55eff5feaa9dce9544b958029e79e600a4",
+  "n_answers": 65536
+ }
+}

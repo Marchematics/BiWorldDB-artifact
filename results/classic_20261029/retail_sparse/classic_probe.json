@@ -1,0 +1,61 @@
+{
+ "rows": [
+  {
+   "base": "retail2009",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 2,
+   "fid": "retail2009_t0_s7_f37_q2",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 88079618.5,
+    "rs": 114390765.0,
+    "hybrid": 29431925.5
+   }
+  },
+  {
+   "base": "retail2009",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 8,
+   "fid": "retail2009_t0_s7_f37_q8",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 90928903.0,
+    "rs": 116386257.5,
+    "hybrid": 45094863.5
+   }
+  },
+  {
+   "base": "retail2009",
+   "topology": 0,
+   "seed": 7,
+   "factor_period": 37,
+   "q": 32,
+   "fid": "retail2009_t0_s7_f37_q32",
+   "exact": {
+    "rf": true,
+    "rs": true,
+    "hybrid": true
+   },
+   "errors": {},
+   "work_ns": {
+    "rf": 94855096.0,
+    "rs": 122662803.5,
+    "hybrid": 77776217.5
+   }
+  }
+ ]
+}

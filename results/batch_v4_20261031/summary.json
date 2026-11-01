@@ -1,0 +1,16 @@
+{
+ "v4_intel": {
+  "full": 219.7,
+  "setup": 112.6,
+  "execute": 79.2,
+  "extract": 24.9,
+  "peak_rss_kb": 140752
+ },
+ "v4_taxi": {
+  "full": 205.7,
+  "setup": 129.0,
+  "execute": 49.0,
+  "extract": 24.5,
+  "peak_rss_kb": 167092
+ }
+}

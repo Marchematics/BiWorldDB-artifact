@@ -1,0 +1,41 @@
+{
+ "run": "roster7_retail",
+ "answers_checked": 324,
+ "answers_bad": [],
+ "fixtures": 54,
+ "rows": [
+  {
+   "cohort": "Q2",
+   "cases": 18,
+   "dd_median": 5.01,
+   "dd_min": 4.0,
+   "dd_max": 5.6,
+   "dbsp_median": 5.46,
+   "dbsp_min": 4.42,
+   "dbsp_max": 6.01,
+   "wins": 18
+  },
+  {
+   "cohort": "Q8",
+   "cases": 18,
+   "dd_median": 3.6,
+   "dd_min": 3.36,
+   "dd_max": 4.12,
+   "dbsp_median": 3.96,
+   "dbsp_min": 3.66,
+   "dbsp_max": 4.36,
+   "wins": 18
+  },
+  {
+   "cohort": "Q32",
+   "cases": 18,
+   "dd_median": 2.74,
+   "dd_min": 2.14,
+   "dd_max": 3.15,
+   "dbsp_median": 3.2,
+   "dbsp_min": 2.47,
+   "dbsp_max": 3.77,
+   "wins": 18
+  }
+ ]
+}

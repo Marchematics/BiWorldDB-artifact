@@ -1,0 +1,58 @@
+{
+ "kStates": 33,
+ "kMaxQ": 32,
+ "compile": "-DBWH_STATES=33",
+ "cases": 10000,
+ "queries_compared": 640672,
+ "engines": [
+  "shipped_hybrid",
+  "sparse_csr",
+  "batch_v2",
+  "pgdg_align_auto",
+  "pgdg_variant_0..3"
+ ],
+ "oracle": "rf (rollback Fenwick)",
+ "coverage": {
+  "topology_chain": 3367,
+  "topology_bushy": 3335,
+  "topology_star": 3298,
+  "shared_ranges": 4534,
+  "per_state_ranges": 5466,
+  "dense_frame": 1023,
+  "op_replace": 92073,
+  "op_insert": 37422,
+  "op_delete": 27729,
+  "op_move": 27504,
+  "op_factor": 135272,
+  "factor_value_zero": 56495,
+  "factor_value_negative": 44988,
+  "factor_value_positive": 33789,
+  "cases_empty_ranges": 1009,
+  "cases_tmax_plus1_inserts": 1030,
+  "cases_negative_amounts": 996,
+  "batch_v2_supported": 0,
+  "batch_v2_unsupported": 0,
+  "pgdg_variant_counts": [
+   14510,
+   15490,
+   10000,
+   10000
+  ],
+  "dense_cases_with_hi_tmax_plus1": 727,
+  "dense_hi_tmax1_pgdg_mismatch": 0,
+  "other_engine_mismatches": 0,
+  "dense_hi_tmax1_pgdg_mismatch_by_engine": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "known_edge_mismatches": 0,
+  "engine_runs": 70000,
+  "engine_mismatches": 0
+ },
+ "mismatches": [],
+ "known_edge_mismatches": [],
+ "pass": true
+}

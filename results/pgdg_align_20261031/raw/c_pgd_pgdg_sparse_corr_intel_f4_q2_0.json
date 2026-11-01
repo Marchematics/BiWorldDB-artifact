@@ -1,0 +1,50 @@
+{
+ "arm": "pgdg_sparse_corr",
+ "base_id": "intel",
+ "mode": "pgdg_sparse_corr",
+ "family": "pgdg_aligned",
+ "fixture": "artifact/intel.bin",
+ "topology": 0,
+ "seed": 7,
+ "factor_period": 4,
+ "q": 2,
+ "repeat": 0,
+ "n_states": 2049,
+ "n_answers": 4096,
+ "range_scope": "per_state",
+ "answers_fn": "53cd9c6c8d01d512",
+ "answers_sha256": "847264a83b6770581738bcd9e519b881d20eb7ef34daf9aef413822a57566665",
+ "phases_ns": {
+  "load": 47348,
+  "setup": 53087941,
+  "execute": 1997713,
+  "extract": 420562,
+  "cleanup": 3988766
+ },
+ "full_ns": 59542330,
+ "peak_rss_kb": 85788,
+ "stats": {
+  "n_active": 61,
+  "n_groups": 61,
+  "classes": 2377,
+  "union_classes": 646,
+  "dense_frame": false,
+  "sparse_base": true,
+  "corr": true,
+  "n_factor_edits": 512,
+  "n_ins": 295,
+  "nnz": 86671,
+  "base_bytes": 1087384,
+  "dense_base_bytes": 1179488,
+  "plan_bytes": 206216,
+  "plan_us": 862,
+  "base_us": 45549
+ },
+ "auto": {
+  "classes": 0,
+  "dense_bytes": 0,
+  "est_nnz": 0,
+  "sparse_bytes": 0,
+  "occ": 0.0
+ }
+}

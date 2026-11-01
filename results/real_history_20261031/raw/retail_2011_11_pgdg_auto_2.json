@@ -1,0 +1,45 @@
+{
+ "arm": "pgdg_auto",
+ "mode": "pgdg_dense_corr",
+ "family": "real_history",
+ "fixture": "artifact/retail_2011_11_base.bin",
+ "spec": "artifact/retail_2011_11_spec.bin",
+ "repeat": 2,
+ "n_states": 87065,
+ "q": 2,
+ "n_answers": 174128,
+ "answers_fn": "72ac2382dc035a6b",
+ "answers_sha256": "c8fc6fbc26704fbd93be4a42b062c104e170a826561a4a53b1f26dcef7b5bfb9",
+ "phases_ns": {
+  "load": 85502,
+  "setup": 32759806,
+  "execute": 9451474,
+  "extract": 8088897,
+  "cleanup": 1547894
+ },
+ "full_ns": 51933573,
+ "peak_rss_kb": 52048,
+ "history": {
+  "n_base": 957134,
+  "n_ins": 83700,
+  "inserts": 83635,
+  "deletes": 1011,
+  "credits": 65,
+  "factor_edits": 2353,
+  "endpoints": 268,
+  "period_lo": 1008000,
+  "period_hi": 1051200,
+  "bucket": 60
+ },
+ "stats": {
+  "n_active": 43,
+  "classes": 269,
+  "union_classes": 263,
+  "sparse_base": false,
+  "corr": true,
+  "base_bytes": 97200,
+  "dense_base_bytes": 95040,
+  "plan_us": 11379,
+  "base_us": 8987
+ }
+}

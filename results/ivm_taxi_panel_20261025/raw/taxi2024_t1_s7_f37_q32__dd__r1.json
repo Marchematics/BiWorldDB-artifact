@@ -1,0 +1,15 @@
+{
+ "engine": "differential-dataflow",
+ "dd_version": "0.25.1",
+ "events": 72188,
+ "answers": 65536,
+ "oracle_ok": true,
+ "oracle_detail": "exact match",
+ "phases_ns": {
+  "load": 82599820,
+  "setup": 262305596,
+  "execute": 1431460752,
+  "extract": 2019184
+ },
+ "full_ns": 1778385352
+}

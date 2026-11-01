@@ -1,0 +1,31 @@
+{
+ "runs": 10,
+ "all_exact": true,
+ "medians": {
+  "intel_t0_s7_f37_q2": {
+   "wall_s": 0.2853961615,
+   "work_s": 0.276817688,
+   "peak_rss_mib": 100.6953125
+  },
+  "intel_t1_s7_f37_q2": {
+   "wall_s": 0.2809936125,
+   "work_s": 0.2731294405,
+   "peak_rss_mib": 100.6953125
+  },
+  "intel_t2_s7_f37_q2": {
+   "wall_s": 0.28590176,
+   "work_s": 0.2774348405,
+   "peak_rss_mib": 100.6953125
+  },
+  "intel_t0_s7_f37_q8": {
+   "wall_s": 0.5009771905,
+   "work_s": 0.483649243,
+   "peak_rss_mib": 100.6953125
+  },
+  "intel_t0_s7_f37_q32": {
+   "wall_s": 0.9874149425,
+   "work_s": 0.966802564,
+   "peak_rss_mib": 100.705078125
+  }
+ }
+}

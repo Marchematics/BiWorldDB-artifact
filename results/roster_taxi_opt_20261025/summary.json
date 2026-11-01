@@ -1,0 +1,38 @@
+{
+ "note": "Measured optimized formal panel on the pre-registered held-out taxi base: same-window interleaved runs (hybrid optimized binary vs actual Differential Dataflow and DBSP) over the full 54-fixture roster, 2 repetitions per fixture, all 324 answer vectors validated against the committed oracle index, quiet window (1-minute load ~2 recorded). Ratios are engine/optimized-hybrid work-time medians per fixture; cohort statistics are over the 18 cases of each Q.",
+ "rows": [
+  {
+   "cohort": "Q2",
+   "dd_median": 4.86,
+   "dd_min": 4.4,
+   "dd_max": 5.92,
+   "dbsp_median": 6.1,
+   "dbsp_min": 5.37,
+   "dbsp_max": 6.59,
+   "wins": 18,
+   "cases": 18
+  },
+  {
+   "cohort": "Q8",
+   "dd_median": 7.44,
+   "dd_min": 5.21,
+   "dd_max": 10.44,
+   "dbsp_median": 8.21,
+   "dbsp_min": 5.95,
+   "dbsp_max": 12.91,
+   "wins": 18,
+   "cases": 18
+  },
+  {
+   "cohort": "Q32",
+   "dd_median": 8.85,
+   "dd_min": 4.3,
+   "dd_max": 14.22,
+   "dbsp_median": 10.55,
+   "dbsp_min": 4.68,
+   "dbsp_max": 15.09,
+   "wins": 18,
+   "cases": 18
+  }
+ ]
+}

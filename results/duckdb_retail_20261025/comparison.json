@@ -1,0 +1,76 @@
+{
+ "note": "external DuckDB full-state probe on the third pre-registered base; five shapes x 2 repeats; genuine per-state relation with real UPDATEs and one batched SQL scan per state bag; all answers exact",
+ "rows": [
+  {
+   "label": "chain Q2",
+   "fixture": "retail2009_t0_s7_f37_q2",
+   "hybrid_wall_s": 0.0584289775,
+   "dd_wall_s": null,
+   "duckdb_wall_s": 14.511991692,
+   "wall_ratio": 248.36976981156312,
+   "hybrid_work_s": 0.054470864,
+   "duckdb_work_s": 14.245800164,
+   "work_ratio": 261.53064441937255,
+   "duckdb_peak_rss_mib": 599.873046875,
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "label": "bushy Q2",
+   "fixture": "retail2009_t1_s7_f37_q2",
+   "hybrid_wall_s": 0.0596777435,
+   "dd_wall_s": null,
+   "duckdb_wall_s": 14.2096772265,
+   "wall_ratio": 238.1068115703805,
+   "hybrid_work_s": 0.055786261,
+   "duckdb_work_s": 13.961535597,
+   "work_ratio": 250.26835186176038,
+   "duckdb_peak_rss_mib": 601.3359375,
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "label": "star Q2",
+   "fixture": "retail2009_t2_s7_f37_q2",
+   "hybrid_wall_s": 0.049434008,
+   "dd_wall_s": null,
+   "duckdb_wall_s": 14.3099583845,
+   "wall_ratio": 289.4759895758402,
+   "hybrid_work_s": 0.0460041015,
+   "duckdb_work_s": 14.060208478,
+   "work_ratio": 305.62945519107683,
+   "duckdb_peak_rss_mib": 604.4453125,
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "label": "chain Q8",
+   "fixture": "retail2009_t0_s7_f37_q8",
+   "hybrid_wall_s": 0.072479684,
+   "dd_wall_s": null,
+   "duckdb_wall_s": 31.172685701,
+   "wall_ratio": 430.0885983581275,
+   "hybrid_work_s": 0.0693377695,
+   "duckdb_work_s": 30.9077300145,
+   "work_ratio": 445.75604663054526,
+   "duckdb_peak_rss_mib": 710.515625,
+   "exact": true,
+   "runs": 2
+  },
+  {
+   "label": "chain Q32",
+   "fixture": "retail2009_t0_s7_f37_q32",
+   "hybrid_wall_s": 0.1300278245,
+   "dd_wall_s": null,
+   "duckdb_wall_s": 76.595504016,
+   "wall_ratio": 589.0701033454574,
+   "hybrid_work_s": 0.126083877,
+   "duckdb_work_s": 76.3107614205,
+   "work_ratio": 605.2380624407671,
+   "duckdb_peak_rss_mib": 1184.0078125,
+   "exact": true,
+   "runs": 2
+  }
+ ],
+ "all_exact": true
+}
